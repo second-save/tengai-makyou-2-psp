@@ -44,9 +44,12 @@ Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engin
   group 11 = 216 battle technique lines, group 10 = 33, area groups = 566.
 - In battle text (group 11) `24 3x` looks like a name placeholder ("$0", "$1"), not 子 + digit (guess, from the text).
 
-## Insert pipeline (2026-11-19, fourth session) - NOT BOOTED YET
+## Insert pipeline (2026-11-19, fourth session) - first dialogue verified from a cold boot
 - `tools/insert.py ORIG SYSCARD BUILT BLOCKS script/messages.json [--marker]` (run after `build.py --all-ascii`, about a minute):
-  all 189 blocks rebuilt and read back by the extractor, 0 blocks without room. Untested in the emulator: boot it first.
+  all 189 blocks rebuilt and read back by the extractor, 0 blocks without room; `romdiff.py --writes` passes.
+  Cold boot + walk to the mother (`work/qa/ins1`): English draws, dictionary codes expand, wrap is right. An 8-line test
+  message (`work/qa/long1`) pages 3 lines at a time: after `12 0D` on a full window the window clears and restarts at the top.
+  pce.py `--mash` runs for the whole route, so it also skips the waits: shoot early or drop it once in control.
 - Room: English is about 45% larger after LZ. Fixes: streams also go into FF runs (64+ bytes) below block offset 0x10000;
   dictionary (group 1) replaced by 128 English strings coded as one byte 0x80-0xFF (hook `dict` in `src/vwf.s`, bank 69
   $5FE6, called from 6F:$7EA8; saves about 21%); reading groups 5/6/7/9 share the stream of name groups 2/3/4/8.
@@ -55,8 +58,8 @@ Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engin
 - Extractor fix: empty groups parked on the group table were decoded as junk messages (script regenerated: 8,330 messages).
 - `build/tm2_02.iso.insert.log`: 1,325 lines wider than 216 px (wrap is one width for every window: width gate not done),
   119 pages where the English lost a choice marker (`01`), 9 other placeholder mismatches.
-- Unverified guesses: FF runs are free at run time; streams end where the extractor cut them; page breaks every 3 lines
-  (`12 0D`); spaces do not erase (the VWF composes by OR).
+- Unverified guesses: FF runs are free at run time (the start block uses none past its table: test one that does);
+  streams end where the extractor cut them; spaces do not erase (the VWF composes by OR).
 
 ## Open problems
 1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
@@ -74,8 +77,8 @@ Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engin
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Insert pipeline: encode English (ASCII; `05` prefix or `--all-ascii`), re-pack the LZ streams, repoint group tables, extend
-   `tools/build.py`; then the marker build and the width gate per window type (dialogue = 216 px, 3 lines).
+1. Debug tool (warp to any area / battle / shop from a cold boot): nothing past the first house can be tested without it.
+   Then the marker build (`insert.py --marker`) and the width gate per window type (dialogue = 216 px, 3 lines).
 2. Extract main-program strings (iso 0x41000-0x62800) into the script.
 3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).
