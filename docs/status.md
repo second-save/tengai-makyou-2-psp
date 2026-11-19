@@ -5,7 +5,7 @@ User rulings: shorter names (avoid overlap/overflow), keep **Jipang** (world), *
 Translation source: the user's own DS translation, `~/develop/tengai-makyou-2-ds/tengai-makyou-2-ds/translation/tengai2_script.translated.json`
 (11,661 lines: `id` like `wa1/vaa1.scs#0`, `jp`, `jp_clean`, `en`), plus `glossary.json`, `native_catalog.json`, `combat_text.json` there.
 
-Phase: 1 (recon) nearly done, 4 (extract) started. Nothing is translated or inserted yet.
+Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engine spike) VWF working. Nothing is translated or inserted yet.
 
 ## Done (2026-11-19) - details in docs/re/notes.md
 - No English patch exists for the PC Engine game (web search). Related repos on this machine: `~/develop/tengai-makyou-2-pce-cd`
@@ -17,29 +17,61 @@ Phase: 1 (recon) nearly done, 4 (extract) started. Nothing is translated or inse
 - Compression: `tools/lz.py` (unpack + greedy pack, self-check passes). Verified on the first dialogue.
 - Message system understood: event block -> group table -> dictionary + LZ streams of NUL-terminated messages; control codes of
   the pre-expansion stage; DS script lines match PC Engine messages one to one (same text, same control codes).
-- `tools/extract.py ISO OUT.json`: 145 event blocks, 8,918 unique messages (293 KB) -> `work/script/blocks.json` (messages as hex).
+- `tools/extract.py ISO OUT.json`: 189 text modules, 10,478 unique message pages -> `work/script/blocks.json` (messages as hex).
+
+## Character table and DS matching (2026-11-19, second session)
+- `tools/align.py BLOCKS.json DS.json work/script/table.json work/script/match.json [--why KEY]` learns the table by aligning with
+  the DS script and writes the match (PC Engine `sector/group/message.page` -> DS `id@segment`). Table is complete except byte 0x20:
+  0x21-0x60 and 0x7A-0x7F = frequent kanji/signs (0x30-0x39 = full-width digits), 0x61-0x79 = voiced kana (が..ぽ),
+  0xA1-0xDF = kana; `0E`/`0F` switch katakana/hiragana for the kana ranges only. Kana gaps were filled by the regular
+  order (inferred, not yet seen drawn). Not yet written as a `tbl.py` table, no roundtrip test yet.
+- One PC Engine message = several DS lines: the DS script has one line per page (pages end at the wait code `12`), and a DS
+  line can hold several messages separated by `{0000}`. `＠` is DS-only padding; DS timing arguments differ.
+  `1B` takes one raw argument byte; `1A` = name placeholder; `16 05 ... 04 ... 08` = place-name cards.
+- Dictionary codes (`1F nn`) work at byte level: a word can supply the second byte of a kanji. Expand before parsing.
+- Extractor fixes this session (all were silently losing text): header and group pointers are plain 16-bit block offsets
+  (no bank masking); the three JMP targets in the module signature vary (203 modules, 189 with text = those carrying the
+  106-word dictionary); the group table ends at a 00..0F byte ramp, at FF padding or at the dictionary; every stream is cut
+  at the first message that is not valid text after dictionary expansion.
+- Coverage: 13,833 of 14,413 DS segments are found on the PC Engine side (96%). PC Engine side: 8,480 of 10,478 unique
+  pages have a DS line; 674 area pages and 1,319 system pages (groups 2-13: item names, battle and menu messages) do not.
+
+- `tools/codec.py` (+ `tools/table.json`, a copy of the learned table): bytes <-> text, `codec.py test BLOCKS.json` roundtrips
+  all 8,497 distinct messages byte-exact.
+- `tools/script.py BLOCKS MATCH DS_SCRIPT script/messages.json DS_CATALOGS...` builds the working script: 8,375 messages,
+  10,869 pages, 9,536 with DS English (script + `native_catalog.json` + `combat_text.json` by exact text). 1,272 messages
+  still need English: group 5/6/7/9 = 450 hiragana readings of item / technique names (check whether they are ever shown),
+  group 11 = 216 battle technique lines, group 10 = 33, area groups = 566.
+- In battle text (group 11) `24 3x` looks like a name placeholder ("$0", "$1"), not 子 + digit (guess, from the text).
 
 ## Open problems
-1. Character table: bytes 0x20-0x7F and part of 0x80+ are voiced kana / frequent kanji / katakana (only a = が, d = げ known).
-   Get it from the drawing stage (consumes the buffer at `($97)`, bank 0x6F around $7FC8 -> $5404) or by aligning with DS text.
-   Until then DS matching cannot be measured (kanji-only matching found only ~850 of 8,918).
-2. 48 of 145 blocks do not have the standard 106-word dictionary (battle/special modules): header entry 4 may mean something
-   else there; `extract.py` output for them is not trusted. 97 blocks are standard.
-3. Stream ends: bounded by the next stream / header pointers; the last stream of a block is cut at the first invalid message.
-   Confirm against message counts the scripts actually use before reinserting.
-4. Main-program text (menus, shops, battle; plain SJIS + the mixed encoding) at iso 0x41000-0x62800 is not extracted yet.
-5. Drawing/VWF: text is drawn at a 12-px pitch into BG tiles; the routine is not disassembled yet. VWF = make the advance per
-   glyph and add an 8x12 Latin font. Width gate (marker build) not done.
-6. Mirror copy of the start of the track at iso 0x8000000: which copy the PSP emulator reads is unknown; patch both.
-7. The PSP side is untested: no PPSSPP on this Mac (headless QA fork is Windows-only). QA so far = Mesen with the extracted track.
+1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
+   the message modules), `xj4` 50/105 (was 71 before the 106-word filter: one of the 14 dropped modules may hold text),
+   and 5-40 lines short in about 25 area directories (likely small wording differences: the match is exact).
+   PC Engine side: the 1,319 system pages should be matched against the DS `native_catalog.json` / `combat_text.json`.
+2. Stream ends are inferred (cut at the first invalid message). Confirm against the message counts the scripts actually
+   use before reinserting.
+3. Main-program text (menus, shops, battle; plain SJIS + the mixed encoding) at iso 0x41000-0x62800 is not extracted yet.
+4. VWF: done as an engine spike (`src/vwf.s`, `tools/build.py`, notes.md "VWF"), using the System Card 8x8 font.
+   Open: W and M touch their neighbours (8-px glyphs), text sits at the top of the 16-px line, text speed is still one
+   glyph per 4 frames, `--all-ascii` works (plain ASCII, no prefix), marker build and width gate for the other windows (battle, menus, shops) not done.
+5. Mirror copy of the start of the track at iso 0x8000000: which copy the PSP emulator reads is unknown; patch both.
+6. The PSP side is untested: no PPSSPP on this Mac (headless QA fork is Windows-only). QA so far = Mesen with the extracted track.
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Disassemble the draw stage, dump the full character table, write `tools/table.tbl` + codec (roundtrip test on all messages).
-2. Fix `extract.py` for the 48 odd blocks; extract main-program strings; build `script/*.json` keyed by block/group/message.
-3. Match to the DS script (exact on normalized Japanese), report coverage, translate the remainder.
-4. VWF hook + font, marker build, width gate.
-5. Insert (re-pack streams, repoint group tables, both disc copies), rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
+1. Insert pipeline: encode English (ASCII; `05` prefix or `--all-ascii`), re-pack the LZ streams, repoint group tables, extend
+   `tools/build.py`; then the marker build and the width gate per window type (dialogue = 216 px, 3 lines).
+2. Extract main-program strings (iso 0x41000-0x62800) into the script.
+3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
+   script first: many differ by a few characters only).
+4. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
+5. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
+
+Build: `python3 tools/build.py work/content/HCD1022_02.iso work/content/files/SYSCARD3P.PCE build/tm2_02.iso`, check with
+`python3 tools/romdiff.py work/content/HCD1022_02.iso build/tm2_02.iso --writes build/tm2_02.iso.writes`, cue with
+`python3 tools/mkcue.py work/content/files/HCD1022.hcd build/tm2_02.iso work/cd-en`. Cold boot to the house: 16000 frames,
+route `1200:run*10;1500:run*10;1800:run*10;2100:i*10;2400:i*10 --mash 40` (about 50 s).
 
 ## Housekeeping
 - Commits use the repo-local identity `second-save <second-save@users.noreply.github.com>` (user ruling 2026-11-19: work is published under the second-save org). No remote yet; ask before creating one.

@@ -12,12 +12,25 @@ import json, re, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lz
 
-SIG = bytes.fromhex('4c15604c16604c1560')
+SIG = rb'\x4c.[\x60-\x7f]\x4c.[\x60-\x7f]\x4c.[\x60-\x7f]\x00'  # three JMPs into the module ($6000-$7FFF), then entry 3
 MIRROR = 0x8000000  # second copy of the start of the track
 
 
 def far(v):
     return (v >> 13) * 0x2000 + (v & 0x1FFF)
+
+
+def expand(m, words, depth=0):
+    """Replace dictionary codes (1F nn, 1-based) by their words. Byte level: a word can supply the trail byte of a kanji."""
+    out, i = bytearray(), 0
+    while i < len(m):
+        if m[i] == 0x1F and i + 1 < len(m) and 0 < m[i + 1] <= len(words) and depth < 4:
+            out += expand(words[m[i + 1] - 1], words, depth + 1)
+            i += 2
+        else:
+            out.append(m[i])
+            i += 1
+    return bytes(out)
 
 
 def valid(m):
@@ -32,27 +45,30 @@ def valid(m):
         elif c >= 0xEB or 0x80 == c:
             return False
         else:
-            i += 1
+            i += 2 if c == 0x1B else 1  # 1B takes one raw argument byte
     return True
 
 
 def block(iso, base):
     d, lo, hi = iso[base + 12:base + 15]
-    tab = d * 0x2000 + (lo | (hi & 0x1F) << 8)
+    tab = d * 0x2000 + (lo | hi << 8)  # plain 16-bit block offset, like the group offsets (no bank masking)
     offs = []
     i = 0
     while True:
         v = iso[base + tab + i * 2] | iso[base + tab + i * 2 + 1] << 8
-        if i >= 2 and (far(v) < far(offs[1]) or tab + i * 2 >= far(offs[1])):
-            break  # the table runs up to the dictionary; smaller values after it are other data
+        if iso[base + tab + i * 2:base + tab + i * 2 + 4] == b'\0\1\2\3' or v == 0xFFFF or (i >= 2 and tab + i * 2 == offs[1]):
+            break  # the table ends at a 00..0F byte ramp, at FF padding, or where the dictionary starts
+        if i == 256:  # the group index is one byte; a block without the ramp once kept this loop running for an hour
+            print('sector', base // 2048, 'table at', hex(tab), 'has no end ramp: block skipped', file=sys.stderr)
+            return {'sector': base // 2048, 'table': tab, 'groups': []}
         offs.append(v)
         i += 1
-    starts = set(far(v) for v in offs[1:])
+    starts = set(far(v) for v in offs[1:]) | {tab}
     for e in range(3, 7):  # the other header pointers bound the last stream
         d2, lo2, hi2 = iso[base + e * 3:base + e * 3 + 3]
-        starts.add(d2 * 0x2000 + (lo2 | (hi2 & 0x1F) << 8))
+        starts.add(d2 * 0x2000 + (lo2 | hi2 << 8))
     starts = sorted(starts)
-    groups = []
+    groups, words = [], []
     for g, v in enumerate(offs):
         o = far(v)
         if g == 0:
@@ -72,19 +88,20 @@ def block(iso, base):
             out, _ = lz.unpack(iso, base + o, limit=m.start() if m else base + o + 0x2000)
         msgs = out.split(b'\0')
         tail = msgs.pop()  # bytes after the last NUL: decoder slack, not a message
-        if not nxt:  # unbounded stream: keep messages up to the first one that is not valid text
-            for k, m in enumerate(msgs):
-                if not valid(m):
-                    msgs = msgs[:k]
-                    break
+        for k, m in enumerate(msgs):  # the bound can be far past the real end: stop at the first message that is not text
+            if not valid(expand(m, words)):
+                msgs = msgs[:k]
+                break
         groups.append({'offset': v, 'kind': 'lz', 'msgs': [m.hex() for m in msgs], 'tail': tail.hex()})
     return {'sector': base // 2048, 'table': tab, 'groups': groups}
 
 
 def main(iso_path, out_path):
     iso = open(iso_path, 'rb').read()
-    blocks = [block(iso, m.start()) for m in re.finditer(re.escape(SIG), iso)
+    blocks = [block(iso, m.start()) for m in re.finditer(SIG, iso, re.S)
               if m.start() % 2048 == 0 and m.start() < MIRROR]
+    # the signature also fits modules without text: every text module carries the same 106-word dictionary
+    blocks = [b for b in blocks if len(b['groups']) > 1 and len(b['groups'][1]['msgs']) == 106]
     json.dump(blocks, open(out_path, 'w'), indent=0)
     n = sum(len(g['msgs']) for b in blocks for g in b['groups'] if g['kind'] == 'lz')
     print(len(blocks), 'blocks,', n, 'messages,', sum(len(b['groups']) for b in blocks), 'groups')

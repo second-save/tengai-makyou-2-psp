@@ -41,10 +41,15 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 
 ## Message system (bank 0x6F at $6000 while a message runs; traced 2026-11-19)
 - Event block = module loaded raw at base bank `$4F` (0x74 for the start area), also mapped at $6000 as code. Header: 3-byte
-  entries `[bank delta, lo, hi]` (far pointer = bank `$4F`+delta, $8000 | 13-bit offset); entries 0-2 are `JMP`s
-  (signature `4C 15 60 4C 16 60 4C 15 60`), entry 4 = message group table (start area: block+0x1FDB), entry 5/6 other data.
+  entries `[bank delta, lo, hi]` = block offset delta*0x2000 + the plain 16-bit lo/hi (do NOT mask it to 13 or 15 bits:
+  two modules have the table past 0x8000); entries 0-2 are `JMP`s into $6000-$7FFF whose targets vary by module
+  (`4C 15 60 4C 16 60 4C 15 60` is only the most common), entry 4 = message group table (start area: block+0x1FDB),
+  entry 5/6 other data. 203 sector-aligned modules match; the 189 with text all carry the same 106-word dictionary.
   Selector: `$485E` (A = entry index) sets `$50` (bank) and `$53/$54` (pointer).
-- Group table: u16 far offsets (value>>13 = bank delta, &0x1FFF = offset), 61 entries in the start block, indexed by `$DA`.
+- Group table: u16 block offsets, not sorted, indexed by `$DA` (53 entries in the start block). It can sit before or after
+  the streams and ends at a `00 01 02 .. 0F` byte ramp, at FF padding, or where the dictionary starts.
+  Groups 2-13 are the same system text in every module (item names, battle and menu messages); 14+ are the area's own.
+  `1F nn` is expanded at byte level: a word can supply the trail byte of a kanji (`8F 1F 47` -> `8F 4D C9`).
   Group 1 = dictionary: plain NUL-terminated strings (106 words), used by code `1F nn` (word nn, 1-based).
   Every other group = one LZ stream holding several NUL-terminated messages; message k is reached by skipping k NULs.
   Groups can share a stream (equal offsets). The stream has no end marker: it ends where the next stream starts.
@@ -56,5 +61,36 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - The DS script matches message for message: DS `wa1/vaa1.scs#0` == start block group 0x11 message 0, same text and the same
   control codes (DS `{0012}` = byte 0x12, `{0010}{0002}` = `10` + "2"). DS file names follow the PC Engine overlay names (wa1...).
 - Group 2 of the start block = 238 item names (plain names, 0E/0F and `1F` codes inside).
-- Character table still incomplete: ASCII-range bytes are voiced kana and frequent kanji/katakana ('a' = が, 'd' = げ, ...).
-  Derive it by aligning decoded messages with the DS Japanese text, or from the drawing routine.
+- Character table: learned by `tools/align.py` from the DS script (`work/script/table.json`, keys = mode letter h/k + byte,
+  or an SJIS pair). 0x21-0x60 and 0x7A-0x7F = frequent kanji and signs, 0x30-0x39 = full-width digits, 0x61-0x79 = が..ぽ,
+  0xA1-0xDF = kana; `0E`/`0F` = katakana/hiragana for the kana ranges only. 0x20 unknown. Not yet confirmed by the drawing routine.
+
+## Text drawing (traced 2026-11-19, third session; `tools/lua/vdcwho.lua`, `drawtrace.lua`, `poketext.lua`)
+- Main program = banks 0x69-0x72 only (resident, identical to the disc at runtime). Banks 0x73+ are overwritten by area data.
+  Free and resident: 6E +1EB9 (327 bytes), 6A +1F67 (153), 6D +1FCC (52), 72 +1FEF (17).
+- Interpreter of the expanded buffer (`($95)`, about $E66E): main `$51A1` loop, `$51CD` get byte, `$51D6` dispatch.
+  Control codes < 0x20: jump table at `$5215` (word per code). SJIS lead byte (80-9F, E0+) = 2-byte character -> 12x12
+  (`$5264`) or, in text mode 2, 8x12 (`$5272`). 1-byte characters (20-7F, A0-DF): jump table at `$5256` by text mode
+  (`$E3CC` & 3): 0 = `$525E` (game table -> SJIS -> 12x12), 1 = `$526B` (8x8 half-width), 2 = `$5272`, 3 = `$5279` (4-px digits).
+  Codes `04`-`07` select text mode 0-3; `02 n` / `03 n` set cursor x / y; `08`-`0B` = x+1, x-1, y+1, ...; `0D` newline (6D:$6644).
+- Far calls: `JSR $492D` + 3 inline bytes (`BIT target`) = call into bank 6D mapped at $6000 (`$4933` = 6E ... `$494B` = 72).
+- Bank 6D (mapped at $6000 by the far call) holds the drawing code:
+  `$6000` 12x12 (glyph via `$620D`: 16 custom glyphs at `$667C`/`$668C`, else System Card EX_GETFNT), `$625A` 8x8
+  (glyph via `$62FF`: 14 custom glyphs `0-9 _ ^ ]` + DE at `$674C`/`$675A`, else System Card bank 1 font at `$8000 + ch*8`,
+  i.e. SYSCARD3P.PCE 0x2000 + ch*8: plain ASCII), `$63E2` 8x12, `$636F` 4x8.
+  Glyph buffer `$31E1` = 16 bits per row. Cursor `$8D`/`$8E` in 4-px units relative to the window origin `$90`/`$91` (tiles);
+  window size `$92`/`$93` (tiles). A 12x12 glyph advances 3 units, 8x8 advances 2; a newline advances 4 units after a 12x12
+  glyph (`$9C` bit 1) and 2 otherwise. Each window cell gets its own tile: `$612A` reads the cell's tile back (or takes a
+  blank one), `$60E8` composes (AND mask, OR glyph rows), `$6177` writes it in the text colour. Shifts are 0 or 4 px only.
+  `$6608` (A = width, Y = height in units) wraps / scrolls before a glyph, `$6635` advances and wraps after it.
+- Text speed: one glyph every 4 frames (`$E3C8`/`$E3C9`), not changed yet.
+- English works with no code at all: `05` + ASCII draws 8-px fixed-width text (28 characters per line, 8-px lines).
+
+## VWF (`src/vwf.s`, built and applied by `tools/build.py`; verified from a cold boot)
+- 6D:$625D (inside the 8x8 entry) -> stub in the 6D tail -> routine in the 6E tail mapped at $8000. It reuses the stock glyph
+  fetch and two-tile blitter with OR masks, shifts by the pixel remainder, and advances by a per-character width
+  (table measured from the glyph bitmaps by `build.py`: left trim << 4 | advance). Sets `$9C` bit 1: 16-px lines.
+- Result: 3 lines per page as in Japanese, about 37 characters per line. Usable line width = 216 px (the routine asks for
+  two free tiles; the dialogue window is 28 tiles wide).
+- `build.py --all-ascii` (verified from a cold boot) points text modes 0/2/3 at the half-width path so messages need no `05` prefix.
+- Savestates hold the old program: `work/states-en/house.mss` is the cold-boot state of the patched build.
