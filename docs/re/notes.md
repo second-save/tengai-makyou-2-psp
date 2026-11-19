@@ -39,6 +39,20 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - MPR while in the field: mpr0=FF mpr1=F8 mpr2=69 mpr3=6A mpr4-6=80-82 (message code swaps mpr4), mpr7=00.
 - RAM dump layout (pce.py --dump): 0x2000 work RAM (CPU $2000), 0x10000 CD RAM (banks 0x80-0x87), 0x30000 Super CD RAM (banks 0x68-0x7F).
 
+## Map loads and warping (traced 2026-11-20; `tools/lua/cdtrace.lua`, `tools/debug/warp.lua`)
+- Location = area `$2BF4`, sub `$2BF5`, entrance `$2BF6`, plus `$323B`. Area = event block: resident `$3803` (A = area) reads
+  sector `area*128 + 2` (count from the table at `$2616,Y`) to bank 0x74+; `$2C00` = area now loaded (no read if equal).
+  Sub = the map (graphics) inside the area; entrance = spawn point (0x46 = return to the place saved in `$2BF7`/`$2BF8`, 0x18 special).
+  Start: area 0x10, sub 0x11 (house), entrance 0x26. Area 0x10 sub 0x12 = overworld around the first village; sub 0x10 = the opening.
+- Every map change starts a task at 6A:`$6917` (created by 6A:`$690B`: `JSR $4C9E` + inline `93 20 17 69`, `$3815` = new task);
+  it reads the destination at 6A:`$697A`. Script opcodes that warp: 6F:`$7839` (area, sub, entrance), 6F:`$6784` (sub, entrance,
+  `$323B`), 6F:`$67E5` (saved place `$2BF9`-`$2BFB`), all through 6A:`$6902` (A/X/Y = area/sub/entrance).
+  Setting the variables and the `$9C`/`$9E` bit 4 flags from outside does nothing: the task must be created.
+- `$E033` calls in the loader are AD_TRANS (area sound, 0x20 sectors at block + 0x60 sectors), not text.
+- Random battles happen on the overworld with no `$E009` read. In a battle mpr4 = 0x6A (never on the field).
+- Text speed: `$E3C8` = 0 draws with no per-glyph delay. Wait code `12` is handled at 69:`$52D3`; the interpreter loop
+  ends at 69:`$51BF` when it reads 00.
+
 ## Message system (bank 0x6F at $6000 while a message runs; traced 2026-11-19)
 - Event block = module loaded raw at base bank `$4F` (0x74 for the start area), also mapped at $6000 as code. Header: 3-byte
   entries `[bank delta, lo, hi]` = block offset delta*0x2000 + the plain 16-bit lo/hi (do NOT mask it to 13 or 15 bits:

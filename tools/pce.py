@@ -84,10 +84,13 @@ def main():
         os.remove(out + n)  # stale shots from an earlier run ended up in new sheets
     cfgp = os.path.join(os.path.dirname(EXE), 'settings.json')
     cfg = json.load(open(cfgp, encoding='utf-8-sig')) if os.path.exists(cfgp) else {}
+    was = json.dumps(cfg)
     cfg.setdefault('Debug', {}).setdefault('ScriptWindow', {})['AllowIoOsAccess'] = True
     cfg.setdefault('PcEngine', {}).setdefault('Port1', {}).setdefault('Type', 'PceController')
     cfg.setdefault('ConfigUpgrade', 1)
-    json.dump(cfg, open(cfgp, 'w'), indent=2)
+    if json.dumps(cfg) != was:   # parallel runs: rewriting it every time let another run read a half-written file
+        json.dump(cfg, open(cfgp + '.tmp', 'w'), indent=2)
+        os.replace(cfgp + '.tmp', cfgp)
     route = []
     for step in filter(None, (s.strip() for s in a.route.split(';'))):
         fr, rest = step.split(':')

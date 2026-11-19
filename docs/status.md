@@ -5,7 +5,8 @@ User rulings: shorter names (avoid overlap/overflow), keep **Jipang** (world), *
 Translation source: the user's own DS translation, `~/develop/tengai-makyou-2-ds/tengai-makyou-2-ds/translation/tengai2_script.translated.json`
 (11,661 lines: `id` like `wa1/vaa1.scs#0`, `jp`, `jp_clean`, `en`), plus `glossary.json`, `native_catalog.json`, `combat_text.json` there.
 
-Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engine spike) VWF working. Nothing is translated or inserted yet.
+Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer and warp work, battle / shop scenes do not yet,
+4 (extract) done for the message modules, 5 (engine spike) VWF working, DS English inserted for 189 blocks (first build).
 
 ## Done (2026-11-19) - details in docs/re/notes.md
 - No English patch exists for the PC Engine game (web search). Related repos on this machine: `~/develop/tengai-makyou-2-pce-cd`
@@ -61,7 +62,30 @@ Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engin
 - Unverified guesses: FF runs are free at run time (the start block uses none past its table: test one that does);
   streams end where the extractor cut them; spaces do not erase (the VWF composes by OR).
 
+## Debug tools (2026-11-20, fifth session) - details in notes.md "Map loads and warping"
+- `python3 tools/debug/show.py --out DIR ITEM...` shows any message in the dialogue window, about 3 s each, 8 in parallel,
+  one shot per page (`DIR/<item>/pNN.png`), exit 1 if a message does not run to its end. ITEM = `sector/group/message`
+  (read back from the built disc) or `text:...`. It talks to the mother from `work/states-en/house.mss` and
+  `tools/debug/msg.lua` swaps the stream in RAM. Verified on dialogue, item names and raw text.
+- `python3 tools/debug/show.py --regen` (4 minutes) rebuilds `preload.mss`, `house.mss` and `battle.mss` in
+  `work/states-en/` from a cold boot and checks that a message shows. Run it after every rebuild.
+- `tools/debug/warp.lua` (`--var AREA= SUB= MAP=`) redirects the next map load: verified for the overworld of the start
+  area (`SUB=0x12`, field menu opens, random battles happen). `tools/debug/battle.lua` walks until a battle starts.
+  No scene list yet: valid sub / entrance values per area are not enumerated, no shop or town reached.
+- Width gate, dialogue window: a line up to 219 px stays on one line, 224 px wraps by itself onto the next line.
+  `insert.py`'s 216 px and 3 lines per page are confirmed (`work/qa/width`).
+- Seen in the battle state on the English build: the prompt, the command names and the enemy name line are still
+  Japanese (main program), the hero's default name is stored as kanji and draws as garbage, and the game prints the
+  actor's name before a battle line, so battle lines have less room than the window. The battle window wraps by itself.
+- `]` and the digits have the game's own glyphs: `]` draws as a kanji-like sign, use `<>` in markers.
+- Battle messages with name placeholders (`19 n`) end at once outside a battle: they need the battle window.
+- pce.py: parallel runs no longer rewrite Mesen's settings.json (one run read it half-written).
+
 ## Open problems
+7. Battle window viewer: `show.py --state work/states-en/battle.mss --route ...` replaced the first battle message in one
+   encounter (group 11 message 127 opened on the first press) but opens no message in the encounter the current
+   `battle.mss` holds (the command cursor starts on the second row; homing it with up/left did not help). Needs a fixed
+   encounter (find the encounter roll) or a hook on the battle's own message call instead of button presses.
 1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
    the message modules), `xj4` 50/105 (was 71 before the 106-word filter: one of the 14 dropped modules may hold text),
    and 5-40 lines short in about 25 area directories (likely small wording differences: the match is exact).
@@ -77,8 +101,10 @@ Phase: 1 (recon) nearly done, 4 (extract) done for the message modules, 5 (engin
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Debug tool (warp to any area / battle / shop from a cold boot): nothing past the first house can be tested without it.
-   Then the marker build (`insert.py --marker`) and the width gate per window type (dialogue = 216 px, 3 lines).
+1. Debug tool, rest of it: battle window viewer (open problem 7), a shop and a town (enumerate sub / entrance values per
+   area: the warp opcodes are 6F:`$7839` and 6F:`$6784`, their arguments sit in the area scripts), then the width gate
+   for the battle, menu and shop windows. The dialogue window is done; the marker build is not needed for it (`show.py`
+   shows a message by id).
 2. Extract main-program strings (iso 0x41000-0x62800) into the script.
 3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).
