@@ -53,6 +53,20 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - Text speed: `$E3C8` = 0 draws with no per-glyph delay. Wait code `12` is handled at 69:`$52D3`; the interpreter loop
   ends at 69:`$51BF` when it reads 00.
 
+## Battle text (traced 2026-11-20, sixth session; viewer = `tools/debug/show.py --battle`)
+- Battle lines are NOT the modules' group 11. Each area has a 64K ADPCM image at sectors `area*128 + 98` .. `+129` (loaded by
+  AD_TRANS; its head is map graphics). At image offset 0xF400 (iso `area*0x40000 + 0x40400`) sits one LZ stream of 235
+  NUL-terminated messages, 0x994 bytes of the 0xC00 up to the end of ADPCM RAM, identical in 370 areas (4, 5, 7, 16 ... 767).
+- Opener 71:`$74EE` (A = message number): `$384B` A=1 switches the LZ byte source to AD_READ (`$3D25`: 256 bytes at a time
+  from ADPCM address `$28/$29` into `$2AE3`), source `$F400` is hard-coded at 71:`$7502`, then it skips A NULs and
+  pre-expands through 6F:`$7E9F` into `$E66E`. Same interpreter as dialogue (wait `$52D3`, end `$51BF`).
+- Codes in that stream: `19` + ASCII digit 1-4 = name placeholder (131 / 81 / 18 / 2 uses), `1B` = number, `0D` newline
+  (111 messages), no wait code. Message 0 = `19 31 C9 8D55 8C82 21` (name + の攻撃!).
+- A second path at 71:`$752A` (`$F65B` = FF) prints a string from the pointer `$F659/$F65A`, where `24 3x` = name
+  placeholder x and `24 6E` = newline. Guess: that is what the modules' group 11 (`$0の紅丸斬$n...`, three variants) feeds.
+- Command cursor: `$2805` (copy `$282B`), 0-8 row-major over 3 columns (0 = Fight). It wraps in both directions.
+- The battle window wraps by itself at the window edge (28 tiles, mid-word) and shows 3 lines.
+
 ## Message system (bank 0x6F at $6000 while a message runs; traced 2026-11-19)
 - Event block = module loaded raw at base bank `$4F` (0x74 for the start area), also mapped at $6000 as code. Header: 3-byte
   entries `[bank delta, lo, hi]` = block offset delta*0x2000 + the plain 16-bit lo/hi (do NOT mask it to 13 or 15 bits:

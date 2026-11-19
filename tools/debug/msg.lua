@@ -6,13 +6,21 @@ local M = emu.memType.pceMemory
 local n, skip = 0, nil
 emu.addMemoryCallback(function()
   local s = emu.getState()
-  if s["memoryManager.mpr[3]"] ~= 0x6F then return end
+  if BATTLE or s["memoryManager.mpr[3]"] ~= 0x6F then return end
   n = n + 1
   if n == (MSG_N or 1) then skip = s["cpu.a"] end
 end, emu.callbackType.exec, 0x7E6D)
 emu.addMemoryCallback(function()
-  if not skip then return end
   local s = emu.getState()
+  -- BATTLE=1: battle lines open at 71:$74EE instead (A = message, pushed, then LZ init from $7509, then skip that
+  -- many NULs). Their stream is the group 11 copy in ADPCM RAM at $F400 (fetched 256 bytes at a time by AD_READ,
+  -- $3D25): count those opens, zero the pushed message number and write the stream there.
+  local mem = M
+  if BATTLE and s["cpu.a"] == 0xF4 and s["cpu.x"] == 0 and s["memoryManager.mpr[3]"] == 0x71 then
+    n = n + 1
+    if n == (MSG_N or 1) then skip = 0; mem = emu.memType.pceAdpcmRam; emu.write(0x2100 + s["cpu.sp"] + 3, 0, M) end
+  end
+  if not skip then return end
   local src = s["cpu.a"] * 256 + s["cpu.x"]
   local raw = {}
   for i = 1, skip do raw[#raw + 1] = 0 end
@@ -20,8 +28,8 @@ emu.addMemoryCallback(function()
   raw[#raw + 1] = 0
   local p = src
   for i = 1, #raw do
-    if i % 8 == 1 then emu.write(p, 0xFF, M); p = p + 1 end  -- flag byte: 8 literals
-    emu.write(p, raw[i], M); p = p + 1
+    if i % 8 == 1 then emu.write(p, 0xFF, mem); p = p + 1 end  -- flag byte: 8 literals
+    emu.write(p, raw[i], mem); p = p + 1
   end
   log(string.format("MSG group=%02X msg=%02X src=%04X bytes=%d", emu.read(0x20DA, M), skip, src, #raw))
   skip = nil
@@ -38,6 +46,8 @@ emu.addMemoryCallback(function()
 end, emu.callbackType.exec, 0x51BF)
 function on_frame(f)
   FRAME = f
+  -- the command cursor ($2805, copy $282B; 0 = Fight) starts wherever the walk left it and wraps: home it by value
+  if BATTLE and f < 5 then emu.write(0x2805, 0, M); emu.write(0x282B, 0, M) end
   if FAST and active then emu.write(0xE3C8, 0, M) end
   if shoot_at and f >= shoot_at then
     shot(string.format("p%02d.png", page)); page = page + 1

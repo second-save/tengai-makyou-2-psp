@@ -5,7 +5,7 @@ User rulings: shorter names (avoid overlap/overflow), keep **Jipang** (world), *
 Translation source: the user's own DS translation, `~/develop/tengai-makyou-2-ds/tengai-makyou-2-ds/translation/tengai2_script.translated.json`
 (11,661 lines: `id` like `wa1/vaa1.scs#0`, `jp`, `jp_clean`, `en`), plus `glossary.json`, `native_catalog.json`, `combat_text.json` there.
 
-Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer and warp work, battle / shop scenes do not yet,
+Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle viewer and warp work, shop / town scenes do not yet,
 4 (extract) done for the message modules, 5 (engine spike) VWF working, DS English inserted for 189 blocks (first build).
 
 ## Done (2026-11-19) - details in docs/re/notes.md
@@ -81,11 +81,18 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer and warp
 - Battle messages with name placeholders (`19 n`) end at once outside a battle: they need the battle window.
 - pce.py: parallel runs no longer rewrite Mesen's settings.json (one run read it half-written).
 
+## Battle viewer (2026-11-20, sixth session)
+- `python3 tools/debug/show.py --battle --out DIR ITEM...` shows any message in the battle window (from `battle.mss`:
+  msg.lua homes the command cursor by RAM value, Fight + first target, the attack line is replaced in ADPCM RAM).
+  Verified with raw text and module messages. Width gate, battle window: wraps by itself at 28 tiles, 3 lines; the
+  name placeholder takes its width out of the first line.
+
 ## Open problems
-7. Battle window viewer: `show.py --state work/states-en/battle.mss --route ...` replaced the first battle message in one
-   encounter (group 11 message 127 opened on the first press) but opens no message in the encounter the current
-   `battle.mss` holds (the command cursor starts on the second row; homing it with up/left did not help). Needs a fixed
-   encounter (find the encounter roll) or a hook on the battle's own message call instead of button presses.
+7. Battle text is not extracted or inserted (found 2026-11-20, sixth session; notes.md "Battle text"): one LZ stream of
+   235 messages at iso `area*0x40000 + 0x40400`, 370 identical copies, 0x994 bytes used of 0xC00. English will not fit
+   as is (+45% = about 0xDE0): use the one-byte dictionary codes, or move the stream lower in the ADPCM image and patch
+   the `LDA #$F4` at 71:`$7502`. Until then the build shows these lines as garbage (their SJIS bytes hit the
+   one-byte English dictionary). The modules' group 11 may be a different table (technique lines, `$0` / `$n` codes).
 1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
    the message modules), `xj4` 50/105 (was 71 before the 106-word filter: one of the 14 dropped modules may hold text),
    and 5-40 lines short in about 25 area directories (likely small wording differences: the match is exact).
@@ -101,10 +108,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer and warp
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Debug tool, rest of it: battle window viewer (open problem 7), a shop and a town (enumerate sub / entrance values per
-   area: the warp opcodes are 6F:`$7839` and 6F:`$6784`, their arguments sit in the area scripts), then the width gate
-   for the battle, menu and shop windows. The dialogue window is done; the marker build is not needed for it (`show.py`
-   shows a message by id).
+1. Battle text: add the ADPCM stream to extract.py / script.py / insert.py (all 370 copies, placeholders `19 n`),
+   match it against the DS `combat_text.json`, make it fit (open problem 7), check with `show.py --battle`.
+   Then the rest of the debug tool: a shop and a town (enumerate sub / entrance values per area: the warp opcodes are
+   6F:`$7839` and 6F:`$6784`, their arguments sit in the area scripts) and the width gate for menus and shops.
 2. Extract main-program strings (iso 0x41000-0x62800) into the script.
 3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).

@@ -6,9 +6,8 @@ one screenshot per page (OUT/<item>/pNN.png).
   show.py --regen [--cue ...] [--state ...]     cold boot and save preload.mss, the house state and battle.mss beside
                                                 --state (after every rebuild: a state carries the program it was made
                                                 with), then check that a message shows from the house state
-  Battle window: --state work/states-en/battle.mss --route "..." replaces the first message the battle opens (the game
-  prints the actor's name before it). Not reliable yet: the encounter is random and the presses that reach a message
-  differ per encounter (docs/status.md, open problem 7).
+  show.py --battle --out DIR ITEM...            same in the battle window: from battle.mss, Fight + first target, the
+                                                attack line is replaced (the game prints the actor's name before it)
 
 ITEM = sector/group/message (bytes read back from the cue's data.iso by the extractor), or text:... with Python
 escapes (text:Hello\\rworld\\x12). Exit 1 if a message did not run to its end.
@@ -22,6 +21,7 @@ sys.path.insert(0, os.path.join(ROOT, 'tools'))
 PCE = [sys.executable, os.path.join(ROOT, 'tools/pce.py')]
 BOOT = '1200:run*10;1500:run*10;1800:run*10;2100:i*10;2400:i*10'   # title -> new game; --mash skips the intro
 TALK = '20:down*100;130:left*8;150:down*30'                        # walk into the doorway: the mother speaks
+BATTLE = '100:i*4;200:i*4'                                         # msg.lua homes the cursor on Fight; I, I = attack the first enemy
 
 
 def main():
@@ -31,6 +31,7 @@ def main():
     ap.add_argument('--slow', action='store_true', help='keep the per-glyph delay')
     ap.add_argument('--route', default=TALK, help='inputs that make the game open a message (default: talk to the mother)')
     ap.add_argument('--msg-n', type=int, default=1, help='replace the Nth message the game opens')
+    ap.add_argument('--battle', action='store_true', help='show in the battle window (battle.mss beside --state, Fight + target)')
     ap.add_argument('--regen', action='store_true'); ap.add_argument('items', nargs='*')
     a = ap.parse_args()
     if a.regen:
@@ -72,7 +73,10 @@ def main():
     def run(i):
         it, data = jobs[i]
         out = os.path.join(a.out, it.replace('/', '_') if not it.startswith('text:') else 'text%d' % i)
-        cmd = PCE + [a.cue, '--out', out, '--frames', '6000', '--state-in', a.state, '--route', a.route, '--var', 'MSG_N=%d' % a.msg_n,
+        state, route, extra = a.state, a.route, []
+        if a.battle:
+            state, route, extra = os.path.join(os.path.dirname(a.state), 'battle.mss'), BATTLE, ['--var', 'BATTLE=1']
+        cmd = PCE + [a.cue, '--out', out, '--frames', '6000', '--state-in', state, '--route', route, '--var', 'MSG_N=%d' % a.msg_n] + extra + [
                      '--script', os.path.join(HERE, 'msg.lua'), '--var', "HEX='%s'" % data.hex(), '--var', 'FRAME=0']
         subprocess.run(cmd + ([] if a.slow else ['--var', 'FAST=1']), stdout=subprocess.DEVNULL)
         log = os.path.join(out, 'log.txt')

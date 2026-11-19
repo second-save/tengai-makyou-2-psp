@@ -7,3 +7,5 @@
 - emulator-qa.md: a shot taken 3 frames after the game reaches its wait-for-button code can miss the last glyphs; 10 frames was enough here.
 - emulator-qa.md: macOS `xargs -I{}` refuses a long command line ("command line cannot be assembled, too long"); use a shell loop with `&` and `wait`.
 - emulator-qa.md: a random battle reached by a scripted walk is not a fixed scene: the encounter and the command cursor differ between runs, so presses that work in one state do nothing in the next.
+- platform-psp.md (PC Engine CD): ADPCM RAM is used as a 64K data cache (AD_TRANS in, AD_READ out): text read from it never shows up in the CPU address space, so a CPU-side poke of the 'source address' does nothing. Dump `pceAdpcmRam` in Mesen.
+- emulator-qa.md: a menu cursor that wraps cannot be homed with presses from an unknown position; find its RAM variable (dump after each of 4-5 known moves and match the sequence) and set it.
