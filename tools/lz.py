@@ -62,7 +62,8 @@ def pack(data):
             best, best_r = 0, 0
             limit = min(17, len(data) - i)
             if limit >= 2:
-                for r in range(256):
+                first = data[i]
+                for r in [r for r in range(256) if ring[r] == first]:
                     # simulate the copy: the ring is written while it is read
                     n, rr, ww = 0, r, w
                     tmp = None

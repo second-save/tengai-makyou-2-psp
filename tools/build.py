@@ -3,7 +3,8 @@
 
   build.py ORIG.iso SYSCARD.PCE OUT.iso [--all-ascii]     -> OUT.iso and OUT.iso.writes (log for romdiff.py --writes)
 
---all-ascii: 1-byte characters draw through the half-width path in every text mode (no 05 prefix needed).
+--all-ascii: 1-byte characters draw through the half-width path in every text mode (no 05 prefix needed) and
+message bytes 0x80-0xFF become one-byte dictionary codes: the build for tools/insert.py, Japanese text no longer reads.
 Needs ca65/ld65 (cc65). Every write is checked against the original bytes and mirrored to the second disc copy.
 """
 import os, shutil, subprocess, sys
@@ -45,15 +46,18 @@ def main(orig, syscard, out, all_ascii=False):
     os.makedirs(tmp, exist_ok=True)
     subprocess.run(['ca65', '--cpu', 'huc6280', os.path.join(ROOT, 'src/vwf.s'), '-o', tmp + '/vwf.o'], check=True)
     subprocess.run(['ld65', '-C', os.path.join(ROOT, 'src/vwf.cfg'), tmp + '/vwf.o', '-o', tmp + '/vwf'], check=True)
-    stub, vwf = (open(tmp + '/vwf.' + s, 'rb').read() for s in ('stub', 'vwf'))
+    stub, vwf, dic = (open(tmp + '/vwf.' + s, 'rb').read() for s in ('stub', 'vwf', 'dict'))
     vwf = vwf[:-96] + widths(iso, card)
     writes = [
         (far(0x6D, 0x7FCC, 0x6000), stub, 'vwf stub'),
         (far(0x6E, 0x9EB9, 0x8000), vwf, 'vwf + width table'),
+        (far(0x69, 0x5FE6, 0x4000), dic, 'dictionary code routine'),
         # 6D:$625D (after PHA PHX PHY): JSR stub; JMP $6014 (PLY PLX PLA RTS)
         (far(0x6D, 0x625D, 0x6000), bytes.fromhex('20cc7f4c1460'), 'half-width draw -> vwf'),
     ]
     if all_ascii:
+        # 6F:$7EA8 JSR $7E5C (next message byte) -> bytes 0x80-0xFF expand as dictionary words (tools/insert.py)
+        writes.append((far(0x6F, 0x7EA8, 0x6000), bytes.fromhex('20e65f'), 'message byte -> dictionary codes'))
         # main $5256: handler table for 1-byte characters by text mode; point modes 0, 2, 3 at mode 1's far call ($526B)
         writes += [(far(0x69, 0x5256 + m * 2, 0x4000), bytes.fromhex('6b52'), 'text mode %d -> half-width' % m) for m in (0, 2, 3)]
     new, log = bytearray(iso), []
@@ -62,7 +66,7 @@ def main(orig, syscard, out, all_ascii=False):
             assert iso[o:o + len(data)] == iso[off:off + len(data)], 'mirror differs at %x' % o
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
-    for off, data, name in writes[:2]:
+    for off, data, name in writes[:3]:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)

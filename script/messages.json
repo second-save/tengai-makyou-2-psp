@@ -35072,18 +35072,6 @@
   ]
  },
  {
-  "hex": "356d",
-  "at": "4866/17/75",
-  "uses": 4,
-  "jp": "５づ",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "1933c91f5f61a01b081f48bcc0816212",
   "at": "4994/10/3",
   "uses": 5,
@@ -40160,66 +40148,6 @@
    {
     "ds": "wd3/wdjd.scs#22@1",
     "en": "A long hair lies by the pillow.{0012}"
-   }
-  ]
- },
- {
-  "hex": "23d423",
-  "at": "5378/20/68",
-  "uses": 2,
-  "jp": "人や人",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "2d",
-  "at": "5378/20/80",
-  "uses": 13,
-  "jp": "水",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "23d42dc1",
-  "at": "5378/20/86",
-  "uses": 1,
-  "jp": "人や水ち",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "23d42323d423",
-  "at": "5378/20/100",
-  "uses": 1,
-  "jp": "人や人人や人",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "351d38",
-  "at": "5378/20/102",
-  "uses": 1,
-  "jp": "５{1D}８",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -49142,7 +49070,7 @@
  {
   "hex": "2f",
   "at": "6274/63/15",
-  "uses": 12,
+  "uses": 9,
   "jp": "一",
   "pages": [
    {
@@ -94024,42 +93952,6 @@
   ]
  },
  {
-  "hex": "220e23",
-  "at": "16258/18/80",
-  "uses": 2,
-  "jp": "大{k}人",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "30",
-  "at": "16258/18/126",
-  "uses": 4,
-  "jp": "０",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "3053",
-  "at": "16258/18/139",
-  "uses": 1,
-  "jp": "０竜",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "0d0192b791442b",
   "at": "16386/14/1",
   "uses": 1,
@@ -96712,78 +96604,6 @@
   ]
  },
  {
-  "hex": "25",
-  "at": "16514/23/72",
-  "uses": 12,
-  "jp": "様",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "3513",
-  "at": "16514/23/108",
-  "uses": 2,
-  "jp": "５{13}",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "a8",
-  "at": "16514/23/127",
-  "uses": 2,
-  "jp": "ぃ",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "375e",
-  "at": "16514/23/159",
-  "uses": 2,
-  "jp": "７百",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "b1",
-  "at": "16514/23/170",
-  "uses": 2,
-  "jp": "あ",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "40",
-  "at": "16514/23/175",
-  "uses": 2,
-  "jp": "気",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "103133301f6abbdd8149a0baafc16ebd814912",
   "at": "16642/16/1",
   "uses": 1,
@@ -97060,30 +96880,6 @@
   ]
  },
  {
-  "hex": "26",
-  "at": "16642/18/76",
-  "uses": 2,
-  "jp": "見",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "2b",
-  "at": "16642/18/104",
-  "uses": 2,
-  "jp": "村",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "90b995ea1f2ea6a026c2b9c02112",
   "at": "16770/16/1",
   "uses": 3,
@@ -97264,18 +97060,6 @@
   ]
  },
  {
-  "hex": "28",
-  "at": "16770/24/66",
-  "uses": 2,
-  "jp": "神",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "90dc4ac98aa5a6a026c2b9c02112",
   "at": "16898/16/4",
   "uses": 2,
@@ -97420,42 +97204,6 @@
   ]
  },
  {
-  "hex": "1f26",
-  "at": "17026/19/90",
-  "uses": 1,
-  "jp": "のどうたく",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "b2",
-  "at": "17026/19/108",
-  "uses": 1,
-  "jp": "い",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "2e",
-  "at": "17026/19/122",
-  "uses": 10,
-  "jp": "手",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "103133311f6ad6ab7a7a12",
   "at": "17154/17/0",
   "uses": 1,
@@ -97536,30 +97284,6 @@
    {
     "ds": "yo7/yom1.scs#6@1",
     "en": "You can see bright red blood seeping out in great amounts...{0012}"
-   }
-  ]
- },
- {
-  "hex": "1f3b",
-  "at": "17154/18/90",
-  "uses": 2,
-  "jp": "らしい",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "c7",
-  "at": "17154/18/97",
-  "uses": 2,
-  "jp": "ぬ",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -98644,18 +98368,6 @@
   ]
  },
  {
-  "hex": "33",
-  "at": "17282/45/72",
-  "uses": 1,
-  "jp": "３",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "103133302e8ad4c9b6b6d9a0b58fec1f116b690d561f18231f18b2b267acc8b4b6d612",
   "at": "17410/16/0",
   "uses": 1,
@@ -98860,78 +98572,6 @@
   ]
  },
  {
-  "hex": "352f352f352f352f352f352f352f352f35352f352f352f352f352f35",
-  "at": "17410/45/71",
-  "uses": 1,
-  "jp": "５一５一５一５一５一５一５一５一５５一５一５一５一５一５",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "c6352f",
-  "at": "17410/45/85",
-  "uses": 1,
-  "jp": "に５一",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "35352f352f352f35352f352f352f352f352f35",
-  "at": "17410/45/91",
-  "uses": 1,
-  "jp": "５５一５一５一５５一５一５一５一５一５",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "352f352f352f35",
-  "at": "17410/45/94",
-  "uses": 1,
-  "jp": "５一５一５一５",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "4b3e352f352f35",
-  "at": "17410/45/100",
-  "uses": 1,
-  "jp": "来中５一５一５",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "35",
-  "at": "17410/45/116",
-  "uses": 1,
-  "jp": "５",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "103133301f6a8c4e21113630a08c4ec97eca113430a0bac9548be21f530d1133309558d6d8d3113230a097e2c0b2c9b6c87a0d113630548be23ccd113330a08fe6d88d9edd6e4bd9c4ca7a12",
   "at": "17538/16/0",
   "uses": 1,
@@ -98976,66 +98616,6 @@
    {
     "ds": "yp2/ypk0.scs#3@1",
     "en": "...hopelessly fond of women! And both of them are beauties... I won't answer for what happens.{0012}"
-   }
-  ]
- },
- {
-  "hex": "23cb23",
-  "at": "17538/21/65",
-  "uses": 9,
-  "jp": "人ひ人",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "31",
-  "at": "17538/21/81",
-  "uses": 3,
-  "jp": "１",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "10325e",
-  "at": "17538/21/86",
-  "uses": 3,
-  "jp": "{10}２百",
-  "pages": [
-   {
-    "ds": "we2/souba.scs#5@9",
-    "en": "hundred"
-   }
-  ]
- },
- {
-  "hex": "2d33d8",
-  "at": "17538/21/96",
-  "uses": 3,
-  "jp": "水３り",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "0834",
-  "at": "17538/21/104",
-  "uses": 3,
-  "jp": "{08}４",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -99396,54 +98976,6 @@
    {
     "ds": "yp3/ypf4.scs#15@0",
     "en": "Everyone is waiting for your deeds!{0012}"
-   }
-  ]
- },
- {
-  "hex": "1ea42727",
-  "at": "17666/21/116",
-  "uses": 1,
-  "jp": "{1E}、天天",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "5d",
-  "at": "17666/21/133",
-  "uses": 1,
-  "jp": "丸",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "2c",
-  "at": "17666/21/151",
-  "uses": 1,
-  "jp": "国",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "2c41",
-  "at": "17666/21/165",
-  "uses": 1,
-  "jp": "国金",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -100500,30 +100032,6 @@
    {
     "ds": "yp7/ypk2.scs#13@0",
     "en": "......We're counting on you, Manjimaru!{0012}"
-   }
-  ]
- },
- {
-  "hex": "1d0227",
-  "at": "18306/16/111",
-  "uses": 2,
-  "jp": "{1D}{02}天",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "bb",
-  "at": "18306/16/160",
-  "uses": 2,
-  "jp": "さ",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -101948,30 +101456,6 @@
   ]
  },
  {
-  "hex": "247425",
-  "at": "18562/21/72",
-  "uses": 5,
-  "jp": "子ぼ様",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
-  "hex": "3ca3",
-  "at": "18562/21/141",
-  "uses": 1,
-  "jp": "城」",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
-   }
-  ]
- },
- {
   "hex": "0ebcadd70f1f2da6a026c2b9c02112",
   "at": "18690/18/2",
   "uses": 2,
@@ -102136,18 +101620,6 @@
    {
     "ds": "yq4/yqf0.scs#10@1",
     "en": "...when you head home, please do stop by Iga! Farewell!{0012}"
-   }
-  ]
- },
- {
-  "hex": "36",
-  "at": "18818/27/131",
-  "uses": 1,
-  "jp": "６",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },
@@ -102788,18 +102260,6 @@
    {
     "ds": "yq7/yok0.scs#65@1",
     "en": "With the Holy Sword you made, Lord Manjimaru, we believe Yomi can be defeated!{0012}"
-   }
-  ]
- },
- {
-  "hex": "1db7",
-  "at": "19202/17/95",
-  "uses": 1,
-  "jp": "{1D}き",
-  "pages": [
-   {
-    "ds": null,
-    "en": null
    }
   ]
  },

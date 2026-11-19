@@ -49,7 +49,7 @@ def valid(m):
     return True
 
 
-def block(iso, base):
+def block(iso, base, valid=valid):
     d, lo, hi = iso[base + 12:base + 15]
     tab = d * 0x2000 + (lo | hi << 8)  # plain 16-bit block offset, like the group offsets (no bank masking)
     offs = []
@@ -71,6 +71,9 @@ def block(iso, base):
     groups, words = [], []
     for g, v in enumerate(offs):
         o = far(v)
+        if g > 1 and tab <= o < tab + len(offs) * 2:  # empty group parked on the table: decoding it gave junk messages
+            groups.append({'offset': v, 'kind': 'lz', 'msgs': [], 'tail': ''})
+            continue
         if g == 0:
             groups.append({'offset': v, 'kind': 'none', 'msgs': []})
             continue

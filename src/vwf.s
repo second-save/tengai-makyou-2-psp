@@ -20,6 +20,16 @@ stub:   tma #$10
         tam #$10
         rts
 
+.segment "DICT"         ; bank 69 tail, CPU $5FE6: called from 6F:$7EA8 in place of JSR $7E5C (next message byte)
+dict:   jsr $7E5C       ; bytes $80-$FF = dictionary word 1-128, through the game's own handler of code 1F
+        cmp #$80
+        bcc d_ret
+        sbc #$7F
+        plx
+        plx
+        jmp $7F9E
+d_ret:  rts
+
 .segment "VWF"          ; bank 6E tail, CPU $9EB9 while mapped by the stub
 vwf:    lda #$04        ; room check: two tiles wide, one 16-px line high (newline / scroll as needed)
         tay
