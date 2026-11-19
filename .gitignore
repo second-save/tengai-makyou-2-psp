@@ -1,0 +1,10 @@
+rom/
+build/
+work/
+dist/
+release/
+tools/mesen/
+*.mss
+__pycache__/
+.DS_Store
+Tengai Makyou II - Manji Maru (Japan)/
