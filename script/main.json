@@ -707,5 +707,166 @@
   "jp": "卍丸{00}カブキ{00}極楽{00}絹{00}シロ{00}卍丸{00}{06}か私き{00}極楽{00}{08}絹{06}[20]",
   "en": "Manji{00}Kabuki{00}Goku{00}Kinu{00}{00}{16}[96][88][8A][84]{1B} Ryo{17}{00}Virtue{08}{06}",
   "note": "6B:$6C3D party names list 2 (status bar, short names by user ruling), $6C55 field money window, $6C61 status label Virtue; all moved here by build.py"
+ },
+ {
+  "at": "4B1D6",
+  "hex": "188081a088038202999761d88f8a03880286019761b9d9029a0188f88ee6d902ad01d4d2d9",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[99]預り所{03}[88]{02}[86]{01}預ける{02}[9A]{01}引取る{02}[AD]{01}やめる",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[99]Bank{03}[88]{02}[86]{01}Store{02}[9A]{01}Take{02}[AD]{01}Exit",
+  "note": "storage top menu"
+ },
+ {
+  "at": "4B25F",
+  "hex": "0382028f6fdaa688f88ee6d8cfbdb68148",
+  "jp": "{03}[82]{02}[8F]どれを引取りますか？",
+  "en": "{03}[82]{02}[8F]Take which?",
+  "note": "storage prompt"
+ },
+ {
+  "at": "4B1B1",
+  "hex": "088e9d41028801029497bc",
+  "jp": "{08}持金{02}[88]{01}{02}[94]両",
+  "en": "Own{02}[88]{01}{02}[94]Ryo",
+  "note": "storage money: what you hold (Cash + Ryo do not fit)"
+ },
+ {
+  "at": "4B1BD",
+  "hex": "0d2081a5028801029497bc0d",
+  "jp": "{0D}[20]▼{02}[88]{01}{02}[94]両{0D}",
+  "en": "{0D} v{02}[88]{01}{02}[94]Ryo{0D}",
+  "note": "storage money: amount line"
+ },
+ {
+  "at": "4B1CA",
+  "hex": "08976141028801029497bc",
+  "jp": "{08}預金{02}[88]{01}{02}[94]両",
+  "en": "Box{02}[88]{01}{02}[94]Ryo",
+  "note": "storage money: what is stored (Bank + Ryo do not fit)"
+ },
+ {
+  "at": "4B1FC",
+  "hex": "168385878c9761b9d90d010895908bef0d010893b98bef0d01088aaa4e0d01084117",
+  "jp": "{16}[83][85][87][8C]預ける{0D}{01}{08}武具{0D}{01}{08}道具{0D}{01}{08}巻物{0D}{01}{08}金{17}",
+  "en": "{16}[83][85][87][8C]Put{0D}{01}Gear{0D}{01}Item{0D}{01}Scroll{0D}{01}Ryo{17}",
+  "note": "storage: what to put in"
+ },
+ {
+  "at": "4B21F",
+  "hex": "168d85878c88f88ee6d90d010895908bef0d010893b98bef0d01088aaa4e0d01084117",
+  "jp": "{16}[8D][85][87][8C]引取る{0D}{01}{08}武具{0D}{01}{08}道具{0D}{01}{08}巻物{0D}{01}{08}金{17}",
+  "en": "{16}[8D][85][87][8C]Take{0D}{01}Gear{0D}{01}Item{0D}{01}Scroll{0D}{01}Ryo{17}",
+  "note": "storage: what to take"
+ },
+ {
+  "at": "4B24F",
+  "hex": "038202906fdaa69761b9cfbdb68148",
+  "jp": "{03}[82]{02}[90]どれを預けますか？",
+  "en": "{03}[82]{02}[90]Put which?",
+  "note": "storage prompt"
+ },
+ {
+  "at": "4520B",
+  "hex": "cbddbc",
+  "jp": "ひんし",
+  "en": "Low",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "4520F",
+  "hex": "cf20cb",
+  "jp": "ま[20]ひ",
+  "en": "Par",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "45213",
+  "hex": "bab5d8",
+  "jp": "こおり",
+  "en": "Ice",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "45217",
+  "hex": "c8d1d8",
+  "jp": "ねむり",
+  "en": "Slp",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "4521B",
+  "hex": "d720dd",
+  "jp": "ら[20]ん",
+  "en": "Cnf",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "4521F",
+  "hex": "dcbdda",
+  "jp": "わすれ",
+  "en": "Fgt",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "45223",
+  "hex": "bb20dd",
+  "jp": "さ[20]ん",
+  "en": "Acd",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "45227",
+  "hex": "c4deb8",
+  "jp": "と゛く",
+  "en": "Psn",
+  "note": "ailment code (3 bytes, skip-N list based at 6B:$620B; the original is 3-kana abbreviations too)"
+ },
+ {
+  "at": "453CD",
+  "hex": "1581956d8e80",
+  "jp": "{15}[81]瀕死",
+  "en": "{15}[81]Weak",
+  "note": "ailment (colour 81); in place: the list access is not known"
+ },
+ {
+  "at": "453D4",
+  "hex": "158382dc82d008",
+  "jp": "{15}[83]まひ{08}",
+  "en": "{15}[83]Numb{08}",
+  "note": "ailment (in place)"
+ },
+ {
+  "at": "453DC",
+  "hex": "1583938082e808",
+  "jp": "{15}[83]凍り{08}",
+  "en": "{15}[83]Iced{08}",
+  "note": "ailment (in place)"
+ },
+ {
+  "at": "453E4",
+  "hex": "158396b082e808",
+  "jp": "{15}[83]眠り{08}",
+  "en": "{15}[83]Doze{08}",
+  "note": "ailment (in place)"
+ },
+ {
+  "at": "453EC",
+  "hex": "15848dac979008",
+  "jp": "{15}[84]混乱{08}",
+  "en": "{15}[84]Daze{08}",
+  "note": "ailment (in place)"
+ },
+ {
+  "at": "453F4",
+  "hex": "1585965982ea08",
+  "jp": "{15}[85]忘れ{08}",
+  "en": "{15}[85]Mute{08}",
+  "note": "ailment (in place)"
+ },
+ {
+  "at": "453FC",
+  "hex": "15868e5f08",
+  "jp": "{15}[86]酸{08}",
+  "en": "{15}[86]Acd",
+  "note": "ailment acid (3 bytes once the {08} is dropped); 毒 after it keeps its kanji (2 bytes)"
  }
 ]
