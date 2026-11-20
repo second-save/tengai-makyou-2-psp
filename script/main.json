@@ -868,5 +868,202 @@
   "jp": "{15}[86]酸{08}",
   "en": "{15}[86]Acd",
   "note": "ailment acid (3 bytes once the {08} is dropped); 毒 after it keeps its kanji (2 bytes)"
+ },
+ {
+  "at": "5769E",
+  "hex": "188081a0880382029697f090edc98b4c985e038802840191b1b70293018ecabd02a2018fc1bd02b1018fda8dd7",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[96]歴戦の記録{03}[88]{02}[84]{01}続き{02}[93]{01}写す{02}[A2]{01}消す{02}[B1]{01}詳細",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[9C]Saves{03}[88]{02}[84]{01}Load{02}[93]{01}Copy{02}[A2]{01}Erase{02}[B1]{01}Info",
+  "note": "title Continue menu (歴戦の記録: 続き 写す 消す 詳細)"
+ },
+ {
+  "at": "576CC",
+  "hex": "15838b4c985e61b1d8cfbedd1580",
+  "jp": "{15}[83]記録がありません{15}[80]",
+  "en": "{15}[83]Empty{15}[80]",
+  "note": "save slot: no record"
+ },
+ {
+  "at": "576DB",
+  "hex": "15838dc58f89b6d78e6ed2d91580",
+  "jp": "{15}[83]最初から始める{15}[80]",
+  "en": "{15}[83]New game{15}[80]",
+  "note": "save slot: start from the beginning"
+ },
+ {
+  "at": "576EA",
+  "hex": "15848ce48f448f9d256ebd20bac98b4c985eca89f3dacfbcc01580",
+  "jp": "{15}[84]御愁傷様です[20]この記録は壊れました{15}[80]",
+  "en": "{15}[84]Alas! Save is broken.{15}[80]",
+  "note": "save slot: corrupted record (御愁傷様です)"
+ },
+ {
+  "at": "57706",
+  "hex": "028903846fc98b4c985e6e91b1b7a64cb2cfbdb68148",
+  "jp": "{02}[89]{03}[84]どの記録で続きを行いますか？",
+  "en": "{02}[89]{03}[84]Load which save?",
+  "note": "load prompt"
+ },
+ {
+  "at": "577C0",
+  "hex": "028c03846fc98b4c985ea68ecabccfbdb6814820",
+  "jp": "{02}[8C]{03}[84]どの記録を写しますか？[20]",
+  "en": "{02}[8C]{03}[84]Copy which save?",
+  "note": "copy prompt"
+ },
+ {
+  "at": "577D5",
+  "hex": "028c03844894d4c98b4c985ecd8ecabccfbdb68148",
+  "jp": "{02}[8C]{03}[84]何番の記録へ写しますか？",
+  "en": "{02}[8C]{03}[84]Copy onto which?",
+  "note": "copy target prompt"
+ },
+ {
+  "at": "577EB",
+  "hex": "028d03846fc98b4c985ea68fc1bccfbdb68148",
+  "jp": "{02}[8D]{03}[84]どの記録を消しますか？",
+  "en": "{02}[8D]{03}[84]Erase which?",
+  "note": "erase prompt"
+ },
+ {
+  "at": "577FF",
+  "hex": "028d03846fc98b4c985ec98fda8dd7a626cfbdb68148",
+  "jp": "{02}[8D]{03}[84]どの記録の詳細を見ますか？",
+  "en": "{02}[8D]{03}[84]View which save?",
+  "note": "details prompt"
+ },
+ {
+  "at": "57816",
+  "hex": "0380a68fc1bccfbd0dd6dbbcb26ebdb681480d",
+  "jp": "{03}[80]を消します{0D}よろしいですか？{0D}",
+  "en": "{03}[80]: erase?{0D}Sure?{0D}",
+  "note": "erase confirm, after the save name (19 bytes)"
+ },
+ {
+  "at": "57DB2",
+  "hex": "18868c9386836f8362834e83418362837683818382838a815b82aa0d8f898afa89bb82b382ea82c482a282dc82b982f11219",
+  "jp": "{18}[86][8C][93][86]バックアップメモリーが{0D}初期化されていません{12}{19}",
+  "en": "{18}[86][8C][93][86]Backup memory is{0D}not formatted.{12}{19}",
+  "note": "backup memory (BRAM) messages; LZ copies in 0x3510000+ areas not patched"
+ },
+ {
+  "at": "57DE5",
+  "hex": "18868b9388836f8362834e83418362837683818382838a815b82f00d8f898afa89bb82b582dc82b782a981480d",
+  "jp": "{18}[86][8B][93][88]バックアップメモリーを{0D}初期化しますか？{0D}",
+  "en": "{18}[86][8B][93][88]Format the{0D}backup memory?{0D}",
+  "note": "BRAM"
+ },
+ {
+  "at": "57E13",
+  "hex": "18868b9388836f8362834e83418362837683818382838a815b82f00d8f898afa89bb82b582c882a282c68351815b838082cd0d82c582ab82dc82b982f11219",
+  "jp": "{18}[86][8B][93][88]バックアップメモリーを{0D}初期化しないとゲームは{0D}できません{12}{19}",
+  "en": "{18}[86][8B][93][88]The game cannot{0D}be played without{0D}formatting it.{12}{19}",
+  "note": "BRAM"
+ },
+ {
+  "at": "57E53",
+  "hex": "18868c9386836f8362834e83418362837683818382838a815b82f00d8f898afa89bb82b582dc82b582bd1219",
+  "jp": "{18}[86][8C][93][86]バックアップメモリーを{0D}初期化しました{12}{19}",
+  "en": "{18}[86][8C][93][86]Backup memory{0D}formatted.{12}{19}",
+  "note": "BRAM"
+ },
+ {
+  "at": "57E80",
+  "hex": "18848c97868b4c985e82aa8bf382c582cd82a082e882dc82b982f10d82dc82b881408b4c985e82f08fc182b582c482ad82be82b382a21219",
+  "jp": "{18}[84][8C][97][86]記録が空ではありません{0D}まず　記録を消してください{12}{19}",
+  "en": "{18}[84][8C][97][86]That save is not empty.{0D}Erase it first.{12}{19}",
+  "note": "BRAM"
+ },
+ {
+  "at": "57EB9",
+  "hex": "18848b9788976597ca82aa91ab82e882dc82b982f10d91bc82cc837483408343838b82f08ded8f9c82b582dc82b782a981480d",
+  "jp": "{18}[84][8B][97][88]容量が足りません{0D}他のファイルを削除しますか？{0D}",
+  "en": "{18}[84][8B][97][88]Not enough space.{0D}Delete other files?{0D}",
+  "note": "BRAM"
+ },
+ {
+  "at": "58546",
+  "hex": "0b0482f00d8ded8f9c82b582dc82b70d82e682eb82b582a282c582b782a98148",
+  "jp": "{0B}{04}を{0D}削除します{0D}よろしいですか？",
+  "en": "{0B}{04}{0D}Delete it?{0D}Are you sure?",
+  "note": "BRAM file manager, after the file name"
+ },
+ {
+  "at": "58567",
+  "hex": "18878c91868ded8f9c82f08f4982e882dc82b782a98148",
+  "jp": "{18}[87][8C][91][86]削除を終りますか？",
+  "en": "{18}[87][8C][91][86]Stop deleting?",
+  "note": "BRAM file manager"
+ },
+ {
+  "at": "5857F",
+  "hex": "18878c9186837483408343838b82aa82a082e882dc82b982f10d8ded8f9c82f08f4982e882dc82b71219",
+  "jp": "{18}[87][8C][91][86]ファイルがありません{0D}削除を終ります{12}{19}",
+  "en": "{18}[87][8C][91][86]No files.{0D}Done deleting.{12}{19}",
+  "note": "BRAM file manager"
+ },
+ {
+  "at": "5861F",
+  "hex": "0c038281408140814082c782cc837483408343838b82f08ded8f9c82b582dc82b782a98148",
+  "jp": "{0C}{03}[82]　　　どのファイルを削除しますか？",
+  "en": "{0C}{03}[82]   Delete which file?",
+  "note": "BRAM file manager (pointer $761F)"
+ },
+ {
+  "at": "58752",
+  "hex": "03a8028081409153837483408343838b814081408140814081408140814081461b8cc2",
+  "jp": "{03}[A8]{02}[80]　全ファイル　　　　　　　：{1B}個",
+  "en": "{03}[A8]{02}[80] All files{02}[A7]:{1B}",
+  "note": "BRAM file manager counts, colon column = 13 full-width chars (pointer $7752); 個 dropped"
+ },
+ {
+  "at": "58776",
+  "hex": "03ac0280814093568a4f8251837483408343838b8140814081408140814081461b8cc2",
+  "jp": "{03}[AC]{02}[80]　天外２ファイル　　　　　：{1B}個",
+  "en": "{03}[AC]{02}[80] Tengai II files{02}[A7]:{1B}",
+  "note": "BRAM file manager counts"
+ },
+ {
+  "at": "5879A",
+  "hex": "03b0028081408bf382ab976597ca815e93568a4f8251837483408343838b81461b8cc295aa",
+  "jp": "{03}[B0]{02}[80]　空き容量／天外２ファイル：{1B}個分",
+  "en": "{03}[B0]{02}[80] Free, in files{02}[A7]:{1B}",
+  "note": "BRAM file manager counts; 個分 dropped"
+ },
+ {
+  "at": "50711",
+  "hex": "8148814896438c828d558c8289ce898a8b9b978b96438c82944d9265",
+  "jp": "？？砲撃攻撃火炎魚雷砲撃熱弾",
+  "en": "??  GunsAtk FireTorpGunsHeat",
+  "note": "ship commands, battle slot 9 name table 70:$7711 (7 x 4 bytes; 砲撃 = Guns as in the field menu)",
+  "free": true
+ },
+ {
+  "at": "45C09",
+  "hex": "02909396d8ca206fb0da6b8148",
+  "jp": "{02}[90]当りは[20]どーれだ？",
+  "en": "{02}[90]Which wins?",
+  "note": "minigame prompt (当りは どーれだ？)"
+ },
+ {
+  "at": "4CB8B",
+  "hex": "0284038814808d558c8297cd081b062f048ee794f597cd081b062f049166918182b3081b",
+  "jp": "{02}[84]{03}[88]{14}[80]攻撃力{08}{1B}{06}一{04}守備力{08}{1B}{06}一{04}素早さ{08}{1B}",
+  "en": "{02}[84]{03}[88]{14}[80]Power{08}{1B}{06}[2F]{04}Guard{08}{1B}{06}[2F]{04}Speed{08}{1B}",
+  "note": "stat change lines (pointer $7B8B), labels as on the status screen"
+ },
+ {
+  "at": "4D000",
+  "hex": "c98ef4b2612089f0b9c0816212",
+  "jp": "の呪いが[20]解けた｜{12}",
+  "en": " uncursed!{12}",
+  "note": "after an item name (の呪いが 解けた)"
+ },
+ {
+  "at": "510B4",
+  "hex": "934782f093a582dd92d782b582bd816212",
+  "jp": "敵を踏み潰した｜{12}",
+  "en": "Enemy crushed!{12}",
+  "note": "after {0C}; 敵を踏み潰した"
  }
 ]

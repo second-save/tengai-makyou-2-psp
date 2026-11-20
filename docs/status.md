@@ -132,6 +132,14 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   fragments (`立立に`, `なない`: extractor cut points, open problem 2), and the kana name-entry grid 4226/17/0
   (needs engine work: the cursor picks kana from a code table, the text alone can't change it).
 
+- Main program, same session: 28 more `script/main.json` entries: title Continue menu (Saves / Load Copy Erase Info,
+  slot states, prompts; verified from a cold boot: `1200:run*10;1500:run*10;2000:right*10;2150:i*10`, then `2700:i*10`
+  = Load), backup memory and file-delete messages (not seen on screen), ship commands (4-byte table 70:$7711:
+  Guns Atk Fire Torp Heat), stat-change lines, " uncursed!", "Enemy crushed!", minigame "Which wins?".
+  The same BRAM strings also sit LZ-compressed in areas at 0x3510000+ (left alone; the screen uses the plain copy).
+  Still Japanese in the main program: province names 0x58140 (4 bytes each: need the list base to relocate),
+  summon names 0x50AC1 (名無し シロ 式神 三角), debug menus (chapter select 0x5771D, battle test 0x4F213 / 0x510C6).
+
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
    230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
