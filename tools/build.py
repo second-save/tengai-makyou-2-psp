@@ -15,7 +15,6 @@ MIRROR = 0x8000000      # second copy of the start of the track
 DIGITS = bytes(range(0x30, 0x3A)) + b'_^]\xde'   # 6D:$674C: characters with the game's own 8x8 glyphs at 6D:$675A
 
 
-FLUSH = False   # page-end message buffer flush (WIP)
 SLOT2 = ('Sword', 'Arts', 'Skills', 'Demon')   # 剣法 秘芸 体術 鬼道 (DS names), 6 bytes each at most
 
 
@@ -55,13 +54,13 @@ def main(orig, syscard, out, all_ascii=False):
     writes = [
         (far(0x6D, 0x7FCC, 0x6000), stub, 'vwf stub'),
         (far(0x6E, 0x9EB9, 0x8000), vwf, 'vwf + width table'),
-        (far(0x69, 0x5FE6, 0x4000), dic, 'dictionary code routine'),
         # 6D:$625D (after PHA PHX PHY): JSR stub; JMP $6014 (PLY PLX PLA RTS)
         (far(0x6D, 0x625D, 0x6000), bytes.fromhex('20cc7f4c1460'), 'half-width draw -> vwf'),
     ]
     if all_ascii:
         # 6F:$7EA8 JSR $7E5C (next message byte) -> bytes 0x80-0xFF expand as dictionary words (tools/insert.py)
-        writes.append((far(0x6F, 0x7EA8, 0x6000), bytes.fromhex('20e65f'), 'message byte -> dictionary codes'))
+        # (the hook, src/vwf.s DICT, is position-independent; it lives at 6F:$7FF0, in the store routine rewritten below)
+        writes.append((far(0x6F, 0x7EA8, 0x6000), bytes.fromhex('20f07f'), 'message byte -> dictionary codes'))
         # main $5256: handler table for 1-byte characters by text mode; point modes 0, 2, 3 at mode 1's far call ($526B)
         writes += [(far(0x69, 0x5256 + m * 2, 0x4000), bytes.fromhex('6b52'), 'text mode %d -> half-width' % m) for m in (0, 2, 3)]
         # battle command menu, slot 2 = the actor's technique class: 70:$7646 copied 4 bytes from a 4-byte table at
@@ -89,18 +88,18 @@ def main(orig, syscard, out, all_ascii=False):
         # status bar: the HP / TP label sits 6 units (24 px, two kanji) after the member's column (6B:$61D1 CLC ADC #6);
         # 8 units leave 32 px for the short names of list 2 (user ruling: shorter names where they would overflow)
         writes.append((far(0x6B, 0x61D2, 0x6000), bytes.fromhex('6908'), 'status bar: name room 24 -> 32 px'))
-        # long messages: the pre-expander (6F:$7FC8, called per output byte) fills the 256-byte buffer at $E66E and, when
-        # full, the game restarts it with "長い!" (too long). English often passes 256 bytes, so the buffer is now drawn
-        # and emptied at every page end (wait code 12): $7FD7/$7FDB compare against $E66F (= not empty), $7FDF jumps to
-        # a helper in 6F's free tail ($7FF1: PLA PHA CMP #$12 BNE $7FE9 / far call 6A:$7F67 / JMP $7FE9) and 6A:$7F67
-        # NUL-terminates the buffer, runs the interpreter on it at the dialogue speed ($3279, as the message task at
-        # 6F:$653C does) and resets the write pointer to $E66E.
-        if FLUSH:   # disabled: crashes after the first page (see status.md open problem 8)
-            writes.append((far(0x6F, 0x7FD7, 0x6000), bytes.fromhex('c96fa598e9e6'), 'message buffer: flush test'))
-            writes.append((far(0x6F, 0x7FDF, 0x6000), bytes.fromhex('4cf17f'), 'message buffer: -> page-end check'))
-            writes.append((far(0x6F, 0x7FF1, 0x6000), bytes.fromhex('6848c912d0f2201b492c677f4ce97f'), 'message buffer: page-end check'))
-            writes.append((far(0x6A, 0x7F67, 0x6000), bytes.fromhex('da5a629297a96e8595a9e68596ad793220e750a96e8597a9e685987afa60'),
-                           'message buffer: draw and empty'))
+        # long messages: the pre-expander stores each output byte through 6F:$7FC8 into the 256-byte buffer at $E66E;
+        # when full, the game restarts it with "長い!" (too long), and ~340 English messages pass 256 bytes. Now the
+        # buffer is drawn and emptied at every page end (wait code 12) while 6F stays mapped (a far call into 6A that
+        # yielded at the key wait crashed the game). 6F:$7FD3 (after LDA #flag, the flag at $7FD2 is set for dialogue):
+        # BEQ done / PLA PHA CMP #$12 BNE done / PHX PHY, save MPR4-5 (the message stream is read through them and other
+        # tasks remap them during the key wait), JSR $5FE6, restore, PLY PLX / done: PLA RTS, then the dictionary hook.
+        # 69:$5FE6 (always mapped): NUL-terminate at ($97), interpret from $E66E at the dialogue speed $3279 (as the
+        # message task at 6F:$6534 does), reset the write pointer $97/$98 to $E66E.
+        writes.append((far(0x6F, 0x7FD3, 0x6000), bytes.fromhex('f0196848c912d013da5a43104843204820e65f68532068531 07afa6860'.replace(' ', '')) + dic,
+                       'message buffer: flush at page ends + dictionary hook'))
+        writes.append((far(0x69, 0x5FE6, 0x4000), bytes.fromhex('629297a96e8595a9e68596ad793220e750a96e8597a9e6859860'),
+                       'message buffer: draw and empty'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     new, log = bytearray(iso), []
     for off, data, name in writes:
@@ -108,8 +107,8 @@ def main(orig, syscard, out, all_ascii=False):
             assert iso[o:o + len(data)] == iso[off:off + len(data)], 'mirror differs at %x' % o
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
-    for off, data, name in writes[:3] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E',
-                                                                       'message buffer: page-end check', 'message buffer: draw and empty')]:
+    for off, data, name in writes[:2] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E',
+                                                                       'message buffer: draw and empty')]:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)

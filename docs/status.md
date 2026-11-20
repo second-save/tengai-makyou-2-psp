@@ -139,20 +139,11 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 2. Stream ends are inferred (cut at the first invalid message). Confirm against the message counts the scripts actually
    use before reinserting.
 3. Main-program text: in progress (see "Main-program strings").
-8. Long dialogue messages break in the window: 2050/25/4 (shop tutorial, 5 pages) shows only stray glyphs ("長い!") and
-   the last line on pages 1-2 in `show.py`. Same on the session-start build (not a regression). Guess: the expanded
-   message passes the 256-byte pre-expansion buffer at $E66E (6F:$7FD5 flushes at $E76E). Confirmed in game (shop tutorial: sub 0x19, goto `12,18;22,18` face right, Yes). Cause: 6F:$7FD5 guard
-   restarts the 256-byte buffer with "長い!" (too long); ~340 English messages pass 256 bytes. WIP fix in build.py
-   (`FLUSH`, off): interpret + empty the buffer at each page-end 12 from 6A:$7F67. Page 1 then shows, then the game
-   crashes. The nested interpreter saves 16 stack bytes to $E3D0 (battle saves up to 12, so probably fine) and yields
-   with bank 6A mapped at $6000 instead of 6F: likely cause. Next: run the flush with 6F mapped (needs ~30 bytes
-   reachable from 6F), or stop the expander at a page end and let the message task (6F:$6524-$6541) loop.
-4. VWF: done as an engine spike (`src/vwf.s`, `tools/build.py`, notes.md "VWF"), using the System Card 8x8 font.
-   Open: W and M touch their neighbours (8-px glyphs), text sits at the top of the 16-px line, text speed is still one
-   glyph per 4 frames, `--all-ascii` works (plain ASCII, no prefix), marker build and width gate for the other windows (battle, menus, shops) not done.
-5. Mirror copy of the start of the track at iso 0x8000000: which copy the PSP emulator reads is unknown; patch both.
-6. The PSP side is untested: no PPSSPP on this Mac (headless QA fork is Windows-only). QA so far = Mesen with the extracted track.
-   The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
+8. Long dialogue messages (fixed 2026-11-20): the pre-expansion buffer at $E66E holds 256 bytes and the game wrote
+   "長い!" (too long) when it filled; ~340 English messages pass it. build.py now draws and empties the buffer at
+   every page end (6F:$7FD3 store tail -> 69:$5FE6, MPR4-5 saved across the key wait). Verified in game on the shop
+   tutorial (2050/25/4, 5 pages; sub 0x19, goto `12,18;22,18` face right, Yes). Limit: one page over 256 bytes would
+   still overflow, now unguarded (the "長い!" guard is gone); pages are 3 lines, far below that.
 
 ## Next steps
 1. Battle group 11: done for the messages the code uses (2026-11-20, tenth session; notes.md "Battle group 11").
