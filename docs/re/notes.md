@@ -86,6 +86,15 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   +14, slot 9 name +56). Check for `STA` into a string before changing its layout.
 - `pce.py --shots` with a long list hangs; use `--shot-every`.
 
+## Start menu panel (graphics, traced 2026-11-20, tenth session; not solved)
+- The panel before the title ("さいしょから はじめたいときは「起」を...") is BG tiles 258+ (BAT 64 wide), drawn with no font
+  fetch. Its tiles are not raw on the disc. Loads before it: CD_READ sector 21506 x 0x60 (f=709) and 21634 x 0x73
+  (f=897, banks from 6B?); LZ streams at f=1351-1396 from bank 78 ($802F 6112 bytes, $8B4A, $9157, $8D48) decode
+  (ring A, assuming bank 78 = sector 21634 + 13 banks) to data that does not contain the panel tiles. Ring B inits
+  (`$3D52`, logged by `tools/lua/lztrace.lua` now with A:X) show 8100/8B00/8600/8800: probably a second stage
+  (graphics, count bit 15), not a source pointer. VRAM writers: BIOS 00:E5F7/E5F9 (51,200 bytes), 69:$4706/$470C.
+  Next: break on VDC writes to the panel tiles' VRAM address (tile 258 * 16 words) and follow the source back.
+
 ## Scenes (2026-11-20, tenth session; `tools/debug/scenes.py`, `warp.lua`)
 - `$2BF6` ("map") is an event id: the loader (6A:`$69E8`) runs it through 6F:`$7977`. Header entry 3 = u16 per sub ->
   object list -> 3-byte entries (event id, script pointer); `scenes.py ISO AREA` lists the ids per sub (subs below 0x10
