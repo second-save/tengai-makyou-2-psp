@@ -486,8 +486,8 @@
   "jp": "人肉切包丁",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Flesh Cleaver"
    }
   ]
  },
@@ -1182,8 +1182,8 @@
   "jp": "抗夫の腹巻",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Miner's Sash"
    }
   ]
  },
@@ -11382,20 +11382,20 @@
   "jp": "いとしの卍丸へ\n孝子です　この前は　わざわざ\n手紙をもってきてくれて　ありがとう{12}\nまさか　{k}ウワサ{h}の　火の勇者　卍丸が\nあたしのことを　好きだったなんて｜\nま　{k}トーゼン{h}と言えば　{k}トーゼン{h}よね{12}\n孝子も　卍丸が　だーい好きよ\nはなれていても　心は　ひとつ｜\nまた　手紙を書きます{12}\nこれから　寒くなるけど\nからだに　気をつけてね\n　　　　　　　　あなたの　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To my darling Manjimaru,\nIt's Takako! Thank you so much for bringing me that letter the other day!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Who'd have thought the famous Fire Hero Manjimaru had a crush on me! Well, of course you did. Of course!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Takako loves you toooo! We may be apart, but our hearts are one! I'll write again."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It's getting colder, so take care of yourself.\nYours always, Takako"
    }
   ]
  },
@@ -11406,16 +11406,16 @@
   "jp": "愛する　卍丸\nきょう　卍丸の　お母さんに\n会いに　行ってきたわ{12}\n卍丸のお母さんも　あたしたちの\n結婚を　すっごく　よろこんでくれたわ\n孝子と　お母さんは　気があうみたい{12}\n卍丸の　言ってたとおりの人ね\nあとは　お式の日取りだけね　{k}ウフッ☆\n　　誰{h}よりも　しあわせな　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Beloved Manjimaru,\nToday I went to visit your mother!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "She was sooo happy about our wedding too! Takako and your mom really hit it off."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "She's just like you said she was. Now all we need is a wedding date. Tee-hee*\nThe happiest girl alive, Takako"
    }
   ]
  },
@@ -11426,20 +11426,20 @@
   "jp": "恋しい　卍丸へ\n今宵の　十五夜の月を\n卍丸も　見ているかしら{12}\nこうして　月を見てると　卍丸と\n結婚を　ちかいあった日のことを\n思いだしちゃう{12}\n卍丸は　孝子に　こう言ったわね\n「{k}キミ{h}は　あの月より美しい！」って\n孝子　うれしくて泣いちゃって…{12}\nそしたら卍丸は　やさしく抱きしめて\n「{k}ボク{h}たちは　いつも一緒さ」って…\n　　あの夜を忘れないでね　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Manjimaru, my love,\nI wonder if you're gazing at tonight's full moon too."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Looking at the moon like this reminds me of the day we swore to marry."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You told me, \"You're more beautiful than that moon!\" Takako was so happy she cried..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Then you held me tight and said, \"We'll always be together\"... Never forget that night. Takako"
    }
   ]
  },
@@ -11450,20 +11450,20 @@
   "jp": "{k}パパ{h}になる　卍丸へ\n赤ちゃんが　できたわ！\n孝子と　卍丸の　赤ちゃんよ！{12}\nあなたが　ずっと　赤ちゃんを\nほしがって　いたから　神さまが\nさずけて　くださったのよ！{12}\nお父さまも　赤ちゃんが　できたなら\nしかたないって　とうとう　結婚を\nゆるしてくださったの！{12}\nおなかが　目だってくる　まえに\nはやく　結婚式を　あげましょうね\n　お{k}ムツ{h}を作りながら☆　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To Manjimaru, soon to be a daddy,\nWe're having a baby! Takako's and your baby!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You wanted a baby so badly that the gods granted us one!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "And with a baby on the way, Father finally gave in and blessed our marriage!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Let's have the wedding soon, before my belly starts to show.\nSewing diapers* Takako"
    }
   ]
  },
@@ -11474,20 +11474,20 @@
   "jp": "あたしだけの卍丸へ\nきょう　赤ちゃんが　うごいたの！\nきっと女の子よ　孝子には　わかるの{12}\nそうそう　卍丸の　大切なお友だちの\n{k}カブキ{h}さん　極楽太郎さん　絹さんから\n赤ちゃんの　きものをもらったの{12}\n赤ちゃんの　きものって\nちいさくって　すっごく　かわいいの\n皆さんに　よく　お礼を言ってね{12}\nそろそろ　なまえを　考えておいてね\n卍子なんて　どうかしら？　{k}ウフフ\n　　　{h}もうすぐ{k}ママ{h}になる　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To my one and only Manjimaru,\nThe baby moved today! It's a girl, I'm sure. Takako just knows."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Oh, and your dear friends Kabuki, Gokuraku Taro and Kinu sent us baby clothes!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Baby clothes are so tiny and sooo cute! Be sure to thank them all for me."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Start thinking of names soon! How about Manjiko? Tee-hee!\nSoon to be a mommy, Takako"
    }
   ]
  },
@@ -11858,12 +11858,12 @@
   "jp": "{1A}は　{1A}を踏み割った｜{12}\n白い蛇が{19}４を\n飲み込んだような気がした…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ stomped on the ￥Ｓ and broke it!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It felt as if a white snake had swallowed ￥Ｚ４..."
    }
   ]
  },
@@ -16938,8 +16938,8 @@
   "jp": "女彦の羽織",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Onnahiko Coat"
    }
   ]
  },
@@ -16950,8 +16950,8 @@
   "jp": "飛龍の沓",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Dragon Boots"
    }
   ]
  },
@@ -16962,8 +16962,8 @@
   "jp": "ぼろ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Rags"
    }
   ]
  },
@@ -16974,8 +16974,8 @@
   "jp": "初恋の杖",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "First Love Staff"
    }
   ]
  },
@@ -16986,8 +16986,8 @@
   "jp": "香水十九番",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Perfume No.19"
    }
   ]
  },
@@ -35210,8 +35210,8 @@
   "jp": "敵の気配が　弱まった｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The enemy's presence has weakened!"
    }
   ]
  },
@@ -35366,20 +35366,20 @@
   "jp": "いとしの卍丸へ\n孝子です　この前は　わざわざ\n手紙をもってきてくれて　ありがとう{12}\nまさか　{k}ウワサ{h}の　火の勇者　卍丸が\nあたしのことを　好きだったなんて｜\nま　{k}トーゼン{h}と言えば　{k}トーゼン{h}よね{12}\n孝子も　卍丸が　だーい好きよ\nはなれていても　心は　ひとつ｜\nまた　手紙を書きます{12}\nこれから　寒くなるけど\nからだに　気をつけてね\n　　　　　　　　あなたの　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To my darling Manjimaru,\nIt's Takako! Thank you so much for bringing me that letter the other day!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Who'd have thought the famous Fire Hero Manjimaru had a crush on me! Well, of course you did. Of course!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Takako loves you toooo! We may be apart, but our hearts are one! I'll write again."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It's getting colder, so take care of yourself.\nYours always, Takako"
    }
   ]
  },
@@ -35390,20 +35390,20 @@
   "jp": "恋しい　卍丸へ\n今宵の　十五夜の月を\n卍丸も　見ているかしら{12}\nこうして　月を見てると　卍丸と\n結婚を　ちかいあった日のことを\n思いだしちゃう{12}\n卍丸は　孝子に　こう言ったわね\n「{k}キミ{h}は　あの月より美しい｜」って\n孝子　うれしくて泣いちゃって…{12}\nそしたら卍丸は　やさしく抱きしめて\n「{k}ボク{h}たちは　いつも一緒さ」って…\n　　あの夜を忘れないでね　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Manjimaru, my love,\nI wonder if you're gazing at tonight's full moon too."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Looking at the moon like this reminds me of the day we swore to marry."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You told me, \"You're more beautiful than that moon!\" Takako was so happy she cried..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Then you held me tight and said, \"We'll always be together\"... Never forget that night. Takako"
    }
   ]
  },
@@ -35414,20 +35414,20 @@
   "jp": "{k}パパ{h}になる　卍丸へ\n赤ちゃんが　できたわ｜\n孝子と　卍丸の　赤ちゃんよ｜{12}\nあなたが　ずっと　赤ちゃんを\nほしがって　いたから　神さまが\nさずけて　くださったのよ｜{12}\nお父さまも　赤ちゃんが　できたなら\nしかたないって　とうとう　結婚を\nゆるしてくださったの｜{12}\nおなかが　目だってくる　まえに\nはやく　結婚式を　あげましょうね\n　お{k}ムツ{h}を作りながら☆　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To Manjimaru, soon to be a daddy,\nWe're having a baby! Takako's and your baby!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You wanted a baby so badly that the gods granted us one!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "And with a baby on the way, Father finally gave in and blessed our marriage!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Let's have the wedding soon, before my belly starts to show.\nSewing diapers* Takako"
    }
   ]
  },
@@ -35438,20 +35438,20 @@
   "jp": "あたしだけの卍丸へ\nきょう　赤ちゃんが　うごいたの｜\nきっと女の子よ　孝子には　わかるの{12}\nそうそう　卍丸の　大切なお友だちの\n{k}カブキ{h}さん　極楽太郎さん　絹さんから\n赤ちゃんの　きものをもらったの{12}\n赤ちゃんの　きものって\nちいさくって　すっごく　かわいいの\n皆さんに　よく　お礼を言ってね{12}\nそろそろ　なまえを　考えておいてね\n卍子なんて　どうかしら？　{k}ウフフ\n　　　{h}もうすぐ{k}ママ{h}になる　孝子より{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To my one and only Manjimaru,\nThe baby moved today! It's a girl, I'm sure. Takako just knows."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Oh, and your dear friends Kabuki, Gokuraku Taro and Kinu sent us baby clothes!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Baby clothes are so tiny and sooo cute! Be sure to thank them all for me."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Start thinking of names soon! How about Manjiko? Tee-hee!\nSoon to be a mommy, Takako"
    }
   ]
  },
@@ -35486,8 +35486,8 @@
   "jp": "{19}１は　消耗しきって\n体の自由がきかない｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｚ１ is exhausted and can't move!"
    }
   ]
  },
@@ -35498,8 +35498,8 @@
   "jp": "{19}１は　しびれて\n体の自由がきかない｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｚ１ is numb and can't move!"
    }
   ]
  },
@@ -35510,8 +35510,8 @@
   "jp": "{1A}は　技の力が足りない｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ doesn't have enough TP!"
    }
   ]
  },
@@ -35534,8 +35534,8 @@
   "jp": "血に染まる卍丸が　見える…{1D}\n私　こわいわ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I see Manjimaru covered in blood... I'm scared!"
    }
   ]
  },
@@ -35546,8 +35546,8 @@
   "jp": "漆黒の闇の中にうごめく\n巨大な殺意を感じる…{1D}\n不安だわ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I sense a huge killing intent stirring in the pitch-black dark... I'm uneasy..."
    }
   ]
  },
@@ -35558,8 +35558,8 @@
   "jp": "まだ　光は見えない…{1D}\nでも力を合わせれば　道は開けるわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I can't see the light yet... But if you join forces, a path will open."
    }
   ]
  },
@@ -35570,8 +35570,8 @@
   "jp": "みんなの心が　ひとつになれば\n何も恐れることは　ないのよ{1D}\n私は　卍丸を信じてるわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "If all your hearts become one, there's nothing to fear. I believe in Manjimaru."
    }
   ]
  },
@@ -35582,8 +35582,8 @@
   "jp": "迷うことは　何もないわ{1D}\n{k}マリ様{h}の祝福の光を感じるから{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "There's nothing to doubt. I can feel the light of Lady Mari's blessing."
    }
   ]
  },
@@ -35594,8 +35594,8 @@
   "jp": "ごめんなさい\n今は　何も見えないわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I'm sorry. I can't see anything right now."
    }
   ]
  },
@@ -35618,12 +35618,12 @@
   "jp": "{1A}は　{1A}を踏み割った｜{12}\n白い蛇が{19}４を\n飲み込んだような気がした…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ stomped on the ￥Ｓ and broke it!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It felt as if a white snake had swallowed ￥Ｚ４..."
    }
   ]
  },
@@ -35670,8 +35670,8 @@
   "jp": "{1A}は　{1A}を吹いた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ blew the ￥Ｓ!"
    }
   ]
  },
@@ -35694,8 +35694,8 @@
   "jp": "{19}３の体力が　１だけ回復した｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｚ３ recovered just 1 HP!"
    }
   ]
  },
@@ -35802,8 +35802,8 @@
   "jp": "ひんし",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Low"
    }
   ]
  },
@@ -35814,8 +35814,8 @@
   "jp": "ま[20]ひ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Par"
    }
   ]
  },
@@ -35826,8 +35826,8 @@
   "jp": "わすれ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Fgt"
    }
   ]
  },
@@ -35850,8 +35850,8 @@
   "jp": "と゛く",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Psn"
    }
   ]
  },
@@ -35862,8 +35862,8 @@
   "jp": "ねむり",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Slp"
    }
   ]
  },
@@ -35874,8 +35874,8 @@
   "jp": "ら[20]ん",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Cnf"
    }
   ]
  },
@@ -35886,8 +35886,8 @@
   "jp": "{1A}は　渡す／交換がてきない{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ can't be given or traded."
    }
   ]
  },
@@ -35898,8 +35898,8 @@
   "jp": "金髪がつらの呪い｜\n技の力をむだにした{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The Blond Wig's curse! TP was wasted."
    }
   ]
  },
@@ -35910,8 +35910,8 @@
   "jp": "密教{k}ヘルム{h}の効果｜\n技の力を節約した{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The Tantric Helm's effect! TP was saved."
    }
   ]
  },
@@ -35946,8 +35946,8 @@
   "jp": "{1A}は　{1A}を見つけた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "￥Ｓ found the ￥Ｓ!"
    }
   ]
  },
@@ -36354,8 +36354,8 @@
   "jp": "が現れた｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " appeared!"
    }
   ]
  },
@@ -36366,8 +36366,8 @@
   "jp": "は術を封じられてる｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " can't use spells!"
    }
   ]
  },

@@ -123,6 +123,15 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 - Left in Japanese: 両 in storage / bank lines, status ailments (2-3 bytes), storage / bank menus,
   save screens (0x576CC-0x58800, not resident), province names 0x58140, the ship commands in battle slot 9.
 
+## Remaining script text (2026-11-21, eleventh session)
+- 54 messages written in `script/overrides.json` (`_remaining`): Takako's 5 letters (both modules 514 and 4994), the
+  4994 battle / fortune-teller lines, ailment short names (same as main.json), 7 item names. Letters checked on screen
+  (`work/qa/letters`); their "wider than 216 px" log lines are the trailing space at a wrap, not overflow.
+- Left without English on purpose: hiragana reading groups 5/6/7/9 (share the English name streams), group 11 `$0`
+  phrases 0-117 / 131-149 (no caller), debug menus (sound / video test, `chNNN`, YAV, ABORT), ~50 garbled stream-tail
+  fragments (`立立に`, `なない`: extractor cut points, open problem 2), and the kana name-entry grid 4226/17/0
+  (needs engine work: the cursor picks kana from a code table, the text alone can't change it).
+
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
    230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
