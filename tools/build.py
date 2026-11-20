@@ -15,6 +15,15 @@ MIRROR = 0x8000000      # second copy of the start of the track
 DIGITS = bytes(range(0x30, 0x3A)) + b'_^]\xde'   # 6D:$674C: characters with the game's own 8x8 glyphs at 6D:$675A
 
 
+LABELS = (('#.......', '#.......', '#...#.#.', '#...#.#.', '#...#.#.', '#....#..', '###..#..', '........'),   # _ Lv
+          ('###.##..', '.#..#.#.', '.#..#.#.', '.#..##..', '.#..#...', '.#..#...', '.#..#...', '........'),   # ^ TP
+          ('#.#.##..', '#.#.#.#.', '#.#.#.#.', '###.##..', '#.#.#...', '#.#.#...', '#.#.#...', '........'))   # ] HP
+
+
+def glyph(rows):
+    return bytes(int(r.replace('#', '1').replace('.', '0'), 2) for r in rows)
+
+
 SLOT2 = ('Sword', 'Arts', 'Skills', 'Demon')   # 剣法 秘芸 体術 鬼道 (DS names), 6 bytes each at most
 
 
@@ -103,6 +112,9 @@ def main(orig, syscard, out, all_ascii=False):
                        'message buffer: flush at page ends + dictionary hook'))
         writes.append((far(0x69, 0x5FE6, 0x4000), bytes.fromhex('629297a96e8595a9e68596ad793220e750a96e8597a9e6859860'),
                        'message buffer: draw and empty'))
+        # status labels: the game's own 8x8 glyphs for '_' '^' ']' (6D:$675A + index * 8, index from the list at $674C)
+        # are small kanji 段 技 体 (level, TP, HP) in the status bar; redrawn as Lv, TP, HP (rows 0-6, as the digits)
+        writes.append((far(0x6D, 0x675A + 10 * 8, 0x6000), b''.join(glyph(g) for g in LABELS), 'status labels Lv TP HP'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     # original bytes each code patch must replace (catches an address off by one)
     expect = {'money window -> 6B:$6C55': 'a762', 'field menu: far call': '20a3502c0567',
