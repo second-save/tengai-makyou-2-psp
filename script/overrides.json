@@ -102,5 +102,11 @@
  "243082cd814193c18d558d558c822121": "￥Ｚ１￥／makes a suicide attack!",
  "243082cd246e8e5f82f0908182ab82a982af82c482a282bd21": "￥Ｚ１￥／sprays acid!",
  "243082cc94f282b082e88d558c8221": "￥Ｚ１'s￥／flying kick!",
- "243082cd8141246e918482f091e582ab82ad905582e889f182b582bd2121": "￥Ｚ１￥／swings its spear wide!"
+ "243082cd8141246e918482f091e582ab82ad905582e889f182b582bd2121": "￥Ｚ１￥／swings its spear wide!",
+ "_battle_fragments": "Module group 11 messages 126-130: printed by bank 70 straight after a name (no space between), so the English starts with its own space or comma.",
+ "618cbbdac021": " appeared!",
+ "ca6fc99347c68148": ", which foe?",
+ "ca924ec68148": ", on whom?",
+ "ca8f70a6959567d7dac3d921": " can't use spells!",
+ "ca924ea68148": ", whom?"
 }

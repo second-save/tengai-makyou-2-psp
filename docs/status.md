@@ -130,21 +130,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Battle group 11 (module messages, same in every block): the encounter line shows "Stray Dog?????" because
-   `が現れた｜` (514/11/126) has no English. Group 11 = battle phrases (`子０` = bytes `24 3x` = name x, `子で` =
-   `24 6E` = newline) and fragments printed after a name or number (`が現れた｜`, `を攻撃｜`, `の{k}ダメージ｜`,
-   `は誰に？`). insert.py treats `24 3x` as a glyph today, so those need a placeholder rule (like `19 n`). First trace
-   how fragments are assembled (who prints the name before them: 71:`$752A` / 6F pre-expansion, writes to `$E66E`
-   seen at 6F:`$7FCA`), then translate them with the right word order. List: messages.json entries `*/11/*` without English.
-   Found (2026-11-20, tenth session, `tools/lua/msgwho.lua` = logs every 6F:`$7E6D` open with group/message and every
-   71:`$752A` print): the encounter opens group 11 message 126 through the normal pre-expander (6F:`$7E95` -> `$7E6D`,
-   called via the far call at `$497A`), so module group 11 IS read and dictionary-expanded like dialogue. Next: find who
-   writes the enemy name into the buffer before it (dense shots of f=2600-2736 of the run below, or a write watch on
-   `$E66E`). Idea, untested: on the all-ASCII build `$0` / `$n` are literally bytes `24 30` / `24 6E`, so English
-   overrides could write "$0 attacks!" if 71:`$752A`'s `$x` handling applies; insert.py also drops a leading space
-   (needed for " appeared!"). Probe run: `pce.py work/cd-en/tm2.cue --frames 60000 --state-in work/states-en/preload.mss
-   --var SUB=0x12 --var MAP=32 --script tools/debug/warp.lua --script tools/debug/battle.lua --script tools/lua/msgwho.lua`
-   (about 50 s, open at f=2663, battle at f=2728). A shorter `--frames 2740 --shots ...` run of the same hung past 5 min: unexplained.
+1. Battle group 11: done for the messages the code uses (2026-11-20, tenth session; notes.md "Battle group 11").
+   Verified in game: "Rabid Dog appeared!" and "卍体, which foe?". Left: messages 0-117 and 131-149 have no caller
+   in the main program (guess: unused leftovers, the battle stream holds their equivalents); if one ever shows as
+   `?????`, run `tools/lua/msgwho.lua` to find it.
 2. Debug tool: a shop and a town (warp opcodes 6F:`$7839` and 6F:`$6784`), the width gate for menus and shops, and a
    warp to one of the 38 areas whose enemy records sit in padding (e.g. area 18, record at $9321).
 3. Extract main-program strings (iso 0x41000-0x62800) into the script.

@@ -72,6 +72,15 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - The stream ends with the ADPCM image, so a longer one starts earlier: 56 bytes of FF padding sit before it in the
   tightest copy (871 in most). insert.py moves the start and patches the address at 71:`$7502` (`LDA #$F4 / LDX #$00`).
 
+## Battle group 11 (traced 2026-11-20, tenth session; `tools/lua/msgwho.lua` logs every message open and `$752A` print)
+- 6B:`$6D9D` (far-called from 69:`$5616`) opens group 11 message A into the buffer `$E66E` through the normal pre-expander
+  (dictionary codes work); 69:`$5601` prints it at the cursor (`$50E6`), 69:`$560A` the same with `$3211` (`$50E7`).
+- The only callers are in bank 70 with fixed numbers: 126 `が現れた` (70:`$61DC`, a battle-script op printed straight
+  after the enemy name), 127/128/130 target prompts after the actor's name, 129, and 118-125 (tactic names, table at
+  70:`$757E`). Messages 0-117 (`$0` phrases) and 131-149 have no caller found (absolute JSR, BSR and far-call scans).
+- Fragments follow a name with no space between, so their English starts with " " or ","; insert.py keeps a leading space.
+- Battle states: the command cursor is wherever the walk left it; `tools/lua/home.lua` homes it on Fight, then `--mash 30` fights.
+
 ## Enemy records (traced 2026-11-20, eighth session; `extract.enemies`, `insert.enemies`)
 - Enemy names and their status / flee / attack lines are plain SJIS in each area's ADPCM image (iso `area*0x40000 + 0x31000`),
   99 areas below the mirror (1,184 records, 275 names, 277 lines). Image header: u16 end of the record section, u16 n,

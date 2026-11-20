@@ -13722,8 +13722,8 @@
   "jp": "が現れた｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " appeared!"
    }
   ]
  },
@@ -13734,8 +13734,8 @@
   "jp": "はどの敵に？",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": ", which foe?"
    }
   ]
  },
@@ -13746,8 +13746,8 @@
   "jp": "は誰に？",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": ", on whom?"
    }
   ]
  },
@@ -13758,8 +13758,8 @@
   "jp": "は術を封じられてる｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " can't use spells!"
    }
   ]
  },
@@ -13770,8 +13770,8 @@
   "jp": "は誰を？",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": ", whom?"
    }
   ]
  },

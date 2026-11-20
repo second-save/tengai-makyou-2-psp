@@ -126,7 +126,7 @@ def english(seg, en, w, problems):
         else:
             word.append(t)
             wpx += n
-    out = bytearray(prefix)
+    out = bytearray(prefix + (b' ' if en.startswith(' ') and not hard else b''))   # fragments printed after a name keep their space
     for i, l in enumerate(lines):
         if i:
             out += b'\x12\r' if i % PAGE == 0 and b'\x12' in suffix and not hard else b'\r'
