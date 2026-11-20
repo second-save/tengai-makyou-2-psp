@@ -156,8 +156,12 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    `goto.lua` walks by RAM position). Left: a warp to one of the 38 areas whose enemy records sit in padding (e.g. area
    18, record at $9321; `scenes.py ISO 12` lists its subs and events), the width gate for menus and shops.
 3. Main-program strings: finish the list under "Main-program strings" (left in Japanese), then the width gate.
-4. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
-   script first: many differ by a few characters only).
+4. Find the ending / cutscene text. Messages without English: script.py now fills pages from near-miss DS lines
+   (ratio >= 0.9, `ds` = "near:<id> <ratio>", 169 pages) and `script/overrides.json` takes a list of page English;
+   ~150 area messages translated here (tenth session; `work/script/todo.json` was the list). 8,200 of 9,111
+   messages fully English. Left on purpose: debug menus (514/16, 642/16, 770/16, 898/16, 5890/16 "chNNN", 4226/17 kana
+   grid), garbled fragments in boss modules (25730+/16: stream junk past the real messages, guess), blank erasers,
+   and system groups 5/6/7/9 (hiragana readings, probably never shown) and 11 (no caller).
 5. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
 6. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
 

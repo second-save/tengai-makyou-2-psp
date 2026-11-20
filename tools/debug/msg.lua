@@ -41,8 +41,12 @@ end, emu.callbackType.exec, 0x3C77)
 local page, shoot_at, stop_at = 0, nil, nil
 -- SHOT_DELAY: 3 frames was too early, the last glyphs were not on screen yet
 emu.addMemoryCallback(function() if active and not shoot_at then shoot_at = FRAME + (SHOT_DELAY or 10) end end, emu.callbackType.exec, 0x52D3)
+-- the long-message flush (69:$5FE6 .. RTS at $5FFF, build.py) runs the interpreter on each page: its 00 is not the end
+local flushing = false
+emu.addMemoryCallback(function() flushing = true end, emu.callbackType.exec, 0x5FE6)
+emu.addMemoryCallback(function() flushing = false end, emu.callbackType.exec, 0x5FFF)
 emu.addMemoryCallback(function()
-  if active and emu.getState()["cpu.a"] == 0 then active = false; stop_at = FRAME + 20 end
+  if active and not flushing and emu.getState()["cpu.a"] == 0 then active = false; stop_at = FRAME + 20 end
 end, emu.callbackType.exec, 0x51BF)
 function on_frame(f)
   FRAME = f

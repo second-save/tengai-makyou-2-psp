@@ -108,5 +108,555 @@
  "ca6fc99347c68148": ", which foe?",
  "ca924ec68148": ", on whom?",
  "ca8f70a6959567d7dac3d921": " can't use spells!",
- "ca924ea68148": ", whom?"
+ "ca924ea68148": ", whom?",
+ "bac91f56c0d21f1cd61f0a1f3fd60d1f4c61b2c5b81f1b7a0dbaba6bb9c998621f0fa01f4cafc37a120dc1aeafc4c8a07c61817e817e817e817e1f3bc9d60d1f05d3a0d3bca01f4cc689efafc3d30d0ecdc00fc690baa6b6b9c5b2ceb361a0b2b2dcd6120dd3b3a02e9278dab6d3a0bcdac5b2b96f7a12": [
+  null,
+  "Apparently she's a bit **** in the head. If you ever run into Takako, you'd better not say anything careless to her.",
+  null
+ ],
+ "0c8b4c985ec9ceb3caa0228fe495766ebdd60d93b93ea0b540a6c2b9c312": [
+  "Your record is safe. Take care on the road."
+ ],
+ "d40eaf76b08149a00fb1c0bca09640246b0e76b081490d1f6a0fbbdda096bda6228e96c6bdd90e76b081490d9640240fb6d7c9a0b58ae8b26b0e76b0814912": [
+  "Hi-peep! I'm Noriko-peep! Take care of your life, Manjimaru-peep! That's Noriko's wish-peep!"
+ ],
+ "b1c0bca096be8dd87a0d1f6abbdd61a01f4f1f45c6a08e45d7dac3d30d8c881f0e8b83b6c5b2457a120d6bafc37a120d8ffcd867acc5b2c9d6a097dcca0d0ecaafcab0dd2112": [
+  "I'm Akina... A woman who will never cry, even if the Root Clan kills you, Manjimaru...",
+  "Because...",
+  "Tears aren't just for show. Ha-haaan!"
+ ],
+ "0edab2ceb0a0dab2ceb081490d1f6aa08cb3400fc6bcc3c08148a05fa05993fa24d681490dc0cf1f1c8ae7a626bec3c8120dc5ddc3afc01f151f6aca0d1f428dc58bad0fc9a01f471f6581490d1f03c6a089efb4c3a0d61f0adc2112": [
+  "Hey-ho, hey-ho! Doing well, Manjimaru? It's me, Kyoko! Come and see me sometimes.",
+  "After all, you're Jipang's greatest Fire Hero, Manjimaru! I'm so glad I met you!"
+ ],
+ "5fc991aba6a00e67db67dba0260fc5b26ed681490db4af8148a026c3c01f3dc5b2c9818a0d5f8148a05fca90e797a2d6120dc1ae1f1690b688d3406ea045c924c6ca0d2340c5b2b96fa08f4cb2d3c9c6ca0d0eccc00fa6bbbec3d3d7b3dc2112": [
+  "Don't stare at my legs! What? You weren't looking? Me? I'm Chisato.",
+  "I'm a bit cheeky and girls don't like me much, but I'm the one who puts a lid on stinky things!"
+ ],
+ "5fa0b2bb24c4b21f060d1f6abbdda06fddc58beabcb290edb2d30dd461c3a08c8cc4c5d8a08d9cc4c51f3cdc120d1f420fc9238158c9c0d2c60d5c8d9cc988d38e756ea061dd70afc3b86bbbb281490dbfb0daa0bfb0daa01f6a2112": [
+  "My name is Isako. Manjimaru, every hard battle becomes your flesh and bone in the end.",
+  "For the people of Jipang, fight on with a will of steel! Go, go, Manjimaru!"
+ ],
+ "0eb5afbd8149a0964d0f1f116bd681490d1f6abbddc9a0d4cf6bb6c2c3c5b28a8896f4a60d8a79bcd0c6bcc3d9d62112": [
+  "Yo! It's Kuni! I'm looking forward to your never-before-seen exploits, Manjimaru!"
+ ],
+ "70dd6770d96bdd0db16c616fb3a0656bb2cf6c6b0ddc6b6ca0d4706970716ebd120db6dd6462c9a0b170d80dca6b61a06d70af6ebc70b2cf676b12": [
+  "Badjibaru-dan, thag you very buch. I'b Yabase Babi.",
+  "I was so boved, by dose got all stuffed ub."
+ ],
+ "baddc6c1ca0ea7a05fa090b9240f6ebd0ea9120d0fbac9550eaaa0b672b70fbbddc60ea80dccd70fdac1acafc0b6d70ea7a05993780fca0ea70d1f6a0fbbddc60ea8a08fe60fd8b6b4c0c90eab12": [
+  "Hellooo, I'm Seikooo.",
+  "Kabuki dumped me the other daaay, so now I'm switching to Manjimaruuu."
+ ],
+ "dcbc61a0cf6ba0b5d2b4bbddb8dab4c98da00dba1f34c9a093ecc99272c9bf706e0d1f6025c4a089efafc0bac4a0b1d9ddd6120dcdddc1b8d8ddc5a0b58ae767acafc012": [
+  null,
+  "He had the funniest face."
+ ],
+ "0c7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d7a7ad31f16cfbcc5a01f471f45ca0db2c8aac9b6d6ab814912": [
+  "...",
+  null
+ ],
+ "0c103133307a7a7a7a7a7a7a7a7a7a7a7a7a7a7a12": [
+  "..."
+ ],
+ "0c408e9dc1caa0dcb6d969210d8a6db6c6a0bac91f4192638f5c7b250fca0db5d2aac95e969c947ba08badb4b6d7c521120dbfb3bbc57aa0b5d2aa2f236e0d568d9c3ca648c4b6bcc3d0c50dbfbcc0d7a04061b6dcd9b6d3c5120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a12": [
+  null,
+  null,
+  "..."
+ ],
+ "0c70dac1cfafc1aca7a0bcaeb361c8b00db5da61a094f692a3a48b9e937392539396c9a09099967b6b81490d8a79bcdd6eb8dac3d9b68148120d67acb1c58149a08b9e93736ecfc089efb5b3814912": [
+  "Well, you caught me. I'm Sugimoto, in charge of Owari and Kyoto! Are you having fun?",
+  "See ya! Let's meet again in Kyoto!"
+ ],
+ "b1af21120d0ecd7190e5230fc4bac97a120d0e70b60f6b2112": [
+  null,
+  null,
+  "Idiot!"
+ ],
+ "1f04b31f0cbcc081490d6fb3a0b597e7a6a047afc3b2b2c9d4d77a7a0d95d9271f689180caa08ee7d7da1f3921120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d1f19bac4c6a0bcc3b5b7cfbcaeb3c80dd0ddc561a0bfb3a0904d67d9bac46e0d59cf1f18b3cfb8a0d4afc3b7c0c9d612": [
+  null,
+  "...",
+  null
+ ],
+ "d2c0d2c0bc7a12": [
+  "And they lived happily ev..."
+ ],
+ "0cd2c0bc7a12": [
+  "...er after..."
+ ],
+ "0c10313330b5cfb4c6a01131388d675d3fa6a08ef6b9d6b381491136340d8d675d3fcaa011323593af8e9ec6a011323095a19094c99347a60d3fd98c956b2112": [
+  "I grant you the Benimaru Slash! The Benimaru Slash is a sword that cuts down several enemies at once!"
+ ],
+ "1138113830c5b6c5b6a0b2b20e698149120d": [
+  "Not bad at all!"
+ ],
+ "113830c5b6c5b6a0b2b20e698149120d": [
+  "Not bad at all!"
+ ],
+ "ddc5d7a08b4c985ebcc3b5b8dc12": [
+  "Then I'll save your record."
+ ],
+ "8b4c985ea6c2b91f39dc81490d8e9fca8f689491c9ceb3d3a06597989770c9ce6f0dd6dbbcb8a0b58ae8b2bccfbdc812": [
+  "Your record is saved! Next time, please stay the night with us too!"
+ ],
+ "8b9e9373c6a00ecddd0fc58a4f23610d8f5ad0c2b2c01f3bdcd6120d924eb6dab6cfdc68a00ecfb2ccdadd6f0fafc30d9862bcb6b9c3b8d91f3fafc32112": [
+  "I hear some strange foreigner has settled down in Kyoto.",
+  null
+ ],
+ "0c1032c06b59a093c195ca0e64bdc481490d3f0fd7da96f0c9a01f471f65c98f948c4e610d939e9285bc1f3921": [
+  "And now, our special guests! The Fire Heroes, here to play the ones who get cut down!"
+ ],
+ "0c10313330c5dd6ba0113138568d9c3ca6937cbcc01f19b6d70d6fddc5a0bd65b2937ab6c458afc0d70d1131357f8998b2a093638ec98ed267acc5b2b68149": [
+  "What? I heard you beat Onikotsu Castle, so I expected someone amazing, but you're just a grubby country bumpkin!"
+ ],
+ "103133310c1f4f1f45a01131308dc511318bad1131c61f0e1132308dc58d82c9113194fc926a2481490d1031333011313888a4c4113194fcc9113190ed8e6d210d1132320e76ddb80fc9538aaaa01133358b6511318cdc11317b113125113230bfc9236b8149": [
+  "The Root Clan's strongest and most handsome man! The warrior of love and beauty! The Pink Tornado, the great Kikugoro himself!"
+ ],
+ "8b9e9373c6a00ecddd0fc58a4f23610d8f5ad0c2b2c01f15d3af75d7c9895c6b69120dbfc98a4f23bbdda08b9e9373c996bc4ec60dc5afc1cf1f158acf448b71c9938a64c3b8d90d9048734ea690481f1590b68a88bcc3dd6bc4d6120d604e6bc5a0cfd96e12": [
+  "Word is a weird foreigner's settled down in Kyoto.",
+  null,
+  "Like an animal, really."
+ ],
+ "ceb48160a01f05d7610d1f471f45d4afc0ddb67a0ddcc3a0cbc4c2a095d78badbbbcc3d3dbc0dc120d228e96a690acbd8ed2c1adb3c9caa02f260d0eb1ce0fc626b4d9d3ddc5ddd4c5b17a12": [
+  null,
+  "So the ones who do great things look like fools at first glance, huh..."
+ ],
+ "0c10313330bfc98e638d93c5cf6ec9a08badbbc991ce94e4a61132300d1031323958b391b652a0658fdc96a1b86bbbb221": [
+  "Savor to your heart's content the cruel contrast in strength!"
+ ],
+ "0c1032654b8989c98a4625210d92b7d7b8a0b591d2c0beb2c0bc1f3921": [
+  "Ladies and gentlemen! Thank you for waiting so long!"
+ ],
+ "0c1032c06b59a093c195ca0e64bdc4210d90d80fd7da96f0c9a01f471f65c98f948c4e610d939e9285bc1f398162": [
+  "And now, our special guests! The Fire Heroes, here to play the ones who get cut down!"
+ ],
+ "ced7a01f05d3a0948f2ebcc5b2c40d8e45bbdad9d62112": [
+  "Come on, you'd better clap too, or they'll kill you!"
+ ],
+ "0c1f6ac995908bef91dc61b2af75b26b816212": [
+  "Manjimaru's gear bag is full!"
+ ],
+ "0c103133308c959640a02a89483fa69067c6c2b9c08162": [
+  "Learned the sword art Kuroha Slash!"
+ ],
+ "8daa4bc98cc395adcaa088c989ea1f5d90bc6e1f0d0d8ae28f4d6e94f27370a0954b68a0954b680dc06fd8c2b9d9ca686e1f0d21120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d6fb3bcc3d390e6c6a093ecc98b49881f31cd0d4cb6dad91f19c5d70db58e7ed2caa0bccfbec7617a12": [
+  null,
+  "...",
+  null
+ ],
+ "b1c0bca0d3b3a0501f3db2c0b27a0d95831f11d3a095ea1f11d37a0db3a9a9a97a12": [
+  "I just want to die... Dad, Mom... *sob*..."
+ ],
+ "8ee523caa01f4f1f45c6a0cb6fb28d8996e2a60d8ef3b9c0d7bcb8a094773ec6a08b658cdc7b88ccb2c40d8fc4b94d70bcc990d561a0b1d91f25120d1f4f1f45caa08b4988c9c68942bbdac3d91f190d1f61a6a09254bcc3b2d9bfb36ebd120d1f61c9b1d8b6a6a095b7b8c0d2a0bac95a95fb6e0d2f94d4c9944e8af1d8c98ee523a6a0bbd7afc30dbaddc5a0cb6fb2bac4a67a0eb3afb3af7a12": [
+  "It seems the Root Clan tortured my husband horribly. They branded \"Kikugoro is great\" on his back with a red-hot poker.",
+  null,
+  null
+ ],
+ "0c103133305993facaa0966cc48c4ec9a08a69c988e1b2afc3c9a60d26bec3b164d6b3c4a058afc30ddc66dc66a08fb591d2bcc0c9bb": [
+  "Today I invited you here specially to show you the difference in class between you and me."
+ ],
+ "0c10313330966c61a09589b9c0d77a0d113630bfddc5bac4a0b1d8b4c5b2b96fc80d8d8296ec3dc9a03d96e5c91f400fa6a0d4dbb3": [
+  "If I lose... not that it could ever happen... I'll give you the Temple Gate Key of Mount Koya."
+ ],
+ "0c10313330b87ab8bf816021a01131306b6195b689bb88e28e59ca0d1f4d6eb7cfb221a01133308cdc8f64c9113293836b21": [
+  "Gr... grr! But you can't attack a cultural treasure! Behold, the Five-Story Pagoda!"
+ ],
+ "0c10313330b5c9da816021a0113235bfddc5d3c9c51135300d97b461a0b6d7d0c2b2c3c51131300dc8678bc864c3a0b8dad9dc21": [
+  "Curse you! A dragon will coil around that thing and twist it apart!"
+ ],
+ "0c3d96e5c91f400fa62ec657dac021": [
+  "Got the Temple Gate Key!"
+ ],
+ "0c1b967b96dacf6ea090d8afc00eb1d9d60d8e630fd8a0b1c4a01b967b2112": [
+  "I cut through ￥Ｄ of them, aru yo! Only ￥Ｄ left!"
+ ],
+ "8a6db6c68b4c985ebcc06e1f0d0d88c07e1f0eb549a6b58b78d2b86bbbb212": [
+  "Your record is saved. Please rest easy."
+ ],
+ "8a6db6c68b4c985ebcc06e1f0d0dcfc0a0b2c21f18b597a7c18af1d8b86bbbda0db591d2c1bcc3b51f3c6a814912": [
+  "Your record is saved. Do stop by again anytime! We'll be waiting for you!"
+ ],
+ "8a6db6c68b4c985ebcc06e1f0d0d954b68d4a01f4f1f45a6937cbc0d0ed6d00fa691c5c1946aafc3b86bbbda2112": [
+  "Your record is saved. Be sure to defeat the Root Clan and crush Yomi!"
+ ],
+ "0c9099967b8146b3b0a00e70b2b80fc68fe6d8c0b2d681600d9181b88f74c6c5d7c5b2b6c57a120d966b8a4393b9c9937ecaa490e1618d7eafc30d8fe6dac5b21f3e12": [
+  "Sugimoto: Ugh, I want to ride my motorbike... I wish spring would hurry up...",
+  "In Hokkaido it snows all winter, so I can't ride."
+ ],
+ "0cc4badb6ea09862bcc60dc2b7b1afc3d3d7afc0b597e7c60dbadaa6b164d6b3814912": [
+  "By the way, as thanks for chatting with me, I'll give you this!"
+ ],
+ "0c2396ca4a438cbb21a08fd58c82619196d921a04d91bd21120d1f4325a00f6591d88ddd3ec9a08d823dc60d1f440fc48cc470dad9a02396ca4a610d8cbbdac021120d2bb5babcc9c0d2a02396ca8b9bc691b1b80d0e72b0d10fa6915fafc0d3c9b6818a120d93638ec98ed2c9a08d6cb4bfb3c5bac46bc40d8b9e9373c923caa0b1b7da8ae712": [
+  null,
+  null,
+  "Is it a bid for the next big boom after the human-faced fish, to put the village on the map?",
+  null
+ ],
+ "0c93fa967b8f898fe397a421a00e76ddb8c0b2ccb0dd21120d88c990a80f1f31a694f27189f1d9a00e76ddb80fc9538aaa6b610dbfc990b349caa08b658cdc7b1f190d96da97a7c1c061d8c9a00ed4ddb7b096ec7b21120d0f6fb3d4d7a00e76bfb8da6ea8b00fc98cb39065897191e0818a0d94decaa093c1c60eb9b28169919d93638c62975c816a0fc90d944d8bb69349c50ecca7dd0f1f10c4a08bc68a458bd8c995d912": [
+  null,
+  null,
+  "He seems to be a former bodyguard of Pink Lady. Industry insiders say he was a rabid fan of Kei (Keiko Masuda) in particular."
+ ],
+ "10300da095c4a0a01ba097bca01ba097bca01ba097bc": [
+  " Rice   ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
+ ],
+ "10300da0949ea0a01ba097bca01ba097bca01ba097bc": [
+  " Wheat  ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
+ ],
+ "10300da093a4a0a01ba097bca01ba097bca01ba097bc": [
+  " Beans  ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
+ ],
+ "10300da08996a0a01ba097bca01ba097bca01ba097bc0d10300da0019483b3a0a0019484d9a0a001d4d2d9a0a00190e096be": [
+  " Salt   ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo\n {0001}Buy    {0001}Sell    {0001}Exit    {0001}Info"
+ ],
+ "bac98a4f23a05fc60d0ecab3cfafc10fc5ddc3a095b7b8c9d60d2f49a048c9bac4b6bcd7814812": [
+  "This foreigner asked me \"How much?\" What on earth does that mean?"
+ ],
+ "b18160b1a05993fad3a06ab3b7dd8a7cb90d3130899d959cb67a0d268f4bb296568ee5caa0c2d7b2d612": [
+  "Sigh... ten trips mopping the floors again today... Life as an apprentice monk is hard."
+ ],
+ "a23a238af1da70a095b68eeac9926d8c62a31f190db1d861c0b2a08bb3b461b1d9120dbac98bb3b461a048a6a090e0b2c3b2d9b60dbfc5c0a0b5dcb6d8b6c58148120d31a0967d231f183a238af1d88d87afc30da0a0926d8c62a643be70a096bc88c4610da0a09582b6721f19bac4a0a0a0a0a0a0a0120d32a03a23bfdb1f15d31f3d8fc4b7a60da0a0904873da70a0b5b2bcb26a1f190da0a090b68a88c9926d8c62a0a0a0a0a0a0a0a0a0a0120dbbb1a06fafc167acc581480d0131a00132": [
+  null,
+  null,
+  null,
+  null,
+  "Well, which is it?\n{0001}1   {0001}2"
+ ],
+ "1f6acaa095f34e8cc9c91f400f6e0d94e0a68a4ab9c0814912": [
+  "Manjimaru opened the door with the Treasury Key!"
+ ],
+ "0c16088c95c91f4d3b61a01bc61f1a210d081f6ac91f5f61a01b21": [
+  "Sword attack is now ￥Ｄ!\nManjimaru's HP: ￥Ｄ!"
+ ],
+ "1f57c41f586bb6d7c5a77a7a0d88a461b1da70a048c4b6c5d9afc30dbfddc5c6a08ac3b6c8aab96f7a7a120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d8ee1b21f15b2b2d3dd6b12": [
+  null,
+  "...",
+  null
+ ],
+ "bfc91f49c6429770bdd98b5aca0dbd6ec6a0306ebd81490d91bcc91f49a6a09149dd6eb86bbbb212": [
+  "That scroll's technique cost is already 0! Please choose another scroll."
+ ],
+ "93738d87c6d6d8a02690a24e7f89aeca95c29358bc1f390da0a0a0a0a0a0a0a0a0a0a0817c91ab89ba8bbb8bc6817c12": [
+  "The sideshow is closed until further notice. -Ashimoto Shows-"
+ ],
+ "0c599378caa0c0b074dadd6cacb0c90d0eb1b8bcaeddbcaeb00d0fd4afc3b8ddc5b2b6c5b112": [
+  "Next time I hope they put on a Turbo Rangah action show!"
+ ],
+ "0ca0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a00da0a0a0a0a0a0a0a0a0a00d0ccfb1a0b2b2d481490d113130d3b3a01f5bd390ccc9bac46b0d9659dac11f3a0e6921": [
+  "Oh, never mind! That was a thousand years ago. I've forgotten all about it!"
+ ],
+ "0d1acd1b95e0a01acd1b95e0c40d955c8ea6bbdac3b2d912": [
+  "It reads: \"￥Ｓ: ￥Ｄ steps. ￥Ｓ: ￥Ｄ steps.\""
+ ],
+ "bad7946e8ead967e8149a0dcb9dcb6ddc5b2bac40d47afc3d9c4a094d30ed2bca094b20fb76bd6814912": [
+  "Hey, you dummy Bakabon! Keep talking nonsense and there's no supper for you!"
+ ],
+ "bada6bd621a0a0a0a00db58e6fcaa00eb6af0fc4c5d9c4a0d0bbb6b261": [
+  "This! When my big sister loses her temper, she"
+ ],
+ "0dc2b6c5b8c5d91f0bbadcb2d6c57a12": [
+  "can't tell right from wrong anymore. Scary..."
+ ],
+ "5bc98aec728e70a60d26b86bbbda2112": [
+  "Behold our lord's joy!"
+ ],
+ "89460893de0889460893de084f0893b4": [
+  "Unazuki Cave"
+ ],
+ "92428ed26ec58149": [
+  "Take care!"
+ ],
+ "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d0e6a700fddc1aeb0b021a00e6b6b0fddc1ae81490d0e68710fd7a077af77a077b0b0bcac7a120d0e6464d70f6fb0d0ac7aa00e6f64d70f64b0d0ac7a12": [
+  "...",
+  null,
+  null
+ ],
+ "b2d4b0a08bc1dab4c06b210dbbafb7a00ecddd0fc57cbcc0a096568ee56193f1230d8ae2c68fe61f1594f2dd6eb7c06bd62112": [
+  "Whoa, what a fright! Just now two monks with funny heads came flying by on a rock!"
+ ],
+ "8d529576c995a08aaaa6a026c2b9c02112": [
+  "Found a Miner's Belly Guard!"
+ ],
+ "c1ae1f16b2d4a08f95b9c3b0b0b0b0b021": [
+  "Hey, no! Heeeelp!"
+ ],
+ "b7acb1a08f95b9c38149a0b58c5ac1acb0b0dd21": [
+  "Eek, help! Big brotherrrr!"
+ ],
+ "b362acb1b1b1b1b1b1b1b1b1b1b1b121": [
+  "Ugyaaaaaaaaaaaah!"
+ ],
+ "1f6a5b81490d966bc98dbb906f1f538fab8c52caa0957695778ed2c989bb4e81490dbbd7c6a095b7b78b7972c4badbc6d6d9c47a120d90edb2c98ee593b18ca0caa045c9ceb3610d88acafc3b2d91f3b6ebd6a81490dcf68caa045a6c0c0b8c961a08fe38df46eca12": [
+  "Lord Manjimaru! The general of Sajin Castle to the north is a monster couple! And from what I hear...",
+  null
+ ],
+ "0c8a6db6c68b4c985ebcc06e1f0d0d88c07e1f0eb549a6b58b78d2b86bbbb212": [
+  "Your record is saved. Please rest easy."
+ ],
+ "0c8a6db6c68b4c985ebcc06e1f0d0d": [
+  "Your record is saved."
+ ],
+ "1f6a5b81490d8dbb906f1f538e63937da00e6eadb0b8a578780fca0d93ecc9924f94672ccda093a6dac0d6b36ebd6a12": [
+  "Lord Manjimaru! Duke Pepe, the last of Sajin Castle, seems to have fled south to Tanba Province."
+ ],
+ "8ef0924d61b1d90d924eb6a08ef0a6a088f9d0cfbdb68148": [
+  "There's a sake barrel. Will anyone drink the sake?"
+ ],
+ "ceddc9d8c4a089b7b6b28ef06b2112": [
+  "Pleasantly warm sake!"
+ ],
+ "0ecfddc4b00fc9937aa0bd65b28ef08d44b76ebb0d8ead96ec1f5d8ef0a6a09390dd6ea0915395940dbac93cc6a0895e7157dad461afc01f3fd612": [
+  "That Manto is crazy about sake. He stole all of Shikano Village's sake and hauled it into this castle!"
+ ],
+ "68b272dda0c661b28ef06b2112": [
+  "Awfully bitter sake!"
+ ],
+ "b9afbab3a08ac38cfbc98ef06b2112": [
+  "Fairly sweet sake!"
+ ],
+ "1f6abbdd6bb9c6a08bb3b4cfbcaeb30d8ec0caa0babac98ef0924da091539594c6a089b4c0c1c90d0ebcaedd73dda0570fdac3d4afc01f3f21120d8ead96ec1f5d96c18ef0a289a941c9bc68b8a36ebdafc30d47afc0d7a00ecfddc4b00fc9937aa0904d9770bcc30db3cfbfb3c6a088f9dd6ed4ddc9120db1b2c2c6a08ef0c996a1c5ddb60ddcb6ddc8aa1f3fd60d6b1f15946e8eadc5dd6bd3dd12": [
+  null,
+  "We told Manto it was Shikano Village's famous \"Golden Drops\" sake, and he believed it and gulped it down!",
+  "That guy can't taste sake at all. He's an idiot, after all!"
+ ],
+ "8a84d8c4a0bcaeaf75b28ef06b2112": [
+  "Rather salty sake!"
+ ],
+ "8fe39569c5a090688cfbc98ef06b2112": [
+  "An elegant, dry sake!"
+ ],
+ "103133300c8c959640a04595463fa6208ef382af8c7082a282be8162": [
+  "Inherited the sword art Onnahiko Slash!"
+ ],
+ "103133300c919797ecc997e9a62ec657dac0": [
+  "Got the Spirit-Sending Bell."
+ ],
+ "89a990f295bdc91f4f23c0c1caa0b7afc47a7a0d1f05c6a08ab48ed3bcc3d9c4a058b3697a7a120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d7a7a7abbb1a089b4c98e9dafc3b2d9a01f49a60d936ebfb38149a03a8a70c91f49afc3b2afc3c50dd3c4caa05693b9c98f701f101f3bc5814912": [
+  null,
+  "...",
+  null
+ ],
+ "89a990f295bdc91f4f23c0c1caa0b7afc47a7a0d1f05c6a08ab48ed3bcc3d9c4a058b3697a7a120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d90edb2c6a08b5d90b5caa0c2b7d3dd6bc5ddc30d47b3c2d3d8caa0c8aa617aa06fb3bcd6b3d30dc8aabac4caa0b2c2d3a08fadbccaa0b1d9bb12": [
+  null,
+  "...",
+  null
+ ],
+ "d3bcd4a08ce3dbc90e6e720fcaa08bc98a79c1adb30dd4afc1aca0c5b2c9b6c9ab0dceafceafce7a7a120db5cfb4bbdd61a093a66443bcc01f090d1f5b55c990edb2c9b5d8a01f4f1f45ca0dc46fd2a6a08e68bbda68c6a0bddd6b120dcfb1a0dcbcd7c9ceb3d3a00eb2cbb60f610d90edb2c993723e6ea093a664c870a01f471f45c60dc46fd2a6a08e68bec061c9ab120dceafceafceafce7a0d88f689cacaa08f84d91f19b6d7c9ab12": [
+  "Could that fatso behind you be the one called Gokuraku? Hohoho...",
+  null,
+  null,
+  null
+ ],
+ "93798bf40edb740f6ec5b2c4bac990e6ca0d9069d2c5b21f3fd6ab12": [
+  "You can't go any further unless you're in a Clay Idol Robot!"
+ ],
+ "5fca2c88f8c98b7c8d6a6ebd12": [
+  "I am the Land-Pull Bowstring."
+ ],
+ "0ccfc04bc3c812": [
+  "Come again!"
+ ],
+ "2c88f8c98b7c8d6aa62ec657dac02112": [
+  "Got the Land-Pull Bowstring!"
+ ],
+ "2c88f8c98b7c8d6acad3b38e9dafc3d9d62112": [
+  "You already have the Land-Pull Bowstring!"
+ ],
+ "0ebcdb0f61d4afc3b71f3912": [
+  "Shiro has arrived!"
+ ],
+ "babacaa08a43c98d4bc40d8dc58bdf67ac93d88f6061a0b5b2bcb20d956c93632b6ebd12": [
+  "This is Hamada Village, known for seafood and, lately, delicious pork soup!"
+ ],
+ "baba1f0b90bcc995fbc64cb9700d3c89ba92acc992c3986196ec61b1d9d68149120d895c67aca092c3986196ecc9b55b1f670d93f78f95afc3b2b3a01f4f1f45c98ee3935fa60d926dafc3d91f3bdd6b12": [
+  null,
+  "Rumor has it the lord of Tsuwano knows the weakness of a Root Clan member called Nikusuke!"
+ ],
+ "b3a0b3a0b3b4af7a7a0d926dd768c67aa0b3af0d23a6a0904873c3bc1f3aa00eb7b80fc5ddc3120dd3b3a0b3af7aa00ecab1cab1a0b672b70fbbddc90db589c5c6c5ddb6a0c5dac5b27ab67a7ac50db3b4af7aa0b3a0b37a7a12": [
+  "Ugh... urk... urp... Without knowing... urk... I ate people... me, Kiku...",
+  null
+ ],
+ "b3afafaf7a7aa064aab0b0b0af210d78afa078af0d65b4af777a7aa0b3b0af120d0ecab1cab1a00fbda0bdcfc8b4c50dbaddc5d3dda026bec1cfafc37a7a120d926dd7c8b46ea0239048b2a6bcc3c0c40d58b3c47a7aa0b3b4af777a7a0db3a0b3a064b4b0b0af2112": [
+  null,
+  null,
+  "To think I was eating people without knowing it... urp... uh... bleeeegh!"
+ ],
+ "bfa0bfb31f10c9b67a7a0d954b50c6a08f95b9a6a08b81d2c3c01f3dc5a7120d8fadbc1f18dcb6afc3d4dac3da707a7a0ddcb6dbb3c4bcc3b2da707a7a0d8f95b9c3d4dac0c9c67a7a12": [
+  "S-so that's what it was... They were begging so desperately for help...",
+  "If I'd understood them even a little... if I'd only tried to understand... I could have saved them..."
+ ],
+ "40c9beb26bc4a058b31f3db96f0dc5dd6bb6a093d8c0c1610dbcac73afc3d9d6b36ec5b1120d0edcbc0fc9a096daa626c561d70d0e72b272b2470fb3c9a6a026c4d9c40d0ed0aeb00fc6a040c61f1bc5b17a7a12": [
+  "I'm sure it's just my imagination, but it seems like the pigs are talking somehow.",
+  "When they look me in the eye and go oink oink, it bothers me something awful..."
+ ],
+ "b1c993d8c0c1610d92c3986196ecc9a023c0c1d4afc0c5ddc37a7a0dceddcfa0905cbc96f3c5b2bac46ebd120db5afc48149a01f18bfdac48fa49484ca95ca6eafbe0d92c3986196ecc923c0c1a6a08b9f977bbdd9c0d2c6d30db7afc1d8a0b591e3cad3d7b2cfcdddc4c5b112": [
+  "To think those pigs were the people of Tsuwano... I'm truly sorry.",
+  "Whoops! But business is business. To give the people of Tsuwano a proper memorial, I'll have to charge full price."
+ ],
+ "926dd7c51f0ac4cab2b40d92c3986196ecc923c0c1a6a0904873c3c0c5ddc30d0eb3a9a00fc5ddc3bac4a67a7a120dbadab6d7caa09656bbddc61f1b0d904873d7dac023c0c1c9a08db0a60d88d4d2c0b2c4a0581f0612": [
+  "I didn't know, but still... to think I was eating the people of Tsuwano... Ugh, what have I done...",
+  "From now on I'll become a monk and console the souls of the people who were eaten."
+ ],
+ "8dc58bdfa090bcc995fbb6d70dd6b893d861a093a664c3b8d91f3e120dcfb1a0bfc91f090d904894ef619582b2c30d8f95b6afc1acb3dd1f0fc821120d93d81f159048b24ec6c5d96bb967acc5b8c30d8e63afc08a76d48d9c6ea0b2dbddc593b98bef610d8decdad91f0b0ebd64aaa095d697980fbb2112": [
+  "Lately a lot of pigs have been running away to here from the west.",
+  "Mind you, thanks to that I save on food, so it's a big help!",
+  null
+ ],
+ "0e720fb2b0a00e720fb1b00d0ecc6592c3cc98616596ecccb07a7a0d72b0a072cb2372cb0f61a00e72b021120d72ce72cea072b0a072b00d8f950fb90ecba074cc74cca0c6afb872b00d72b0a095cf0fb40e72cbcba0720fd7da0e72b012": [
+  "Oink-eee... Oink-aaa... Tsu-snort-wa-snort-no... Oink... oink-people-oink... OINK!",
+  "Snort snort oink oink... Hel-oink-p... snort snort Nikk-oink... Oink... turned... oink oink... into... OINK!"
+ ],
+ "bfb31f101f3fb67a7a0d93d86ea02f90b6a68f49dcd9c5ddc30dc5ddc4d3a0d4d8b7dac5b2c8b47a7a12": [
+  "So that's what happened... To end your life as a pig... how unbearable..."
+ ],
+ "bfb3b2b4700d92c3986196ecc995fb1f0b4bd993723e6e0d489543d3a093d8a6a026c0c5b112": [
+  "Come to think of it, I saw lots of pigs on my way here from Tsuwano."
+ ],
+ "0eb3a9a9a9a01f6a0fbbddc0c1c91f090d91b7c0c1caa0904873d7da68c6bdd01f390d6ed37a7a120d954b506ea0ba1f34c6a08f95b9a68b81d2c3b7c00d96ba95769577a6a00edcbc0fd7610d904873c3bccfafc3c01f3d7a7a120d0eb5b0b2a0b5b2b5b20d0fc5ddc3baafc0a70d0eb5b0b2a0b5b2b5b27a7a12": [
+  "Waaah... Thanks to you, Manjimaru, my grandchildren weren't eaten. But...",
+  "My daughter and her husband came to this village desperately begging for help, and we... we ate them...",
+  "Waaah, waaah... What have we done... Waaah, waaah..."
+ ],
+ "5a8d968a98c993f78f95a6a0937cbbdac01f3fafc381490d937ac95049caa06fba6ebdb681480d5fc6a0b8dcbcb8a08bb3b4c3b86bbbb2120d8c6061a0dcb6d7c5b8c5d9ce6fa090d8d88d8fdd6e0d93a5d0c6671f15c270a69366b7b6b9c30d8dc592e1a0bfda63d7b2caa0bcc3d4d8c0b2c912": [
+  "You beat Nikusuke of the Hell Cauldron?! Where's his body? Tell me everything!",
+  "I want to chop it up till it's unrecognizable, stomp on it and spit on it. That's the least I want to do!"
+ ],
+ "907b907b8db2c9468c8a": [
+  "Susa Wind Cave"
+ ],
+ "b58c5abbdd21a0b3c1c5d7a0c0b2c3b2c94eca0d2ec6571f3cd621a09483afc3afc3d681990da001cab2a0a001b2b2b4": [
+  "Hey, mister! You can get just about anything here! Buy something!\n{0001}Yes   {0001}No"
+ ],
+ "0c1f04b3a01f0cb0bd2112": [
+  "Thank you very muuuch!"
+ ],
+ "9761b6d88f8ac6a0d6b3babf210d6597989770c6c51f3cb681480da001cab2a0a001b2b2b4": [
+  "Welcome to the storehouse! Would you like to use it?\n{0001}Yes   {0001}No"
+ ],
+ "b5cfb4a0895ecaa0b2b2ceb3b681480da001cab2a0a001b2b2b4": [
+  "Are you the lucky type?\n{0001}Yes   {0001}No"
+ ],
+ "bddd65b8a0895e61a0b2b2ceb3b681480da001cab2a0a001b2b2b4": [
+  "The really, really lucky type?\n{0001}Yes   {0001}No"
+ ],
+ "2846c98f7061a08eb89473bcc3d3a089b4c9beb26ed30d1f49c9beb26ed3c5b2b6d7c5210db5d2b4c9895e61a0c5b2c4a0b1b7d7d2dbd612": [
+  "If the Divine Wind technique fails, it's not my fault or the scroll's! Just accept that you've got no luck!"
+ ],
+ "cf6b0eda73d9b1af770fbccfbedd12": [
+  "Not leveling up yet."
+ ],
+ "0c0eda73d9b1af770fbcc0c2d3d812": [
+  "Pretend you leveled up."
+ ],
+ "1f4961a08c881f3ad7a0cfc00db1afbcddc1a6a0b5964bc8b86bbbb2d4bcc8210d99c2c9228fab816212": [
+  "Once you've picked a scroll, come visit my place again, Boss Manji!"
+ ],
+ "8ea952c68d87afc01f4961a026c21f0ad70d9659da68a0dcbca6964bc8c3b86bbbda2112": [
+  "When you find a scroll that suits you, don't forget to come see me!"
+ ],
+ "8a6db6c68b4c985ebcc06e1f0d0dcfc0a0b2c21f18b597a7c18af1d8b86bbbda0db591d2c1bcc3b51f3c6a2112": [
+  "Your record is saved. Do stop by again anytime! We'll be waiting for you!"
+ ],
+ "cfc0a0b2c21f18b597a7c18af1d8b86bbbda0db591d2c1bcc3b51f3c6a2112": [
+  "Do stop by again anytime! We'll be waiting for you!"
+ ],
+ "817c817c93798bf40edb74959491e0a091e088f50fcd817c817c0d438c828e9ecaa090ea97700ed8ccc40fa642b2a0314968c20d89c28b799349bdd0d4b6c6a05a8fe3cd88da9197bed62112": [
+  "--To all Clay Idol Robot Unit members-- When deploying, use the dedicated lift and move to the surface one unit at a time, as quickly as possible!"
+ ],
+ "d1afa0bfc990dfca0d8ee6d89790bcc3bccfb2a08eb897e7bcc07a7a120d7a7a0d7a7a0d7a7a120d8fceb2c0b9da70a08fceb361d6b2210dccddaf814912": [
+  null,
+  "...\n...\n...",
+  null
+ ],
+ "d0ddc5a01f4f1f456188abb2c9d681490db1c0bcc989c691b0d497469242a6a095d4bcc3210d0ebcb8a0bcb87aa0bcb87a12": [
+  "It's all the Root Clan's fault! Give me back my family and friends! *sniff*... *sniff*..."
+ ],
+ "8eadc9241f5d8f681f158dc592e1c5c9d681490db2c2d3a00e61b70f61a0b2af75b2b2c30db3d9bbb8c3a09051c3d7dad4bcc5b2c9d6120dc5ddb6a00ecec3b25d0fafc3b2b30db9afc0b2c58a4f2361a09491cfafc3dd1f0f0dbfb2c2c9beb2c5c9d612": [
+  null,
+  "There's some weird foreigner called Hoteimaru staying there, and it's all his fault!"
+ ],
+ "8a6db6c68b4c985ebcc06e1f0d0d88c07e1f0eb549a6b58b78d2b86bbbb2120dc4badb6e7a120d1f6a257aa0cfc2d825ca0d1f6a25c6a0cbb6dac3b2d9d6b36e1f0d0db5408e9dc1a0b58e40bcb86bbbd8cfbe120dbac9d6b3c5bac4a6a0b5978ad0bcc0bac4ca0dcfc2d8251f1c6593e096a7c68ae81f060dd3bca070dac0d77a120ddcc0b8bca0cfc2d825c68e45bbdacfbdd912": [
+  "Your record is saved. Please rest easy.",
+  null,
+  null,
+  null,
+  null
+ ],
+ "bac955a07f8ea8c6cabbdd6bddd4b96f0d95cfc58a4f23bbdd610d8de4c6a097acda9285b2c0bfb3d4c8120d8a6db6a096adc1b7d8ddc5a093fa967b8ceaa60dbcac73d9937a6ea00ecec0c30fc4b60d0eceafb70fc4b6b2b3a096bc55d4afc0b6c5814812": [
+  "I overheard the other day that some strange foreigner washed up in Sakai.",
+  null
+ ],
+ "b3c1c992e08ee5c4b7c0d7a08b8b41c92294bca60d95f392cb1f5d450e62c2c80f6fd3c6a0c262badd6e0dbfda6ed391abd868c6a08ed841cf6e8decafc37a120d1f09a095e9d7bccaa0cb6fb8c5d92f95fb7a0db2afbfa0b1c0bcd3a0bac9b3c1a643c30d95f392cb2b6ea093adbab3b6bcd78149120d7a6ea0b3c1c992e08ee5d0c0b2c5a0946e8eada60db8dcb4badd6ea00eb9c20fc996d1c92f967bcf6e0dd1bcd8c4afc37a7aa00eb3cccccccc7a12": [
+  null,
+  null,
+  "...and then I'll snare some fool like my husband and pluck him down to the last hair on his butt... Ufufufu..."
+ ],
+ "98438ccbc995e612": [
+  "Grave of Rod"
+ ],
+ "968397a28b9bc995e612": [
+  "Grave of Marilyn"
+ ],
+ "97d18be5c995e612": [
+  "Grave of Lincoln"
+ ],
+ "889f937997afc995e612": [
+  "Grave of Adolf"
+ ],
+ "96c28cc48db2889fc995e612": [
+  "Grave of Caesar"
+ ],
+ "5096e5c995e612": [
+  "Grave of Simon"
+ ],
+ "88ab8cd3895ac995e612": [
+  "Grave of Akuri"
+ ],
+ "8ba3899f89a424c995e612": [
+  "Grave of Prince Kyouou"
+ ],
+ "7a7a7a7a7a12": [
+  "..."
+ ],
+ "bac98d601f1cb2dbddc58a4f23bbdd610d4bc5bbd9b96fd67aa0b1d8aca06fbac90db52cc923c5dd6bdbb37a120dbd64b4a00ec1710f6ed6aba095cfc594af8c606ed6ab0dbfb3b2d4a01f05c0c1c9bac4a60db662cfdcafc3c0d6b36bc57aa08a6db67a120d0e6eadb0b8a578780f1f1596ec7b6bd612": [
+  null,
+  "Real short, with a weird hairdo... Come to think of it, he seemed to be sniffing around after you folks... What was it...",
+  null
+ ],
+ "b1dcdcdc7a120d8d7c5c1f53946a89f33bcaa0bdbbcf67b27a0dbcb6bca0dcbccaa0d3afc48bb0bcb20ed3c90fa60d26c3bc1f3a6a7a120db1c98b9022c53c61a01f511f210dbf1f0e3dc98cfcbab3c98b6794f52cc98bf3c60d8cbbdac01f2121120d7a7a7a7a7a7a7a7a818a120d7ab5a4b5b5a0c5ddc421a059ca938cc98bf3c60d9582b6dd6eb2d96ecac5b2b621a0b1c93cca0d2f8f756ea02ca688da606eb7d9c9b6818a12": [
+  null,
+  null,
+  null,
+  "...?!",
+  null
+ ],
+ "103133300c8de4c9966b90bcc996a66b8149a0113430954b68a04bc3b8dad60d113135bfdacf6ea0bab2c2caa09761b6d7bec3d3d7b30d113735b2c2cf1f1811313091d2afc3d9d612": [
+  "The cape northwest of Sakai! Be sure to come! Till then, I'll be keeping this. I'll wait for you, forever."
+ ],
+ "0cbac988c08c7c1f31c9a093ec938cc98a43c60d1f58c992df9550618decafc0a08f4d8a438b7b1f190d285b61a0b1d91f3b6a12": [
+  "They say in the sea southeast of this Aki Province there's a shrine called Funakai Palace, built by the mermaid Princess Tsuru."
+ ],
+ "5fcaa08fadbc6ebd610d90e8b2c97e93be61a01f0cbd0d8a4625a690e8afc3bbbcb164cfbcaeb3120d7a7a7a7a7a7a7a7a7a7a7a21212121120d8b9022c588c5c93ec6a088f9d08d9ecfdac3b80db6bdb6c54461a026b41f397a12": [
+  null,
+  "..........!!!!",
+  null
+ ],
+ "91bcc95a95fb6ecaa01f4f1f45610db2c5b81f1a1f3fafc3c80db3d7d4cfbcb2dc12": [
+  "I hear the Root Clan has disappeared from the other regions. How I envy them."
+ ],
+ "103133320c0e67b066bd21113230a061af6ed1210d113330bbc97071afc12112": [
+  "Jesus! Goddamn! Son of a bitch!"
+ ],
+ "59c9dcbcd71f1c9056bcb290b98c95a68decd90d9872c56fa0b1d8acbedd1f217aa0beafb6b80d4bc3d3d71f15905cbcdcb9c5b261c87a120d7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a120d7a7a7abf1f08210d90b98c95a68decdad98ed261a0b5d967acc5b2b6210d924ec9bac4b6a0cf6ba0dcb6d7c7b621120db5c7bc67ac21a01f6a5b210db5c7bcc5d7a01f478c8c61a0945ab2210db5c7bcc5d7a0b71f166eb7d96ad62112": [
+  null,
+  "...",
+  null,
+  null
+ ],
+ "0c10320eb8af8149a08cb696b23c0fcd4bb2a01f6a81490dbfba6ea0dcdad7a00edc6bc2d035238f4f0f610db7bbcfd7a6a08c8ccfc2d8c6bcc3d4d9814912": [
+  "Tch! Come to Genmu Castle, Manjimaru! There, we, the Wadatsumi Five, will make a blood sacrifice of you!"
+ ],
+ "0c1032bfc9c0d2c6113330a05993facf6e0d5a8d96c9d6b3c5a00ec4dab0c6dd630fc993fa8158a60d10319197afc3b7c0c9bb814912": [
+  "That's why I've spent every day until today in hellish training!"
+ ]
 }

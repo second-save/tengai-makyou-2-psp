@@ -91,6 +91,10 @@ def main():
                 # no validity cut: the default one knows Japanese only (same call as insert.py's read-back)
                 blocks[sector] = extract.block(iso, sector * 2048, valid=lambda m: True)
             data = bytes.fromhex(blocks[sector]['groups'][group]['msgs'][msg])
+            # the house module decodes bytes 0x80-0xFF with the dictionary in the state: expand this module's words first
+            words = [bytes.fromhex(w) for w in blocks[sector]['groups'][1]['msgs']]
+            if len(words) == 128:   # also the house module: the state may hold an older dictionary
+                data = b''.join(words[c - 0x80] if c >= 0x80 else bytes([c]) for c in data)
         if b'\x12' not in data:
             data += b'\x12'   # names and battle lines have no wait: without one the window closes before the shot
         jobs.append((it, data))

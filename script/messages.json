@@ -18718,8 +18718,8 @@
   "jp": "「西　高山町\n　旅の　ほこり落としに\n　お立ち寄りください」{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wa3/wa00.scs#4@0 0.96",
+    "en": "\"West: Takayama Village\nStop by and shake off the dust of the road.\""
    }
   ]
  },
@@ -20694,8 +20694,8 @@
   "jp": "卍丸さんのお母さんは　まだ生きてるわ\nお母さんの目の前で　あなたを殺すって\nあいつら　言ってたもの｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wa2/vae0f1.scs#13@0 0.95",
+    "en": "Your mother's still alive, Manjimaru. They said they'd finish you off right in front of her."
    }
   ]
  },
@@ -21590,8 +21590,8 @@
     "en": "It's for the best for him that Takako's gone... Just between us, Takako's...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Apparently she's a bit **** in the head. If you ever run into Takako, you'd better not say anything careless to her."
    },
    {
     "ds": "wa3/vai7f2.scs#6@0",
@@ -21710,8 +21710,8 @@
     "en": "Something unbelievable happened at the Takayama festival, they say... Everyone in town just vanished without a trace...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wa3/wah0.scs#5@0 0.97",
+    "en": "And that a monster dragged a boy named Manjimaru into Ryomen Cavern to kill him... Nothing but terrible rumors.{0012}"
    },
    {
     "ds": "wa3/wah0.scs#6@0",
@@ -22162,8 +22162,8 @@
   "jp": "{0C}記録のほうは　大丈夫ですよ\n道中　お気をつけて{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is safe. Take care on the road."
    }
   ]
  },
@@ -22234,8 +22234,8 @@
   "jp": "{01}火多　{01}尾張　{01}伊勢　{01}紀伊　{01}京　　{01}近江\n{01}越前　{01}越中　{01}越後　{01}因幡　{01}出雲　{01}石見\n{01}丹波　{01}浪華　{01}吉備　{01}安芸　{01}長門",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:set/warp_seg.scs#0@0 1.00",
+    "en": "Hida\n\n   Owari\n\n   Ise\n\n   Kii\n\n   Kyoto\n\n   Omi\n\n   Echizen\n\n   Etchu\n\n   Echigo\n\n   Inaba\n\n   Izumo\n\n   Iwami\n\n   Tanba\n\n   Naniwa\n\n   Kibi\n\n   Aki\n\n   Nagato"
    }
   ]
  },
@@ -22386,8 +22386,8 @@
   "jp": "や{k}ッピー！　{h}あたし　法子だ{k}ピー！\n卍丸{h}さん　命を大事にする{k}ピー！\n法子{h}からの　お願いだ{k}ピー！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hi-peep! I'm Noriko-peep! Take care of your life, Manjimaru-peep! That's Noriko's wish-peep!"
    }
   ]
  },
@@ -22398,16 +22398,16 @@
   "jp": "あたし　明菜…\n卍丸さんが　根の一族に　殺られても\n決して　泣かない女…{12}\nだって…{12}\n飾りじゃないのよ　涙は\n{k}ハッハーン｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I'm Akina... A woman who will never cry, even if the Root Clan kills you, Manjimaru..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Because..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Tears aren't just for show. Ha-haaan!"
    }
   ]
  },
@@ -22418,12 +22418,12 @@
   "jp": "{k}レイホー　レイホー！\n卍丸　元気{h}にしてた？　私　今日子よ！\nたまには　顔を見せてね{12}\nなんてったって　卍丸は\n{k}ジパング最強{h}の　火の勇者！\nあなたに　会えて　よかったわ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hey-ho, hey-ho! Doing well, Manjimaru? It's me, Kyoko! Come and see me sometimes."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "After all, you're Jipang's greatest Fire Hero, Manjimaru! I'm so glad I met you!"
    }
   ]
  },
@@ -22434,12 +22434,12 @@
   "jp": "私の足を　{k}ジロジロ　見{h}ないでよ！\nえっ？　見てたんじゃないの♀\n私？　私は千里よ{12}\nちょっと　生意気で　女の子には\n人気ないけど　臭いものには\n{k}フタ{h}をさせてもらうわ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Don't stare at my legs! What? You weren't looking? Me? I'm Chisato."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I'm a bit cheeky and girls don't like me much, but I'm the one who puts a lid on stinky things!"
    }
   ]
  },
@@ -22450,12 +22450,12 @@
   "jp": "私　いさ子といいます\n卍丸さん　どんな苦しい戦いも\nやがて　血となり　骨となりますわ{12}\n{k}ジパング{h}の人々のために\n鉄骨の意志で　がんばってください！\nそーれ　そーれ　卍丸｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "My name is Isako. Manjimaru, every hard battle becomes your flesh and bone in the end."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "For the people of Jipang, fight on with a will of steel! Go, go, Manjimaru!"
    }
   ]
  },
@@ -22466,8 +22466,8 @@
   "jp": "{k}オッス！　邦{h}ちゃんだよ！\n卍丸さんの　やまだかつてない活躍を\n楽しみにしてるよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Yo! It's Kuni! I'm looking forward to your never-before-seen exploits, Manjimaru!"
    }
   ]
  },
@@ -22478,12 +22478,12 @@
   "jp": "ばんじばるだん\nあぢがどう　ごだいまぢだ\nわだぢ　やばぜばびです{12}\nかんげぎの　あばり\nはだが　づばっでしばいまじだ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Badjibaru-dan, thag you very buch. I'b Yabase Babi."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I was so boved, by dose got all stuffed ub."
    }
   ]
  },
@@ -22494,12 +22494,12 @@
   "jp": "こんにちは{k}ァ　私　聖子{h}です{k}ゥ{12}\n{h}この前{k}ェ　カブキ{h}さんに{k}ィ\nフラ{h}れちゃったから{k}ァ　今度{h}は{k}ァ\n卍丸{h}さんに{k}ィ　乗{h}りかえたの{k}ォ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hellooo, I'm Seikooo."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Kabuki dumped me the other daaay, so now I'm switching to Manjimaruuu."
    }
   ]
  },
@@ -24098,8 +24098,8 @@
     "en": "After Manjimaru went to all the trouble of rescuing us... *cough cough*... all this man does is whine!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wa4/vabaf2.scs#3@0 0.97",
+    "en": "Once I can move again, the first thing I'll do is wring this man's... *cough*... neck... Manjimaru...{0012}"
    },
    {
     "ds": "wa4/vabaf2.scs#4@0",
@@ -24602,8 +24602,8 @@
     "en": "When I was about your age, I met the Tengu by the pond south of this village.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "He had the funniest face."
    }
   ]
  },
@@ -24814,8 +24814,8 @@
   "jp": "{0C}……………………………………………{12}\n……もっと　ましな　火の一族は\nいねぇのかよぉ！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "wa4/wag0.scs#2@0",
@@ -24834,8 +24834,8 @@
     "en": "You're late! It's 'cause you're such a slowpoke that your mom got kidnapped!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wa4/wag0.scs#4@0 0.90",
+    "en": "Is it really okay to hand a scroll I've guarded for a thousand years to a little runt like you?{0012}"
    },
    {
     "ds": "wa4/wag0.scs#5@0",
@@ -25014,8 +25014,8 @@
   "jp": "{0C}{10}１３０………………………………………{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    }
   ]
  },
@@ -26134,8 +26134,8 @@
     "en": "Tell you what... Go deal with Onikotsu Castle by yourself. Then maybe I'll change my mind.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    }
   ]
  },
@@ -26214,8 +26214,8 @@
   "jp": "いや～　{k}カブキ{h}ってのは\nすげえ男だよ！{12}\n天守閣の上から　大判小判の雨あられ！\nあんたも　もう少し　早く　来れば\nごしょうばんに　あずかれたのにね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb1/vba3f2.scs#3@0 1.00",
+    "en": "Man, that Kabuki is something else!"
    },
    {
     "ds": "wb1/vba3f2.scs#4@0",
@@ -26462,12 +26462,12 @@
   "jp": "{0C}ばれちまっちゃぁ　しょうがねー\nおれが　尾張、京都担当の　杉本だ！\n楽しんでくれてるか？{12}\nじゃあな！　京都でまた会おう！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Well, you caught me. I'm Sugimoto, in charge of Owari and Kyoto! Are you having fun?"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "See ya! Let's meet again in Kyoto!"
    }
   ]
  },
@@ -26722,8 +26722,8 @@
     "en": "Coming to a run-down town like this... you're an odd one. Believe it or not, there used to be a lot more people here.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb1/wbb0.scs#1@0 1.00",
+    "en": "The minute that Onikotsu Castle thing popped up west of town, the lord ran off. The samurai and merchants, every last one, ran off too.{0012}"
    },
    {
     "ds": "wb1/wbb0.scs#2@0",
@@ -26886,8 +26886,8 @@
   "jp": "{k}ビビ{h}って　城を　捨てるなんてよぉ\nあの腰ぬけの　{k}バカ殿{h}は　根の一族に\n{k}キンタマ　食{h}われたんじゃねぇのか｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb1/wbb0.scs#22@0 0.94",
+    "en": "Running scared and abandoning his castle! That gutless fool of a lord, maybe the Root Clan ate his family jewels!"
    }
   ]
  },
@@ -26942,8 +26942,8 @@
     "en": "The Snake Hermit's...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Idiot!"
    }
   ]
  },
@@ -27162,8 +27162,8 @@
   "jp": "{0C}{10}１３０いや～　{11}２０ひさしぶりの客なんで\nさっきは　{k}スキ{h}をつかれて\nすっかり　あわててしもたわい｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb1/wbd0.scs#11@0 1.00",
+    "en": "Well, well! I haven't had a visitor in so long, you caught me off guard earlier and I got all flustered!"
    }
   ]
  },
@@ -27606,8 +27606,8 @@
   "jp": "いや～　{k}ブッ{h}たまげただよ｜\n{k}オラ{h}ん{k}チ{h}の　隣りに　へんてこな城が\n建っちまったんだがな{12}\n夜寝るときゃ　なかったのに\n朝起きたら　もう　建ってただ｜\n不思議なことも　あるもんだなや｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb1/wbg0.scs#9@0 1.00",
+    "en": "Well, I'll be! I nearly jumped out of my skin! Some weird castle went up right next to my house!"
    },
    {
     "ds": "wb1/wbg0.scs#10@0",
@@ -28570,8 +28570,8 @@
     "en": "The keys to that room are held by Lady Benten herself and... oh yes, that Tengu...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb2/vbl1.scs#12@0 1.00",
+    "en": "...or so it was until last week. Oh dear, I can't recall. Please ask one of the others.{0012}"
    }
   ]
  },
@@ -28602,8 +28602,8 @@
     "en": "The keys to that room are held by Lady Benten herself and the headman of Fukushima Village...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wb2/vbl1.scs#16@0 1.00",
+    "en": "...though that was meant to be just a summer fling. Oh dear, I can't recall. Please ask one of the others.{0012}"
    }
   ]
  },
@@ -28646,8 +28646,8 @@
     "en": "Thank you so much! I don't know how to thank you... Lady Benten's virtue has been preserved!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "wb2/vbl1.scs#22@0",
@@ -29066,8 +29066,8 @@
   "jp": "めためたし…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "And they lived happily ev..."
    }
   ]
  },
@@ -29078,8 +29078,8 @@
   "jp": "{0C}めたし…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "...er after..."
    }
   ]
  },
@@ -29682,8 +29682,8 @@
   "jp": "{0C}{10}１３０おまえに　{11}１８紅丸斬を　授けよう！{11}６４\n紅丸斬は　{11}２５同時に　{11}２０複数の敵を\n斬る剣だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I grant you the Benimaru Slash! The Benimaru Slash is a sword that cuts down several enemies at once!"
    }
   ]
  },
@@ -29754,8 +29754,8 @@
   "jp": "{11}８{11}８０なかなか　いい{k}ゼ！{12}\n",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Not bad at all!"
    }
   ]
  },
@@ -29766,8 +29766,8 @@
   "jp": "{11}８０なかなか　いい{k}ゼ！{12}\n",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Not bad at all!"
    }
   ]
  },
@@ -29922,8 +29922,8 @@
   "jp": "「北－奈良村　南－赤目村\n　西－生駒峠」{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/wc00.scs#1@0 1.00",
+    "en": "\"North: Nara Village\nSouth: Akame Village\nWest: Ikoma Pass\""
    }
   ]
  },
@@ -30802,8 +30802,8 @@
   "jp": "ほえ～　あの　でっけえ建物は\n大仏殿だったのか｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/wce0.scs#2@0 1.00",
+    "en": "Whoa! So that huge building was the Great Buddha Hall!"
    }
   ]
  },
@@ -31606,8 +31606,8 @@
   "jp": "んなら　記録しておくわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Then I'll save your record."
    }
   ]
  },
@@ -31686,8 +31686,8 @@
   "jp": "{k}エヘヘ　エ{h}へ　森は　生きている\n森は　生きているよ～\nう～ん　食べられちゃうよ～{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/wca4.scs#0@0 1.00",
+    "en": "Ehehe, ehe... The forest is alive... The forest is aliiive... Mmm, it's gonna eat you...{0012}"
    }
   ]
  },
@@ -32558,8 +32558,8 @@
   "jp": "記録をつけましたわ！\n次は宿泊のほうも　ご利用のほど\nよろしく　お願いしますね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved! Next time, please stay the night with us too!"
    }
   ]
  },
@@ -33102,8 +33102,8 @@
   "jp": "京都に　{k}ヘン{h}な外人が\n住みついたらしいわよ{12}\n誰かれかまわず　{k}マイフレンド{h}って\n話しかけてくるんですって｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I hear some strange foreigner has settled down in Kyoto."
    },
    {
     "ds": "wc2/wcb1.scs#1@0",
@@ -33514,8 +33514,8 @@
   "jp": "{0C}{10}２ただ今　特別{k}ゲスト！\n斬{h}られ役の　火の勇者の諸君が\n到着しました｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "And now, our special guests! The Fire Heroes, here to play the ones who get cut down!"
    }
   ]
  },
@@ -33834,8 +33834,8 @@
   "jp": "{0C}{10}１３０なんだ　{11}１８鬼骨城を倒したというから\nどんな　すごい奴かと思ったら\n{11}１５小汚い　田舎者じゃないか！",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "What? I heard you beat Onikotsu Castle, so I expected someone amazing, but you're just a grubby country bumpkin!"
    }
   ]
  },
@@ -33882,8 +33882,8 @@
   "jp": "{10}１３１{0C}根の一族　{11}１０最{11}１強{11}１にして　{11}２０最高の{11}１美男子！\n{10}１３０{11}１８愛と{11}１美の{11}１戦士｜\n{11}２２{k}ピンク{h}の竜巻　{11}３５菊{11}１五{11}１郎{11}１様{11}２０その人だ！",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The Root Clan's strongest and most handsome man! The warrior of love and beauty! The Pink Tornado, the great Kikugoro himself!"
    }
   ]
  },
@@ -34590,8 +34590,8 @@
   "jp": "卍丸さんが　取り戻した聖剣で\n伊勢神宮の暗黒{k}ラン{h}を\n{k}バッサリ　{h}やっちゃってくださいね｜｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc6/wce0.scs#13@0 1.00",
+    "en": "Use the Holy Sword you took back, Manjimaru, and chop that Dark Orchid at Ise Shrine to bits!"
    }
   ]
  },
@@ -34722,8 +34722,8 @@
     "en": "What?! The people who were carried off were made to watch Kikugoro's stage shows every day?!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc6/wcb8.scs#1@0 1.00",
+    "en": "Hmm... They might've been better off dead.{0012}"
    }
   ]
  },
@@ -34894,16 +34894,16 @@
   "jp": "京都に　{k}ヘン{h}な外人が\n住みついたって　もっぱらの噂だぜ{12}\nその外人さん　京都の名物に\nなっちまって　観光客の投げてくる\n食べ物を食って　生活してんだとよ{12}\n動物だな　まるで{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Word is a weird foreigner's settled down in Kyoto."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc6/wcec.scs#1@0 0.95",
+    "en": "Seems he's become one of Kyoto's sights, and he lives on the food tourists toss him!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Like an animal, really."
    }
   ]
  },
@@ -35002,12 +35002,12 @@
   "jp": "ほえ～　あんたらが\n火の一族やったんか…\nわて　ひとつ　勉強さしてもろたわ{12}\n大事を成す者ちゅうのは　一見\n{k}アホ{h}に見えるもんなんやなあ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc6/wcr2.scs#1@0 1.00",
+    "en": "Well, I'll be! So you folks were the Fire Clan... Learned somethin' today."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "So the ones who do great things look like fools at first glance, huh..."
    }
   ]
  },
@@ -36558,8 +36558,8 @@
   "jp": "{0C}{10}１３０その残酷なまでの　強さの対比を{11}２０\n{10}１２９思う存分　ご賞味ください｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Savor to your heart's content the cruel contrast in strength!"
    }
   ]
  },
@@ -36582,8 +36582,8 @@
   "jp": "{0C}{10}２ご来演の皆様｜\n長らく　お待たせいたしました｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Ladies and gentlemen! Thank you for waiting so long!"
    }
   ]
  },
@@ -36594,8 +36594,8 @@
   "jp": "{0C}{10}２ただ今　特別{k}ゲスト｜\n切{h}られ役の　火の勇者の諸君が\n到着しました｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "And now, our special guests! The Fire Heroes, here to play the ones who get cut down!"
    }
   ]
  },
@@ -36606,8 +36606,8 @@
   "jp": "ほら　あんたも　拍手しないと\n殺されるよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Come on, you'd better clap too, or they'll kill you!"
    }
   ]
  },
@@ -36618,8 +36618,8 @@
   "jp": "{0C}卍丸の武具袋がいっぱいだ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Manjimaru's gear bag is full!"
    }
   ]
  },
@@ -36654,8 +36654,8 @@
   "jp": "{0C}{10}１３０よし｜\n{11}２０俺の編み出した　{11}２０黒羽斬りを\n{11}２０おまえにやろう｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc3/wco4.scs#3@0 0.98",
+    "en": "Good! I'll give you the Kuroha Slash, which I devised myself!"
    }
   ]
  },
@@ -36666,8 +36666,8 @@
   "jp": "{0C}{10}１３０黒羽斬りは　一度　使うと　{11}２０しばらく\n{11}２０動けなくなるほど　体力を消耗するが\n{11}４０敵に　{11}３０大きな痛手を　{11}２０負わせる技だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc3/wco4.scs#4@0 0.99",
+    "en": "Kuroha Slash drains you so much you can't move for a while after using it, but it deals a crushing blow to the enemy!"
    }
   ]
  },
@@ -36702,8 +36702,8 @@
   "jp": "{0C}{10}１３０剣法　黒羽斬を身につけた｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Learned the sword art Kuroha Slash!"
    }
   ]
  },
@@ -36726,8 +36726,8 @@
   "jp": "{1E}両を手に入れた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/usrf.scs#0@0 0.92",
+    "en": "obtained!"
    }
   ]
  },
@@ -36738,8 +36738,8 @@
   "jp": "を手に入れた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/usrf.scs#0@0 1.00",
+    "en": "obtained!"
    }
   ]
  },
@@ -36750,8 +36750,8 @@
   "jp": "を見つけた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc2/takara.scs#3@0 1.00",
+    "en": "found!"
    }
   ]
  },
@@ -37170,8 +37170,8 @@
   "jp": "う～む　異形の像とは　{k}イヒカ{h}が\n建てたものじゃったのか{12}\nわしは　安産祈願の仏像だとばかり\n思っとったが　ちがったわい{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wd1/wdb0.scs#13@0 1.00",
+    "en": "Hmm, so the strange statues were made by the Ihika..."
    },
    {
     "ds": "wd1/wdb0.scs#14@0",
@@ -37510,8 +37510,8 @@
     "en": "The Negoro Tomb lies west of Iga Village. Fly there in the stone boat, and you will surely, surely reach it!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "wd1/wcp0.scs#10@0",
@@ -37586,8 +37586,8 @@
   "jp": "あたし　もう　死んじゃいたい…\n父ちゃんも　母ちゃんも…\nうぅぅぅ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I just want to die... Dad, Mom... *sob*..."
    }
   ]
  },
@@ -38274,8 +38274,8 @@
     "en": "Right on top of the castle, two performers put on a grand play of monsters and shapeshifting!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wd1/wdf1.scs#6@0 1.00",
+    "en": "Oh, how I'd have loved to see it!{0012}"
    }
   ]
  },
@@ -38306,8 +38306,8 @@
   "jp": "う～ん　う～ん…\nわしは　銅鐸なぞ…　知らん…\nもう　許してくれーーーーーー｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wd1/wdf3.scs#0@0 1.00",
+    "en": "Nngh... nngh... I don't know anything... about Bronze Bells... Please, let me goooooo!{0012}"
    }
   ]
  },
@@ -38330,8 +38330,8 @@
   "jp": "主人は　根の一族に　ひどい拷問を\n受けたらしく　背中に　菊五郎偉いと\n焼け火ばしの跡が　あるのです{12}\n根の一族は　紀伊に隠されてるという\n銅鐸を　探しているそうです{12}\n銅鐸のありかを　聞くため　この地方で\n一番の年寄りの主人を　さらって\nこんな　ひどいことを…{k}ウッウッ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It seems the Root Clan tortured my husband horribly. They branded \"Kikugoro is great\" on his back with a red-hot poker."
    },
    {
     "ds": "wd1/wdf3.scs#3@0",
@@ -41518,8 +41518,8 @@
   "jp": "{0C}{10}１３０今日は　僕と君の　格の違いってのを\n見せてあげようと　思って\nわざわざ　招待したのさ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Today I invited you here specially to show you the difference in class between you and me."
    }
   ]
  },
@@ -41554,8 +41554,8 @@
   "jp": "{0C}{10}１３０僕が　負けたら…\n{11}６０そんなこと　ありえないけどね\n高野山の　山門の{k}カギ{h}を　やろう",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "If I lose... not that it could ever happen... I'll give you the Temple Gate Key of Mount Koya."
    }
   ]
  },
@@ -41746,8 +41746,8 @@
   "jp": "{0C}{10}１３０く…くそ～｜　{11}１０だが文化遺産は\n攻撃できまい｜　{11}３０五重の{11}２塔だ｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Gr... grr! But you can't attack a cultural treasure! Behold, the Five-Story Pagoda!"
    }
   ]
  },
@@ -41770,8 +41770,8 @@
   "jp": "{0C}{10}１３０おのれ～｜　{11}２５そんなものな{11}５０\n龍が　からみついてな{11}１０\nねじ曲げて　くれるわ｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Curse you! A dragon will coil around that thing and twist it apart!"
    }
   ]
  },
@@ -41842,8 +41842,8 @@
   "jp": "{0C}山門の{k}カギ{h}を手に入れた｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Got the Temple Gate Key!"
    }
   ]
  },
@@ -43466,8 +43466,8 @@
   "jp": "{0C}{1B}本目まで　切った{k}アルヨ\n残{h}り　あと　{1B}本｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I cut through ￥Ｄ of them, aru yo! Only ￥Ｄ left!"
    }
   ]
  },
@@ -43730,8 +43730,8 @@
     "en": "Tch! The shrines and temples humans build are no use at all!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we1/weh0.scs#19@0 0.93",
+    "en": "And the priests are all talk! They couldn't protect the people of Kyoto, could they?!{0012}"
    }
   ]
  },
@@ -44286,8 +44286,8 @@
   "jp": "おいら　京都で　けったいな\n外人さんを　見てきちった！{12}\nみすぼらしい{k}カッコ{h}して\n{k}ギブミーフード{h}って　言ってたから\n{k}ウメボシ{h}を　あげたんだ{12}\n一口食べて　大騒ぎしてたよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we1/ucq0.scs#15@0 0.98",
+    "en": "I saw a really weird foreigner in Kyoto!"
    },
    {
     "ds": "we1/ucq0.scs#16@0",
@@ -45110,8 +45110,8 @@
   "jp": "京都にいた　外人さん\nあんたの友だちだったのかい？\n火の一族って　顔が広いな{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we1/ucq1.scs#5@0 0.95",
+    "en": "That foreigner in Kyoto was a friend of yours? You Fire Clan folks sure know a lot of people!"
    }
   ]
  },
@@ -45126,8 +45126,8 @@
     "en": "Hello, small boy!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we1/ucq1.scs#7@0 0.96",
+    "en": "Oh, nothing. Word is a foreigner's come to Kyoto, and I want to meet him, so I'm studying English conversation!{0012}"
    }
   ]
  },
@@ -45518,8 +45518,8 @@
   "jp": "確かに記録したでござる\n安心して　お体をお休めください{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Please rest easy."
    }
   ]
  },
@@ -45566,8 +45566,8 @@
   "jp": "確かに記録したでござる\nまた　いつでも　お立ち寄りくだされ\nお待ちしておりますぞ！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Do stop by again anytime! We'll be waiting for you!"
    }
   ]
  },
@@ -45618,8 +45618,8 @@
   "jp": "確かに記録したでござる\n必ずや　根の一族を倒し\n{k}ヨミ{h}を打ち破ってくだされ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Be sure to defeat the Root Clan and crush Yomi!"
    }
   ]
  },
@@ -45822,8 +45822,8 @@
     "en": "Why, if it isn't Manjimaru! I'm from Ise. Thank you for your help back then.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/wec0.scs#22@0 1.00",
+    "en": "I came to Kyoto first thing, but it's so big it amazed me!{0012}"
    },
    {
     "ds": "we2/wec0.scs#23@0",
@@ -45838,8 +45838,8 @@
   "jp": "ほえ～　京都は　見るもの見るもの\nみんな　目新しいのう｜\n壮大な建物｜　きらびやかな人々｜{12}\nほんに　ここは　とこしえの\n楽園のようじゃ｜　ちっぽけな\nわしの村とは　大ちがいじゃよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/wec0.scs#24@0 1.00",
+    "en": "Whoa! Everything I see in Kyoto is so new! Grand buildings! Dazzling people!"
    },
    {
     "ds": "we2/wec0.scs#25@0",
@@ -46030,8 +46030,8 @@
   "jp": "いや～　足下さんは　素晴らしい｜{12}\nあの　商魂のたくましさ｜\n金こそ正義という　揺るぎなき信念｜\n{k}ダマ{h}して　もうけろという　気迫｜{12}\n私も　商売人として　見習うところが\n多々　ありますよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/wee0.scs#17@0 1.00",
+    "en": "Ah, the Ashimotos are marvelous!"
    },
    {
     "ds": "we2/wee0.scs#18@0",
@@ -46470,12 +46470,12 @@
   "jp": "ここにはね　とても　面白い\n外人さんが　いるんだよ\n{k}ホテイ丸{h}ったっけな{12}\nみんなから　着物や　食べものを\nもらって　すっかり　ここの住人さ\n外人のくせに　なかなか見所あるぜ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/weg0.scs#15@0 0.95",
+    "en": "There's a really funny foreigner here. Hoteimaru, I think his name was."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/weg0.scs#16@0 0.99",
+    "en": "Everybody gave him clothes and food, and now he's one of us! For a foreigner, he's got something to him!{0012}"
    }
   ]
  },
@@ -46966,12 +46966,12 @@
   "jp": "{0C}杉本：うー　{k}バイク{h}に乗りたいよ～\n早く春にならないかな…{12}\n北海道の冬は、雪が降って\n乗れないんだよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Sugimoto: Ugh, I want to ride my motorbike... I wish spring would hurry up..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "In Hokkaido it snows all winter, so I can't ride."
    }
   ]
  },
@@ -46982,8 +46982,8 @@
   "jp": "{0C}ところで　話しに\nつきあってもらったお礼に\nこれをあげよう！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "By the way, as thanks for chatting with me, I'll give you this!"
    }
   ]
  },
@@ -47510,8 +47510,8 @@
     "en": "A human-faced flower called the Dark Orchid has appeared in Takayama, where the Tycoon is staying!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Is it a bid for the next big boom after the human-faced fish, to put the village on the map?"
    },
    {
     "ds": "we2/veec.scs#8@0",
@@ -47578,8 +47578,8 @@
     "en": "The pink tornado flying around Ise Province is really Kikugoro, a show-off punk!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "He seems to be a former bodyguard of Pink Lady. Industry insiders say he was a rabid fan of Kei (Keiko Masuda) in particular."
    }
   ]
  },
@@ -48926,8 +48926,8 @@
     "en": "Ah... ah... ACHOO!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we2/veg6.scs#1@0 1.00",
+    "en": "Well, I was starving, so I ate my clothes. But it's cold after all.{0012}"
    }
   ]
  },
@@ -48962,8 +48962,8 @@
   "jp": "{10}０\n　米　　{1B}　両　{1B}　両　{1B}　両",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " Rice   ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
    }
   ]
  },
@@ -48974,8 +48974,8 @@
   "jp": "{10}０\n　麦　　{1B}　両　{1B}　両　{1B}　両",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " Wheat  ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
    }
   ]
  },
@@ -48986,8 +48986,8 @@
   "jp": "{10}０\n　豆　　{1B}　両　{1B}　両　{1B}　両",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " Beans  ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo"
    }
   ]
  },
@@ -48998,8 +48998,8 @@
   "jp": "{10}０\n　塩　　{1B}　両　{1B}　両　{1B}　両\n{10}０\n　{01}買う　　{01}売る　　{01}やめる　　{01}説明",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": " Salt   ￥Ｄ Ryo  ￥Ｄ Ryo  ￥Ｄ Ryo\n {0001}Buy    {0001}Sell    {0001}Exit    {0001}Info"
    }
   ]
  },
@@ -49222,8 +49222,8 @@
     "en": "Winning numbers: First prize, 34{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we3/wec0.scs#1@0 1.00",
+    "en": "Second prize: 29, 65\nThird prize: 85, 46, 71\nFourth prize: 50, 38, 33{0012}"
    },
    {
     "ds": "we3/wec0.scs#2@0",
@@ -49714,8 +49714,8 @@
   "jp": "{k}ハッピ　ヌー　ヤー｜\n{h}どーでぇ？　外人みたいだろ？\n{k}ホテイ丸{h}に　教えてもらったんだよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we3/weg0.scs#12@0 0.97",
+    "en": "Happy Noo Yeah! How's that? Sound like a foreigner, right? Hoteimaru taught me!"
    }
   ]
  },
@@ -49890,8 +49890,8 @@
   "jp": "{0C}{1B}両分の幸が　あなたに\n訪れますように｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we3/vec2.scs#3@0 0.94",
+    "en": "May  Ryo worth of good fortune come your way!"
    }
   ]
  },
@@ -49914,8 +49914,8 @@
   "jp": "{0C}あなたには　見えなかったでしょうが\n今　{1B}両分の幸が　あなたから\n去りました　ご愁傷さま…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we3/vec2.scs#6@0 0.97",
+    "en": "You couldn't see it, but  Ryo worth of good fortune just left you. My condolences..."
    }
   ]
  },
@@ -50322,8 +50322,8 @@
   "jp": "一富士　二鷹　三…　なんだっけ♀\nう～んと　う～んと　三{k}カルビ…\n{h}ちょっと　ちがう気が　するなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we3/vec7.scs#2@0 1.00",
+    "en": "First, Mt. Fuji... second, a hawk... third... what was it?! Um, um... third, short ribs... That doesn't sound right."
    }
   ]
  },
@@ -51382,8 +51382,8 @@
   "jp": "え～ん　え～ん\n迷子に　なっちゃった{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/wec0.scs#10@0 1.00",
+    "en": "Waaah... waaah... I'm lost..."
    }
   ]
  },
@@ -51498,8 +51498,8 @@
   "jp": "この外人　私に\n{k}ハウマッチ{h}なんて　聞くのよ\n一体　何のことかしら？{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "This foreigner asked me \"How much?\" What on earth does that mean?"
    }
   ]
  },
@@ -51546,8 +51546,8 @@
   "jp": "ぶふー　さっきから\nこの外人さんに　力くらべを\nせがまれて　困っとるとですよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/wee0.scs#12@0 0.99",
+    "en": "Phew... This foreigner's been begging me for a test of strength this whole time. What a bother."
    }
   ]
  },
@@ -51630,8 +51630,8 @@
   "jp": "　　　－－－－手配書－－－－\n　　　売国奴　{k}デューク・ペペ\n　　　賞金　１００００両{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/act125.scs#0@0 1.00",
+    "en": "---- WANTED ----\n  Traitor: Duke Pepe\n  Reward: 10,000 ryo{0012}"
    }
   ]
  },
@@ -51734,8 +51734,8 @@
   "jp": "うわー　お兄ちゃん　火の一族だろ？\nかっちょええなあ～！　おいらも\n大きくなったら　仲間に入れとくれよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/wef0.scs#9@0 1.00",
+    "en": "Whoa, mister, you're Fire Clan, right? So cool! When I grow up, let me join your gang!"
    }
   ]
  },
@@ -51786,8 +51786,8 @@
   "jp": "こないだまで　寺社町で　坊主を\nやっとったんじゃがのぉ\nつくづく　{k}イヤ{h}になってしもてのぉ{12}\n他の寺や神社と　競争して\n毎日が　金や信者の奪い合い！\n実のない説教ばかり　うまくなった…{12}\nここには　「生きてる」という実感が\n文字通り　くさるほどに　あるのじゃ｜\nこれこそが　究極の悟りなのじゃ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/weg0.scs#2@0 0.95",
+    "en": "Until recently I was a priest in the temple district, but I got thoroughly sick of it."
    },
    {
     "ds": "we4/weg0.scs#3@0",
@@ -52006,8 +52006,8 @@
   "jp": "あ～あ　今日も　ぞうきん掛け\n１０往復か…\n見習い坊主は　つらいよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Sigh... ten trips mopping the floors again today... Life as an apprentice monk is hard."
    }
   ]
  },
@@ -52178,8 +52178,8 @@
     "en": "I gave the temple a whole 500 ryo in offerings, you see.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/vec6.scs#2@0 0.91",
+    "en": "Even if everyone else dies, I'll be just fine! Wahahaha!{0012}"
    }
   ]
  },
@@ -52206,8 +52206,8 @@
     "en": "2. The everyday wisdom that monjayaki tastes better when three people eat it together.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Well, which is it?\n{0001}1   {0001}2"
    }
   ]
  },
@@ -52450,8 +52450,8 @@
     "en": "Its fighting power, which wiped out the army of Himeji Castle, is fearsome enough, but...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we4/veec.scs#55@0 0.91",
+    "en": "...even worse, what seems to be the crew's sewage raining down from the sky has plunged residents into despair!{0012}"
    }
   ]
  },
@@ -53394,8 +53394,8 @@
   "jp": "卍丸は　宝物庫の{k}カギ{h}で\n扉を開けた！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Manjimaru opened the door with the Treasury Key!"
    }
   ]
  },
@@ -54066,8 +54066,8 @@
     "en": "Huh? Is that Gokuraku Taro of the Fire Clan, the one who was in Echizen?!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wf1/wfa0.scs#26@0 1.00",
+    "en": "Wow, he looks strong, just like I thought! I heard all about how he fought like a lion at Genmu Castle!{0012}"
    },
    {
     "ds": "wf1/wfa0.scs#27@0",
@@ -54494,8 +54494,8 @@
   "jp": "{k}シクシク…　{h}もし　わたしに…\nあなたみたいな力が　あったら…\n根の一族を　ひとり残らず　殺すわ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wf1/vfa6.scs#9@0 0.97",
+    "en": "*sniff*... If only I... had power like yours... I'd destroy the Root Clan, every last one of them..."
    }
   ]
  },
@@ -54654,8 +54654,8 @@
     "en": "Like a giant snake rearing its head, smashing through the ground and racing along like crazy!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wf1/wfj0.scs#15@0 1.00",
+    "en": "Whew, I almost got swallowed into a crack in the ground! Never been so scared in my life!{0012}"
    }
   ]
  },
@@ -54758,8 +54758,8 @@
     "en": "That skirt-chasing creep even tried to sweet-talk my wife, so I dumped a bucket of manure on him and ran him off!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wf1/vfj2.scs#3@0 0.96",
+    "en": "I want the Root Clan wiped out, sure, but get rid of pests like him first!{0012}"
    }
   ]
  },
@@ -56790,8 +56790,8 @@
   "jp": "{0C}{16}{08}剣の攻撃力が　{1B}になった｜\n{08}卍丸の体力が　{1B}｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Sword attack is now ￥Ｄ!\nManjimaru's HP: ￥Ｄ!"
    }
   ]
  },
@@ -58210,8 +58210,8 @@
   "jp": "坊主がいくら　祈っても　無駄だ！\n自らの手で　戦おうとしない者が\n根の一族を　倒せるもんか{12}\nまっ　俺も人のこと　言えねえがよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg1/wga0.scs#15@0 0.95",
+    "en": "No matter how much the monks pray, it's no use! People who won't fight with their own hands can't beat the Root Clan!"
    },
    {
     "ds": "wg1/wga0.scs#16@0",
@@ -58350,8 +58350,8 @@
     "en": "{000C}When the Dark Orchid bloomed, a woman calling herself Princess Hamaguri came out from inside the flower.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg1/vga2.scs#1@0 0.96",
+    "en": "Then five strange monks appeared out of nowhere and flew off with Princess Hamaguri...{0012}"
    },
    {
     "ds": "wg1/vga2.scs#2@0",
@@ -58494,8 +58494,8 @@
   "jp": "う～ん　う～ん　あの花じゃ…\nあの花が咲いてから　体の具合が\n日に日に　悪くなっていく…{12}\nなにか…　花に　精気を　吸われとる\n気がするんじゃ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg1/vga4.scs#0@0 1.00",
+    "en": "Nngh... nngh... that flower... Ever since that flower bloomed, I've been getting sicker by the day...{0012}"
    },
    {
     "ds": "wg1/vga4.scs#1@0",
@@ -59318,8 +59318,8 @@
     "en": "A human and a mermaid, after all... \"Love conquers all\" isn't that simple...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "wg1/vgb3.scs#16@0",
@@ -59714,8 +59714,8 @@
   "jp": "その巻物に使用する技は\nすでに　０です！\n他の巻物を　選んでください{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "That scroll's technique cost is already 0! Please choose another scroll."
    }
   ]
  },
@@ -60826,8 +60826,8 @@
   "jp": "{0C}おっし｜　その件は\n俺様ひとりに　まかせろ｜\nすぐに　片{10}１３２つけてきてやるぜ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg2/vfs12.scs#19@0 0.97",
+    "en": "All right! Leave that job to me alone! I'll wrap it up in no time!"
    }
   ]
  },
@@ -61034,8 +61034,8 @@
   "jp": "都合により　見世物小屋は閉店しました\n　　　　　　　　　　　－足下興業－{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The sideshow is closed until further notice. -Ashimoto Shows-"
    }
   ]
  },
@@ -61098,8 +61098,8 @@
   "jp": "{0C}今度は　たーぼれんぢゃーの\n{k}アクションショー\n{h}やってくんないかなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Next time I hope they put on a Turbo Rangah action show!"
    }
   ]
  },
@@ -61922,8 +61922,8 @@
   "jp": "ここまで見せる？　超過激人魚{k}ショー\n悩殺　美女人魚{h}が　貴男に{k}サービス｜\n只今　絶賛開催中　　　－足下興業－{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg6/wgd0.scs#1@0 1.00",
+    "en": "\"You'll see THIS much?! Ultra-Daring Mermaid Show!\nA bewitching mermaid beauty serves YOU!\nNow playing! -Ashimoto Shows-\""
    }
   ]
  },
@@ -61934,8 +61934,8 @@
   "jp": "果たして　人か｜　魚か｜\n大{k}スペクタクル人魚ショー近日公開｜\n　　　　　　　　　　　－足下興業－{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg6/wgd0.scs#2@0 1.00",
+    "en": "\"Is she human? Is she fish?\nSpectacular Mermaid Show, coming soon!\n-Ashimoto Shows-\""
    }
   ]
  },
@@ -61962,8 +61962,8 @@
   "jp": "{0C}あ～ん　早く　人魚さん\n見てみたいなー{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg6/wgd0.scs#9@0 1.00",
+    "en": "Aww, I can't wait to see the mermaid lady!"
    }
   ]
  },
@@ -62354,8 +62354,8 @@
   "jp": "卍丸様　大丈夫ですかー！　　　　\n今　お助けいたしまーす！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wg6/vgd1.scs#24@0 1.00",
+    "en": "Lord Manjimaru, are you all right?! I'm coming to save you!"
    }
   ]
  },
@@ -63642,8 +63642,8 @@
   "jp": "{0C}　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　\n{0C}まあ　いいや！\n{11}１０もう　千年も昔のことだ\n忘れちまった{k}ゼ｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Oh, never mind! That was a thousand years ago. I've forgotten all about it!"
    }
   ]
  },
@@ -64046,8 +64046,8 @@
   "jp": "\n{1A}へ{1B}歩　{1A}へ{1B}歩と\n表示されている{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It reads: \"￥Ｓ: ￥Ｄ steps. ￥Ｓ: ￥Ｄ steps.\""
    }
   ]
  },
@@ -64362,8 +64362,8 @@
   "jp": "あんたも　{k}カブキ{h}さんと同じ\n火の勇者かね？　根の一族さ　必ず\nぶっ殺してくれるとね？{12}\n約束できるんか♀\nほんま　約束してもらえるんか♀",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wh1/whb0.scs#16@0 0.97",
+    "en": "Are ye a Hero of Fire too, like Mister Kabuki? Will ye truly smash the Root Clan for us?"
    },
    {
     "ds": "wh1/whb0.scs#17@0",
@@ -65602,8 +65602,8 @@
   "jp": "なにが{k}シンドバッド{h}だか…\nあの子の　本名　馬鹿盆ってんですよ\n変な名でしょ　親が言うのも何ですが{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wh1/vgn3f2.scs#5@0 0.93",
+    "en": "Sinbad, my foot... His real name's Damemaru. A funny name, isn't it, if I do say so as his mother."
    }
   ]
  },
@@ -65614,8 +65614,8 @@
   "jp": "こら馬鹿盆！　わけわかんないこと\n言ってると　晩{k}メシ　抜{h}きだよ！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hey, you dummy Bakabon! Keep talking nonsense and there's no supper for you!"
    }
   ]
  },
@@ -65710,8 +65710,8 @@
   "jp": "ほえ～　おまえさんが　幻夢城を\n倒したのかい♀\nそれはそれは　驚いたわい｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wh1/vgn4.scs#7@0 1.00",
+    "en": "Ohh, you defeated Genmu Castle?! Well, well, what a surprise!"
    }
   ]
  },
@@ -66754,8 +66754,8 @@
   "jp": "卍丸様…　{11}３０流れ星が　消える前に\nお祈りをすると　{11}３０願いごとが叶うって\n言い伝え　{11}３０知ってますか{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wh2/vhd140.scs#3@0 0.97",
+    "en": "Lord Manjimaru... Do you know the old saying, that if you pray before a shooting star fades, your wish will come true?"
    }
   ]
  },
@@ -66790,8 +66790,8 @@
   "jp": "俺の祈りは　{11}３０よく通じるんだぜ{k}ェェ！",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wh2/vhd140.scs#6@0 1.00",
+    "en": "My prayers always get through, y'knoooow!!"
    }
   ]
  },
@@ -67538,8 +67538,8 @@
   "jp": "これだよ｜　　　　\nお姉は　{k}カッ{h}となると　みさかいが",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "This! When my big sister loses her temper, she"
    }
   ]
  },
@@ -67550,8 +67550,8 @@
   "jp": "\nつかなくなるから　こわいよな…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "can't tell right from wrong anymore. Scary..."
    }
   ]
  },
@@ -67726,8 +67726,8 @@
   "jp": "殿の喜ぶ姿を\n見くだされ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Behold our lord's joy!"
    }
   ]
  },
@@ -67886,8 +67886,8 @@
   "jp": "宇{08}奈{08}宇{08}奈{08}月{08}洞",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Unazuki Cave"
    }
   ]
  },
@@ -68114,8 +68114,8 @@
   "jp": "達者でな！",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Take care!"
    }
   ]
  },
@@ -68318,8 +68318,8 @@
   "jp": "今　鉱夫の募集してんのさ\nなかなか　ああいう　{k}キツ{h}い仕事を\nしてくれる　若者がいなくてなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xia0.scs#14@0 0.93",
+    "en": "We're looking for mine workers right now. Not many young folks will do that kind of hard work."
    }
   ]
  },
@@ -68330,8 +68330,8 @@
   "jp": "{k}ドンデン山{h}が　根の一族に\n占拠されちまったんだってな｜\nいや～　俺　勧誘係でよかったわ{12}\n佐渡にいたら　それこそ　地獄に\n勧誘されてたかもしれねえもんな｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xia0.scs#15@0 1.00",
+    "en": "I hear the Root Clan's taken over Mt. Donden! Boy, am I glad I'm just the recruiter."
    },
    {
     "ds": "xi1/xia0.scs#16@0",
@@ -68602,8 +68602,8 @@
   "jp": "………………………………………{12}\n{k}ゾバ{h}んちょーー｜　{k}ダダ{h}んちょ！\n{k}ズビ{h}ら　ぷっぷ　ぷーーしゃ…{12}\n{k}ゲゲラ{h}どーみゃ…　{k}ドゲラ{h}げーみゃ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "xi1/via3.scs#5@0",
@@ -68830,8 +68830,8 @@
   "jp": "はいはい　{k}ミノ職人{h}の　もんたです\nおや　あんた　さっき来た\nえ～と　お名前は　卍丸さん｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/via4.scs#3@0 1.00",
+    "en": "Yes, yes, I'm Monta the straw-cape maker. Oh, you came by earlier. Er, your name was... Manjimaru!"
    }
   ]
  },
@@ -69674,8 +69674,8 @@
     "en": "What?! The apothecary's medicine actually worked and cured Mister Denjiro?!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/via8.scs#8@0 1.00",
+    "en": "Hmm, I bet that was a case of fighting poison with poison!{0012}"
    }
   ]
  },
@@ -69774,8 +69774,8 @@
     "en": "Over on Sado there's a big gold mine called Mt. Donden.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xib0.scs#6@0 0.92",
+    "en": "When it's season work, folks from this village go off to the mine too, but it's winter now, so it's the off season.{0012}"
    }
   ]
  },
@@ -70342,8 +70342,8 @@
     "en": "Hey, hey! The Root Clan kidnaps pretty girls, right?!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/vib4.scs#1@0 1.00",
+    "en": "Then I bet they've got their eye on me! Eek, how scary! What'll I do?!{0012}"
    }
   ]
  },
@@ -70506,8 +70506,8 @@
   "jp": "いやー　驚れえただ｜\nさっき　{k}ヘン{h}な頭した　坊主が二人\n岩に乗って　飛んできただよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Whoa, what a fright! Just now two monks with funny heads came flying by on a rock!"
    }
   ]
  },
@@ -70542,8 +70542,8 @@
   "jp": "岩に乗った坊主が　{k}ドンデン山{h}から\n飛び去っていっただよ\n幻夢城に　戻ったんじゃねぇだか？{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#3@0 0.96",
+    "en": "A monk riding a rock flew off from Mt. Donden. Reckon he went back to Genmu Castle?"
    }
   ]
  },
@@ -70566,8 +70566,8 @@
   "jp": "{0C}あの　岩に乗った　坊主たちにとって\nはまぐり姫は　仏だったのかも\nしれねえだな{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#5@0 0.96",
+    "en": "To those monks on their rocks, maybe Princess Hamaguri was their Buddha."
    }
   ]
  },
@@ -70578,8 +70578,8 @@
   "jp": "浄土だろうが　女だろうが\n坊主っちゅうのは　ありもしねえ\n幻を　追っかけとるもんだなや{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#6@0 0.96",
+    "en": "Be it paradise or a woman, monks are always chasing after illusions that aren't even there."
    }
   ]
  },
@@ -70694,8 +70694,8 @@
   "jp": "あんた　{k}トロッコ　動{h}かせるかい？\nそのくらい　できないと\n一人前の鉱夫に　なれないよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#17@0 0.96",
+    "en": "Can you work a mine cart? If you can't do at least that, you'll never be a real man."
    }
   ]
  },
@@ -70706,8 +70706,8 @@
   "jp": "あんた　鉱夫になりたいんじゃ\nなかったのかい｜　見所があると\n思ってたのに　残念だよ{12}\nでもまあ　あんたは\nあんたの道で　がんばりなさい{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#18@0 0.95",
+    "en": "You didn't want to be a miner?! I thought you showed promise, too. Shame."
    },
    {
     "ds": "xi1/xie0.scs#19@0",
@@ -70790,8 +70790,8 @@
   "jp": "門を開けたとたんに　中から\n鉱夫たちが　逃げ出てきおったんです{12}\nよほど　中で　恐しい目に\nあっていたんでしょうな\n悪いことを　してしまいました{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#27@0 0.95",
+    "en": "The moment I opened the gate, the men came running out from inside."
    },
    {
     "ds": "xi1/xie0.scs#28@0",
@@ -70930,8 +70930,8 @@
     "en": "I see... So you're Fire Clan...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi1/xie0.scs#40@0 0.94",
+    "en": "Things even us brawny miners can't do, you pull off like it's nothing.{0012}"
    }
   ]
  },
@@ -71666,8 +71666,8 @@
   "jp": "抗夫の腹巻を　見つけた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Found a Miner's Belly Guard!"
    }
   ]
  },
@@ -71882,8 +71882,8 @@
   "jp": "照照妙の金を　見つけた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xi2/vif3.scs#1@0 0.95",
+    "en": "Found the Shomyo Gold!"
    }
   ]
  },
@@ -72174,8 +72174,8 @@
   "jp": "ちょっと　いや　助けてーーーーー｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hey, no! Heeeelp!"
    }
   ]
  },
@@ -72210,8 +72210,8 @@
   "jp": "{k}ワンワンワンワンワンワンワンワン！",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj1/xjb0.scs#17@0 0.93",
+    "en": "Woof?\n\nWoof woof woof woof woof woof!"
    }
   ]
  },
@@ -72618,8 +72618,8 @@
   "jp": "きゃあ　助けて！　お兄ちゃーーん｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Eek, help! Big brotherrrr!"
    }
   ]
  },
@@ -72654,8 +72654,8 @@
   "jp": "うぎゃああああああああああああ｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Ugyaaaaaaaaaaaah!"
    }
   ]
  },
@@ -73286,8 +73286,8 @@
   "jp": "卍丸殿！\n北の砂塵城の将軍は　夫婦者の化物！\nさらに　聞き及ぶところによると…{12}\n戦いの主導権は　女のほうが\n握っているらしいですぞ！\nまずは　女をたたくのが　上策では{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Lord Manjimaru! The general of Sajin Castle to the north is a monster couple! And from what I hear..."
    },
    {
     "ds": "xj1/xjk0.scs#1@0",
@@ -73554,8 +73554,8 @@
   "jp": "う～ん　う～ん…\n流砂に　引きこまれる…\n砂神城には　とても　近づけねぇ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj1/vjb6.scs#3@0 1.00",
+    "en": "Uuugh... uuugh... The quicksand's pulling me in... Can't get anywhere near Sand God Castle..."
    }
   ]
  },
@@ -74146,8 +74146,8 @@
   "jp": "{0C}確かに記録したでござる\n安心して　お体をお休めください{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Please rest easy."
    }
   ]
  },
@@ -74194,8 +74194,8 @@
   "jp": "{0C}確かに記録したでござる\n",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved."
    }
   ]
  },
@@ -74530,8 +74530,8 @@
   "jp": "物を　見つけた！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc2/takara.scs#3@0 0.91",
+    "en": "found!"
    }
   ]
  },
@@ -74542,8 +74542,8 @@
   "jp": "{10}１３０{0C}晒を　見つけた！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc2/takara.scs#3@0 0.91",
+    "en": "found!"
    }
   ]
  },
@@ -74850,8 +74850,8 @@
   "jp": "「近日中に　かわいい花嫁　三人を\n　差し出さぬと　村の者を皆殺しにする\n　－世界最強の　馬鹿野城城主－」{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj3/xji0.scs#0@0 0.94",
+    "en": "Shikano\nVillage\n\n\"Hand over three pretty brides soon, or I'll kill everyone in the village.\n-The World's Strongest Lord of Umashikano Castle-\""
    }
   ]
  },
@@ -75106,8 +75106,8 @@
   "jp": "卍丸殿！\n砂塵城の残党　{k}デューク・ペペ{h}は\n南の丹波国へ　逃れたようですぞ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Lord Manjimaru! Duke Pepe, the last of Sajin Castle, seems to have fled south to Tanba Province."
    }
   ]
  },
@@ -76062,8 +76062,8 @@
   "jp": "酒樽がある\nしかし中はからっぽだった{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj4/vjp0.scs#1@0 0.97",
+    "en": "There's a barrel. But it's empty."
    }
   ]
  },
@@ -76074,8 +76074,8 @@
   "jp": "酒樽がある\n誰か　酒を　飲みますか？",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "There's a sake barrel. Will anyone drink the sake?"
    }
   ]
  },
@@ -76086,8 +76086,8 @@
   "jp": "ほんのりと　温かい酒だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Pleasantly warm sake!"
    }
   ]
  },
@@ -76330,8 +76330,8 @@
   "jp": "{k}マントー{h}の奴　すごい酒好きでさ\n鹿野村の酒を　盗んで　全部\nこの城に　運び入れやがったんですよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "That Manto is crazy about sake. He stole all of Shikano Village's sake and hauled it into this castle!"
    }
   ]
  },
@@ -76342,8 +76342,8 @@
   "jp": "ずいぶん　にがい酒だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Awfully bitter sake!"
    }
   ]
  },
@@ -76390,8 +76390,8 @@
   "jp": "けっこう　甘口の酒だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Fairly sweet sake!"
    }
   ]
  },
@@ -76494,16 +76494,16 @@
   "jp": "卍丸さんだけに　教えましょう\n実は　ここの酒樽　全部に　俺たちの\n{k}ションベン　入{h}れてやったんです｜{12}\n鹿野村の銘酒「黄金のしずく」ですって\n言ったら　{k}マントー{h}の奴　信用して\nうまそうに　飲んでやんの{12}\nあいつに　酒の味なんか\nわかんねぇんですよ\nだって　馬鹿なんだもん{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj4/vjp4.scs#7@0 0.99",
+    "en": "I'll tell just you, Manjimaru. The truth is, we peed in every one of these barrels!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "We told Manto it was Shikano Village's famous \"Golden Drops\" sake, and he believed it and gulped it down!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "That guy can't taste sake at all. He's an idiot, after all!"
    }
   ]
  },
@@ -76514,8 +76514,8 @@
   "jp": "割りと　しょっぱい酒だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Rather salty sake!"
    }
   ]
  },
@@ -76526,8 +76526,8 @@
   "jp": "{0C}{11}６０のぼれないよ～{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj4/vjp5.scs#0@0 1.00",
+    "en": "{000C}I can't climb out~{0012}"
    }
   ]
  },
@@ -76538,8 +76538,8 @@
   "jp": "{0C}出してくれ～{11}６０\nおらあ　まだ　嫁も　もらって{11}１０ねえんだ{11}３０\n助けて{11}１０くれ～{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj4/vjp5.scs#1@0 1.00",
+    "en": "Lemme out~! I ain't even got a wife yet! Heeelp~!"
    }
   ]
  },
@@ -76562,8 +76562,8 @@
   "jp": "上品な　辛口の酒だ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "An elegant, dry sake!"
    }
   ]
  },
@@ -76910,8 +76910,8 @@
   "jp": "{10}１３０{0C}剣法　女彦斬を[20]受け継いだ｜",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Inherited the sword art Onnahiko Slash!"
    }
   ]
  },
@@ -77094,8 +77094,8 @@
     "en": "{000C}\"North: Matsue Village\nOur dolls make the perfect\ngift for the kids!\"{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xk1/xk00.scs#6@0 1.00",
+    "en": "-Ashimoto Doll Shop, Matsue Village-{0012}"
    }
   ]
  },
@@ -77482,8 +77482,8 @@
   "jp": "{10}１３０{0C}送霊の鈴を手に入れた",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Got the Spirit-Sending Bell."
    }
   ]
  },
@@ -78610,8 +78610,8 @@
     "en": "The Root folk of Yomotsu Slope must be... grateful to you, I think...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "xk1/xki0.scs#14@0",
@@ -78654,8 +78654,8 @@
     "en": "The Root folk of Yomotsu Slope must be... grateful to you, I think...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "xk1/xki0.scs#18@0",
@@ -79430,8 +79430,8 @@
   "jp": "もしや　後ろの{k}デブ{h}は　極楽ちゅう\nやっちゃ　ないのかのぉ\nほっほっほ……{12}\nおまえさんが　逃げ出したおかげで\n千年前の戦いのおり　根の一族は\nとどめを　刺されずに　すんだ{12}\nまあ　わしらのほうも　{k}イヒカ{h}が\n戦いの途中で　逃げねば　火の一族に\nとどめを　刺せたがのぉ{12}\nほっほっほっほ…\n因果は　巡るというからのぉ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Could that fatso behind you be the one called Gokuraku? Hohoho..."
    },
    {
     "ds": "xk2/vkk5.scs#4@0",
@@ -79626,8 +79626,8 @@
   "jp": "土偶{k}ロボ{h}でないとこの先は\n進めないんですよぉ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You can't go any further unless you're in a Clay Idol Robot!"
    }
   ]
  },
@@ -79638,8 +79638,8 @@
   "jp": "私は国引の弓綱です{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I am the Land-Pull Bowstring."
    }
   ]
  },
@@ -79650,8 +79650,8 @@
   "jp": "{0C}また来てね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Come again!"
    }
   ]
  },
@@ -79662,8 +79662,8 @@
   "jp": "国引の弓綱を手に入れた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Got the Land-Pull Bowstring!"
    }
   ]
  },
@@ -79674,8 +79674,8 @@
   "jp": "国引の弓綱はもう持ってるよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You already have the Land-Pull Bowstring!"
    }
   ]
  },
@@ -79762,8 +79762,8 @@
   "jp": "{k}シロ{h}がやってきました{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Shiro has arrived!"
    }
   ]
  },
@@ -80122,8 +80122,8 @@
   "jp": "ここは　海の幸と\n最近じゃ豚汁が　おいしい\n浜田村です{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "This is Hamada Village, known for seafood and, lately, delicious pork soup!"
    }
   ]
  },
@@ -80150,8 +80150,8 @@
     "en": "Head west from here, and you'll find the castle town of Tsuwano!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Rumor has it the lord of Tsuwano knows the weakness of a Root Clan member called Nikusuke!"
    }
   ]
  },
@@ -80162,8 +80162,8 @@
   "jp": "なにっ！\n左姫山に　行ったってのかい♀\nそりゃあ　ご苦労だったねぇ{12}\n極楽さんなんかは\nいい　汗かけて\n減量できたんじゃ　ないですかい？{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xla0.scs#6@0 0.95",
+    "en": "What?! You went to Mt. Sabime?! Well, that must've been rough!"
    },
    {
     "ds": "xl1/xla0.scs#7@0",
@@ -80194,8 +80194,8 @@
   "jp": "う　う　うえっ……\n知らずに…　うっ\n人を　食べてしまった　{k}キク{h}なんて{12}\nもう　うっ…　{k}ハアハア　カブキ{h}さんの\nお嫁になんか　なれない…か……な\nうえっ…　う　う……{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Ugh... urk... urp... Without knowing... urk... I ate people... me, Kiku..."
    },
    {
     "ds": "xl1/xla0.scs#12@0",
@@ -80238,8 +80238,8 @@
     "en": "Hah, hah... S-sorry you had to see that...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To think I was eating people without knowing it... urp... uh... bleeeegh!"
    }
   ]
  },
@@ -80262,12 +80262,12 @@
   "jp": "そ　そうだったのか……\n必死に　助けを　求めてたんじゃなぁ{12}\n少しでも　わかってやれてれば……\nわかろうとしていれば……\n助けてやれたのに……{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "S-so that's what it was... They were begging so desperately for help..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "If I'd understood them even a little... if I'd only tried to understand... I could have saved them..."
    }
   ]
  },
@@ -80278,12 +80278,12 @@
   "jp": "気のせいだと　思うんじゃけど\nなんだか　豚たちが\nしゃべってるようでなあ{12}\n{k}ワシ{h}の　目を見ながら\n{k}ブイブイ言{h}うのを　見とると\n{k}ミョー{h}に　気になってなあ……{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I'm sure it's just my imagination, but it seems like the pigs are talking somehow."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "When they look me in the eye and go oink oink, it bothers me something awful..."
    }
   ]
  },
@@ -80330,12 +80330,12 @@
   "jp": "あの豚たちが\n津和野の　人たちやったなんて……\nほんま　申し訳ないことです{12}\nおっと！　でも　それと商売は別でっせ\n津和野の人たちを　供養するためにも\nきっちり　お代はもらいまへんとなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "To think those pigs were the people of Tsuwano... I'm truly sorry."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Whoops! But business is business. To give the people of Tsuwano a proper memorial, I'll have to charge full price."
    }
   ]
  },
@@ -80362,12 +80362,12 @@
   "jp": "知らなかったとはいえ\n津和野の人たちを　食べてたなんて\n{k}ウゥ　{h}なんてことを……{12}\nこれからは　坊さんになって\n食べられた人たちの　魂を\n慰めたいと　思います{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I didn't know, but still... to think I was eating the people of Tsuwano... Ugh, what have I done..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "From now on I'll become a monk and console the souls of the people who were eaten."
    }
   ]
  },
@@ -80378,12 +80378,12 @@
   "jp": "最近　西の方から\nよく豚が　逃げてくるんだよ{12}\nまあ　そのおかげで\n食費が浮いて\n助かっちゃうんだけどね｜{12}\n豚って　食い物になるだけじゃなくて\n残った革や骨で　いろんな道具が\n作れるから　{k}スゲェ　便利{h}さ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Lately a lot of pigs have been running away to here from the west."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Mind you, thanks to that I save on food, so it's a big help!"
    },
    {
     "ds": "xl1/vla3.scs#2@0",
@@ -80398,12 +80398,12 @@
   "jp": "{k}ブ{h}いー　{k}ブ{h}あー\n{k}フゴ津フ和ゴ野フー……\nブー　ブヒ人ブヒ{h}が　{k}ブー｜{12}\nブホブホ　ブー　ブー\n助{h}け{k}ヒ　ボフボフ　ニックブー\nブー　変{h}え{k}ブヒヒ　ブ{h}られ{k}ブー{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Oink-eee... Oink-aaa... Tsu-snort-wa-snort-no... Oink... oink-people-oink... OINK!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Snort snort oink oink... Hel-oink-p... snort snort Nikk-oink... Oink... turned... oink oink... into... OINK!"
    }
   ]
  },
@@ -80414,8 +80414,8 @@
   "jp": "そうだったんですか……\n豚で　一生を終わるなんて\nなんとも　やりきれないねえ……{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "So that's what happened... To end your life as a pig... how unbearable..."
    }
   ]
  },
@@ -80426,8 +80426,8 @@
   "jp": "そういえば\n津和野の方から　来る途中で\n何匹も　豚を　見たなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Come to think of it, I saw lots of pigs on my way here from Tsuwano."
    }
   ]
  },
@@ -80450,16 +80450,16 @@
   "jp": "{k}ウゥゥゥ　卍丸{h}さんたちのおかげで\n孫たちは　食べられずにすみました\nでも……{12}\n必死で　この村に　助けを求めてきた\n娘夫婦を　{k}ワシ{h}らが\n食べてしまってたんじゃ……{12}\n{k}オーイ　オイオイ\n{h}なんてこったぁ\n{k}オーイ　オイオイ……{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Waaah... Thanks to you, Manjimaru, my grandchildren weren't eaten. But..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "My daughter and her husband came to this village desperately begging for help, and we... we ate them..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Waaah, waaah... What have we done... Waaah, waaah..."
    }
   ]
  },
@@ -80542,8 +80542,8 @@
     "en": "Oh, no, no, no... How long is this going to go on?{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlc0.scs#7@0 1.00",
+    "en": "When I remember the eyes of the pigs I led to Darkness Castle... Oh, no...{0012}"
    }
   ]
  },
@@ -80602,8 +80602,8 @@
   "jp": "{k}ブヒブヒー　{h}いやだよお～　{k}ブーブー\n連{h}れてかな　{k}ブヒ　{h}まだ　{k}ブヒヒー\n死{h}にたくない　{k}ブヒブヒブヒー{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlc0.scs#14@0 1.00",
+    "en": "Oink oinnk, nooo, oink oink... Don't take me, oink... I don't, oinkoink... want to die, oink oink oink!"
    }
   ]
  },
@@ -80818,8 +80818,8 @@
     "en": "South of Tsuwano, through Twilight Cave and further south, lies Darkness Castle, where that hateful Nikusuke lives.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlc0.scs#35@0 0.97",
+    "en": "Won't someone defeat that Nikusuke and free Tsuwano from this misery?{0012}"
    }
   ]
  },
@@ -80918,8 +80918,8 @@
     "en": "They're only ingredients, after all, for Lord Nick to enjoy.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlc1.scs#5@0 1.00",
+    "en": "The pigs I raise are so delicious your cheeks will fall off!{0012}"
    },
    {
     "ds": "xl1/vlc1.scs#6@0",
@@ -81026,8 +81026,8 @@
     "en": "What! You mean Nikusuke of the Hell Cauldron in Darkness Castle? Oh, he's a nasty one.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlc3.scs#4@0 0.91",
+    "en": "Anyone he doesn't like, he turns into a pig.{0012}"
    },
    {
     "ds": "xl1/vlc3.scs#5@0",
@@ -81070,8 +81070,8 @@
   "jp": "あんた　やったわね｜\nあの肉助を　{k}ブッ殺{h}してくれたんだね！\nさすが　火の勇者よね｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlc4.scs#3@0 0.97",
+    "en": "You did it! You knocked that Nikusuke flat! That's the Heroes of Fire for you!"
    }
   ]
  },
@@ -81726,12 +81726,12 @@
   "jp": "地獄釜の肉助を　倒されたんですって！\n奴の死体は　どこですか？\n私に　くわしく　教えてください{12}\n形が　わからなくなるほど　切り刻んで\n踏みにじって　つばを吐きかけて\n最低　それぐらいは　してやりたいの{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "You beat Nikusuke of the Hell Cauldron?! Where's his body? Tell me everything!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I want to chop it up till it's unrecognizable, stomp on it and spit on it. That's the least I want to do!"
    }
   ]
  },
@@ -82066,8 +82066,8 @@
   "jp": "浜田村の豚って　実は　人間だったって\n聞いたんだけど…　まさかねぇ…\nだって…　確かに　豚の味だったよ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vkp3.scs#2@0 0.95",
+    "en": "I heard the pigs in Hamada Village were actually monsters... Surely not... I mean... it really did taste like pork..."
    }
   ]
  },
@@ -82310,8 +82310,8 @@
   "jp": "ここから　西へ行ったところに\n犬神寺ちゅう　古寺が　あるんじゃ\n先代の坊主で　つぶれたはずじゃが…{12}\n近頃　へんな噂が　立っとんじゃよ\n寺の中から　奇妙な音が　聞こえたとか\n切り刻まれた　犬の死体を見たとか…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh1.scs#1@0 0.95",
+    "en": "West of here there's an old temple called Inugami Temple. It was supposed to have been abandoned under the last head priest..."
    },
    {
     "ds": "xl1/vlh1.scs#2@0",
@@ -83254,8 +83254,8 @@
   "jp": "人肉切包丁を　見つけた｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl2/xlg1.scs#1@0 0.95",
+    "en": "Found a Meat Cleaver!"
    }
   ]
  },
@@ -83674,8 +83674,8 @@
   "jp": "須須佐の風穴",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Susa Wind Cave"
    }
   ]
  },
@@ -83794,8 +83794,8 @@
   "jp": "{16}卍丸御一行様へ　またの　お越しを\nお待ち申し上げております｜\n　　　－－足下村旅館組合観光局－－{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl4/xldh.scs#0@0 1.00",
+    "en": "{0016}\"To the honored Manjimaru party: we look forward to your next visit!\n-Ashimoto Village Inn Association Tourist Office-\"{0012}"
    }
   ]
  },
@@ -83838,8 +83838,8 @@
     "en": "You came all the way here through Enkiri Cave? Nothing happened in there?{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlh0.scs#3@0 1.00",
+    "en": "They say that anyone you part with in Enkiri Cave, the Cave of Severed Ties, you'll never meet alive again... It's only a superstition, of course.{0012}"
    }
   ]
  },
@@ -83854,8 +83854,8 @@
     "en": "I've heard a legend that long ago, in Izumo, the Fire Clan hauled in the Root island.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlh0.scs#5@0 0.97",
+    "en": "They say the two ropes they used are still lying asleep on some mountain somewhere.{0012}"
    }
   ]
  },
@@ -83870,8 +83870,8 @@
     "en": "This is Inome Village in Iwami Province... But this area is the most out-of-the-way part of Iwami.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlh0.scs#7@0 0.99",
+    "en": "To get to Tsuwano Town or Hamada Village in the north of the same province, you have to go out through Izumo next door first.{0012}"
    }
   ]
  },
@@ -83882,12 +83882,12 @@
   "jp": "「こたこは　たいのめむたたらよた｜」\nこれは　{k}タヌキ{h}の言葉でーす\nさて　何て　言ったでしょう？{12}\n答えは　「ここは　いのめむらよ｜」\nへへへへへ　{k}タヌキ{h}の言葉は\n「た」を抜くのよ｜{12}\n他にも　{k}オ{h}とりの言葉とか…\n{k}コ{h}けしの言葉とか　いろいろあるわよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlh0.scs#8@0 1.00",
+    "en": "\"Thtais itas Intaome Vitallage!\" That's tanuki talk! So, what did it say?"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlh0.scs#9@0 1.00",
+    "en": "The answer is \"This is Inome Village!\" Heheheh! Tanuki means \"take out the ta\"!{0012}"
    },
    {
     "ds": "xl1/xlh0.scs#10@0",
@@ -83946,8 +83946,8 @@
   "jp": "あなたがたの　活躍で　この石見国の\n邪悪な闇は　消し去られました｜\nまことに　ありがたいことです｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh2.scs#0@0 1.00",
+    "en": "Thanks to your deeds, the evil darkness over Iwami Province has been swept away! We're truly grateful!{0012}"
    }
   ]
  },
@@ -83958,8 +83958,8 @@
   "jp": "はるか西の　山並みの向こうに\n邪悪な闇が　広がっておる｜\nきっと　根の城があるのじゃろうて{12}\nしかし　山の向こうへ行くには\nこの石見の国の　北を\nまわりこまねばならぬ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh2.scs#1@0 1.00",
+    "en": "Far to the west, beyond the mountains, an evil darkness is spreading! There must be a Root castle there."
    },
    {
     "ds": "xl1/vlh2.scs#2@0",
@@ -83974,8 +83974,8 @@
   "jp": "犬が　一匹残らず　姿を消してしもた｜\n根の一族が　犬神寺に　犬たちを\n集めておるという噂もある…{12}\n良からぬことが　起きねばいいが…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh3.scs#2@0 1.00",
+    "en": "Every last dog has vanished! There's a rumor the Root Clan is gathering dogs at Inugami Temple..."
    },
    {
     "ds": "xl1/vlh3.scs#3@0",
@@ -84002,12 +84002,12 @@
   "jp": "笑うなよ　兄さん｜\nこの石見国の　根の一族の親分は\n{k}クククククッ…{12}\nコレ{h}もんの　{k}オカマ{h}だってよ\n小汚いおやじづらで　{k}ニック{h}と\n呼んでね｜と　きたもんだ…{12}\n世も末だねぇ…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh3.scs#5@0 1.00",
+    "en": "Don't laugh, pal! The Root Clan boss here in Iwami Province is... heh heh heh heh..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh3.scs#6@0 1.00",
+    "en": "...a real flouncy one, they say! Has a grubby old man's mug, and goes \"Call me Nick!\"...{0012}"
    },
    {
     "ds": "xl1/vlh3.scs#7@0",
@@ -84022,8 +84022,8 @@
   "jp": "お兄さん｜　うちなら　たいていの物は\n手に入りますよ｜　買ってってよ☆\n　{01}はい　　{01}いいえ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Hey, mister! You can get just about anything here! Buy something!\n{0001}Yes   {0001}No"
    }
   ]
  },
@@ -84034,8 +84034,8 @@
   "jp": "{0C}ありがとう　ございまーす｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Thank you very muuuch!"
    }
   ]
  },
@@ -84046,8 +84046,8 @@
   "jp": "預かり所に　ようこそ｜\nご利用になりますか？\n　{01}はい　　{01}いいえ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Welcome to the storehouse! Would you like to use it?\n{0001}Yes   {0001}No"
    }
   ]
  },
@@ -84058,8 +84058,8 @@
   "jp": "あんた｜　うちの亭主　そこいらで\n見なかったかい？　まあ　ちょくちょく\nいなくなる奴なんだけどね…{12}\n迷いこんできた豚を　あたしひとりで\n食べちまうと　後で　文句をたれるに\n決まってるから　亭主を捜してんだよ{12}\nまったく　うちの亭主　どこを\nうろついているのやら…　うちには\nこんな　うまそうな豚が　いるのにね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/vlh6.scs#1@0 1.00",
+    "en": "You! Seen my husband around? Well, he's always wandering off..."
    },
    {
     "ds": "xl1/vlh6.scs#2@0",
@@ -84078,12 +84078,12 @@
   "jp": "すまねぇな｜　現場で　命の取りっこ\nやってるあんたらを　迷わせるような\nことばっか　くっちゃべっちまってよ{12}\n忘れてくんな｜\nほらよ｜　昭和の巻物を　渡すぜ｜\nあんたらの　好きに　使ってくれ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#6@0 1.00",
+    "en": "Sorry! You're out there on the front lines trading lives, and here I am rambling about stuff that'll just mix you up."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#7@0 1.00",
+    "en": "Forget I said it! Here! I'm handing you the Radiant Peace scroll! Use it however you like!{0012}"
    }
   ]
  },
@@ -84106,8 +84106,8 @@
   "jp": "あー　残念じゃが　巻物袋が\nいっぱいじゃ　わしの巻物は\n渡せんぞ　出直してまいれ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#1@0 1.00",
+    "en": "Ah, sorry, but with your scroll bag full, I can't give you my scroll. Come back another time!"
    }
   ]
  },
@@ -84118,8 +84118,8 @@
   "jp": "おまえ　運は　いいほうか？\n　{01}はい　　{01}いいえ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Are you the lucky type?\n{0001}Yes   {0001}No"
    }
   ]
  },
@@ -84130,8 +84130,8 @@
   "jp": "すんごく　運が　いいほうか？\n　{01}はい　　{01}いいえ",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The really, really lucky type?\n{0001}Yes   {0001}No"
    }
   ]
  },
@@ -84146,8 +84146,8 @@
     "en": "{000C}Then I can hand you this Divine Wind scroll. Truth is, Divine Wind hardly ever works.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#12@0 1.00",
+    "en": "But if you're really, really lucky... I'm starting to feel like it might work sometimes!{0012}"
    }
   ]
  },
@@ -84174,8 +84174,8 @@
     "en": "Coming here when your scrolls are full and you can't carry another... means you've got no luck.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#10@0 1.00",
+    "en": "My scroll would be no use at all to somebody with no luck, so don't bother coming back, got it?!{0012}"
    }
   ]
  },
@@ -84198,8 +84198,8 @@
   "jp": "神風の術が　失敗しても　俺のせいでも\n巻物のせいでもないからな｜\nおめえの運が　ないと　あきらめろよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "If the Divine Wind technique fails, it's not my fault or the scroll's! Just accept that you've got no luck!"
    }
   ]
  },
@@ -84210,12 +84210,12 @@
   "jp": "火の勇者様で　ございやすか｜\nあっしみてぇな者を　お訪ねくださり\nありがとうござんす｜{12}\nお好きな巻物を　ご指示くだせえ｜\nどれか　ひとつの巻物の　使う技を\n１　だけ減らして　あげやしょう｜{12}\n今すぐに　いたしやすかねぇ？\nそれとも　後に　いたしやすかねぇ？\n　{01}今すぐ　　{01}後で",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#15@0 1.00",
+    "en": "You're the Heroes of Fire?! Thank you for visiting the likes of me!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#16@0 1.00",
+    "en": "Name any scroll you like! I'll lower the TP cost of any one scroll's technique by 1!{0012}"
    },
    {
     "ds": "xl1/xlten.scs#17@0",
@@ -84230,8 +84230,8 @@
   "jp": "まだ{k}レベルアップ{h}しません{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Not leveling up yet."
    }
   ]
  },
@@ -84242,8 +84242,8 @@
   "jp": "{0C}{k}レベルアップ{h}したつもり{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Pretend you leveled up."
    }
   ]
  },
@@ -84266,8 +84266,8 @@
   "jp": "巻物が　決まったら　また\nあっしんちを　お訪ねくださいやしね｜\n卍の大将｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Once you've picked a scroll, come visit my place again, Boss Manji!"
    }
   ]
  },
@@ -84278,12 +84278,12 @@
   "jp": "よう　来なすった｜\nささ　巻物をお見せくだされ｜{12}\n今　お持ちの巻物のうち　ひとつの\n使う技を　１　減らしてしんぜよう｜{12}\n今すぐ　やるかね？　後でやるかね？\n　{01}今すぐ　　{01}後で",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#20@0 1.00",
+    "en": "Welcome, welcome! Come, show me your scrolls!"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl1/xlten.scs#21@0 0.95",
+    "en": "I'll lower the TP cost of just one of the scrolls you have by 1!{0012}"
    },
    {
     "ds": "xl1/xlten.scs#22@0",
@@ -84310,8 +84310,8 @@
   "jp": "自分に合った巻物が　見つかったら\n忘れず　わしを訪ねてくだされ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "When you find a scroll that suits you, don't forget to come see me!"
    }
   ]
  },
@@ -84322,8 +84322,8 @@
   "jp": "気ぃつけて　行きなはれや\nまた　おいで｜　卍丸はん｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/wca3.scs#3@0 1.00",
+    "en": "Take care on the road! Come back again, Manjimaru!"
    }
   ]
  },
@@ -84334,8 +84334,8 @@
   "jp": "また　来てや｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:wc1/wcr1.scs#7@0 1.00",
+    "en": "Come again!"
    }
   ]
  },
@@ -84346,8 +84346,8 @@
   "jp": "卍丸様でございますな｜\nお噂は　聞いておりますぞ\nこよいは　この里でお泊りくだされ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xj1/sino1.scs#0@0 1.00",
+    "en": "You must be Lord Manjimaru! We've heard all about you. Please stay the night in this village.{0012}"
    }
   ]
  },
@@ -84358,8 +84358,8 @@
   "jp": "確かに記録したでござる\nまた　いつでも　お立ち寄りくだされ\nお待ちしておりますぞ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Do stop by again anytime! We'll be waiting for you!"
    }
   ]
  },
@@ -84370,8 +84370,8 @@
   "jp": "また　いつでも　お立ち寄りくだされ\nお待ちしておりますぞ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Do stop by again anytime! We'll be waiting for you!"
    }
   ]
  },
@@ -84382,8 +84382,8 @@
   "jp": "根の一族は　日に日に\n力をつけているようでござる\n卍丸様｜｜　くれぐれもお気をつけて｜｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:we1/vej1.scs#7@0 1.00",
+    "en": "The Root Clan grows stronger by the day, it seems. Lord Manjimaru, please take the greatest care!"
    }
   ]
  },
@@ -84406,8 +84406,8 @@
   "jp": "－－－土偶{k}ロボ　整備室－－－\n注意｜　{h}ここにある土偶{k}ロボ{h}は\n整備中につき　乗るべからず{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl7/vli0.scs#2@0 1.00",
+    "en": "\"Clay Idol Robot Maintenance Room\nCAUTION: The Clay Idol Robots here are under maintenance. Do not ride.\""
    }
   ]
  },
@@ -84418,8 +84418,8 @@
   "jp": "－－土偶{k}ロボ部隊　隊員{h}へ－－\n出撃時は　専用{k}リフト{h}を使い　１体ずつ\n可及的すみやかに　地上へ移送せよ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "--To all Clay Idol Robot Unit members-- When deploying, use the dedicated lift and move to the surface one unit at a time, as quickly as possible!"
    }
   ]
  },
@@ -84430,8 +84430,8 @@
   "jp": "－－土偶{k}ロボ部隊　隊員{h}へ－－\n自分の土偶{k}ロボ{h}を　見失った時は\n犬神寺基地へ　即時　帰還すべし{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xl7/vli0.scs#4@0 1.00",
+    "en": "\"To all Clay Idol Robot Unit members: If you lose sight of your Clay Idol Robot, return to Inugami Temple Base at once.\""
    }
   ]
  },
@@ -84670,8 +84670,8 @@
     "en": "Ahem. Forgive me for losing my composure the other day...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "...\n...\n..."
    },
    {
     "ds": "xl8/vlc8.scs#7@0",
@@ -85198,8 +85198,8 @@
   "jp": "あなた　卍丸さんでしょ？\n身なりの悪い　{k}チビ{h}の中年男が\nあなたのことを　捜していたわよ！{12}\n断っておくけど　その中年男\n{k}ホテイ丸{h}さんじゃないわよ…\nそいつ目つきが　普通じゃなかったわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmg0.scs#7@0 0.91",
+    "en": "You're Manjimaru, aren't you? A shabby little middle-aged man was looking for you!"
    },
    {
     "ds": "xm1/xmg0.scs#8@0",
@@ -85226,8 +85226,8 @@
   "jp": "みんな　根の一族が悪いのよ！\nあたしの家族や友達を　返して｜\n{k}シク　シク…　シク…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "It's all the Root Clan's fault! Give me back my family and friends! *sniff*... *sniff*..."
    }
   ]
  },
@@ -85346,8 +85346,8 @@
   "jp": "偏屈な顔した　{k}チビ{h}のおっさんが\nよそから　やってきて\n村に　住みついちまったんだ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#6@0 0.90",
+    "en": "A sour-faced little old guy came here from somewhere else and settled in the village."
    }
   ]
  },
@@ -85410,8 +85410,8 @@
   "jp": "南に行けば　浪華国よ\n浪華には　港町が多くて\n外人さんも　たくさん来るの{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#12@0 0.94",
+    "en": "Go south and you'll reach Naniwa Province. Naniwa has lots of port towns, and lots of foreigners come there."
    }
   ]
  },
@@ -85422,8 +85422,8 @@
   "jp": "あら　宿屋にいた　外人さんは\nあなたの　お友達だったの{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#13@0 0.91",
+    "en": "Oh, so the foreigner at the inn was your friend?"
    }
   ]
  },
@@ -85434,8 +85434,8 @@
   "jp": "{k}バカ{h}みたいに　陽気な性格の\n外人さんが　宿屋に\n泊まってるわよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#14@0 0.98",
+    "en": "There's a foreigner staying at the inn who's cheerful to the point of silliness."
    }
   ]
  },
@@ -85458,8 +85458,8 @@
   "jp": "{k}ウチ{h}の　{k}ガキ{h}は　どこ　行ったんだ？\nまた　宿屋にいる　変な外人に\n会いに　行ったのかな{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#16@0 0.94",
+    "en": "Where'd my brat go? Off to see the foreigner at the inn again?"
    }
   ]
  },
@@ -85470,8 +85470,8 @@
   "jp": "宿屋にいた　外人さんが\n探してた人って\nあなただったのね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#17@0 0.92",
+    "en": "So you're the one the foreigner at the inn was looking for!"
    }
   ]
  },
@@ -85482,12 +85482,12 @@
   "jp": "宿屋に　泊まってる　外人さんから\n卍丸って人が来たら　教えてくれって\n頼まれちゃったんだけど…{12}\n私　卍丸って人の　顔も　知らないのよ\nあわてものの　外人さんね{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#18@0 0.95",
+    "en": "The foreigner staying at the inn asked me to tell him if someone called Manjimaru showed up..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/xmf0.scs#19@0 0.92",
+    "en": "But I don't even know what this Manjimaru looks like! What a scatterbrained foreigner.{0012}"
    }
   ]
  },
@@ -85542,8 +85542,8 @@
     "en": "The inn in Kanoko Village is the worst! It's always full of kids making such a racket you can't sleep!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "There's some weird foreigner called Hoteimaru staying there, and it's all his fault!"
    }
   ]
  },
@@ -85614,8 +85614,8 @@
   "jp": "おいらも　大人になったら\n{k}ホテイ丸{h}みていな　外人になるんだ！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm1/vmf2.scs#5@0 0.98",
+    "en": "When I grow up, I'm gonna be a foreigner like Hoteimaru!"
    }
   ]
  },
@@ -87190,8 +87190,8 @@
   "jp": "確かに記録したでござる\n安心して　お体をお休めください{12}\nところで…{12}\n卍丸様…　まつり様は\n卍丸様に　ひかれているようでござる\nお気持ち　お察しくださりませ{12}\nこのようなことを　お頼みしたことは\nまつり様には　ご内密に願います\nもし　ばれたら…{12}\nわたくし　まつり様に殺されまする{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Your record is saved. Please rest easy."
    },
    {
     "ds": "wh1/vhg1.scs#3@0",
@@ -87630,8 +87630,8 @@
     "en": "A little north of Kishiwada Village, there's a big port town called Sakai.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm2/vnk2.scs#4@0 0.93",
+    "en": "Sakai's a thriving town, full of goods and money, and foreigners too.{0012}"
    }
   ]
  },
@@ -87658,8 +87658,8 @@
   "jp": "堺に流れ着いたっちゅう　外人さん\nあんたの知り合い　やったんやてな\n火の勇者って　顔　広いねんなぁ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:xm2/vnk3.scs#0@0 0.95",
+    "en": "That foreigner who washed up in Sakai was a friend of yours, I hear! You Heroes of Fire sure know a lot of folks!{0012}"
    }
   ]
  },
@@ -87670,8 +87670,8 @@
   "jp": "この前　小耳にはさんだんやけど\n変な外人さんが\n堺に　流れ着いたそうやね{12}\n確か　妙ちきりんな　日本語を\nしゃべる奴で　{k}ホタテ{h}とか\n{k}ホッキ{h}とかいう　名前やったかな？{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I overheard the other day that some strange foreigner washed up in Sakai."
    },
    {
     "ds": "xm2/vnk3.scs#2@0",
@@ -88018,8 +88018,8 @@
     "en": "So we just get poorer and poorer... Maybe I'll leave this house and go work in Takarazuka Village myself!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "...and then I'll snare some fool like my husband and pluck him down to the last hair on his butt... Ufufufu..."
    }
   ]
  },
@@ -88570,8 +88570,8 @@
   "jp": "呂戸の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Rod"
    }
   ]
  },
@@ -88582,8 +88582,8 @@
   "jp": "麻里魚の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Marilyn"
    }
   ]
  },
@@ -88594,8 +88594,8 @@
   "jp": "林句の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Lincoln"
    }
   ]
  },
@@ -88606,8 +88606,8 @@
   "jp": "亜土留の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Adolf"
    }
   ]
  },
@@ -88618,8 +88618,8 @@
   "jp": "鳴呼佐亜の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Caesar"
    }
   ]
  },
@@ -88630,8 +88630,8 @@
   "jp": "死門の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Simon"
    }
   ]
  },
@@ -88642,8 +88642,8 @@
   "jp": "悪胡瓜の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Akuri"
    }
   ]
  },
@@ -88654,8 +88654,8 @@
   "jp": "競押王子の墓{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Grave of Prince Kyouou"
    }
   ]
  },
@@ -88666,8 +88666,8 @@
   "jp": "……………{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    }
   ]
  },
@@ -88870,8 +88870,8 @@
   "jp": "{k}ミー{h}は　外人{k}デース｜\n黒船　港{h}に　あります{k}デース\nエビス丸船長　港{h}に　います{k}デース｜{12}\nエビス丸船長　ブラザー・ホテイ丸{h}に\n{k}シー　ユー　アゲン{h}すること\n{k}ベリー　楽{h}しみに　してます{k}デース｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yn1/ync0.scs#23@0 0.99",
+    "en": "Me is a foreigner, desu! The black ship is at the port, desu! Captain Ebisumaru is at the port, desu!"
    },
    {
     "ds": "yn1/ync0.scs#24@0",
@@ -89210,12 +89210,12 @@
   "jp": "この港には　いろんな外人さんが\n来なさるけどよ…　ありゃ　どこの\nお国の人なんだろう…{12}\nすげえ　{k}チビ{h}でよぉ　変な髪形でよぉ\nそういや　あんたたちのことを\nかぎまわってたようだな…　確か…{12}\n{k}デューク・ペペ{h}って　野郎だよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yn1/vncb.scs#1@0 0.94",
+    "en": "All kinds of foreigners come to this port... but where was that one from, I wonder..."
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Real short, with a weird hairdo... Come to think of it, he seemed to be sniffing around after you folks... What was it..."
    },
    {
     "ds": "yn1/vncb.scs#3@0",
@@ -90414,8 +90414,8 @@
   "jp": "ありがと{k}ゴザイマース……\n{h}わたし　神戸に戻って　外人墓地に\n{k}エビス丸{h}の墓　おっ立てたり{k}マース…{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yn3/ynl0.scs#5@0 0.99",
+    "en": "Thank you very much... I go back to Kobe and put up grave for Ebisumaru in foreigner cemetery..."
    }
   ]
  },
@@ -91634,8 +91634,8 @@
     "en": "That giant castle vanished! And then it appeared in the sky over Kibi Province, beyond the mountains!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "...?!"
    },
    {
     "ds": "yn3/ynu0.scs#38@0",
@@ -91818,8 +91818,8 @@
   "jp": "早く　父ちゃん　帰ってこないかな～{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yn3/vnu2.scs#1@0 1.00",
+    "en": "I wish Dad would hurry home..."
    }
   ]
  },
@@ -93658,8 +93658,8 @@
   "jp": "{10}１３０{0C}堺の北西の岬だ！　{11}４０必ず　来てくれよ\n{11}１５それまで　こいつは　預からせてもらう\n{11}７５いつまでも　{11}１０待ってるよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "The cape northwest of Sakai! Be sure to come! Till then, I'll be keeping this. I'll wait for you, forever."
    }
   ]
  },
@@ -94118,8 +94118,8 @@
   "jp": "「東－岡山町　南－倉敷村」{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo1/yo00.scs#2@0 1.00",
+    "en": "\"East: Okayama Town  South: Kurashiki Village\""
    }
   ]
  },
@@ -94574,8 +94574,8 @@
   "jp": "あ～あ　外に　出れなくて\n退屈だなあ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo1/yob0.scs#18@0 1.00",
+    "en": "Aww, I can't go outside. It's so boring."
    }
   ]
  },
@@ -95950,8 +95950,8 @@
   "jp": "白銀城の城主は　みにくい象顔の\n百貫丸という男だそうなの…\n好んで女を　その鼻で絞め殺すそうよ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo1/voo6.scs#1@0 0.98",
+    "en": "The lord of Hakugin Castle is an ugly elephant-faced man named Hyakkanmaru, they say... He loves to crush women to death with his trunk."
    }
   ]
  },
@@ -96922,8 +96922,8 @@
   "jp": "{10}０　　　－－－－獅子王－－－－－\n　\n　　　　　　法水院　紅丸　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#0@0 1.00",
+    "en": "--- The Lion King ---\nHousuiin Benimaru{0012}"
    }
   ]
  },
@@ -96934,8 +96934,8 @@
   "jp": "{10}０　　　－－－－闇の剣士－－－－\n　\n　　　　　　妙院　{k}カラス　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#1@0 1.00",
+    "en": "--- The Swordsman of Darkness ---\nMyoin Karasu"
    }
   ]
  },
@@ -96946,8 +96946,8 @@
   "jp": "{10}０　　　－－－水の貴公子－－－－\n　\n　　　　　　船海宮　義経　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#2@0 1.00",
+    "en": "--- The Prince of the Water ---\nSenkaigu Yoshitsune"
    }
   ]
  },
@@ -96958,8 +96958,8 @@
   "jp": "{10}０　　　－－－－火の巨人－－－－\n　\n　　　　　　大霊院　女彦　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#3@0 1.00",
+    "en": "--- The Giant of Fire ---\nDaireiin Onnahiko"
    }
   ]
  },
@@ -96970,8 +96970,8 @@
   "jp": "{10}０　　　－－－火刃の女王－－－－\n　\n　　　　　　いろは宮　静　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#4@0 1.00",
+    "en": "--- The Queen of Kajin ---\nIrohagu Shizuka"
    }
   ]
  },
@@ -96982,8 +96982,8 @@
   "jp": "{10}０　　　－－浪華の火の玉小僧－－\n　\n　　　　　　鳥居堂　三郎　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#5@0 1.00",
+    "en": "--- Naniwa's Fireball Kid ---\nTorii-do Saburo"
    }
   ]
  },
@@ -96994,8 +96994,8 @@
   "jp": "{10}０　　　－－－悲恋の鬼百合－－－\n　\n　　　　　　蛇光院　松虫　　　　　{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo4/yol2.scs#6@0 1.00",
+    "en": "--- The Lily of Lost Love ---\nJakouin Matsumushi"
    }
   ]
  },
@@ -97826,8 +97826,8 @@
   "jp": "{0C}この安芸の国の　南東の海に\n人魚の鶴姫が作った　舟海宮という\n神殿が　あるらしいぞ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "They say in the sea southeast of this Aki Province there's a shrine called Funakai Palace, built by the mermaid Princess Tsuru."
    }
   ]
  },
@@ -97994,12 +97994,12 @@
     "en": "I have some small skill in fortune-telling. Let me read your fortunes.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo8/vpb0.scs#1@0 1.00",
+    "en": "..............................! I see you, Lord Manjimaru, and your friends, eaten by poison and acid!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yo8/vpb0.scs#2@0 1.00",
+    "en": "The heart of Echizen Province! The Pure Water scroll! That is your only defense.{0012}"
    }
   ]
  },
@@ -98014,8 +98014,8 @@
     "en": "I have some small skill in fortune-telling. Let me read your fortunes.{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..........!!!!"
    },
    {
     "ds": "yo8/vpb0.scs#5@0",
@@ -98446,8 +98446,8 @@
   "jp": "{10}１３１{0C}な～に{11}２０　心配するな{11}３０　わしにはわかる\n{11}２０おまえは　もう一人前だ\n{11}４０きっと　ひとりで　やり遂げられる{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yp1/yp00.scs#5@0 1.00",
+    "en": "Ah, don't worry. I can tell. You're a grown man now. You'll see it through alone, sure as anything."
    }
   ]
  },
@@ -99618,8 +99618,8 @@
   "jp": "他の地方では　根の一族が\nいなくなったんですってね\nうらやましいわ{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "I hear the Root Clan has disappeared from the other regions. How I envy them."
    }
   ]
  },
@@ -100090,8 +100090,8 @@
   "jp": "{10}１３２{0C}{k}ジーザス｜{11}２０　ガッデム｜\n{11}３０サノバビッチ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Jesus! Goddamn! Son of a bitch!"
    }
   ]
  },
@@ -100878,8 +100878,8 @@
     "en": "Oh! You must be the Heroes of Fire everyone talks about!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yq1/vqb2.scs#1@0 0.95",
+    "en": "Hearing of your deeds, I wondered if there was anything I could do too, but in the end, I'm just a monk...{0012}"
    },
    {
     "ds": "yq1/vqb2.scs#2@0",
@@ -101886,8 +101886,8 @@
     "en": "We don't have the skill to make a new Holy Sword now... Sorry, after you came all this way...{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "..."
    },
    {
     "ds": "yq7/yok0.scs#19@0",
@@ -102270,8 +102270,8 @@
   "jp": "　　　　　　　　　　　　　　　\n　　　　　　　\n{0C}これで　{11}１０君たちと{11}３０\nわしらは　五分と　五分｜{11}３０\n勝負は　{11}２０振り出しに　もどった｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:yrp8/yrp8.scs#0@0 1.00",
+    "en": "Now you and we are even! The contest is back to square one!{0012}"
    }
   ]
  },
@@ -103146,8 +103146,8 @@
   "jp": "　　　　　　　　　　　　　　　\n　　　　　　　　　　　　\n{0C}また　会ったわね　卍丸｜{11}６０\n{k}アタシ{h}は　{11}６０死の料理人{11}６０\n地獄釜の肉助よ｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:v75/act075.scs#0@0 1.00",
+    "en": "We meet again, Manjimaru! I'm the chef of death, Nikusuke of the Hell Cauldron!"
    }
   ]
  },
@@ -103962,8 +103962,8 @@
   "jp": "{10}２来な｜｜　ぼうず｜{11}６０\n体を　切り刻んでやるからよぉ｜{12}{0C}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b04/b04.scs#2@0 1.00",
+    "en": "Come on, kid! I'll slice you to ribbons!"
    }
   ]
  },
@@ -104054,8 +104054,8 @@
     "en": "{000C}Kikugoro spread his fan and cheered!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b05/b05.scs#2@0 1.00",
+    "en": "\"Tenze-e-en! Go get 'em☆!\"{0012}"
    }
   ]
  },
@@ -104154,8 +104154,8 @@
     "en": "{000C}Kikugoro spread his fan and cheered!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b06/b06.scs#2@0 1.00",
+    "en": "\"Princess Kuchina-a-awa! Go get 'em☆!\"{0012}"
    }
   ]
  },
@@ -104218,8 +104218,8 @@
     "en": "{000C}Kikugoro spread his fan and cheered!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b07/b07.scs#2@0 1.00",
+    "en": "\"Kakuta-a-aro! Go get 'em☆!\"{0012}"
    }
   ]
  },
@@ -104282,8 +104282,8 @@
     "en": "{000C}Kikugoro spread his fan and cheered!{0012}"
    },
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b08/b08.scs#2@0 1.00",
+    "en": "\"Ebizo-o-o! Go get 'em☆!\"{0012}"
    }
   ]
  },
@@ -104414,8 +104414,8 @@
   "jp": "{10}２{0C}負けかたが　誰よりも　うまい\n火の勇者の諸君に　もう一度\n熱い拍手を　お願いします｜{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b09/b09.scs#8@0 0.97",
+    "en": "Let's have another warm round of applause for the Heroes of Fire, who lose more beautifully than anyone!"
    }
   ]
  },
@@ -104970,8 +104970,8 @@
   "jp": "{10}２卍丸｜｜{11}３０　美しい花に　うずもれて\n死ねるとは{11}５０{10}１　幸せだな{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b13/b13.scs#9@0 1.00",
+    "en": "Manjimaru! How lucky you are, to die buried in beautiful flowers!"
    }
   ]
  },
@@ -105178,8 +105178,8 @@
   "jp": "{0C}{10}２{k}クッ！　幻夢城{h}へ来い　卍丸！\nそこで　われら　{k}ワダツミ５人衆{h}が\nきさまらを　血まつりにしてやる！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "Tch! Come to Genmu Castle, Manjimaru! There, we, the Wadatsumi Five, will make a blood sacrifice of you!"
    }
   ]
  },
@@ -106014,8 +106014,8 @@
   "jp": "{0C}{10}２そのために{11}３０　今日まで\n地獄のような　{k}トレーニング{h}の日々を\n{10}１送ってきたのさ！{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "override",
+    "en": "That's why I've spent every day until today in hellish training!"
    }
   ]
  },
@@ -106862,8 +106862,8 @@
   "jp": "{0C}卍丸は　敗べ走した………{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b01/b01.scs#12@0 0.93",
+    "en": "Manjimaru was routed..."
    }
   ]
  },
@@ -109582,8 +109582,8 @@
   "jp": "{0C}残りは　あと{1B}体{12}",
   "pages": [
    {
-    "ds": null,
-    "en": null
+    "ds": "near:b43/b43.scs#5@0 0.91",
+    "en": "left to go!"
    }
   ]
  },

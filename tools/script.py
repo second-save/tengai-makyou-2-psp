@@ -30,6 +30,40 @@ def records(node):
             yield from records(x)
 
 
+def near(keyed, codec, ds_path, cutoff=0.9):
+    """Area pages with no DS line: take the closest DS line (difflib ratio >= cutoff on the bare text; 0.85-0.9 gave
+    wrong items and DS lines with extra parts; a page with codes / digits needs DS English with tags); `ds` =
+    "near:<id> <ratio>" so these stay reviewable (the exact match missed them by a few characters)."""
+    import difflib
+    bare = lambda t: re.sub(r'\{[^}]*\}|￥.|[\s　＠｜！？!?、。…・]', '', t)
+    def text(keys):
+        out = []
+        for k in keys:
+            if len(k) == 4:
+                out.append(bytes.fromhex(k).decode('shift_jis', 'replace'))
+            else:
+                out.append(codec.dec.get((k[0], int(k[1:], 16)), ''))
+        return ''.join(out)
+    lines = {}
+    for e in json.load(open(ds_path, encoding='utf-8')):
+        segs, jps = e['en_tagged'].split('{0000}'), e['jp_clean'].split('{0000}') if '{0000}' in e['jp_clean'] else [e['jp_clean']]
+        for n, jp in enumerate(jps):
+            if bare(jp):
+                lines.setdefault(bare(jp), ('%s@%d' % (e['id'], n), segs[n] if len(segs) == len(jps) else e['en']))
+    keys = list(lines)
+    hits = 0
+    for entry, pk in keyed:
+        for page, k in zip(entry['pages'], pk):
+            if page['en']:
+                continue
+            t = bare(text(k))
+            m = difflib.get_close_matches(t, keys, n=1, cutoff=cutoff) if len(t) >= 4 else []
+            if m and lines[m[0]][1].strip() and not (set('０１２３４５６７８９') & set(text(k)) and '{' not in lines[m[0]][1] and '￥' not in lines[m[0]][1]):
+                page.update(ds='near:%s %.2f' % (lines[m[0]][0], difflib.SequenceMatcher(None, t, m[0]).ratio()), en=lines[m[0]][1])
+                hits += 1
+    print(hits, 'pages filled from near-miss DS lines')
+
+
 def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/content/HCD1022_02.iso'):
     cat = {}
     for path in catalogs:
@@ -43,7 +77,7 @@ def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/conten
         same = len(segs) == len(e['jp'].split('{0000}'))
         for n in range(len(e['jp'].split('{0000}'))):
             en['%s@%d' % (e['id'], n)] = segs[n] if same else e['en']  # 30 lines lost a separator: whole line then
-    codec, out = Codec(), {}
+    codec, out, keyed = Codec(), {}, []
     for b in blocks:
         words = [bytes.fromhex(w) for w in b['groups'][1]['msgs']]
         for gi, g in enumerate(b['groups']):
@@ -59,8 +93,11 @@ def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/conten
                     ids = match.get('%d/%d/%d.%d' % (b['sector'], gi, k, n))
                     pages.append({'ds': ids[0] if ids else None, 'en': en.get(ids[0]) if ids else None})
                 out[h] = {'hex': h, 'at': '%d/%d/%d' % (b['sector'], gi, k), 'uses': 1, 'jp': codec.decode(full, strict=False), 'pages': pages}
+                if gi >= 14:
+                    keyed.append((out[h], align.pages(full)))
                 if len(pages) == 1 and not pages[0]['en'] and norm(out[h]['jp']) in cat:
                     pages[0].update(ds='catalog', en=cat[norm(out[h]['jp'])])
+    near(keyed, codec, ds_path)
     import extract
     for k, m in enumerate(extract.battle(open(iso, 'rb').read())[0]):   # battle lines: their own stream, one page each
         jp = codec.decode(m, strict=False)
@@ -83,8 +120,15 @@ def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/conten
                                     'uses': 0, 'jp': jp, 'pages': [{'ds': 'catalog' if bare(jp) in ecat else None, 'en': ecat.get(bare(jp))}]}
                 out[m.hex()]['uses'] += 1
     over = json.load(open(os.path.join(os.path.dirname(out_path), 'overrides.json'), encoding='utf-8'))
-    for h, text in over.items():   # one-page messages only, so far
-        if h in out:
+    for h, text in over.items():   # a string = the whole (one-page) message; a list = English per page, null = keep
+        if h not in out:
+            continue
+        if isinstance(text, list):
+            assert len(text) == len(out[h]['pages']), '%s: %d pages, %d in overrides' % (h, len(out[h]['pages']), len(text))
+            for page, t in zip(out[h]['pages'], text):
+                if t:
+                    page.update(ds='override', en=t)
+        else:
             out[h]['pages'] = [{'ds': 'override', 'en': text}]
     entries = [e for e in out.values() if e['pages']]
     json.dump(entries, open(out_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
