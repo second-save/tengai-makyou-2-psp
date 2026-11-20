@@ -15,6 +15,9 @@ MIRROR = 0x8000000      # second copy of the start of the track
 DIGITS = bytes(range(0x30, 0x3A)) + b'_^]\xde'   # 6D:$674C: characters with the game's own 8x8 glyphs at 6D:$675A
 
 
+SLOT2 = ('Sword', 'Arts', 'Skills', 'Demon')   # 剣法 秘芸 体術 鬼道 (DS names), 6 bytes each at most
+
+
 def far(bank, cpu, base):
     """iso offset of CPU address `cpu` in main-program `bank` mapped at `base`."""
     return MAIN + (bank - 0x69) * 0x2000 + cpu - base
@@ -60,13 +63,18 @@ def main(orig, syscard, out, all_ascii=False):
         writes.append((far(0x6F, 0x7EA8, 0x6000), bytes.fromhex('20e65f'), 'message byte -> dictionary codes'))
         # main $5256: handler table for 1-byte characters by text mode; point modes 0, 2, 3 at mode 1's far call ($526B)
         writes += [(far(0x69, 0x5256 + m * 2, 0x4000), bytes.fromhex('6b52'), 'text mode %d -> half-width' % m) for m in (0, 2, 3)]
+        # battle command menu, slot 2 = the actor's technique class: 70:$7646 copied 4 bytes from a 4-byte table at
+        # $76CB into the menu string at $7759; now 6 bytes from an 8-byte table in bank 70's own free tail ($7FDE; 6A is
+        # not mapped when this runs). TXA ASL ASL ASL TAY LDX #$FA / LDA $7FDE,Y STA $765F,X INY INX BNE / RTS (same 18 bytes)
+        writes.append((far(0x70, 0x7646, 0x6000), bytes.fromhex('8a0a0a0aa8a2fab9de7f9d5f76c8e8d0f660'), 'menu slot 2: 6-byte names'))
+        writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     new, log = bytearray(iso), []
     for off, data, name in writes:
         for o in (off, off + MIRROR):
             assert iso[o:o + len(data)] == iso[off:off + len(data)], 'mirror differs at %x' % o
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
-    for off, data, name in writes[:3]:
+    for off, data, name in writes[:3] + [w for w in writes if w[2] == 'menu slot 2 names']:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)
