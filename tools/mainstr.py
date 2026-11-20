@@ -105,6 +105,10 @@ def insert(built, main_json):
             continue
         at, old = int(e['at'], 16), bytes.fromhex(e['hex'])
         new = encode(e['en'])
+        if not e.get('free') and iso[at + len(old)] != 0:
+            print('%s: original not followed by a NUL (wrong start or length?)' % e['at'])
+            bad += 1
+            continue
         if iso[at:at + len(old)] != old or len(new) > len(old):
             print('%s: %s' % (e['at'], 'bytes differ' if iso[at:at + len(old)] != old else
                                  'English %d bytes, room %d' % (len(new), len(old))))

@@ -71,6 +71,23 @@ def main(orig, syscard, out, all_ascii=False):
         # string inline) becomes a far call into 6E ($4933) that prints a copy at 6E:$7FB3 (written by mainstr.py)
         writes.append((far(0x6B, 0x665B, 0x6000), bytes.fromhex('2033492cac7f'), 'field menu: far call'))
         writes.append((far(0x6E, 0x7FAC, 0x6000), bytes.fromhex('20a3502cb37f60'), 'field menu: print from 6E'))
+        # the kind names ({1A} in "Use which ...": 武具 道具 巻物 ...) are looked up by number from the list whose base is
+        # set at 6B:$6D7B (LDY #$6B / LDX #$99); it moves into the old field menu string at 6B:$6705 (unused now,
+        # English list written there by mainstr.py)
+        # (6B:$6CE0 = JSR $4661: the A-th string of the list at Y:X). Every base that pointed into it moves:
+        writes.append((far(0x6B, 0x6D7B, 0x6000), bytes.fromhex('a067a205'), 'kind name list -> 6B:$6705'))
+        writes.append((far(0x6B, 0x6CF8, 0x6000), bytes.fromhex('a067a205'), 'kind name list -> 6B:$6705 (2)'))
+        writes.append((far(0x6B, 0x6D10, 0x6000), bytes.fromhex('a067a21b'), 'technique kind list -> 6B:$671B'))
+        writes.append((far(0x6B, 0x6D75, 0x6000), bytes.fromhex('a067a21b'), 'technique kind list -> 6B:$671B (2)'))
+        # party names (卍丸 カブキ 極楽 絹 シロ at 6B:$6C3D, base at 6B:$6CDC) move into the 37 bytes the old kind list
+        # freed at 6B:$6B99 (English written there by mainstr.py)
+        writes.append((far(0x6B, 0x6CDC, 0x6000), bytes.fromhex('a06ba299'), 'party name list -> 6B:$6B99'))
+        # second party name list (status bar; 6B:$6C55, base at 6B:$6CD3) moves to 6B:$6C3D, where it and the old first
+        # list leave 44 bytes
+        writes.append((far(0x6B, 0x6CD3, 0x6000), bytes.fromhex('a06ca23d'), 'party name list 2 -> 6B:$6C3D'))
+        # status bar: the HP / TP label sits 6 units (24 px, two kanji) after the member's column (6B:$61D1 CLC ADC #6);
+        # 8 units leave 32 px for the short names of list 2 (user ruling: shorter names where they would overflow)
+        writes.append((far(0x6B, 0x61D2, 0x6000), bytes.fromhex('6908'), 'status bar: name room 24 -> 32 px'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     new, log = bytearray(iso), []
     for off, data, name in writes:

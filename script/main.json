@@ -25,7 +25,8 @@
   "hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
   "jp": "[FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF]",
   "en": "{16}[81][88][8C][88]{08}{01}Status{02}[8B]{01}Items{0D}{08}{01}Scrolls{02}[8B]{01}Gear{0D}{08}{01}Techs{02}[8B]{01}",
-  "note": "field menu (button II): copy at 6E:$7FB3 printed by the far call build.py puts at 6B:$665B; window 10 -> 12 tiles; the 6th item is printed after it from the list at 6B:$6C2E"
+  "note": "field menu (button II): copy at 6E:$7FB3 printed by the far call build.py puts at 6B:$665B; window 10 -> 12 tiles; the 6th item is printed after it from the list at 6B:$6C2E",
+  "free": true
  },
  {
   "at": "45731",
@@ -230,5 +231,481 @@
   "en": "Arms",
   "note": "shop name list (skip-N-NULs); short: room 4",
   "pad": "20"
+ },
+ {
+  "at": "45A4C",
+  "hex": "8ea952",
+  "jp": "自分",
+  "en": "Me",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A50",
+  "hex": "bfc991bc20",
+  "jp": "その他[20]",
+  "en": "Other",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A56",
+  "hex": "88da93ae96688ce4",
+  "jp": "移動防御",
+  "en": "Barrier",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A5F",
+  "hex": "898a8c6e8d558c82",
+  "jp": "炎系攻撃",
+  "en": "Fire",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A68",
+  "hex": "2c8a4f88da93ae",
+  "jp": "国外移動",
+  "en": "Travel",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A70",
+  "hex": "2c93e088da93ae",
+  "jp": "国内移動",
+  "en": "Warp",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A78",
+  "hex": "8ff391d489f1959c",
+  "jp": "状態回復",
+  "en": "Cure",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A81",
+  "hex": "90ed93ac96688ce4",
+  "jp": "戦闘防御",
+  "en": "Defense",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A8A",
+  "hex": "90ed93ac97a39245",
+  "jp": "戦闘離脱",
+  "en": "Escape",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A93",
+  "hex": "493b89f1959c",
+  "jp": "体力回復",
+  "en": "Heal",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45A9A",
+  "hex": "93478ee34989bb",
+  "jp": "敵弱体化",
+  "en": "Weaken",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AA2",
+  "hex": "95588c6e8d558c82",
+  "jp": "氷系攻撃",
+  "en": "Ice",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AAB",
+  "hex": "468c6e8d558c82",
+  "jp": "風系攻撃",
+  "en": "Wind",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AB3",
+  "hex": "95cf90678fa28aab",
+  "jp": "変身召喚",
+  "en": "Summon",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45ABC",
+  "hex": "96a195fb8bad89bb",
+  "jp": "味方強化",
+  "en": "Empower",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AC5",
+  "hex": "96c08b7b924543",
+  "jp": "迷宮脱出",
+  "en": "Exit",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45ACD",
+  "hex": "978b8c6e8d558c82",
+  "jp": "雷系攻撃",
+  "en": "Thunder",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AD6",
+  "hex": "bfc991bc20",
+  "jp": "その他[20]",
+  "en": "Other",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45ADC",
+  "hex": "8ab74e8ab741",
+  "jp": "換物換金",
+  "en": "Barter",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AE3",
+  "hex": "8b5a3b89f1959c",
+  "jp": "技力回復",
+  "en": "Restore",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AEB",
+  "hex": "8d558c822020",
+  "jp": "攻撃[20][20]",
+  "en": "Attack",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AF2",
+  "hex": "2c8a4f88da93ae",
+  "jp": "国外移動",
+  "en": "Travel",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45AFA",
+  "hex": "2c93e088da93ae",
+  "jp": "国内移動",
+  "en": "Warp",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B02",
+  "hex": "8ff391d489f1959c",
+  "jp": "状態回復",
+  "en": "Cure",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B0B",
+  "hex": "498b5a89f1959c",
+  "jp": "体技回復",
+  "en": "Refresh",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B13",
+  "hex": "493b89f1959c",
+  "jp": "体力回復",
+  "en": "Heal",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B1A",
+  "hex": "93478ee34989bb",
+  "jp": "敵弱体化",
+  "en": "Weaken",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B22",
+  "hex": "957396be2020",
+  "jp": "不明[20][20]",
+  "en": "???",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B29",
+  "hex": "96824e8fa28aab",
+  "jp": "魔物召喚",
+  "en": "Monster",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B31",
+  "hex": "96a195fb8bad89bb",
+  "jp": "味方強化",
+  "en": "Empower",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B3A",
+  "hex": "96c08b7b924543",
+  "jp": "迷宮脱出",
+  "en": "Exit",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B42",
+  "hex": "bfc991bc20",
+  "jp": "その他[20]",
+  "en": "Other",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B48",
+  "hex": "8d558c82975593b1",
+  "jp": "攻撃誘導",
+  "en": "Decoy",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B51",
+  "hex": "8f758ad488da93ae",
+  "jp": "瞬間移動",
+  "en": "Teleport",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B5A",
+  "hex": "498b5a52975e",
+  "jp": "体技分与",
+  "en": "Share",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B61",
+  "hex": "9250498d558c82",
+  "jp": "単体攻撃",
+  "en": "Single",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B69",
+  "hex": "92698fc68d8720",
+  "jp": "段照合[20]",
+  "en": "Rank",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B71",
+  "hex": "92e38e402020",
+  "jp": "偵察[20][20]",
+  "en": "Scout",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B78",
+  "hex": "93478ee34989bb",
+  "jp": "敵弱体化",
+  "en": "Weaken",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B80",
+  "hex": "957396be2020",
+  "jp": "不明[20][20]",
+  "en": "???",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B87",
+  "hex": "95a190948d558c82",
+  "jp": "複数攻撃",
+  "en": "All Foes",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45B90",
+  "hex": "95cf90678fa28aab",
+  "jp": "変身召喚",
+  "en": "Summon",
+  "note": "effect category list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "4B02A",
+  "hex": "188081a0880382028f8aaa4ea66fb3bccfbdb681480388028401208f7042b3029601936ebd815e8cf08ab702a801208eccc3d9",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[8F]巻物をどうしますか？{03}[88]{02}[84]{01}[20]術使う{02}[96]{01}渡す／交換{02}[A8]{01}[20]捨てる",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[8F]What now?{03}[88]{02}[84]{01} Cast{02}[96]{01}Give/Swap{02}[A8]{01} Drop",
+  "note": "scroll action menu"
+ },
+ {
+  "at": "4B05E",
+  "hex": "188081a0880382028f93b98befa66fb3bccfbdb681480388028401082042b3029601936ebd815e8cf08ab702a801208eccc3d9",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[8F]道具をどうしますか？{03}[88]{02}[84]{01}{08}[20]使う{02}[96]{01}渡す／交換{02}[A8]{01}[20]捨てる",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[8F]What now?{03}[88]{02}[84]{01}{08} Use{02}[96]{01}Give/Swap{02}[A8]{01} Drop",
+  "note": "item action menu"
+ },
+ {
+  "at": "4B0D9",
+  "hex": "188081a0880382028f95908befa66fb3bccfbdb68148038802840108919594f5bdd9029601936ebd815e8cf08ab702a801208eccc3d9",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[8F]武具をどうしますか？{03}[88]{02}[84]{01}{08}装備する{02}[96]{01}渡す／交換{02}[A8]{01}[20]捨てる",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[8F]What now?{03}[88]{02}[84]{01}{08}Equip{02}[96]{01}Give/Swap{02}[A8]{01} Drop",
+  "note": "gear action menu"
+ },
+ {
+  "at": "4B092",
+  "hex": "028d038214806fc91aa642b2cfbdb68148",
+  "jp": "{02}[8D]{03}[82]{14}[80]どの{1A}を使いますか？",
+  "en": "{02}[8D]{03}[82]{14}[80]Use which {1A}",
+  "note": "use prompt ({1A} = kind)"
+ },
+ {
+  "at": "4B271",
+  "hex": "924e618e9dc1cfbdb6",
+  "jp": "誰が持ちますか",
+  "en": "Who gets?",
+  "note": "give: who holds it"
+ },
+ {
+  "at": "4B286",
+  "hex": "0c1a91dcc98bf3b761b1d8cfbedd12",
+  "jp": "{0C}{1A}袋の空きがありません{12}",
+  "en": "{0C}{1A}'s bag full{12}",
+  "note": "bag full"
+ },
+ {
+  "at": "4B2A5",
+  "hex": "0c1aa6b1b7d7d2cfbdb68148",
+  "jp": "{0C}{1A}をあきらめますか？",
+  "en": "{0C}Give up {1A}?",
+  "note": "give up the new item"
+ },
+ {
+  "at": "4B2B2",
+  "hex": "14800382028f6fc91aa68eccc3cfbdb68148",
+  "jp": "{14}[80]{03}[82]{02}[8F]どの{1A}を捨てますか？",
+  "en": "{14}[80]{03}[82]{02}[8F]Drop which?",
+  "note": "drop prompt ({1A} dropped)"
+ },
+ {
+  "at": "4B2C5",
+  "hex": "18868b93881ac9201aa60d8eccc3cfbdb68148",
+  "jp": "{18}[86][8B][93][88]{1A}の[20]{1A}を{0D}捨てますか？",
+  "en": "{18}[86][8B][93][88]{1A}'s {1A}{0D}Drop it?",
+  "note": "drop confirm: owner, item"
+ },
+ {
+  "at": "4B2F2",
+  "hex": "1480038202832020201aa68e7792e8bcc3b86bbbb220202020",
+  "jp": "{14}[80]{03}[82]{02}[83][20][20][20]{1A}を指定してください[20][20][20][20]",
+  "en": "{14}[80]{03}[82]{02}[83]   Choose {1A}.    ",
+  "note": "choose a target slot"
+ },
+ {
+  "at": "4B30C",
+  "hex": "148003820283936ebdc4b7ca8bf39793a6815e8cf08ab78e9eca1aa68e7792e8",
+  "jp": "{14}[80]{03}[82]{02}[83]渡すときは空欄を／交換時は{1A}を指定",
+  "en": "{14}[80]{03}[82]{02}[83]Empty slot: give; {1A}: swap",
+  "note": "give / swap help line"
+ },
+ {
+  "at": "507C4",
+  "hex": "0c89bd82f08e6782a48148189195878708080193b98bef0d08080195908bef",
+  "jp": "{0C}何を使う？{18}[91][95][87][87]{08}{08}{01}道具{0D}{08}{08}{01}武具",
+  "en": "{0C}Use what{18}[91][95][87][87]{08}{08}{01}Item{0D}{08}{08}{01}Gear",
+  "note": "battle item menu"
+ },
+ {
+  "at": "4B296",
+  "hex": "0c91bcc91aa68eccc3cfbdb68148",
+  "jp": "{0C}他の{1A}を捨てますか？",
+  "en": "{0C}Drop other {1A}?",
+  "note": "drop a different one"
+ },
+ {
+  "at": "45705",
+  "hex": "1681888a880508018ff391d408080193b98bef0d08018aaa95a808080195908bef0d0801899c8b60080801",
+  "jp": "{16}[81][88][8A][88]{05}{08}{01}状態{08}{08}{01}道具{0D}{08}{01}巻物{08}{08}{01}武具{0D}{08}{01}奥義{08}{08}{01}",
+  "en": "Gear{00}Item{00}Scroll{00}Tech{00}Sword{00}Art{00}Skill{00}Oni",
+  "note": "kind name list (武具 道具 巻物 奥義 剣法 秘芸 体術 鬼道), moved here by build.py (6B:$6D7B); was the field menu string"
+ },
+ {
+  "at": "410C3",
+  "hex": "080108cab2200801b2b2b4",
+  "jp": "{08}{01}{08}はい[20]{08}{01}いいえ",
+  "en": "{08}{01}{08}Yes {08}{01}No",
+  "note": "yes / no choice under a question"
+ },
+ {
+  "at": "45B99",
+  "hex": "95908bef0093b98bef008aaa4e00899c8b60008c9596400094e98c7c00498f70005693b9",
+  "jp": "武具{00}道具{00}巻物{00}奥義{00}剣法{00}秘芸{00}体術{00}鬼道",
+  "en": "Manjimaru{00}Kabuki{00}Gokuraku{00}Kinu{00}Shiro",
+  "note": "party names (list 1, base 6B:$6CDC repointed here by build.py); was the kind list 武具..鬼道 (moved to 6B:$6705)"
+ },
+ {
+  "at": "45000",
+  "hex": "92690806",
+  "jp": "段{08}{06}",
+  "en": "Lv{08}{06}",
+  "note": "status label 段 (level)"
+ },
+ {
+  "at": "45C3D",
+  "hex": "99c25d00834a8375834c008bc98a79008ca6008356838d0099c28adb0006b65fb7008bc98a7900088ca60620",
+  "jp": "卍丸{00}カブキ{00}極楽{00}絹{00}シロ{00}卍丸{00}{06}か私き{00}極楽{00}{08}絹{06}[20]",
+  "en": "Manji{00}Kabuki{00}Goku{00}Kinu",
+  "note": "party names, list 2 (status bar: 32 px each, short names by user ruling), base 6B:$6CD3 repointed here by build.py"
+ },
+ {
+  "at": "45024",
+  "hex": "490806",
+  "jp": "体{08}{06}",
+  "en": "HP{06}",
+  "note": "status screen label 体 (1 byte: the {08} gap is dropped)"
+ },
+ {
+  "at": "45028",
+  "hex": "8b5a0806",
+  "jp": "技{08}{06}",
+  "en": "TP{08}{06}",
+  "note": "status screen label 技"
  }
 ]

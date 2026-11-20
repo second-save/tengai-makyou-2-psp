@@ -31,9 +31,9 @@ dict:   jsr $7E5C       ; bytes $80-$FF = dictionary word 1-128, through the gam
 d_ret:  rts
 
 .segment "VWF"          ; bank 6E tail, CPU $9EB9 while mapped by the stub
-vwf:    ldy #$04        ; room check: one 16-px line high (newline / scroll as needed), 8 px wide: 6D:$6608 wraps when
-        lda #$02        ; x + A > (window tiles - 2) * 2, so the last glyph starts by unit 26 and its two tiles stay
-        jsr $6608       ; inside the border (asking for 4 = 16 px left a 3-column menu only 16 px in its last column)
+vwf:    ldy #$02        ; room check, 8 x 8 px: 6D:$6608 wraps when x + A > (window tiles - 2) * 2 (and scrolls on y + Y),
+        lda #$02        ; so the last glyph starts by unit 26 and its two tiles stay inside the border. Asking for
+        jsr $6608       ; 16 x 16 left a 3-column menu 16 px in its last column and scrolled the 8-px status bar rows
         lda CURX        ; cursor moved by anything but us (newline, position code, new window): drop the remainder
         cmp #$FF
 lastx = * - 1
