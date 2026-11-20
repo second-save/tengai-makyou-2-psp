@@ -156,7 +156,11 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    `goto.lua` walks by RAM position). Left: a warp to one of the 38 areas whose enemy records sit in padding (e.g. area
    18, record at $9321; `scenes.py ISO 12` lists its subs and events), the width gate for menus and shops.
 3. Main-program strings: finish the list under "Main-program strings" (left in Japanese), then the width gate.
-4. Find the ending / cutscene text. Messages without English: script.py now fills pages from near-miss DS lines
+4. Ending / cutscene text (DS end0-end3, v172 Kinu's "don't come", xk8 Yomi's descent): not plain SJIS anywhere,
+   not in the 14 signature modules without a dictionary (2690 3714 ... 14978: other data), not an LZ stream at any
+   sector start (scan for 卍丸 = `99 C2 5D` + kana). Guess: voice-only (ADPCM) on the PC Engine; confirm by reaching an
+   ending with the debug tool before searching further. Also the start menu panel before the title ("さいしょから
+   はじめたいときは「起」を...") is graphics (no font fetch, no interpreter): needs a graphics redraw. Messages without English: script.py now fills pages from near-miss DS lines
    (ratio >= 0.9, `ds` = "near:<id> <ratio>", 169 pages) and `script/overrides.json` takes a list of page English;
    ~150 area messages translated here (tenth session; `work/script/todo.json` was the list). 8,200 of 9,111
    messages fully English. Left on purpose: debug menus (514/16, 642/16, 770/16, 898/16, 5890/16 "chNNN", 4226/17 kana
