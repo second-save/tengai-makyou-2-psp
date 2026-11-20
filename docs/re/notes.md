@@ -72,6 +72,20 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - The stream ends with the ADPCM image, so a longer one starts earlier: 56 bytes of FF padding sit before it in the
   tightest copy (871 in most). insert.py moves the start and patches the address at 71:`$7502` (`LDA #$F4 / LDX #$00`).
 
+## Main-program strings (traced 2026-11-20, tenth session; `tools/mainstr.py`, `script/main.json`)
+- UI strings are NUL-terminated, same mixed encoding as messages, printed directly (no pre-expansion, no dictionary):
+  69:`$50A3` + inline pointer prints at once (text speed 0). Codes (table at 69:`$5215`): `02 x` / `03 y` = cursor
+  x / y (arg & 0x7F, 4-px units from the window's inner origin), `08`-`0B` = x+1 x-1 y+1 y-1, `01` = record a choice
+  position (no advance; the cursor is a highlight box), `0C` = clear window, `0D` newline, `14 n` / `15 n` = colour,
+  `16 x y w h` / `18 x y w h` = open a window (tiles, bit 7 set), `17` = close, `1A` = name slot (pointer at
+  `$EAD3/$EAD8`), `1B` = number, `04`-`07` = text mode.
+- Wrap / scroll before a glyph: 6D:`$6608` (A = width, Y = height in units) wraps when x + A > (window w - 2) * 2.
+- Name lists: 6B:`$4661` = A-th string after skipping A NULs from base Y:X; the bases are immediates in the 6B jump
+  table at `$6C7E` (selectors 0x0D 0x0E 0x0F 0x10 ...) and at `$6D6F`-`$6D97`. Lists can move by patching the pair.
+- Code patches strings at fixed offsets: the battle command menu (70:`$7745`: colours at +06 +48 +52, slot 2 name
+  +14, slot 9 name +56). Check for `STA` into a string before changing its layout.
+- `pce.py --shots` with a long list hangs; use `--shot-every`.
+
 ## Scenes (2026-11-20, tenth session; `tools/debug/scenes.py`, `warp.lua`)
 - `$2BF6` ("map") is an event id: the loader (6A:`$69E8`) runs it through 6F:`$7977`. Header entry 3 = u16 per sub ->
   object list -> 3-byte entries (event id, script pointer); `scenes.py ISO AREA` lists the ids per sub (subs below 0x10
