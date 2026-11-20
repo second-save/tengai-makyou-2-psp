@@ -19,5 +19,216 @@
   "jp": "{18}[91][95][89][88]{08}{08}{01}{08}守る{0D}{08}{08}{01}かばう{0D}{08}{08}{01}よける",
   "en": "{18}[91][95][89][88]{08}{08}{01}{08}Defend{0D}{08}{08}{01}Cover{0D}{08}{08}{01}Dodge",
   "note": "battle guard sub-menu (DS names)"
+ },
+ {
+  "at": "4CFB3",
+  "hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "jp": "[FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF]",
+  "en": "{16}[81][88][8C][88]{08}{01}Status{02}[8B]{01}Items{0D}{08}{01}Scrolls{02}[8B]{01}Gear{0D}{08}{01}Techs{02}[8B]{01}",
+  "note": "field menu (button II): copy at 6E:$7FB3 printed by the far call build.py puts at 6B:$665B; window 10 -> 12 tiles; the 6th item is printed after it from the list at 6B:$6C2E"
+ },
+ {
+  "at": "45731",
+  "hex": "1681888688088ff391d40d08018cc295ca0d080188ea979717",
+  "jp": "{16}[81][88][86][88]{08}状態{0D}{08}{01}個別{0D}{08}{01}一覧{17}",
+  "en": "{16}[81][88][88][88]{08}Stats{0D}{08}{01}Each{0D}{08}{01}All{17}",
+  "note": "field menu > Status: window 6 -> 8 tiles"
+ },
+ {
+  "at": "4500C",
+  "hex": "8d558c823b0806",
+  "jp": "攻撃力{08}{06}",
+  "en": "Power{08}{06}",
+  "note": "status screen stat label"
+ },
+ {
+  "at": "45014",
+  "hex": "8ee794f53b0806",
+  "jp": "守備力{08}{06}",
+  "en": "Guard{08}{06}",
+  "note": "status screen stat label"
+ },
+ {
+  "at": "4501C",
+  "hex": "91669181bb0806",
+  "jp": "素早さ{08}{06}",
+  "en": "Speed{08}{06}",
+  "note": "status screen stat label"
+ },
+ {
+  "at": "45C2E",
+  "hex": "81488148",
+  "jp": "？？",
+  "en": "??",
+  "note": "field menu 6th item list",
+  "pad": "20"
+ },
+ {
+  "at": "45C33",
+  "hex": "96438c82",
+  "jp": "砲撃",
+  "en": "Guns",
+  "note": "field menu 6th item list",
+  "pad": "20"
+ },
+ {
+  "at": "45C38",
+  "hex": "8f7588da",
+  "jp": "瞬移",
+  "en": "Warp",
+  "note": "field menu 6th item list",
+  "pad": "20"
+ },
+ {
+  "at": "4B111",
+  "hex": "b595698f912020926c9269062f0497bc",
+  "jp": "お品書[20][20]値段{06}一{04}両",
+  "en": "Goods{02}[8F]Price Ryo",
+  "note": "shop list header"
+ },
+ {
+  "at": "4B122",
+  "hex": "188d858688089484d90d080195908bef0d080193b98bef",
+  "jp": "{18}[8D][85][86][88]{08}売る{0D}{08}{01}武具{0D}{08}{01}道具",
+  "en": "{18}[8D][85][88][88]Sell{0D}{08}{01}Gear{0D}{08}{01}Item",
+  "note": "shop > Sell: what kind (window 6 -> 8 tiles)"
+ },
+ {
+  "at": "4B13A",
+  "hex": "188081a088038202991a0388028601089483b3029a01089484d902ad01d4d2d9",
+  "jp": "{18}[80][81][A0][88]{03}[82]{02}[99]{1A}{03}[88]{02}[86]{01}{08}買う{02}[9A]{01}{08}売る{02}[AD]{01}やめる",
+  "en": "{18}[80][81][A0][88]{03}[82]{02}[99]{1A}{03}[88]{02}[87]{01}Buy{02}[9B]{01}Sell{02}[AD]{01}Exit",
+  "note": "shop top menu ({1A} = shop name)"
+ },
+ {
+  "at": "4B15B",
+  "hex": "18898a8e8a201aca0d201b97bc6ebd0d209484d8cfbdb68148",
+  "jp": "{18}[89][8A][8E][8A][20]{1A}は{0D}[20]{1B}両です{0D}[20]売りますか？",
+  "en": "{18}[89][8A][8E][8A] {1A}{0D} {1B} Ryo.{0D} Sell it?",
+  "note": "shop: sell confirm"
+ },
+ {
+  "at": "4B175",
+  "hex": "18898a8e8a201aca0d201b97bc6ebd0d209483b2cfbdb68148",
+  "jp": "{18}[89][8A][8E][8A][20]{1A}は{0D}[20]{1B}両です{0D}[20]買いますか？",
+  "en": "{18}[89][8A][8E][8A] {1A}{0D} {1B} Ryo.{0D} Buy it?",
+  "note": "shop: buy confirm"
+ },
+ {
+  "at": "4B18F",
+  "hex": "14800382029248a69484d8cfbdb68148",
+  "jp": "{14}[80]{03}[82]{02}[92]何を売りますか？",
+  "en": "{14}[80]{03}[82]{02}[92]Sell what?",
+  "note": "shop prompt"
+ },
+ {
+  "at": "4B1A0",
+  "hex": "14800382029248a69483b2cfbdb68148",
+  "jp": "{14}[80]{03}[82]{02}[92]何を買いますか？",
+  "en": "{14}[80]{03}[82]{02}[92]Buy what?",
+  "note": "shop prompt"
+ },
+ {
+  "at": "4C3D0",
+  "hex": "02a2038e15808e9d82bf8be0081b0497bc",
+  "jp": "{02}[A2]{03}[8E]{15}[80]持ち金{08}{1B}{04}両",
+  "en": "{02}[A2]{03}[8E]{15}[80]Purse{08}{1B}{04}[97][BC]",
+  "note": "money window: Purse <n> 両 (Ryo does not fit: 両 kept)"
+ },
+ {
+  "at": "45BBE",
+  "hex": "95908bef89ae",
+  "jp": "武具屋",
+  "en": "Armory",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BC5",
+  "hex": "93b98bef89ae",
+  "jp": "道具屋",
+  "en": "Goods",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BCC",
+  "hex": "d6db6889ae",
+  "jp": "よろず屋",
+  "en": "Store",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BD2",
+  "hex": "8ce0959e89ae",
+  "jp": "呉服屋",
+  "en": "Tailor",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BD9",
+  "hex": "b8bdd889ae",
+  "jp": "くすり屋",
+  "en": "Herbs",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BDF",
+  "hex": "928389ae",
+  "jp": "茶屋",
+  "en": "Tea",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BEA",
+  "hex": "8fac8ad44e89ae",
+  "jp": "小間物屋",
+  "en": "Notions",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BF7",
+  "hex": "90c28bf38e73",
+  "jp": "青空市",
+  "en": "Market",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45C03",
+  "hex": "238c6089ae",
+  "jp": "人形屋",
+  "en": "Dolls",
+  "note": "shop name list (skip-N-NULs)",
+  "pad": "20"
+ },
+ {
+  "at": "45BE4",
+  "hex": "45d3c989ae",
+  "jp": "女もの屋",
+  "en": "Gowns",
+  "note": "shop name list (skip-N-NULs); short: room 5",
+  "pad": "20"
+ },
+ {
+  "at": "45BF2",
+  "hex": "4c8fa423",
+  "jp": "行商人",
+  "en": "Shop",
+  "note": "shop name list (skip-N-NULs); short: room 4",
+  "pad": "20"
+ },
+ {
+  "at": "45BFE",
+  "hex": "29904523",
+  "jp": "刀職人",
+  "en": "Arms",
+  "note": "shop name list (skip-N-NULs); short: room 4",
+  "pad": "20"
  }
 ]

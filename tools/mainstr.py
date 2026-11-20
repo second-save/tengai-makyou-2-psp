@@ -14,7 +14,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from codec import Codec
 
 ARG1 = {0x02, 0x03, 0x14, 0x15}
-CTRL = {0x01, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0D, 0x0E, 0x0F, 0x12, 0x16, 0x17, 0x18, 0x1A, 0x1B}
+ARG4 = {0x16, 0x18}   # windows: 4 raw bytes (x, y, w, h with bit 7 set)
+CTRL = {0x01, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x12, 0x17, 0x1A, 0x1B}
 
 
 def glyphs(b):
@@ -22,8 +23,8 @@ def glyphs(b):
     i, n = 0, 0
     while i < len(b):
         c = b[i]
-        if c in ARG1:
-            i += 2
+        if c in ARG1 or c in ARG4:
+            i += 2 if c in ARG1 else 5
             continue
         if c in CTRL:
             i += 1
@@ -51,14 +52,15 @@ def scan(iso, start, end):
     out, i = [], start
     while i < end:
         j = iso.index(b'\x00', i, end + 0x400) if b'\x00' in iso[i:end + 0x400] else end
-        b = iso[i:j]
-        if 0 < len(b) <= 160 and glyphs(b) >= 2 and sum(1 for x in b if 0x20 <= x <= 0x7E) * 2 <= len(b):
-            out.append((i, b))
+        for k in range(max(0, j - i - 160), j - i):   # longest valid tail: a string can follow code, not a NUL
+            b = iso[i + k:j]
+            if glyphs(b) >= 2 and sum(1 for x in b if 0x20 <= x <= 0x7E) * 2 <= len(b) and (b[0] < 0x20 or b[0] >= 0x81):
+                out.append((i + k, b))
+                break
         i = j + 1
     return out
 
 
-ARG4 = {0x18}   # window: 4 raw bytes (x, y, w, h with bit 7 set)
 MIRROR = 0x8000000
 EN = re.compile(r'\{([0-9A-F]{2})\}|\[([0-9A-F]{2})\]|(.)', re.S)
 
@@ -108,7 +110,7 @@ def insert(built, main_json):
                                  'English %d bytes, room %d' % (len(new), len(old))))
             bad += 1
             continue
-        new = new.ljust(len(old), b'\x00')
+        new = new.ljust(len(old), bytes.fromhex(e.get('pad', '00')))   # lists read by skipping NULs: pad '20'
         for o in (at, at + MIRROR):
             iso[o:o + len(old)] = new
             log.append('%x %s %s main %s' % (o, old.hex(), new.hex(), e['at']))

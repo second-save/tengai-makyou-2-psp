@@ -67,6 +67,10 @@ def main(orig, syscard, out, all_ascii=False):
         # $76CB into the menu string at $7759; now 6 bytes from an 8-byte table in bank 70's own free tail ($7FDE; 6A is
         # not mapped when this runs). TXA ASL ASL ASL TAY LDX #$FA / LDA $7FDE,Y STA $765F,X INY INX BNE / RTS (same 18 bytes)
         writes.append((far(0x70, 0x7646, 0x6000), bytes.fromhex('8a0a0a0aa8a2fab9de7f9d5f76c8e8d0f660'), 'menu slot 2: 6-byte names'))
+        # field menu: its English does not fit the 43 bytes at 6B:$6705, so 6B:$665B (JSR $50A3 / BIT $6705: print the
+        # string inline) becomes a far call into 6E ($4933) that prints a copy at 6E:$7FB3 (written by mainstr.py)
+        writes.append((far(0x6B, 0x665B, 0x6000), bytes.fromhex('2033492cac7f'), 'field menu: far call'))
+        writes.append((far(0x6E, 0x7FAC, 0x6000), bytes.fromhex('20a3502cb37f60'), 'field menu: print from 6E'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     new, log = bytearray(iso), []
     for off, data, name in writes:
@@ -74,12 +78,13 @@ def main(orig, syscard, out, all_ascii=False):
             assert iso[o:o + len(data)] == iso[off:off + len(data)], 'mirror differs at %x' % o
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
-    for off, data, name in writes[:3] + [w for w in writes if w[2] == 'menu slot 2 names']:
+    for off, data, name in writes[:3] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E')]:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)
     open(out + '.writes', 'w').write('\n'.join(log) + '\n')
-    print('vwf %d bytes (room %d), stub %d (room %d), %d writes' % (len(vwf), 0x147, len(stub), 0x34, len(log)))
+    assert len(vwf) <= 0xF3, 'vwf runs into the field menu routine at 6E:$7FAC'
+    print('vwf %d bytes (room %d), stub %d (room %d), %d writes' % (len(vwf), 0xF3, len(stub), 0x34, len(log)))
 
 
 if __name__ == '__main__':
