@@ -47,6 +47,46 @@ def unpack(src, pos=0, size=None, stop=None, limit=None):
     return bytes(out), pos
 
 
+def pack_best(data):
+    """Optimal parse (literal = 9 bits, match of 2-17 = 13 bits), a few percent smaller than pack().
+    shortcut: several times slower than pack(), so only the battle stream uses it; use it for a block that runs out of room."""
+    n, ext = len(data), bytes(256) + bytes(data)   # ext[256 + i] = data[i]; before it, the zero-filled ring
+    cost, pick = [0] * (n + 1), [None] * n
+    for i in range(n - 1, -1, -1):
+        cost[i], best = 9 + cost[i + 1], 0
+        lim = min(17, n - i)
+        for j in range(i, i + 256):   # source index in ext; the copy may run into the bytes it writes
+            k = 0
+            while k < lim and ext[j + k] == ext[256 + i + k]:
+                k += 1
+            if k > best:
+                best, src = k, j - 256
+                if k == lim:
+                    break
+        for l in range(2, best + 1):
+            if 13 + cost[i + l] < cost[i]:
+                cost[i], pick[i] = 13 + cost[i + l], (l, (0xEF + src) & 255)
+    out, i, nib_at, bit = bytearray(), 0, None, 8
+    while i < n:
+        if bit == 8:
+            flag_at, bit = len(out), 0
+            out.append(0)
+        if pick[i]:
+            l, r = pick[i]
+            out.append(r)
+            if nib_at is None:
+                nib_at = len(out); out.append((l - 2) << 4)
+            else:
+                out[nib_at] |= l - 2; nib_at = None
+            i += l
+        else:
+            out[flag_at] |= 0x80 >> bit
+            out.append(data[i])
+            i += 1
+        bit += 1
+    return bytes(out)
+
+
 def pack(data):
     """Greedy encoder; unpack(pack(x), size=len(x)) == x."""
     ring = bytearray(256)
@@ -100,4 +140,5 @@ if __name__ == '__main__':
     for n in (0, 1, 5, 300, 5000):
         x = os.urandom(n // 3) + bytes(n // 3) + b'abcabcabcabc' * (n // 36)
         assert unpack(pack(x), size=len(x))[0] == x, n
+        assert unpack(pack_best(x), size=len(x))[0] == x and len(pack_best(x)) <= len(pack(x)), n
     print('lz self-check ok')

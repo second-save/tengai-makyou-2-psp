@@ -9,3 +9,5 @@
 - emulator-qa.md: a random battle reached by a scripted walk is not a fixed scene: the encounter and the command cursor differ between runs, so presses that work in one state do nothing in the next.
 - platform-psp.md (PC Engine CD): ADPCM RAM is used as a 64K data cache (AD_TRANS in, AD_READ out): text read from it never shows up in the CPU address space, so a CPU-side poke of the 'source address' does nothing. Dump `pceAdpcmRam` in Mesen.
 - emulator-qa.md: a menu cursor that wraps cannot be homed with presses from an unknown position; find its RAM variable (dump after each of 4-5 known moves and match the sequence) and set it.
+- emulator-qa.md: a savestate taken at a fixed frame of a boot route drifts when text changes the intro's length (English build: the house load moved before frame 14300 and a map-load hook in the state never fired). Probe the event's frame in a first run, then save the state a little before it.
+- emulator-qa.md: `build && insert 2>&1 | tail -1 && next` carries on after a failed insert (the pipe returns tail's status) and regenerated states from a half-built disc. Use `set -o pipefail`.

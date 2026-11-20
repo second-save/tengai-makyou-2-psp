@@ -285,7 +285,13 @@ def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
     pat = re.compile(b'|'.join(re.escape(x) for x in sorted(words, key=len, reverse=True)))
     for h, m in cache.items():
         if m:
-            cache[h] = b''.join(pat.sub(lambda x: code[x.group()], bytes(t)) if text else bytes(t) for text, t in runs(m))
+            # the handler of a decimal-argument code reads the byte after its digits itself, past the dictionary hook
+            # (seen: 19 31 86 drew 86 as a kanji lead byte): keep that byte plain
+            rs, parts = runs(m), []
+            for k, (text, t) in enumerate(rs):
+                keep = 1 if k and rs[k - 1][1][0] in ARG | {0x19} else 0
+                parts.append(bytes(t[:keep]) + pat.sub(lambda x: code[x.group()], bytes(t[keep:])) if text else bytes(t))
+            cache[h] = b''.join(parts)
             assert all(c < 0x80 for c in m) and b''.join(words[c - 0x80] if c >= 0x80 else bytes([c]) for c in cache[h]) == m, h
     done = total = kept = 0
     for b in blocks:
@@ -302,6 +308,28 @@ def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
                 if o == lo or orig[o:o + hi - lo] == orig[lo:hi]:
                     new[o:o + hi - lo] = new[lo:hi]
                     writes.append('%x %s %s block %d text' % (o, orig[lo:hi].hex(), new[lo:hi].hex(), b['sector']))
+    # battle lines: one stream, the same bytes at every copy
+    msgs, copies = extract.battle(orig)
+    want = [cache.get(m.hex()) or blank(m) for m in msgs]
+    packed = lz.pack_best(b''.join(m + b'\0' for m in want))   # greedy was 66 bytes over the room
+    assert lz.unpack(packed)[0].split(b'\0')[:len(msgs)] == want
+    # the stream ends with ADPCM RAM: when it is too long it starts earlier, in the FF padding before it (56 bytes in
+    # the tightest copy), and the source address in the opener (71:$7502 LDA #$F4 / LDX #$00) moves with it
+    back = max(0, len(packed) - extract.BATTLE_ROOM)
+    packed = packed.ljust(extract.BATTLE_ROOM, b'\0')
+    code = extract.BATTLE_CODE
+    patch = bytes([0xA9, (0xF400 - back) >> 8, 0xA2, (0xF400 - back) & 255])
+    assert orig[code:code + 4] == b'\xa9\xf4\xa2\x00'
+    for o in (code, code + MIRROR) if back else ():
+        writes.append('%x %s %s battle text address' % (o, orig[o:o + 4].hex(), patch.hex()))
+        new[o:o + 4] = patch
+    for o in copies:
+        o -= back
+        assert orig[o:o + back] == b'\xff' * back, 'battle stream: %d bytes too long for the padding at %#x' % (back, o)
+        writes.append('%x %s %s battle text' % (o, orig[o:o + len(packed)].hex(), packed.hex()))
+        new[o:o + len(packed)] = packed
+    assert extract.battle(new) == (want, [o - back for o in copies]), 'battle stream: read-back differs'
+    done, total = done + sum(1 for m in msgs if cache.get(m.hex())), total + len(msgs)
     open(built, 'wb').write(new)
     open(built + '.writes', 'a').write('\n'.join(writes) + '\n')
     open(built + '.insert.log', 'w', encoding='utf-8').write('\n'.join(log) + '\n')

@@ -67,7 +67,7 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   one shot per page (`DIR/<item>/pNN.png`), exit 1 if a message does not run to its end. ITEM = `sector/group/message`
   (read back from the built disc) or `text:...`. It talks to the mother from `work/states-en/house.mss` and
   `tools/debug/msg.lua` swaps the stream in RAM. Verified on dialogue, item names and raw text.
-- `python3 tools/debug/show.py --regen` (4 minutes) rebuilds `preload.mss`, `house.mss` and `battle.mss` in
+- `python3 tools/debug/show.py --regen` (about 6 minutes; probes the frame of the house load first) rebuilds `preload.mss`, `house.mss` and `battle.mss` in
   `work/states-en/` from a cold boot and checks that a message shows. Run it after every rebuild.
 - `tools/debug/warp.lua` (`--var AREA= SUB= MAP=`) redirects the next map load: verified for the overworld of the start
   area (`SUB=0x12`, field menu opens, random battles happen). `tools/debug/battle.lua` walks until a battle starts.
@@ -82,17 +82,22 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 - pce.py: parallel runs no longer rewrite Mesen's settings.json (one run read it half-written).
 
 ## Battle viewer (2026-11-20, sixth session)
-- `python3 tools/debug/show.py --battle --out DIR ITEM...` shows any message in the battle window (from `battle.mss`:
+- `python3 tools/debug/show.py --battle --out DIR ITEM...` (ITEM may be `battle/N`) shows any message in the battle window (from `battle.mss`:
   msg.lua homes the command cursor by RAM value, Fight + first target, the attack line is replaced in ADPCM RAM).
   Verified with raw text and module messages. Width gate, battle window: wraps by itself at 28 tiles, 3 lines; the
   name placeholder takes its width out of the first line.
 
 ## Open problems
-7. Battle text is not extracted or inserted (found 2026-11-20, sixth session; notes.md "Battle text"): one LZ stream of
-   235 messages at iso `area*0x40000 + 0x40400`, 370 identical copies, 0x994 bytes used of 0xC00. English will not fit
-   as is (+45% = about 0xDE0): use the one-byte dictionary codes, or move the stream lower in the ADPCM image and patch
-   the `LDA #$F4` at 71:`$7502`. Until then the build shows these lines as garbage (their SJIS bytes hit the
-   one-byte English dictionary). The modules' group 11 may be a different table (technique lines, `$0` / `$n` codes).
+7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
+   230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
+   with `lz.pack_best` and starts early in the FF padding before it (71:`$7502` patched). Room is tight: now 51 of the
+   56 free bytes in the 92 tightest copies (the 5K before it is shared battle data in two versions, not free). Longer
+   battle English needs room first: drop unused lines (`battle/204` "Coming soon" is likely debug) or tighten wording.
+   All 230 distinct lines have English: 6 come from `script/overrides.json` (hex -> English, applied last by script.py,
+   written from the nearest DS combat lines). Left: `battle/91` and `battle/155` logged wider than 216 px;
+   verified in a real fight from a cold-boot state (`狂犬 takes 4 damage!`).
+   Still Japanese in battle, from sources not extracted yet: enemy names (`狂犬`), enemy status / flee lines
+   (`狂犬は うなっている`, `狂犬は 逃げていった`), the prompt and command menu (main program), the hero's default name.
 1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
    the message modules), `xj4` 50/105 (was 71 before the 106-word filter: one of the 14 dropped modules may hold text),
    and 5-40 lines short in about 25 area directories (likely small wording differences: the match is exact).
@@ -108,10 +113,9 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Battle text: add the ADPCM stream to extract.py / script.py / insert.py (all 370 copies, placeholders `19 n`),
-   match it against the DS `combat_text.json`, make it fit (open problem 7), check with `show.py --battle`.
-   Then the rest of the debug tool: a shop and a town (enumerate sub / entrance values per area: the warp opcodes are
-   6F:`$7839` and 6F:`$6784`, their arguments sit in the area scripts) and the width gate for menus and shops.
+1. Battle: find where the enemy names and the flee / victory lines live (not in the battle stream or the modules'
+   messages: trace the opener at 71:`$752A`, pointer `$F659`). Then the rest of the debug tool: a shop and a town
+   (warp opcodes 6F:`$7839` and 6F:`$6784`) and the width gate for menus and shops.
 2. Extract main-program strings (iso 0x41000-0x62800) into the script.
 3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).

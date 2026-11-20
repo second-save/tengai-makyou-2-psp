@@ -99,6 +99,26 @@ def block(iso, base, valid=valid):
     return {'sector': base // 2048, 'table': tab, 'groups': groups}
 
 
+BATTLE, BATTLE_ROOM = 0x40400, 0xC00   # battle lines: offset in each area's 0x40000 bytes (0xF400 of its ADPCM image), room
+BATTLE_LINES = 235                      # lines in the original stream
+BATTLE_CODE = 0x41000 + (0x71 - 0x69) * 0x2000 + 0x1502   # 71:$7502 LDA #hi / LDX #lo = the stream's ADPCM address
+
+
+def battle(iso):
+    """(messages, iso offsets of every copy) of the battle text stream: one LZ stream of NUL-terminated messages,
+    the same in every area that has battles (docs/re/notes.md, "Battle text"). Follows the address in the opener,
+    so it also reads a built disc where insert.py moved the stream."""
+    back = 0xF400 - (iso[BATTLE_CODE + 1] << 8 | iso[BATTLE_CODE + 3])
+    first = 4 * 0x40000 + BATTLE - back
+    # the game picks a line by number: decode exactly BATTLE_LINES lines (trailing zeros can be padding or the last NUL)
+    out, end = lz.unpack(iso, first, limit=first + BATTLE_ROOM + back,
+                         stop=lambda o: o[-1:] == b'\0' and o.count(0) == BATTLE_LINES)
+    msgs = out.split(b'\0')[:BATTLE_LINES]
+    assert len(msgs) == BATTLE_LINES, 'battle stream: %d lines' % len(msgs)
+    raw = iso[first:end]
+    return msgs, [o for o in range(BATTLE - back, len(iso), 0x40000) if iso[o:o + len(raw)] == raw]
+
+
 def main(iso_path, out_path):
     iso = open(iso_path, 'rb').read()
     blocks = [block(iso, m.start()) for m in re.finditer(SIG, iso, re.S)

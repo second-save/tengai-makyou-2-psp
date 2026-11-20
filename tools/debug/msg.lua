@@ -16,7 +16,7 @@ emu.addMemoryCallback(function()
   -- many NULs). Their stream is the group 11 copy in ADPCM RAM at $F400 (fetched 256 bytes at a time by AD_READ,
   -- $3D25): count those opens, zero the pushed message number and write the stream there.
   local mem = M
-  if BATTLE and s["cpu.a"] == 0xF4 and s["cpu.x"] == 0 and s["memoryManager.mpr[3]"] == 0x71 then
+  if BATTLE and s["cpu.a"] >= 0xF0 and s["memoryManager.mpr[3]"] == 0x71 then   -- $F400, lower when insert.py moved it
     n = n + 1
     if n == (MSG_N or 1) then skip = 0; mem = emu.memType.pceAdpcmRam; emu.write(0x2100 + s["cpu.sp"] + 3, 0, M) end
   end
@@ -54,5 +54,9 @@ function on_frame(f)
     ROUTE[#ROUTE + 1] = {f + 2, {"i"}, 6}
     shoot_at = nil
   end
-  if stop_at and f >= stop_at then log("END pages=" .. page); FRAMES = f end
+  if stop_at and f >= stop_at then
+    -- a name placeholder's string ends with its own 00, read as the end of the message before any wait: shoot anyway
+    if page == 0 then shot("p00.png"); page = 1 end
+    log("END pages=" .. page); FRAMES = f
+  end
 end

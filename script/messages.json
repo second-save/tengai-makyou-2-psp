@@ -13550,7 +13550,7 @@
  {
   "hex": "88dd89746149a6976eb6bd21",
   "at": "514/11/112",
-  "uses": 549,
+  "uses": 550,
   "jp": "胃液が体を溶かす｜",
   "pages": [
    {
@@ -109932,6 +109932,2766 @@
    {
     "ds": null,
     "en": null
+   }
+  ]
+ },
+ {
+  "hex": "1931c98d558c8221",
+  "at": "battle/0",
+  "uses": 1,
+  "jp": "{19}１の攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9984191b18d558c8221",
+  "at": "battle/1",
+  "uses": 1,
+  "jp": "{19}１の連続攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks repeatedly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa048d3bcc5b6afc0",
+  "at": "battle/2",
+  "uses": 1,
+  "jp": "{19}１は　何もしなかった",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ did nothing.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a022502f94d421",
+  "at": "battle/3",
+  "uses": 1,
+  "jp": "{19}１の　大死一番｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Death-Defying Blow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a08ecc90678d558c8221",
+  "at": "battle/4",
+  "uses": 1,
+  "jp": "{19}１の　捨身攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks recklessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a0229055d88d558c8221",
+  "at": "battle/5",
+  "uses": 1,
+  "jp": "{19}１の　大振り攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ takes a mighty swing!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a093cb8c8221",
+  "at": "battle/6",
+  "uses": 1,
+  "jp": "{19}１の　突撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ charges!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c994772dc9907721",
+  "at": "battle/7",
+  "uses": 1,
+  "jp": "{19}１の背水の陣｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ makes a Last Stand!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa03ba697add2c3b2d921",
+  "at": "battle/8",
+  "uses": 1,
+  "jp": "{19}１は　力を溜めている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is gathering strength!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a0badd9067c92f8c8221",
+  "at": "battle/9",
+  "uses": 1,
+  "jp": "{19}１の　こん身の一撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ strikes with all its might!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c994bd8ecbc98d5cb421",
+  "at": "battle/10",
+  "uses": 1,
+  "jp": "{19}１の反射の構え｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ takes a Reflect stance!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ee7d8c6934fbcc021",
+  "at": "battle/11",
+  "uses": 1,
+  "jp": "{19}１は　守りに徹した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ focuses on defense!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0d6b9c6934fbcc021",
+  "at": "battle/12",
+  "uses": 1,
+  "jp": "{19}１は　よけに徹した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ focuses on dodging!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932a6b670afc021",
+  "at": "battle/13",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２をかばった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／protected ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d92878ad4915388f5a6b670afc021",
+  "at": "battle/14",
+  "uses": 1,
+  "jp": "{19}１は\n仲間全員をかばった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／protects all allies!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa091de8b70bcc021",
+  "at": "battle/15",
+  "uses": 1,
+  "jp": "{19}１は　退却した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ retreated!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d904b94f6a68aaab2c3a093a66443bcc021",
+  "at": "battle/16",
+  "uses": 1,
+  "jp": "{19}１は\n尻尾を巻いて　逃げ出した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／flees with tail between legs!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d935091de96bd97dfa6a043bcc021",
+  "at": "battle/17",
+  "uses": 1,
+  "jp": "{19}１は\n撤退命令を　出した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／orders a retreat!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa05a8d96c6b6b6afc3b2d921",
+  "at": "battle/18",
+  "uses": 1,
+  "jp": "{19}１は　地獄にかかっている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is caught in Hell!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d976e89f08974a69081b2c021",
+  "at": "battle/19",
+  "uses": 1,
+  "jp": "{19}１は\n溶解液を吹いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays corrosive fluid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa088d08a64bcc021",
+  "at": "battle/20",
+  "uses": 1,
+  "jp": "{19}１は　威嚇した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ threatens!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca946a97f4bcc021",
+  "at": "battle/21",
+  "uses": 1,
+  "jp": "{19}１は破裂した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ burst!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca8ea9949abcc021",
+  "at": "battle/22",
+  "uses": 1,
+  "jp": "{19}１は自爆した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ self-destructs!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98e5f8d558c8221",
+  "at": "battle/23",
+  "uses": 1,
+  "jp": "{19}１の酸攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks with acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c993c58d558c8221",
+  "at": "battle/24",
+  "uses": 1,
+  "jp": "{19}１の毒攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks with poison!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9bc71da8d558c8221",
+  "at": "battle/25",
+  "uses": 1,
+  "jp": "{19}１のしびれ攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses a paralyzing attack!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ef4b2a6b6b9c021",
+  "at": "battle/26",
+  "uses": 1,
+  "jp": "{19}１は　呪いをかけた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ casts a curse!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d89f6bcb260b7a6bcc021",
+  "at": "battle/27",
+  "uses": 1,
+  "jp": "{19}１は\n怪しい動きをした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／moves suspiciously!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1934c98e7797dfa643bcc021",
+  "at": "battle/28",
+  "uses": 1,
+  "jp": "{19}１は\n{19}４の指令を出した｜",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ gives the order:￥／￥Ｚ４!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa049c48b5ac93ba60d92878ad4c652b9c021",
+  "at": "battle/29",
+  "uses": 1,
+  "jp": "{19}１は　体と技の力を\n仲間に分けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ shared HP and TP￥／with the party!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0978dd0c2b2c021",
+  "at": "battle/30",
+  "uses": 1,
+  "jp": "{19}１は　絡みついた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ entangles the target!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98bb640c92f8c8221",
+  "at": "battle/31",
+  "uses": 1,
+  "jp": "{19}１の狂気の一撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ strikes in madness!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9499396d821",
+  "at": "battle/32",
+  "uses": 2,
+  "jp": "{19}１の体当り｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Body Slam!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa05297f4bcc021",
+  "at": "battle/33",
+  "uses": 1,
+  "jp": "{19}１は　分裂した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ splits apart!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa092878ad4a68cc4dd6b21",
+  "at": "battle/34",
+  "uses": 1,
+  "jp": "{19}１は　仲間を呼んだ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ calls for allies!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d93cb9152a08e70a68fc1bcc021",
+  "at": "battle/35",
+  "uses": 1,
+  "jp": "{19}１は\n突然　姿を消した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／suddenly vanished!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932a6a08bf2afc021",
+  "at": "battle/36",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２を　喰った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／devoured ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c98ce3c68942dac021",
+  "at": "battle/37",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２の後に隠れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／hides behind ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98d675d3f210d93644490ce4d21",
+  "at": "battle/38",
+  "uses": 1,
+  "jp": "{19}１の紅丸斬｜\n電光石火｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s Benimaru Slash!￥／Lightning fast!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c92a89483f210d22502f94d421",
+  "at": "battle/39",
+  "uses": 1,
+  "jp": "{19}１の黒羽斬｜\n大死一番｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Kuroha Slash!￥／Death-Defying Blow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98b608c6f3f21",
+  "at": "battle/40",
+  "uses": 1,
+  "jp": "{19}１の義経斬｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Yoshitsune Slash!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c94595463f210d8eccc39067c9a0cbc491be2921",
+  "at": "battle/41",
+  "uses": 1,
+  "jp": "{19}１の女彦斬｜\n捨て身の　ひと太刀｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Onnahiko Slash!￥／A self-sacrificing strike!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c990c397903f210d1932c90dccc4badbc6a094f2718d9edd6b21",
+  "at": "battle/42",
+  "uses": 1,
+  "jp": "{19}１の静乱斬｜\n{19}２の\nふところに　飛び込んだ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s Shizuka Flurry Slash!￥／Dives past ￥Ｚ２'s￥／guard!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c93a7b3f210d43c08f8a8f9f958921",
+  "at": "battle/43",
+  "uses": 1,
+  "jp": "{19}１の三郎斬｜\n出た所勝負｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s Saburo Slash!￥／Take a chance!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98fbc7d3f210d94772dc9907721",
+  "at": "battle/44",
+  "uses": 1,
+  "jp": "{19}１の松虫斬｜\n背水の陣｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s Matsumushi Slash!￥／Last Stand!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "99c299c23f210d8c8850c991be2921",
+  "at": "battle/45",
+  "uses": 1,
+  "jp": "卍卍斬｜\n決死の太刀｜",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Manji Manji Slash!￥／A desperate strike!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa088ab91d4a6c2b2c021",
+  "at": "battle/46",
+  "uses": 1,
+  "jp": "{19}１は　悪態をついた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ hurls insults!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0222693bea690d8afc021",
+  "at": "battle/47",
+  "uses": 1,
+  "jp": "{19}１は　大見得を切った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ strikes a grand pose!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c994f264d821",
+  "at": "battle/48",
+  "uses": 1,
+  "jp": "{19}１の飛げり｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ delivers a flying kick!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa07e3e4ea68e648a7cb9c0210d8eccc39067c9228b5a21",
+  "at": "battle/49",
+  "uses": 1,
+  "jp": "{19}１は　心中物を仕掛けた｜\n捨て身の大技｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ begins Lovers' Suicide!￥／A powerful sacrifice attack!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0c6d7d0a68cf8b6bcc021",
+  "at": "battle/50",
+  "uses": 1,
+  "jp": "{19}１は　にらみを効かした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ fixes a fierce glare!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0228af1bea642afc021",
+  "at": "battle/51",
+  "uses": 1,
+  "jp": "{19}１は　大寄せを使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Enemy Lure!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa02a24c6c5afc021",
+  "at": "battle/52",
+  "uses": 1,
+  "jp": "{19}１は　黒子になった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ becomes a stagehand!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08d728e96a68e648a7cb9c0210d22502f94d421",
+  "at": "battle/53",
+  "uses": 1,
+  "jp": "{19}１は　荒事を仕掛けた｜\n大死一番｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ launches￥／a Bold Performance!￥／Death-Defying Strike!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa093b792f7d2a68e648a7cb9c021",
+  "at": "battle/54",
+  "uses": 1,
+  "jp": "{19}１は　胴締めを仕掛けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attempts a Body Lock!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c97c93cbb721",
+  "at": "battle/55",
+  "uses": 1,
+  "jp": "{19}１の頭突き｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ headbutts!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa088dd8974a69366b2c021",
+  "at": "battle/57",
+  "uses": 1,
+  "jp": "{19}１は　胃液を吐いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ spits stomach acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c993cb8c82210d1932c90dccc4badbc6a094f2718d9edd6b21",
+  "at": "battle/58",
+  "uses": 1,
+  "jp": "{19}１の突撃｜\n{19}２の\nふところに　飛び込んだ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ charges!￥／Dashes inside ￥Ｚ２'s￥／guard!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9229055d821",
+  "at": "battle/59",
+  "uses": 1,
+  "jp": "{19}１の大振り｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ takes a mighty swing!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa094772dc98d5cb4a6c4afc021",
+  "at": "battle/60",
+  "uses": 1,
+  "jp": "{19}１は　背水の構えをとった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ takes￥／a Last Stand stance!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a08ecc9067c98d558c8221",
+  "at": "battle/61",
+  "uses": 1,
+  "jp": "{19}１の　捨身の攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ attacks recklessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0944f609467a695faafc021",
+  "at": "battle/62",
+  "uses": 1,
+  "jp": "{19}１は　念動波を放った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ unleashes￥／a psychic wave!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c992b98af1be21",
+  "at": "battle/63",
+  "uses": 1,
+  "jp": "{19}１の鳥寄せ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ calls the birds!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c6a056c93b618f68afc021",
+  "at": "battle/64",
+  "uses": 1,
+  "jp": "{19}１に　鬼の力が宿った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ gained demonic power!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa090e093bea68e8ed0c021",
+  "at": "battle/67",
+  "uses": 1,
+  "jp": "{19}１は　説得を試みた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ tries to￥／persuade the enemy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08c8c8df7a642afc021",
+  "at": "battle/68",
+  "uses": 1,
+  "jp": "{19}１は　血桜を使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Blood Blossom!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0974856a642afc021",
+  "at": "battle/69",
+  "uses": 1,
+  "jp": "{19}１は　幽鬼を使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses Specter!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933c98aaa4ea6a042afc021",
+  "at": "battle/70",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３の巻物を　使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ used the￥／￥Ｚ３ scroll!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933a642afc021",
+  "at": "battle/71",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３を使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ used￥／￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933a6a09265b2c021",
+  "at": "battle/72",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３を　弾いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ played￥／the ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933c6a09347a68ecabcc021",
+  "at": "battle/73",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３に　敵を写した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／captured the enemy￥／image in ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "88c32ac94461a0c667d043bcc021",
+  "at": "battle/74",
+  "uses": 1,
+  "jp": "暗黒の光が　にじみ出した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark light seeps out!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933a6a08db7bc43bcc021",
+  "at": "battle/75",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３を　差し出した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／offers ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933a69055afc021",
+  "at": "battle/76",
+  "uses": 1,
+  "jp": "{19}１は　{19}３を振った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ waves ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933a69081b2c021",
+  "at": "battle/77",
+  "uses": 1,
+  "jp": "{19}１は　{19}３を吹いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ plays ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa09452b4d92da69081b2c0210d95d3d8caa0898ac695efcfdac021",
+  "at": "battle/78",
+  "uses": 1,
+  "jp": "{19}１は　燃える水を吹いた｜\n辺りは　炎に包まれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ sprays burning water!￥／Flames engulf the area!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1933a6938a64c021",
+  "at": "battle/79",
+  "uses": 1,
+  "jp": "{19}１は\n{19}３を投げた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／throws ￥Ｚ３!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa096fb92d9a6938a64c0210d95d3d8c6a096fb61c0c1bad2c021",
+  "at": "battle/80",
+  "uses": 1,
+  "jp": "{19}１は　油壷を投げた｜\n辺りに　油がたちこめた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ throws an oil jar!￥／Oil fills the air!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933a60d8d82b8a0b6b664c021",
+  "at": "battle/81",
+  "uses": 1,
+  "jp": "{19}１は　{19}３を\n高く　かかげた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ raises ￥Ｚ３￥／high!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa019336e0d72dd89a3afc021",
+  "at": "battle/82",
+  "uses": 1,
+  "jp": "{19}１は　{19}３で\nぶん殴った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ swings ￥Ｚ３￥／for a heavy blow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933c90d91b3a69055afc021",
+  "at": "battle/83",
+  "uses": 1,
+  "jp": "{19}１は　{19}３の\n袖を振った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ waves ￥Ｚ３'s￥／sleeve!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933c90d0e74c0dd0fa6899fbcc021",
+  "at": "battle/84",
+  "uses": 1,
+  "jp": "{19}１は　{19}３の\n{k}ボタン{h}を押した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ presses ￥Ｚ３'s￥／button!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa01933c60d944fa68d9ed2c021",
+  "at": "battle/85",
+  "uses": 1,
+  "jp": "{19}１は　{19}３に\n念を込めた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ fills ￥Ｚ３￥／with spiritual power!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d91669181b8a0d6b9c021",
+  "at": "battle/86",
+  "uses": 1,
+  "jp": "{19}２は\n素早く　よけた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／dodges swiftly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c60d0e6bd2b0670fc5bc21",
+  "at": "battle/87",
+  "uses": 1,
+  "jp": "{19}２に\n{k}ダメージ{h}なし｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ takes￥／no damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d94e6984a6e60b9c5b221",
+  "at": "battle/88",
+  "uses": 1,
+  "jp": "{19}１は\n疲労で動けない｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is too exhausted to move!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d60b9d9d6b3c6c5afc021",
+  "at": "battle/89",
+  "uses": 1,
+  "jp": "{19}１は\n動けるようになった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／can move again!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98b7d8f8aa693cbb2c021",
+  "at": "battle/90",
+  "uses": 1,
+  "jp": "{19}２の急所を突いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hit ￥Ｚ２'s weak spot!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ee7d8a68eccc3c0210d8ee794f53b61a01b08978ec1c021",
+  "at": "battle/91",
+  "uses": 1,
+  "jp": "{19}１は　守りを捨てた｜\n守備力が　{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ abandoned defense!￥／DEF fell by ￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca493ba60d1b08a642afc021",
+  "at": "battle/92",
+  "uses": 1,
+  "jp": "{19}１は体力を\n{1B}{08}を使った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ spent￥／￥Ｄ￥右 HP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c60d9347c98d558c82619153c38f57cfafc021",
+  "at": "battle/93",
+  "uses": 1,
+  "jp": "{19}１に\n敵の攻撃が全て集まった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／draws all enemy attacks!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "88ab91d4c98cf889ca61a08fc1b4c021",
+  "at": "battle/94",
+  "uses": 1,
+  "jp": "悪態の効果が　消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Taunt wears off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d8bb0daa6c5bcc3a093a66443bcc021",
+  "at": "battle/95",
+  "uses": 1,
+  "jp": "{19}２は\n恐れをなして　逃げ出した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／flees in terror!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "9347c940947a61a08badcfafc021",
+  "at": "battle/96",
+  "uses": 2,
+  "jp": "敵の気配が　強まった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The enemy presence grew stronger!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "9347caa01931c98e70a60d268eb8afc021",
+  "at": "battle/97",
+  "uses": 1,
+  "jp": "敵は　{19}１の姿を\n見失った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The enemy lost sight￥／of ￥Ｚ１!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c949a695dfd7b4c021",
+  "at": "battle/98",
+  "uses": 1,
+  "jp": "{19}２の体を捕らえた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ is caught in a hold!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa00e63b263b292f70fd2c0210d1932c60d1b08c90e6bd2b06721",
+  "at": "battle/99",
+  "uses": 1,
+  "jp": "{19}１は　{k}グイグイ締{h}めた｜\n{19}２に\n{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ tightens the hold!￥／￥Ｚ２ takes￥／￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bbd7c6a0945d0ed0bf0f619768dac021",
+  "at": "battle/100",
+  "uses": 1,
+  "jp": "さらに　脳{k}ミソ{h}が揺れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "It also rattles the brain!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c6b6b6afc3b2c00d88dd897461a08aa3b2c021",
+  "at": "battle/102",
+  "uses": 1,
+  "jp": "{19}１にかかっていた\n胃液が　乾いた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The stomach acid on ￥Ｚ１￥／dries up!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa08fc1bc94f2dd6b21",
+  "at": "battle/103",
+  "uses": 1,
+  "jp": "{19}２は　消し飛んだ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ was blown away!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "92b961a01b8948a094f2dd6eb7c021",
+  "at": "battle/104",
+  "uses": 1,
+  "jp": "鳥が　{1B}羽　飛んできた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｄ birds fly in!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9493b610d1b08978ec1c021",
+  "at": "battle/105",
+  "uses": 1,
+  "jp": "{19}１の体力が\n{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s HP falls by￥／￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a095cf90676189f0b9c021",
+  "at": "battle/106",
+  "uses": 1,
+  "jp": "{19}１の　変身が解けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s transformation ends!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa090ed97f1a697a3dac021",
+  "at": "battle/107",
+  "uses": 1,
+  "jp": "{19}２は　戦列を離れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ left the battle!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c90d493b61a01b08978ec1c0210d8b5ac93b61a01b08978ec1c021",
+  "at": "battle/108",
+  "uses": 1,
+  "jp": "{19}１の\n体力が　{1B}{08}落ちた｜\n技の力が　{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／loses ￥Ｄ￥右 HP!￥／Loses ￥Ｄ￥右 TP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c6a08fe6d888daafc0210d1931caa060b9c5b221",
+  "at": "battle/109",
+  "uses": 1,
+  "jp": "{19}２に　乗り移った｜\n{19}１は　動けない｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Possessed ￥Ｚ２!￥／￥Ｚ１ cannot move!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "974856c98cf889ca618fc1b4c0210d1932caa089e4c6b6b4afc0210d1931caa089e4c6b6b4afc021",
+  "at": "battle/110",
+  "uses": 1,
+  "jp": "幽鬼の効果が消えた｜\n{19}２は　我にかえった｜\n{19}１は　我にかえった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Specter wore off!￥／￥Ｚ２ regained control!￥／￥Ｚ１ regained control!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa092c7afc3b7c021",
+  "at": "battle/111",
+  "uses": 1,
+  "jp": "{19}２は　追ってきた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ gives chase!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa08e5fa68ef3b9c021",
+  "at": "battle/112",
+  "uses": 1,
+  "jp": "{19}２は　酸を受けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ was hit by acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9493b610d8e5fc69049cfdad9210d1b08c90e6bd2b06721",
+  "at": "battle/113",
+  "uses": 1,
+  "jp": "{19}１の体力が\n酸に蝕まれる｜\n{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is￥／eaten away by acid!￥／￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa093c5a68ef3b9c021",
+  "at": "battle/114",
+  "uses": 1,
+  "jp": "{19}２は　毒を受けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ is poisoned!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98b5ac93b610d93c5c69049cfdad9210d1b08c90e6bd2b06721",
+  "at": "battle/115",
+  "uses": 1,
+  "jp": "{19}１の技の力が\n毒に蝕まれる｜\n{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s TP￥／is ravaged by poison!￥／￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa0bc71dac021",
+  "at": "battle/116",
+  "uses": 1,
+  "jp": "{19}２は　しびれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ is paralyzed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0bc71dac3b2d921",
+  "at": "battle/117",
+  "uses": 1,
+  "jp": "{19}１は　しびれている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is paralyzed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c9a0bc71daca8fc1b4c021",
+  "at": "battle/118",
+  "uses": 1,
+  "jp": "{19}１の　しびれは消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s paralysis wears off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932b6d71933c90d919594f5a6ca68bcc021",
+  "at": "battle/119",
+  "uses": 1,
+  "jp": "{19}２から{19}３の\n装備をはずした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ has ￥Ｚ３￥／unequipped!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca048d38b4ebad7c5b6afc021",
+  "at": "battle/120",
+  "uses": 1,
+  "jp": "しかし　何も起こらなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But nothing happened!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932b6d71933a60d9390d08ee6afc021",
+  "at": "battle/121",
+  "uses": 1,
+  "jp": "{19}２から{19}３を\n盗み取った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Stole ￥Ｚ３￥／from ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932b6d7a01b97bcc941a60d9390d08ee6afc021",
+  "at": "battle/122",
+  "uses": 1,
+  "jp": "{19}２から　{1B}両の金を\n盗み取った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "From ￥Ｚ２, ￥Ｄ ryo￥／is stolen!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0935091debcc021",
+  "at": "battle/123",
+  "uses": 1,
+  "jp": "{19}１は　撤退した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ retreats!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c60d1b08c90e6bd2b06721",
+  "at": "battle/124",
+  "uses": 1,
+  "jp": "{19}２に\n{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ takes￥／￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c6a0b6b6afc3b2c00d1933c98cf889cacaa08fc1b4c021",
+  "at": "battle/125",
+  "uses": 1,
+  "jp": "{19}１に　かかっていた\n{19}３の効果は　消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "On ￥Ｚ１,￥／the effect of ￥Ｚ３ wears off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c60d1933c98f70a6b6b9c5b5bcc021",
+  "at": "battle/126",
+  "uses": 1,
+  "jp": "{19}２に\n{19}３の術をかけなおした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "On ￥Ｚ２,￥／￥Ｚ３ was recast!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca01932c60d8cf889cacac5b6afc021",
+  "at": "battle/127",
+  "uses": 1,
+  "jp": "しかし　{19}２に\n効果はなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But ￥Ｚ２￥／is unaffected!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c9493b610d1b0889f1959c21",
+  "at": "battle/128",
+  "uses": 1,
+  "jp": "{19}２の体力が\n{1B}{08}回復｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ recovers￥／￥Ｄ￥右 HP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c9493b61915389f521",
+  "at": "battle/129",
+  "uses": 1,
+  "jp": "{19}２の体力が全快｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s HP is fully restored!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98b5ac93b61915389f521",
+  "at": "battle/130",
+  "uses": 1,
+  "jp": "{19}２の技の力が全快｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s TP is fully restored!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932959c8a88210d493bc48b5ac93b61915389f521",
+  "at": "battle/131",
+  "uses": 1,
+  "jp": "{19}２復活｜\n体力と技の力が全快｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ revived!￥／HP and TP fully restored!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c6b6b6afc3b2c00d9153c3c98cf889ca618fc1b4c021",
+  "at": "battle/132",
+  "uses": 1,
+  "jp": "{19}２にかかっていた\n全ての効果が消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "All effects on ￥Ｚ２￥／have vanished!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c90d493b61a01b0889f1959c210d8b5ac93b61a01b0889f1959c21",
+  "at": "battle/133",
+  "uses": 1,
+  "jp": "{19}２の\n体力が　{1B}{08}回復｜\n技の力が　{1B}{08}回復｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／recovers ￥Ｄ￥右 HP!￥／Recovers ￥Ｄ￥右 TP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "898acaa0cf6b9452b4c3b2d921",
+  "at": "battle/134",
+  "uses": 1,
+  "jp": "炎は　まだ燃えている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The flames are still burning!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c90d8e634dc98cf889cacaa08fc1b4c021",
+  "at": "battle/135",
+  "uses": 1,
+  "jp": "{19}１の\n残火の効果は　消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s￥／Embers wears off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c90d493b61a01b0889f1959c21",
+  "at": "battle/136",
+  "uses": 1,
+  "jp": "{19}１の\n体力が　{1B}{08}回復｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／recovers ￥Ｄ￥右 HP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98d558c823b610d1b088fe3afc0",
+  "at": "battle/137",
+  "uses": 1,
+  "jp": "{19}２の攻撃力が\n{1B}{08}上った",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s ATK rose￥／by ￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98ee794f53b610d1b088fe3afc0",
+  "at": "battle/138",
+  "uses": 1,
+  "jp": "{19}２の守備力が\n{1B}{08}上った",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s DEF rises by￥／￥Ｄ￥右.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c991669181bb610d1b088fe3afc0",
+  "at": "battle/139",
+  "uses": 1,
+  "jp": "{19}２の素早さが\n{1B}{08}上った",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s speed￥／rises by ￥Ｄ￥右.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98d558c823b610d1b08978ec1c0",
+  "at": "battle/140",
+  "uses": 1,
+  "jp": "{19}２の攻撃力が\n{1B}{08}落ちた",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s ATK fell￥／by ￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98ee794f53b610d1b08978ec1c0",
+  "at": "battle/141",
+  "uses": 1,
+  "jp": "{19}２の守備力が\n{1B}{08}落ちた",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ２'s DEF falls by￥／￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c991669181bb610d1b08978ec1c021",
+  "at": "battle/142",
+  "uses": 1,
+  "jp": "{19}２の素早さが\n{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s speed￥／drops by ￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c955c60d977a898a61a097a7c18fb8afc021",
+  "at": "battle/143",
+  "uses": 1,
+  "jp": "{19}２の前に\n陽炎が　立ち昇った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Before ￥Ｚ２,￥／a heat haze rose!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98f70610db6b6d8d4bdb8c5afc021",
+  "at": "battle/144",
+  "uses": 1,
+  "jp": "{19}２の術が\nかかりやすくなった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s spells￥／become easier to land!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98f70610d89f0b9c6b8b8c5afc021",
+  "at": "battle/145",
+  "uses": 1,
+  "jp": "{19}２の術が\n解けにくくなった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s spells￥／become harder to dispel!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c9895ec93b610d1b08978ec1c021",
+  "at": "battle/146",
+  "uses": 1,
+  "jp": "{19}２の運の力が\n{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ２'s luck falls by￥／￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c9926d945c61978ec1c021",
+  "at": "battle/147",
+  "uses": 1,
+  "jp": "{19}２の知能が落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s intelligence falls!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c9926d945c618fe3afc021",
+  "at": "battle/148",
+  "uses": 1,
+  "jp": "{19}２の知能が上った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s intelligence rises!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa08cd5c695cf9067bcc021",
+  "at": "battle/149",
+  "uses": 1,
+  "jp": "{19}２は　虎に変身した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ turns into a tiger!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c9919594f5a68ecabc8ee6afc021",
+  "at": "battle/150",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２の装備を写し取った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／copied ￥Ｚ２'s equipment!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c93ba693bec021",
+  "at": "battle/151",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２の力を得た｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gained ￥Ｚ２'s power!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c98965610d1b49c652b6dac021",
+  "at": "battle/152",
+  "uses": 1,
+  "jp": "{19}１の影が\n{1B}体に分かれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s shadow￥／splits into ￥Ｄ copies!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca08cbbdac5b6afc021",
+  "at": "battle/153",
+  "uses": 1,
+  "jp": "しかし　現れなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But nothing appeared!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca8fc1b4c021",
+  "at": "battle/154",
+  "uses": 1,
+  "jp": "{19}２は消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ vanished!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c60d518965c98f70a6b6b9c5b5bcc0210d59cf6ec98965caa08fc1b4c021",
+  "at": "battle/155",
+  "uses": 1,
+  "jp": "{19}２に\n赤影の術をかけなおした｜\n今までの影は　消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "On ￥Ｚ２,￥／Crimson Shadow was recast!￥／The old shadow vanished!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8eae2861a01b498cbbdac021",
+  "at": "battle/156",
+  "uses": 1,
+  "jp": "式神が　{1B}体現れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｄ spirit familiars appear!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8eae28c98f70a6b6b9c5b5bcc0210d1934ca8fc1b4c0210d8eae2861a01b498cbbdac021",
+  "at": "battle/157",
+  "uses": 1,
+  "jp": "式神の術をかけなおした｜\n{19}４は消えた｜\n式神が　{1B}体現れた｜",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Spirit Familiar recast!￥／￥Ｚ４ vanishes!￥／￥Ｄ familiars appear!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "5661a03395438cbbdac021",
+  "at": "battle/158",
+  "uses": 1,
+  "jp": "鬼が　３匹現れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Three demons appeared!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa03b9073b7c021",
+  "at": "battle/159",
+  "uses": 1,
+  "jp": "{19}２は　力尽きた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ collapses!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "3a8a70c98f70a6b6b9c5b5bcc0210d569242ca8fc1b4c021",
+  "at": "battle/160",
+  "uses": 1,
+  "jp": "三角の術をかけなおした｜\n鬼達は消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Triangle was recast!￥／The demons vanished!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa096b0afc021",
+  "at": "battle/161",
+  "uses": 1,
+  "jp": "{19}２は　眠った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ falls asleep!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa096b0afc3b2d921",
+  "at": "battle/162",
+  "uses": 1,
+  "jp": "{19}１は　眠っている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is asleep!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ae1a68a6fcfbcc021",
+  "at": "battle/163",
+  "uses": 1,
+  "jp": "{19}１は　眼を覚ました｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ wakes up!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa09347a69055d890d8afc021",
+  "at": "battle/164",
+  "uses": 1,
+  "jp": "{19}１は　敵を振り切った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ shakes off the enemy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca08cf889cacac5b6afc021",
+  "at": "battle/165",
+  "uses": 1,
+  "jp": "しかし　効果はなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But it has no effect!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "974688f8c98f70a6b6b9c5b5bcc021",
+  "at": "battle/167",
+  "uses": 1,
+  "jp": "友引の術をかけなおした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shared Fate was recast!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98b5ac93ba60d1b089244afc021",
+  "at": "battle/168",
+  "uses": 1,
+  "jp": "{19}２の技の力を\n{1B}{08}奪った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Stole TP from ￥Ｚ２:￥／￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c98b5ac93b610d1b0889f1959c21",
+  "at": "battle/169",
+  "uses": 1,
+  "jp": "{19}２の技の力が\n{1B}{08}回復｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ recovers￥／￥Ｄ￥右 TP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d54b244c695efcfdac021",
+  "at": "battle/170",
+  "uses": 1,
+  "jp": "{19}２は\n白い光に包まれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is bathed in white light!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d51b244c695efcfdac021",
+  "at": "battle/171",
+  "uses": 1,
+  "jp": "{19}２は\n赤い光に包まれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is bathed in red light!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d90c2b244c695efcfdac021",
+  "at": "battle/172",
+  "uses": 1,
+  "jp": "{19}２は\n青い光に包まれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is bathed in blue light!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa08d558c82a695d4bcc0210d1931c60d1b08c90e6bd2b06721",
+  "at": "battle/173",
+  "uses": 1,
+  "jp": "{19}２は　攻撃を返した｜\n{19}１に\n{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ reflects the attack!￥／￥Ｚ１ takes￥／￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d8aaa4ea642b4c5b8c5afc021",
+  "at": "battle/174",
+  "uses": 1,
+  "jp": "{19}２は\n巻物を使えなくなった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／can no longer use scrolls!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d2ab28965c695efcfdac021",
+  "at": "battle/175",
+  "uses": 1,
+  "jp": "{19}２は\n黒い影に包まれた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is shrouded in black shadow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d1931c9238c60c6c5afc021",
+  "at": "battle/176",
+  "uses": 1,
+  "jp": "{19}２は\n{19}１の人形になった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／becomes ￥Ｚ１'s puppet!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca8bb69790bcc021",
+  "at": "battle/177",
+  "uses": 1,
+  "jp": "{19}２は狂乱した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ went berserk!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bbd7c6a09380d8c2b2c021",
+  "at": "battle/178",
+  "uses": 1,
+  "jp": "さらに　凍りついた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Also frozen solid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa09380afc3b2d921",
+  "at": "battle/179",
+  "uses": 1,
+  "jp": "{19}１は　凍っている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is frozen!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1b08c90e6bd2b0670fa694bd8ecbbcc021",
+  "at": "battle/180",
+  "uses": 1,
+  "jp": "{1B}{08}の{k}ダメージ{h}を反射した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Reflected ￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932959c8a88210d493b6131c6c5afc0210d93c5a68ef3b9c021",
+  "at": "battle/181",
+  "uses": 1,
+  "jp": "{19}２復活｜\n体力が１になった｜\n毒を受けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ revived!￥／HP dropped to 1!￥／Poisoned!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c90d493b6131c6c5afc0210d93c5a68ef3b9c021",
+  "at": "battle/182",
+  "uses": 1,
+  "jp": "{19}２の\n体力が１になった｜\n毒を受けた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s￥／HP dropped to 1!￥／Poisoned!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932959c8a88210d8b5ac93b611b08978ec1c021",
+  "at": "battle/183",
+  "uses": 1,
+  "jp": "{19}２復活｜\n技の力が{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ revived!￥／TP fell by ￥Ｄ￥右!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c90d8b5ac93b611b08978ec1c021",
+  "at": "battle/184",
+  "uses": 1,
+  "jp": "{19}２の\n技の力が{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ lost￥／￥Ｄ￥右 TP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca01932ca0d959c8a88bcc5b6afc021",
+  "at": "battle/185",
+  "uses": 1,
+  "jp": "しかし　{19}２は\n復活しなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But ￥Ｚ２￥／did not revive!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c90d493b611b08978ec1c021",
+  "at": "battle/186",
+  "uses": 1,
+  "jp": "{19}２の\n体力が{1B}{08}落ちた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ lost￥／￥Ｄ￥右 HP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "0ebcdb0fcaa089e4c6b6b4afc021",
+  "at": "battle/187",
+  "uses": 1,
+  "jp": "{k}シロ{h}は　我にかえった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shiro comes to his senses!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c993b98bef91dcc657dac021",
+  "at": "battle/188",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２の道具袋に入れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is placed￥／in ￥Ｚ２'s item bag!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8e9e8cc0949a926561949a94adbcc0210d1931c61b08c90e6bd2b06721",
+  "at": "battle/189",
+  "uses": 1,
+  "jp": "時限爆弾が爆発した｜\n{19}１に{1B}{08}の{k}ダメージ｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The Time Bomb explodes!￥／￥Ｚ１ takes ￥Ｄ￥右 damage!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93a62dc98ff1caa090dcdac3bccfafc021",
+  "at": "battle/190",
+  "uses": 1,
+  "jp": "逃水の杖は　折れてしまった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The Mirage Staff snaps!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ae2c6c5afc021",
+  "at": "battle/191",
+  "uses": 1,
+  "jp": "{19}１は　岩になった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ turned to stone!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ae2c6c5afc3b2d921",
+  "at": "battle/192",
+  "uses": 1,
+  "jp": "{19}１は　岩になっている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is turned to stone!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08ae2b6d796dfafc021",
+  "at": "battle/193",
+  "uses": 1,
+  "jp": "{19}１は　岩から戻った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is no longer stone!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c993bfc9895e618fe3afc021",
+  "at": "battle/194",
+  "uses": 1,
+  "jp": "{19}２の徳の運が上った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s virtue luck rises!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c941895e618fe3afc021",
+  "at": "battle/195",
+  "uses": 1,
+  "jp": "{19}２の金運が上った｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s money luck rises!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89698993c991be29caa00e79b7d80fc490dcdac021",
+  "at": "battle/196",
+  "uses": 1,
+  "jp": "永遠の太刀は　{k}ポキリ{h}と折れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The Eternal Sword snaps in two!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa090edb4c5b8c5afc021",
+  "at": "battle/197",
+  "uses": 1,
+  "jp": "{19}２は　戦えなくなった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ can no longer fight!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932a6937cbcc021",
+  "at": "battle/198",
+  "uses": 1,
+  "jp": "{19}２を倒した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Defeated ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89ef7ec92f91be2921",
+  "at": "battle/199",
+  "uses": 1,
+  "jp": "会心の一太刀｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "A critical sword strike!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "95738a6fc92f8c8221",
+  "at": "battle/200",
+  "uses": 1,
+  "jp": "不覚の一撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "An unexpected blow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d1931a6b670afc3b2d9",
+  "at": "battle/201",
+  "uses": 1,
+  "jp": "{19}２は\n{19}１をかばっている",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is protecting ￥Ｚ１.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c6a0b6b6afc3b2c00d94bd8ecbc98cf889cacaa08fc1b4c021",
+  "at": "battle/202",
+  "uses": 1,
+  "jp": "{19}１に　かかっていた\n反射の効果は　消えた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s￥／Reflect effect wears off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d93b792f7d2b6d789f095fabbdac021",
+  "at": "battle/203",
+  "uses": 1,
+  "jp": "{19}１は\n胴締めから解放された｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is free of the Body Lock!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8262828f828d828d8289828e8287a08293828f828f828e8144814481440d8169814f8151814f8147816a",
+  "at": "battle/204",
+  "uses": 1,
+  "jp": "Ｃｏｍｍｉｎｇ　ｓｏｏｎ．．．\n（＾＿＾；）",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Coming soon..."
+   }
+  ]
+ },
+ {
+  "hex": "8eb89473bcc021",
+  "at": "battle/205",
+  "uses": 1,
+  "jp": "失敗した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "It failed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c493af4989bbbcc021",
+  "at": "battle/206",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２と同体化した｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／merged with ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca01931ca0d93a664d7dac5b6afc021",
+  "at": "battle/207",
+  "uses": 1,
+  "jp": "しかし　{19}１は\n逃げられなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But ￥Ｚ１￥／couldn't escape!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca08b5ac93b6191abd8c5b6afc021",
+  "at": "battle/208",
+  "uses": 1,
+  "jp": "しかし　技の力が足りなかった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But there is not enough TP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d92f7d2c2b9c3b2d921",
+  "at": "battle/209",
+  "uses": 1,
+  "jp": "{19}１は\n締めつけている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／maintains the hold!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0d90e093bebbdac3a08b41afc34cafc0",
+  "at": "battle/210",
+  "uses": 1,
+  "jp": "{19}２は\n説得されて　帰って行った",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／is persuaded to go home.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932c90d8ee794f53b61978ec1c0",
+  "at": "battle/211",
+  "uses": 1,
+  "jp": "{19}２の\n守備力が落ちた",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２'s￥／DEF fell!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932ca0db2c1d3b8bbddc6a093a6646bbcc021",
+  "at": "battle/212",
+  "uses": 1,
+  "jp": "{19}２は\nいちもくさんに　逃げだした｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２￥／fled at full speed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c90d3b61a0d0c562afc021",
+  "at": "battle/213",
+  "uses": 1,
+  "jp": "{19}１の\n力が　みなぎった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is brimming with power!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932a68f82c6bcc3b2d9",
+  "at": "battle/214",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２を盾にしている",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is using ￥Ｚ２ as a shield!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa089f1959cc98f70a6c4c5b4c0",
+  "at": "battle/215",
+  "uses": 1,
+  "jp": "{19}１は　回復の術をとなえた",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ casts a healing spell!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8ae28ccbc98f82ca8dd3b9c3bccfafc021",
+  "at": "battle/216",
+  "uses": 1,
+  "jp": "岩戸の盾は砕けてしまった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The Stone Door Shield shatters!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1932caa094f271bbafc021",
+  "at": "battle/217",
+  "uses": 1,
+  "jp": "{19}２は　飛びさった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ flies away!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "59cf6eb2c0a092b9caa094f271bbafc021",
+  "at": "battle/218",
+  "uses": 1,
+  "jp": "今までいた　鳥は　飛びさった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The birds that were here fly away!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "280ec0c00fc99144c98ee596438d558c8221",
+  "at": "battle/219",
+  "uses": 1,
+  "jp": "神{k}タタ{h}の船の主砲攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "God Tata's ship fires its main gun!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "220ec0c00fc99144c996438c8221",
+  "at": "battle/220",
+  "uses": 1,
+  "jp": "大{k}タタ{h}の船の砲撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Great Tata's ship fires its cannons!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93798bf40edb740fc94d898a95fa8ecb21",
+  "at": "battle/221",
+  "uses": 1,
+  "jp": "土偶{k}ロボ{h}の火炎放射｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "The Clay Robot fires its flamethrower!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91ac92b9c98ee596438d558c8221",
+  "at": "battle/222",
+  "uses": 1,
+  "jp": "速鳥の主砲攻撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hayatori fires its main cannon!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91ac92b9c996438c8221",
+  "at": "battle/223",
+  "uses": 1,
+  "jp": "速鳥の砲撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hayatori fires its cannons!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91ac92b9c9978b8c8221",
+  "at": "battle/224",
+  "uses": 1,
+  "jp": "速鳥の雷撃｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hayatori's lightning strike!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91ac92b9c98b408f65917c8ecb21",
+  "at": "battle/225",
+  "uses": 1,
+  "jp": "速鳥の機銃掃射｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hayatori strafes with machine guns!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8d7c5c3cc996b39347964394ad8ecb21",
+  "at": "battle/226",
+  "uses": 1,
+  "jp": "鋼鉄城の無敵砲発射｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Steel Castle fires its Invincible Cannon!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "bcb6bca01932ca0d44c695efcfdac3b2d9",
+  "at": "battle/227",
+  "uses": 1,
+  "jp": "しかし　{19}２は\n光に包まれている",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "But ￥Ｚ２￥／is enveloped in light.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931ca0d1932c6a0915fb2a6c2b9c021",
+  "at": "battle/228",
+  "uses": 1,
+  "jp": "{19}１は\n{19}２に　狙いをつけた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／takes aim at ￥Ｚ２!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c93bcaa0d3c4c6d36fafc0",
+  "at": "battle/229",
+  "uses": 1,
+  "jp": "{19}１の力は　もとにもどった",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s strength￥／returns to normal.￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931c949b6d7a08db06197a3dac021",
+  "at": "battle/230",
+  "uses": 1,
+  "jp": "{19}１の体から　魂が離れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s soul leaves its body!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa0974856a642afc3b2d921",
+  "at": "battle/231",
+  "uses": 1,
+  "jp": "{19}１は　幽鬼を使っている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is using Specter!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "193261a08cbbdac021",
+  "at": "battle/232",
+  "uses": 1,
+  "jp": "{19}２が　現れた｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ２ appears!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1933caa089f3dac3bccfafc021",
+  "at": "battle/233",
+  "uses": 1,
+  "jp": "{19}３は　壊れてしまった｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ３ breaks!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "1931caa08cd5c6c5afc3b2d921",
+  "at": "battle/234",
+  "uses": 1,
+  "jp": "{19}１は　虎になっている｜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ is in tiger form!￥ｋ"
    }
   ]
  }

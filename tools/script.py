@@ -30,7 +30,7 @@ def records(node):
             yield from records(x)
 
 
-def main(blocks_path, match_path, ds_path, out_path, *catalogs):
+def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/content/HCD1022_02.iso'):
     cat = {}
     for path in catalogs:
         for r in records(json.load(open(path, encoding='utf-8'))):
@@ -61,6 +61,17 @@ def main(blocks_path, match_path, ds_path, out_path, *catalogs):
                 out[h] = {'hex': h, 'at': '%d/%d/%d' % (b['sector'], gi, k), 'uses': 1, 'jp': codec.decode(full, strict=False), 'pages': pages}
                 if len(pages) == 1 and not pages[0]['en'] and norm(out[h]['jp']) in cat:
                     pages[0].update(ds='catalog', en=cat[norm(out[h]['jp'])])
+    import extract
+    for k, m in enumerate(extract.battle(open(iso, 'rb').read())[0]):   # battle lines: their own stream, one page each
+        jp = codec.decode(m, strict=False)
+        e = out.setdefault(m.hex(), {'hex': m.hex(), 'at': 'battle/%d' % k, 'uses': 0, 'jp': jp, 'pages': [{'ds': None, 'en': None}]})
+        e['uses'] += 1
+        if e['pages'] and not e['pages'][0]['en'] and norm(jp) in cat:   # an empty message has no page
+            e['pages'][0].update(ds='catalog', en=cat[norm(jp)])
+    over = json.load(open(os.path.join(os.path.dirname(out_path), 'overrides.json'), encoding='utf-8'))
+    for h, text in over.items():   # one-page messages only, so far
+        if h in out:
+            out[h]['pages'] = [{'ds': 'override', 'en': text}]
     entries = [e for e in out.values() if e['pages']]
     json.dump(entries, open(out_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     pages = [p for e in entries for p in e['pages']]

@@ -66,6 +66,11 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   placeholder x and `24 6E` = newline. Guess: that is what the modules' group 11 (`$0の紅丸斬$n...`, three variants) feeds.
 - Command cursor: `$2805` (copy `$282B`), 0-8 row-major over 3 columns (0 = Fight). It wraps in both directions.
 - The battle window wraps by itself at the window edge (28 tiles, mid-word) and shows 3 lines.
+- The handler of a decimal-argument code (`19 n`, and `02 03 10 11 14 15`) reads the byte after its digits itself, past
+  the dictionary hook at 6F:`$7EA8`: a one-byte dictionary code there is copied raw and drawn as a kanji lead byte
+  (seen: `19 31 86` -> `1D 01 86`). insert.py keeps that byte plain.
+- The stream ends with the ADPCM image, so a longer one starts earlier: 56 bytes of FF padding sit before it in the
+  tightest copy (871 in most). insert.py moves the start and patches the address at 71:`$7502` (`LDA #$F4 / LDX #$00`).
 
 ## Message system (bank 0x6F at $6000 while a message runs; traced 2026-11-19)
 - Event block = module loaded raw at base bank `$4F` (0x74 for the start area), also mapped at $6000 as code. Header: 3-byte

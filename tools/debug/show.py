@@ -38,8 +38,17 @@ def main():
         d, tmp = os.path.dirname(a.state), a.state + '.run'
         pre = os.path.join(d, 'preload.mss')
         lua = [x for n in ('warp.lua', 'battle.lua') for x in ('--script', os.path.join(HERE, n))]
+        # the intro's length depends on the build: find the frame of the house load (area 10 sub 11) first, the
+        # preload state must come before it or warp.lua never sees a load (a fixed frame broke on the English build)
+        subprocess.run(PCE + [a.cue, '--out', tmp, '--frames', '17000', '--route', BOOT, '--mash', '40',
+                              '--script', os.path.join(HERE, 'warp.lua'), '--var', 'WARP_N=0'], stdout=subprocess.DEVNULL)
+        # map=26: the load that hands control to the player; an earlier house load (map=18) belongs to the intro
+        loads = [l for l in open(os.path.join(tmp, 'log.txt')).read().splitlines() if 'area=10 sub=11 map=26' in l]
+        if not loads:
+            sys.exit('regen: no house load in the first 17000 frames, see %s' % tmp)
+        house = int(loads[0].split('f=')[1].split()[0])
         for name, args in (
-                ('preload.mss', ['--frames', '14300', '--route', BOOT, '--mash', '40']),   # just before the house loads
+                ('preload.mss', ['--frames', str(house - 60), '--route', BOOT, '--mash', '40']),   # just before the house loads
                 (os.path.basename(a.state), ['--frames', '1700', '--mash', '40', '--state-in', pre]),
                 ('battle.mss', ['--frames', '60000', '--state-in', pre, '--var', 'SUB=0x12', '--var', 'MAP=32'] + lua)):
             r = subprocess.run(PCE + [a.cue, '--out', tmp, '--state-out'] + args)
@@ -57,6 +66,11 @@ def main():
     for it in a.items:
         if it.startswith('text:'):
             data = it[5:].encode().decode('unicode_escape').encode('latin-1')
+        elif it.startswith('battle/'):   # a line of the battle stream (use with --battle)
+            import extract
+            if iso is None:
+                iso = open(os.path.join(os.path.dirname(a.cue), 'data.iso'), 'rb').read()
+            data = extract.battle(iso)[0][int(it.split('/')[1])]
         else:
             import extract
             sector, group, msg = (int(x) for x in it.split('/'))
