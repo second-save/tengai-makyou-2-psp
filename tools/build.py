@@ -15,6 +15,7 @@ MIRROR = 0x8000000      # second copy of the start of the track
 DIGITS = bytes(range(0x30, 0x3A)) + b'_^]\xde'   # 6D:$674C: characters with the game's own 8x8 glyphs at 6D:$675A
 
 
+FLUSH = False   # page-end message buffer flush (WIP)
 SLOT2 = ('Sword', 'Arts', 'Skills', 'Demon')   # 剣法 秘芸 体術 鬼道 (DS names), 6 bytes each at most
 
 
@@ -88,6 +89,18 @@ def main(orig, syscard, out, all_ascii=False):
         # status bar: the HP / TP label sits 6 units (24 px, two kanji) after the member's column (6B:$61D1 CLC ADC #6);
         # 8 units leave 32 px for the short names of list 2 (user ruling: shorter names where they would overflow)
         writes.append((far(0x6B, 0x61D2, 0x6000), bytes.fromhex('6908'), 'status bar: name room 24 -> 32 px'))
+        # long messages: the pre-expander (6F:$7FC8, called per output byte) fills the 256-byte buffer at $E66E and, when
+        # full, the game restarts it with "長い!" (too long). English often passes 256 bytes, so the buffer is now drawn
+        # and emptied at every page end (wait code 12): $7FD7/$7FDB compare against $E66F (= not empty), $7FDF jumps to
+        # a helper in 6F's free tail ($7FF1: PLA PHA CMP #$12 BNE $7FE9 / far call 6A:$7F67 / JMP $7FE9) and 6A:$7F67
+        # NUL-terminates the buffer, runs the interpreter on it at the dialogue speed ($3279, as the message task at
+        # 6F:$653C does) and resets the write pointer to $E66E.
+        if FLUSH:   # disabled: crashes after the first page (see status.md open problem 8)
+            writes.append((far(0x6F, 0x7FD7, 0x6000), bytes.fromhex('c96fa598e9e6'), 'message buffer: flush test'))
+            writes.append((far(0x6F, 0x7FDF, 0x6000), bytes.fromhex('4cf17f'), 'message buffer: -> page-end check'))
+            writes.append((far(0x6F, 0x7FF1, 0x6000), bytes.fromhex('6848c912d0f2201b492c677f4ce97f'), 'message buffer: page-end check'))
+            writes.append((far(0x6A, 0x7F67, 0x6000), bytes.fromhex('da5a629297a96e8595a9e68596ad793220e750a96e8597a9e685987afa60'),
+                           'message buffer: draw and empty'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     new, log = bytearray(iso), []
     for off, data, name in writes:
@@ -95,7 +108,8 @@ def main(orig, syscard, out, all_ascii=False):
             assert iso[o:o + len(data)] == iso[off:off + len(data)], 'mirror differs at %x' % o
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
-    for off, data, name in writes[:3] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E')]:
+    for off, data, name in writes[:3] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E',
+                                                                       'message buffer: page-end check', 'message buffer: draw and empty')]:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)
