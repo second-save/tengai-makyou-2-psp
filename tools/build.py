@@ -94,12 +94,18 @@ def main(orig, syscard, out, all_ascii=False):
         # second party name list (status bar; 6B:$6C55, base at 6B:$6CD3) moves to 6B:$6C3D, where it and the old first
         # list leave 44 bytes
         writes.append((far(0x6B, 0x6CD3, 0x6000), bytes.fromhex('a06ca23d'), 'party name list 2 -> 6B:$6C3D'))
+        # the same two lists through the second base table (6B:$6D81 / $6D8A, status screen)
+        writes.append((far(0x6B, 0x6D84, 0x6000), bytes.fromhex('a06ca23d'), 'party name list 2 -> 6B:$6C3D (2)'))
+        writes.append((far(0x6B, 0x6D8D, 0x6000), bytes.fromhex('a06ba299'), 'party name list -> 6B:$6B99 (2)'))
         # status bar: the HP / TP label sits 6 units (24 px, two kanji) after the member's column (6B:$61D1 CLC ADC #6);
         # 8 units leave 32 px for the short names of list 2 (user ruling: shorter names where they would overflow)
         writes.append((far(0x6B, 0x61D2, 0x6000), bytes.fromhex('6908'), 'status bar: name room 24 -> 32 px'))
         # field menu money window ({1B}両 at 6B:$62A7, printed by 6B:$62A0 JSR $50A3 / BIT $62A7, pointer at $62A4): "Ryo" needs one more
         # byte, so a copy after the second name list (6B:$6C55, written by mainstr.py) is printed instead
         writes.append((far(0x6B, 0x62A4, 0x6000), bytes.fromhex('556c'), 'money window -> 6B:$6C55'))
+        # status screen: each label is copied by JSR $540C + inline pointer; 徳 (Virtue, 2 bytes at 6B:$6005, pointer at
+        # 6B:$62C8) gets the full word from a copy at 6B:$6C61 (after the money window)
+        writes.append((far(0x6B, 0x62C8, 0x6000), bytes.fromhex('616c'), 'Virtue label -> 6B:$6C61'))
         # long messages: the pre-expander stores each output byte through 6F:$7FC8 into the 256-byte buffer at $E66E;
         # when full, the game restarts it with "長い!" (too long), and ~340 English messages pass 256 bytes. Now the
         # buffer is drawn and emptied at every page end (wait code 12) while 6F stays mapped (a far call into 6A that
@@ -117,10 +123,11 @@ def main(orig, syscard, out, all_ascii=False):
         writes.append((far(0x6D, 0x675A + 10 * 8, 0x6000), b''.join(glyph(g) for g in LABELS), 'status labels Lv TP HP'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
     # original bytes each code patch must replace (catches an address off by one)
-    expect = {'money window -> 6B:$6C55': 'a762', 'field menu: far call': '20a3502c0567',
+    expect = {'money window -> 6B:$6C55': 'a762', 'Virtue label -> 6B:$6C61': '0560', 'field menu: far call': '20a3502c0567',
               'kind name list -> 6B:$6705': 'a06ba299', 'kind name list -> 6B:$6705 (2)': 'a06ba299',
               'technique kind list -> 6B:$671B': 'a06ba2ac', 'technique kind list -> 6B:$671B (2)': 'a06ba2ac',
-              'party name list -> 6B:$6B99': 'a06ca23d', 'party name list 2 -> 6B:$6C3D': 'a06ca255',
+              'party name list -> 6B:$6B99': 'a06ca23d', 'party name list 2 -> 6B:$6C3D': 'a06ca255', 'party name list 2 -> 6B:$6C3D (2)': 'a06ca255',
+              'party name list -> 6B:$6B99 (2)': 'a06ca23d',
               'status bar: name room 24 -> 32 px': '6906', 'menu slot 2: 6-byte names': '8a0a0aa882b9cb769d5977c8e8e00490f460',
               'message byte -> dictionary codes': '205c7e', 'half-width draw -> vwf': None}
     for off, data, name in writes:

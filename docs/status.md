@@ -117,8 +117,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   copy in 6E ($665B far call, 6E:$7FB8 routine, string at $7FBF); kind / party name lists moved in 6B (bases at
   $6CF8 $6D10 $6D75 $6D7B $6CDC $6CD3); status bar name room 24 -> 32 px (6B:$61D2); VWF room check 8 px wide, 16 px
   high in windows of 6+ tiles and 8 px in smaller ones (status bar).
-- Left in Japanese: status bar / status screen glyph labels 体 段 技 (custom 8x8 glyphs for `_ ^ ]`, need redrawing),
-  徳 (Virtue: 2 bytes), 両 after amounts (Ryo needs 3 bytes), status ailments (2-3 bytes), storage / bank menus,
+- Also English since: status bar labels (glyphs for `_ ^ ]` redrawn as Lv TP HP), status screen (Virtue label moved to
+  6B:$6C61, all name-list bases incl. 6B:$6D84/$6D8D), Ryo in the field money window (moved to 6B:$6C55) and shop.
+  build.py checks the original bytes under each code patch (an off-by-one pointer patch broke a screen once).
+- Left in Japanese: 両 in storage / bank lines, status ailments (2-3 bytes), storage / bank menus,
   save screens (0x576CC-0x58800, not resident), province names 0x58140, the ship commands in battle slot 9.
 
 ## Open problems
