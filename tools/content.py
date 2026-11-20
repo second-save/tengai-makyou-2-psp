@@ -7,7 +7,7 @@ padded to 32. Data tracks (*.bin) are zlib chunks of 0x40000 bytes behind a
 (count, [offset, size]*) table.
 
   content.py unpack CONTENT.DAT PSP-KEY.EDAT OUTDIR
-  content.py pack   OUTDIR PSP-KEY.EDAT CONTENT.DAT
+  content.py pack   OUTDIR PSP-KEY.EDAT CONTENT.DAT [TRACK.iso]   (TRACK.iso replaces data track HCD1022_02.bin)
   content.py test   CONTENT.DAT PSP-KEY.EDAT     (identity self-check)
 """
 import os, struct, sys, zlib
@@ -64,21 +64,59 @@ def track_unpack(data):
 
 
 def track_pack(raw, orig=None, orig_raw=None):
-    """Compress a data track. Chunks equal to orig_raw reuse orig's bytes."""
+    """Compress a data track. With orig, keep its layout: unchanged chunks stay as they are and a changed chunk is
+    written at its old offset when it fits (the rest of its old slot is left as it was), so the rest of CONTENT.DAT,
+    whose XOR key depends on the file position, stays byte-identical and the release patch stays small. A chunk that
+    does not fit goes at the end of the track (reported)."""
     n = (len(raw) + CHUNK - 1) // CHUNK
-    out = bytearray(4 + n * 8)
-    struct.pack_into('<I', out, 0, n)
+    if orig is None or struct.unpack_from('<I', orig, 0)[0] != n:
+        out = bytearray(4 + n * 8)
+        struct.pack_into('<I', out, 0, n)
+        for i in range(n):
+            comp = zlib.compress(raw[i * CHUNK:(i + 1) * CHUNK], 9)
+            comp += bytes(-len(comp) & 3)
+            struct.pack_into('<II', out, 4 + i * 8, len(out), len(comp))
+            out += comp
+        return bytes(out)
+    out, late, holes = bytearray(orig), [], []
     for i in range(n):
         chunk = raw[i * CHUNK:(i + 1) * CHUNK]
-        comp = None
-        if orig is not None and orig_raw[i * CHUNK:(i + 1) * CHUNK] == chunk:
-            off, size = struct.unpack_from('<II', orig, 4 + i * 8)
-            comp = orig[off:off + size]
-        if comp is None:
-            comp = zlib.compress(chunk, 9)
-            comp += bytes(-len(comp) & 3)
-        struct.pack_into('<II', out, 4 + i * 8, len(out), len(comp))
-        out += comp
+        if orig_raw[i * CHUNK:(i + 1) * CHUNK] == chunk:
+            continue
+        off, size = struct.unpack_from('<II', orig, 4 + i * 8)
+        comp = zlib.compress(chunk, 9)
+        comp += bytes(-len(comp) & 3)
+        holes.append([off, size])          # the old slot is free for whoever fits (itself first)
+        late.append((i, comp))
+    late.sort(key=lambda x: -len(x[1]))    # largest first, each into the smallest hole that holds it
+    spare = [i for i in range(n) if orig_raw[i * CHUNK:(i + 1) * CHUNK] == raw[i * CHUNK:(i + 1) * CHUNK]]
+    moved = 0
+    for i, comp in late:
+        while True:
+            fit = [h for h in holes if h[1] >= len(comp)]
+            if fit or not spare:
+                break
+            # make room: recompress an unchanged chunk at level 9 (smaller than Sony's), its saved tail becomes a hole
+            j = spare.pop(0)
+            off, size = struct.unpack_from('<II', orig, 4 + j * 8)
+            c = zlib.compress(raw[j * CHUNK:(j + 1) * CHUNK], 9)
+            c += bytes(-len(c) & 3)
+            if len(c) + 0x4000 < size:
+                out[off:off + len(c)] = c
+                struct.pack_into('<II', out, 4 + j * 8, off, len(c))
+                holes.append([off + len(c), size - len(c)])
+        if fit:
+            h = min(fit, key=lambda h: h[1])
+            out[h[0]:h[0] + len(comp)] = comp
+            struct.pack_into('<II', out, 4 + i * 8, h[0], len(comp))
+            h[0] += len(comp)
+            h[1] -= len(comp)
+        else:
+            struct.pack_into('<II', out, 4 + i * 8, len(out), len(comp))
+            out += comp
+            moved += 1
+    if moved:
+        print('track: %d chunks did not fit any free slot and went to the end' % moved)
     return bytes(out)
 
 
@@ -106,7 +144,13 @@ def pack(indir, key, content, tracks=None):
     for name in open(os.path.join(indir, 'order.txt')).read().split():
         data = open(os.path.join(indir, 'files', name), 'rb').read()
         if tracks and name in tracks:
+            orig = data
             data = track_pack(tracks[name], data, track_unpack(data))
+            # the XOR key repeats every 512 bytes: if the track grew, grow it by a multiple of 512 (after 32-byte file
+            # alignment) so every later file keeps its encrypted bytes and the patch only has to shift them
+            grow = ((len(data) + 31) & -32) - ((len(orig) + 31) & -32)
+            if grow:
+                data += bytes((-grow & 511) + (-len(data) & 31))
         files.append((name, data))
     open(content, 'wb').write(xor(build(header, files), open(key, 'rb').read()))
 
@@ -128,5 +172,8 @@ def test(content, key):
 
 
 if __name__ == '__main__':
-    cmd = sys.argv[1]
-    {'unpack': unpack, 'pack': pack, 'test': test}[cmd](*sys.argv[2:])
+    cmd, a = sys.argv[1], sys.argv[2:]
+    if cmd == 'pack' and len(a) == 4:
+        pack(a[0], a[1], a[2], {'HCD1022_02.bin': open(a[3], 'rb').read()})
+    else:
+        {'unpack': unpack, 'pack': pack, 'test': test}[cmd](*a)

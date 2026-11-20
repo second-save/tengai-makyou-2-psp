@@ -163,7 +163,12 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    grid), garbled fragments in boss modules (25730+/16: stream junk past the real messages, guess), blank erasers,
    and system groups 5/6/7/9 (hiragana readings, probably never shown) and 11 (no caller).
 5. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
-6. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
+6. Release: `python3 tools/content.py pack work/content rom/NPJJ30036/PSP-KEY.EDAT build/CONTENT.DAT build/tm2_02.iso`
+   (layout kept: changed chunks reuse old slots or holes; the track grows by a multiple of 512 so later files keep
+   their XOR bytes), then `xdelta3 -e -9 -B 180355072 -s rom/NPJJ30036/CONTENT.DAT build/CONTENT.DAT dist/tm2-en.xdelta`
+   (76.5 MB: ~400 changed zlib chunks; re-apply and track round trip verified 2026-11-20). CONTENT.DAT grows by
+   978,432 bytes: whether Sony's emulator accepts that is untested (no PPSSPP here). Not released: needs PSP-side QA,
+   README, graphics text. Keep 1 GB free on the disk: xdelta's output was silently truncated once (disk full).
 
 Build: `tools/make.sh` (build, insert, main strings, write check, cue), then `python3 tools/debug/show.py --regen`. Cold boot to the house: 16000 frames,
 route `1200:run*10;1500:run*10;1800:run*10;2100:i*10;2400:i*10 --mash 40` (about 50 s).
