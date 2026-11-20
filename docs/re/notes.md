@@ -72,6 +72,19 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - The stream ends with the ADPCM image, so a longer one starts earlier: 56 bytes of FF padding sit before it in the
   tightest copy (871 in most). insert.py moves the start and patches the address at 71:`$7502` (`LDA #$F4 / LDX #$00`).
 
+## Scenes (2026-11-20, tenth session; `tools/debug/scenes.py`, `warp.lua`)
+- `$2BF6` ("map") is an event id: the loader (6A:`$69E8`) runs it through 6F:`$7977`. Header entry 3 = u16 per sub ->
+  object list -> 3-byte entries (event id, script pointer); `scenes.py ISO AREA` lists the ids per sub (subs below 0x10
+  read junk). Script opcodes: table at 6F:`$6653` (op*2), op 0x03 = in-area warp (sub, map, entrance), op 0x71 = full warp.
+- A sub's own message group has the same number as the sub (sub 0x11 = house = group 0x11; sub 0x23 opened group 35).
+- Area 0x10: sub 0x20 = first village (map 2, entrance 5 = at the gate; place card "Village"). Its interiors are subs
+  0x14-0x27 (even subs: map 2 / entrance 5, odd: map 3 / entrance 6). Loaded from the preload state they draw with the
+  wrong tiles; redirect a load made from the village instead: from `town.mss`, `--route '10:down*150'` (walks out of the
+  gate) + `warp.lua --var SUB=0x19 --var MAP=3 --var ENT=6`, about 700 frames. Sub 0x19 = shop (group 25, the
+  shopkeeper on the tatami), sub 0x1C = inn (group 28), sub 0x23 = a house (NPC talks: verified).
+- Not yet: a route that talks to the shopkeeper (from the sub 0x19 spawn the player needs about 300 frames before it moves;
+  walking left / up and pressing I did not open a message in 4 tries), so the shop menu is not reached.
+
 ## Battle group 11 (traced 2026-11-20, tenth session; `tools/lua/msgwho.lua` logs every message open and `$752A` print)
 - 6B:`$6D9D` (far-called from 69:`$5616`) opens group 11 message A into the buffer `$E66E` through the normal pre-expander
   (dictionary codes work); 69:`$5601` prints it at the cursor (`$50E6`), 69:`$560A` the same with `$3211` (`$50E7`).

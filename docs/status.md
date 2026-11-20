@@ -134,8 +134,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    Verified in game: "Rabid Dog appeared!" and "卍体, which foe?". Left: messages 0-117 and 131-149 have no caller
    in the main program (guess: unused leftovers, the battle stream holds their equivalents); if one ever shows as
    `?????`, run `tools/lua/msgwho.lua` to find it.
-2. Debug tool: a shop and a town (warp opcodes 6F:`$7839` and 6F:`$6784`), the width gate for menus and shops, and a
-   warp to one of the 38 areas whose enemy records sit in padding (e.g. area 18, record at $9321).
+2. Debug tool: town and interiors reached (tenth session, notes.md "Scenes": `town.mss` from `--regen`, interiors by
+   redirecting the walk out of the gate). Left: a route to the shopkeeper in sub 0x19 so the shop menu opens (then the
+   width gate for menus and shops), and a warp to one of the 38 areas whose enemy records sit in padding (e.g. area 18,
+   record at $9321; `scenes.py ISO 12` lists its subs and events).
 3. Extract main-program strings (iso 0x41000-0x62800) into the script.
 4. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).

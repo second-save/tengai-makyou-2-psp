@@ -3,7 +3,7 @@
 one screenshot per page (OUT/<item>/pNN.png).
 
   show.py --out DIR [--cue work/cd-en/tm2.cue] [--state work/states-en/house.mss] [--jobs 8] [--slow] ITEM...
-  show.py --regen [--cue ...] [--state ...]     cold boot and save preload.mss, the house state and battle.mss beside
+  show.py --regen [--cue ...] [--state ...]     cold boot and save preload.mss, the house state, battle.mss and town.mss beside
                                                 --state (after every rebuild: a state carries the program it was made
                                                 with), then check that a message shows from the house state
   show.py --battle --out DIR ITEM...            same in the battle window: from battle.mss, Fight + first target, the
@@ -50,7 +50,10 @@ def main():
         for name, args in (
                 ('preload.mss', ['--frames', str(house - 60), '--route', BOOT, '--mash', '40']),   # just before the house loads
                 (os.path.basename(a.state), ['--frames', '1700', '--mash', '40', '--state-in', pre]),
-                ('battle.mss', ['--frames', '60000', '--state-in', pre, '--var', 'SUB=0x12', '--var', 'MAP=32'] + lua)):
+                ('battle.mss', ['--frames', '60000', '--state-in', pre, '--var', 'SUB=0x12', '--var', 'MAP=32'] + lua),
+                # first village, at the gate; its interiors render only when loaded from here (see notes.md "Scenes")
+                ('town.mss', ['--frames', '1500', '--state-in', pre, '--var', 'SUB=0x20', '--var', 'MAP=2', '--var', 'ENT=5',
+                              '--script', os.path.join(HERE, 'warp.lua')])):
             r = subprocess.run(PCE + [a.cue, '--out', tmp, '--state-out'] + args)
             log = os.path.join(tmp, 'log.txt')
             black_ok = name == 'preload.mss' and r.returncode == 3   # taken during the fade before the house load
