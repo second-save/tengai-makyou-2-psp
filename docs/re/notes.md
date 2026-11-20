@@ -82,8 +82,12 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   wrong tiles; redirect a load made from the village instead: from `town.mss`, `--route '10:down*150'` (walks out of the
   gate) + `warp.lua --var SUB=0x19 --var MAP=3 --var ENT=6`, about 700 frames. Sub 0x19 = shop (group 25, the
   shopkeeper on the tatami), sub 0x1C = inn (group 28), sub 0x23 = a house (NPC talks: verified).
-- Not yet: a route that talks to the shopkeeper (from the sub 0x19 spawn the player needs about 300 frames before it moves;
-  walking left / up and pressing I did not open a message in 4 tries), so the shop menu is not reached.
+- Player position: X = `$2085`, Y = `$2087` (4-px units). `tools/debug/goto.lua` walks to waypoints by these values
+  (`PATH='x,y;x,y'`, `FACE`, `TALKS` I presses, `START` frame: after a map load the player moves only ~300 frames later).
+  Shopkeeper of sub 0x19: from (12,18) to (18,18), face up. `show.py --regen` saves `town.mss` (gate) and `shop.mss`
+  (inside the buy menu).
+- Still Japanese in the shop (main program): title 道具屋, 買う / 売る / やめる, お品書 / 値段 / 両 / 持ち金, the buy prompt
+  (`Hを買いますか？`, item description line), and the はい / いいえ choice under the greeting.
 
 ## Battle group 11 (traced 2026-11-20, tenth session; `tools/lua/msgwho.lua` logs every message open and `$752A` print)
 - 6B:`$6D9D` (far-called from 69:`$5616`) opens group 11 message A into the buffer `$E66E` through the normal pre-expander

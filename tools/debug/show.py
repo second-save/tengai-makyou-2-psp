@@ -3,7 +3,7 @@
 one screenshot per page (OUT/<item>/pNN.png).
 
   show.py --out DIR [--cue work/cd-en/tm2.cue] [--state work/states-en/house.mss] [--jobs 8] [--slow] ITEM...
-  show.py --regen [--cue ...] [--state ...]     cold boot and save preload.mss, the house state, battle.mss and town.mss beside
+  show.py --regen [--cue ...] [--state ...]     cold boot and save preload.mss, the house state, battle.mss, town.mss and shop.mss beside
                                                 --state (after every rebuild: a state carries the program it was made
                                                 with), then check that a message shows from the house state
   show.py --battle --out DIR ITEM...            same in the battle window: from battle.mss, Fight + first target, the
@@ -53,7 +53,12 @@ def main():
                 ('battle.mss', ['--frames', '60000', '--state-in', pre, '--var', 'SUB=0x12', '--var', 'MAP=32'] + lua),
                 # first village, at the gate; its interiors render only when loaded from here (see notes.md "Scenes")
                 ('town.mss', ['--frames', '1500', '--state-in', pre, '--var', 'SUB=0x20', '--var', 'MAP=2', '--var', 'ENT=5',
-                              '--script', os.path.join(HERE, 'warp.lua')])):
+                              '--script', os.path.join(HERE, 'warp.lua')]),
+                # the village shop's buy menu: walk out of the gate, that load goes to sub 0x19, walk to the counter, talk
+                ('shop.mss', ['--frames', '1700', '--state-in', os.path.join(d, 'town.mss'), '--route', '10:down*150',
+                              '--script', os.path.join(HERE, 'warp.lua'), '--var', 'SUB=0x19', '--var', 'MAP=3', '--var', 'ENT=6',
+                              '--script', os.path.join(HERE, 'goto.lua'), '--var', 'START=1000', '--var', "PATH='12,18;18,18'",
+                              '--var', "FACE='up'", '--var', 'TALKS=5'])):
             r = subprocess.run(PCE + [a.cue, '--out', tmp, '--state-out'] + args)
             log = os.path.join(tmp, 'log.txt')
             black_ok = name == 'preload.mss' and r.returncode == 3   # taken during the fade before the house load
