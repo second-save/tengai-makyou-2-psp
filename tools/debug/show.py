@@ -53,7 +53,8 @@ def main():
                 ('battle.mss', ['--frames', '60000', '--state-in', pre, '--var', 'SUB=0x12', '--var', 'MAP=32'] + lua)):
             r = subprocess.run(PCE + [a.cue, '--out', tmp, '--state-out'] + args)
             log = os.path.join(tmp, 'log.txt')
-            if r.returncode or (name == 'battle.mss' and 'BATTLE' not in open(log).read()):
+            black_ok = name == 'preload.mss' and r.returncode == 3   # taken during the fade before the house load
+            if (r.returncode and not black_ok) or (name == 'battle.mss' and 'BATTLE' not in open(log).read()):
                 sys.exit('regen: %s failed (exit %d), see %s' % (name, r.returncode, tmp))
             shutil.copy(os.path.join(tmp, 'state.mss'), os.path.join(d, name))
         shutil.rmtree(tmp)

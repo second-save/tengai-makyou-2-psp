@@ -97,10 +97,12 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 - Verified: a fresh battle from the old `battle.mss` with area 0x10's new image loaded by `tools/debug/adpcm.lua` shows
   "Rabid Dog / fled!". Not verified: an area whose records sit in padding (no warp to one with battles yet).
 - The garbled top box in battle is the party status (hero's kanji name), the same before this change.
-- `show.py --regen` battle step is flaky: the intro's first load goes to sub 0x10 (opening, then the map-26 house load
-  the regen waits for) or sub 0x11 (straight to the house, no map-26 load) from run to run, on any build; warping on the
-  first load reaches the overworld but no random battle came in 30,000 frames. `work/states-en/battle.mss` is from the
-  previous build (main program unchanged, still usable; load a new area image with `adpcm.lua`).
+- Padding verified (ninth session): area 0x10's records moved into its zero padding at $9A43 (old section filled with
+  junk), loaded with `adpcm.lua`: a fresh random battle reads them ("Stray Dog / fled!") and the overworld redraws
+  cleanly after it. Not checked in the 38 real padding areas themselves.
+- `show.py --regen` fixed (ninth session): the "flaky intro" was Mesen's backup RAM (`tools/mesen/.../Saves/tm2.sav`,
+  shared by every run): a save written by one run changed the next cold boot's new-game path. `pce.py` now deletes it
+  before every cold-boot run; regen is deterministic again (house load at f=14453) and accepts a black preload frame.
 
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
@@ -128,15 +130,19 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Debug tool: make `--regen`'s battle step robust (handle both intro paths, or find what an encounter needs after a
-   first-load warp), then reach a battle in an area whose enemy records sit in padding (e.g. area 18, record at $9321)
-   to prove the padding is unread. Then a shop and a town (warp opcodes 6F:`$7839` and 6F:`$6784`) and the width gate
-   for menus and shops.
-2. Extract main-program strings (iso 0x41000-0x62800) into the script.
-3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
+1. Battle group 11 (module messages, same in every block): the encounter line shows "Stray Dog?????" because
+   `が現れた｜` (514/11/126) has no English. Group 11 = battle phrases (`子０` = bytes `24 3x` = name x, `子で` =
+   `24 6E` = newline) and fragments printed after a name or number (`が現れた｜`, `を攻撃｜`, `の{k}ダメージ｜`,
+   `は誰に？`). insert.py treats `24 3x` as a glyph today, so those need a placeholder rule (like `19 n`). First trace
+   how fragments are assembled (who prints the name before them: 71:`$752A` / 6F pre-expansion, writes to `$E66E`
+   seen at 6F:`$7FCA`), then translate them with the right word order. List: messages.json entries `*/11/*` without English.
+2. Debug tool: a shop and a town (warp opcodes 6F:`$7839` and 6F:`$6784`), the width gate for menus and shops, and a
+   warp to one of the 38 areas whose enemy records sit in padding (e.g. area 18, record at $9321).
+3. Extract main-program strings (iso 0x41000-0x62800) into the script.
+4. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).
-4. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
-5. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
+5. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
+6. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
 
 Build: `python3 tools/build.py work/content/HCD1022_02.iso work/content/files/SYSCARD3P.PCE build/tm2_02.iso`, check with
 `python3 tools/romdiff.py work/content/HCD1022_02.iso build/tm2_02.iso --writes build/tm2_02.iso.writes`, cue with

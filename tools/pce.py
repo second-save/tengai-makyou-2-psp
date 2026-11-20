@@ -91,6 +91,11 @@ def main():
     if json.dumps(cfg) != was:   # parallel runs: rewriting it every time let another run read a half-written file
         json.dump(cfg, open(cfgp + '.tmp', 'w'), indent=2)
         os.replace(cfgp + '.tmp', cfgp)
+    # Mesen keeps backup RAM per game name (Saves/tm2.sav) across runs: a save written by an earlier run changed the new
+    # game path of the next cold boot (the intro's first load went to the house instead of the opening). Start clean.
+    sav = os.path.join(os.path.dirname(EXE), 'Saves', os.path.splitext(os.path.basename(a.cue))[0] + '.sav')
+    if not a.state_in and os.path.exists(sav):
+        os.remove(sav)
     route = []
     for step in filter(None, (s.strip() for s in a.route.split(';'))):
         fr, rest = step.split(':')
