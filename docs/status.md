@@ -148,31 +148,16 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    still overflow, now unguarded (the "長い!" guard is gone); pages are 3 lines, far below that.
 
 ## Next steps
-1. Battle group 11: done for the messages the code uses (2026-11-20, tenth session; notes.md "Battle group 11").
-   Verified in game: "Rabid Dog appeared!" and "卍体, which foe?". Left: messages 0-117 and 131-149 have no caller
-   in the main program (guess: unused leftovers, the battle stream holds their equivalents); if one ever shows as
-   `?????`, run `tools/lua/msgwho.lua` to find it.
-2. Debug tool: village (`town.mss`) and the shop's buy menu (`shop.mss`) come out of `--regen` (notes.md "Scenes";
-   `goto.lua` walks by RAM position). Left: a warp to one of the 38 areas whose enemy records sit in padding (e.g. area
-   18, record at $9321; `scenes.py ISO 12` lists its subs and events), the width gate for menus and shops.
-3. Main-program strings: finish the list under "Main-program strings" (left in Japanese), then the width gate.
-4. Ending / cutscene text (DS end0-end3, v172 Kinu's "don't come", xk8 Yomi's descent): not plain SJIS anywhere,
-   not in the 14 signature modules without a dictionary (2690 3714 ... 14978: other data), not an LZ stream at any
-   sector start (scan for 卍丸 = `99 C2 5D` + kana). Guess: voice-only (ADPCM) on the PC Engine; confirm by reaching an
-   ending with the debug tool before searching further. Also the start menu panel before the title ("さいしょから
-   はじめたいときは「起」を...") is graphics (no font fetch, no interpreter): needs a graphics redraw. Messages without English: script.py now fills pages from near-miss DS lines
-   (ratio >= 0.9, `ds` = "near:<id> <ratio>", 169 pages) and `script/overrides.json` takes a list of page English;
-   ~150 area messages translated here (tenth session; `work/script/todo.json` was the list). 8,200 of 9,111
-   messages fully English. Left on purpose: debug menus (514/16, 642/16, 770/16, 898/16, 5890/16 "chNNN", 4226/17 kana
-   grid), garbled fragments in boss modules (25730+/16: stream junk past the real messages, guess), blank erasers,
-   and system groups 5/6/7/9 (hiragana readings, probably never shown) and 11 (no caller).
-5. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
-6. Release: `python3 tools/content.py pack work/content rom/NPJJ30036/PSP-KEY.EDAT build/CONTENT.DAT build/tm2_02.iso`
-   (layout kept: changed chunks reuse old slots or holes; the track grows by a multiple of 512 so later files keep
-   their XOR bytes), then `xdelta3 -e -9 -B 180355072 -s rom/NPJJ30036/CONTENT.DAT build/CONTENT.DAT dist/tm2-en.xdelta`
-   (76.5 MB: ~400 changed zlib chunks; re-apply and track round trip verified 2026-11-20). CONTENT.DAT grows by
-   978,432 bytes: whether Sony's emulator accepts that is untested (no PPSSPP here). Not released: needs PSP-side QA,
-   README, graphics text. Keep 1 GB free on the disk: xdelta's output was silently truncated once (disk full).
+1. PSP-side test (blocker for release): boot `build/CONTENT.DAT` (or the original + `dist/tm2-en.xdelta`) in PPSSPP
+   or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
+2. Graphics text: start menu panel (notes.md "Start menu panel"), the 起 / 転 buttons, title logo, any other
+   tile-drawn Japanese (survey not done). Mesen Lua does not report VRAM writes (tried a pceVideoRam write callback).
+3. Ending / cutscene text: confirm voice-only by reaching an ending (debug tool: find its area / event).
+4. Main-program leftovers: 毒 (2 bytes), the battle slot-9 ship commands (Guns, Torpedo...), save screens
+   (0x576CC+, not resident: find their overlay), province names at 0x58140, a warp to an area with enemy records in
+   padding (area 18), the width gate for the other windows, storage menus not seen on screen yet.
+5. Font polish (W/M touch neighbours), text speed. Review the ~150 messages translated in the tenth session
+   (`script/overrides.json`, page lists) and the 169 near-miss pages (`ds` = "near:...").
 
 Build: `tools/make.sh` (build, insert, main strings, write check, cue), then `python3 tools/debug/show.py --regen`. Cold boot to the house: 16000 frames,
 route `1200:run*10;1500:run*10;1800:run*10;2100:i*10;2400:i*10 --mash 40` (about 50 s).
