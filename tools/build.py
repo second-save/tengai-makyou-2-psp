@@ -88,6 +88,9 @@ def main(orig, syscard, out, all_ascii=False):
         # status bar: the HP / TP label sits 6 units (24 px, two kanji) after the member's column (6B:$61D1 CLC ADC #6);
         # 8 units leave 32 px for the short names of list 2 (user ruling: shorter names where they would overflow)
         writes.append((far(0x6B, 0x61D2, 0x6000), bytes.fromhex('6908'), 'status bar: name room 24 -> 32 px'))
+        # field menu money window ({1B}両 at 6B:$62A7, printed by 6B:$62A0 JSR $50A3 / BIT $62A7, pointer at $62A4): "Ryo" needs one more
+        # byte, so a copy after the second name list (6B:$6C55, written by mainstr.py) is printed instead
+        writes.append((far(0x6B, 0x62A4, 0x6000), bytes.fromhex('556c'), 'money window -> 6B:$6C55'))
         # long messages: the pre-expander stores each output byte through 6F:$7FC8 into the 256-byte buffer at $E66E;
         # when full, the game restarts it with "長い!" (too long), and ~340 English messages pass 256 bytes. Now the
         # buffer is drawn and emptied at every page end (wait code 12) while 6F stays mapped (a far call into 6A that
@@ -101,6 +104,16 @@ def main(orig, syscard, out, all_ascii=False):
         writes.append((far(0x69, 0x5FE6, 0x4000), bytes.fromhex('629297a96e8595a9e68596ad793220e750a96e8597a9e6859860'),
                        'message buffer: draw and empty'))
         writes.append((far(0x70, 0x7FDE, 0x6000), b''.join(n.ljust(8).encode() for n in SLOT2), 'menu slot 2 names'))
+    # original bytes each code patch must replace (catches an address off by one)
+    expect = {'money window -> 6B:$6C55': 'a762', 'field menu: far call': '20a3502c0567',
+              'kind name list -> 6B:$6705': 'a06ba299', 'kind name list -> 6B:$6705 (2)': 'a06ba299',
+              'technique kind list -> 6B:$671B': 'a06ba2ac', 'technique kind list -> 6B:$671B (2)': 'a06ba2ac',
+              'party name list -> 6B:$6B99': 'a06ca23d', 'party name list 2 -> 6B:$6C3D': 'a06ca255',
+              'status bar: name room 24 -> 32 px': '6906', 'menu slot 2: 6-byte names': '8a0a0aa882b9cb769d5977c8e8e00490f460',
+              'message byte -> dictionary codes': '205c7e', 'half-width draw -> vwf': None}
+    for off, data, name in writes:
+        if expect.get(name):
+            assert iso[off:off + len(data)].hex() == expect[name], '%s: original bytes %s' % (name, iso[off:off + len(data)].hex())
     new, log = bytearray(iso), []
     for off, data, name in writes:
         for o in (off, off + MIRROR):

@@ -130,13 +130,6 @@
   "note": "shop prompt"
  },
  {
-  "at": "4C3D0",
-  "hex": "02a2038e15808e9d82bf8be0081b0497bc",
-  "jp": "{02}[A2]{03}[8E]{15}[80]持ち金{08}{1B}{04}両",
-  "en": "{02}[A2]{03}[8E]{15}[80]Purse{08}{1B}{04}[97][BC]",
-  "note": "money window: Purse <n> 両 (Ryo does not fit: 両 kept)"
- },
- {
   "at": "45BBE",
   "hex": "95908bef89ae",
   "jp": "武具屋",
@@ -688,13 +681,6 @@
   "note": "status label 段 (level)"
  },
  {
-  "at": "45C3D",
-  "hex": "99c25d00834a8375834c008bc98a79008ca6008356838d0099c28adb0006b65fb7008bc98a7900088ca60620",
-  "jp": "卍丸{00}カブキ{00}極楽{00}絹{00}シロ{00}卍丸{00}{06}か私き{00}極楽{00}{08}絹{06}[20]",
-  "en": "Manji{00}Kabuki{00}Goku{00}Kinu",
-  "note": "party names, list 2 (status bar: 32 px each, short names by user ruling), base 6B:$6CD3 repointed here by build.py"
- },
- {
   "at": "45024",
   "hex": "490806",
   "jp": "体{08}{06}",
@@ -707,5 +693,19 @@
   "jp": "技{08}{06}",
   "en": "TP{08}{06}",
   "note": "status screen label 技"
+ },
+ {
+  "at": "45C3D",
+  "hex": "99c25d00834a8375834c008bc98a79008ca6008356838d0099c28adb0006b65fb7008bc98a7900088ca60620",
+  "jp": "卍丸{00}カブキ{00}極楽{00}絹{00}シロ{00}卍丸{00}{06}か私き{00}極楽{00}{08}絹{06}[20]",
+  "en": "Manji{00}Kabuki{00}Goku{00}Kinu{00}{00}{16}[96][88][8A][84]{1B} Ryo{17}",
+  "note": "party names list 2 (status bar, short names by user ruling; base 6B:$6CD3), then at 6B:$6C55 the field money window (pointer at 6B:$62A4), both moved here by build.py"
+ },
+ {
+  "at": "4C3D0",
+  "hex": "02a2038e15808e9d82bf8be0081b0497bc",
+  "jp": "{02}[A2]{03}[8E]{15}[80]持ち金{08}{1B}{04}両",
+  "en": "{02}[A2]{03}[8E]{15}[80]Cash{08}{1B}{08}Ryo",
+  "note": "shop money window: Cash <n> Ryo ({04} mode switch dropped: only the kanji 両 needed it)"
  }
 ]
