@@ -167,8 +167,9 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 ## Next steps
 1. PSP-side test (blocker for release): boot `build/CONTENT.DAT` (or the original + `dist/tm2-en.xdelta`) in PPSSPP
    or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
-2. Graphics text: start menu panel (notes.md "Start menu panel"), the 起 / 転 buttons, title logo, any other
-   tile-drawn Japanese (survey not done). Mesen Lua does not report VRAM writes (tried a pceVideoRam write callback).
+2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
+   Left: title logo, any other tile-drawn Japanese (survey not done). `tools/lua/vramwho.lua` finds the writer of
+   any VRAM range (tracks the VDC address itself; CPU write callbacks on $0000-$0003 see ST0/ST1/ST2 too).
 3. Ending / cutscene text: confirm voice-only by reaching an ending (debug tool: find its area / event).
 4. Main-program leftovers: 毒 (2 bytes), the battle slot-9 ship commands (Guns, Torpedo...), save screens
    (0x576CC+, not resident: find their overlay), province names at 0x58140, a warp to an area with enemy records in

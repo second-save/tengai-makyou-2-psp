@@ -135,8 +135,90 @@ def pack(data):
     return bytes(out)
 
 
+def unpack_rings(src, pos, rings):
+    """Graphics variant (69:$4700 -> VRAM): two decoders, ring A ($3C8D) and ring B ($3D62), share one flag / nibble /
+    byte stream; rings[k] (0 = A, 1 = B) says which one the k-th fetch uses. Returns (bytes, end pos)."""
+    ring = [bytearray(256), bytearray(256)]
+    w, r, left = [0xEF, 0xEF], [0, 0], [0, 0]
+    flags, bit, nib, out = 0, 8, None, bytearray()
+    for k in rings:
+        if not left[k]:
+            if bit == 8:
+                flags, bit, pos = src[pos], 0, pos + 1
+            lit = flags & (0x80 >> bit)
+            bit += 1
+            if lit:
+                b, pos = src[pos], pos + 1
+                out.append(b); ring[k][w[k]] = b; w[k] = (w[k] + 1) & 255
+                continue
+            r[k], pos = src[pos], pos + 1
+            if nib is None:
+                nib, pos = src[pos], pos + 1
+                n = nib >> 4
+            else:
+                n, nib = nib & 15, None
+            left[k] = n + 2
+        b = ring[k][r[k]]; r[k] = (r[k] + 1) & 255; left[k] -= 1
+        out.append(b); ring[k][w[k]] = b; w[k] = (w[k] + 1) & 255
+    return bytes(out), pos
+
+
+def pack_rings(data, rings):
+    """Greedy encoder for unpack_rings: data[k] is fetched from ring rings[k]."""
+    ring = [bytearray(256), bytearray(256)]
+    w, left = [0xEF, 0xEF], [0, 0]
+    out, bit, flag_at, nib_at = bytearray(), 8, 0, None
+    later = [[i for i in range(len(rings)) if rings[i] == k] for k in (0, 1)]   # fetch indices per ring
+    at = [0, 0]
+    for i, k in enumerate(rings):
+        at[k] += 1
+        if left[k]:
+            left[k] -= 1
+            ring[k][w[k]] = data[i]; w[k] = (w[k] + 1) & 255
+            continue
+        mine = [data[j] for j in later[k][at[k] - 1:at[k] + 16]]   # this ring's next bytes, up to 17
+        best, best_r = 0, 0
+        for s in range(256):
+            n, rr, ww, tmp = 0, s, w[k], {}
+            while n < len(mine):
+                b = tmp.get(rr, ring[k][rr])
+                if b != mine[n]:
+                    break
+                tmp[ww] = b; rr = (rr + 1) & 255; ww = (ww + 1) & 255; n += 1
+            if n > best:
+                best, best_r = n, s
+        if bit == 8:
+            flag_at, bit = len(out), 0
+            out.append(0)
+        if best >= 2:
+            out.append(best_r)
+            if nib_at is None:
+                nib_at = len(out); out.append((best - 2) << 4)
+            else:
+                out[nib_at] |= best - 2; nib_at = None
+            left[k] = best - 1
+        else:
+            out[flag_at] |= 0x80 >> bit
+            out.append(data[i])
+        bit += 1
+        ring[k][w[k]] = data[i]; w[k] = (w[k] + 1) & 255
+    return bytes(out)
+
+
+def gfx_rings(header):
+    """Fetch order of a 69:$4681 graphics block from its 2-byte header (word count, bit 15 = high bytes from ring B)."""
+    n = header[0] | (header[1] & 0x7F) << 8
+    return [0, 1 if header[1] & 0x80 else 0] * n
+
+
 if __name__ == '__main__':
     import os
+    for n in (0, 7, 600):
+        x = os.urandom(n // 3) + bytes(n // 3) + b'abcabcabcabc' * (n // 36)
+        x = x[:len(x) & ~1]
+        for hb in (0, 0x80):
+            rings = gfx_rings(bytes([len(x) // 2 & 255, len(x) // 512 | hb]))
+            assert unpack_rings(pack_rings(x, rings), 0, rings)[0] == x, (n, hb)
     for n in (0, 1, 5, 300, 5000):
         x = os.urandom(n // 3) + bytes(n // 3) + b'abcabcabcabc' * (n // 36)
         assert unpack(pack(x), size=len(x))[0] == x, n

@@ -86,7 +86,16 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   +14, slot 9 name +56). Check for `STA` into a string before changing its layout.
 - `pce.py --shots` with a long list hangs; use `--shot-every`.
 
-## Start menu panel (graphics, traced 2026-11-20, tenth session; not solved)
+## Start menu panel (solved 2026-11-21, eleventh session; `tools/panel.py`, `tools/lua/vramwho.lua`)
+- Bank 78 = iso 0x5F000 (+ mirror). Resource 0 (u16 size 0xD3E, u16 8, u16 tile block 0x2D, u16 map block 0xB48,
+  37 bytes): tile block = u16 word count (bit 15: high bytes from ring B) + stream for 69:$4681, loaded at tile 256;
+  map block = w, h (32, 32) + plain LZ (ring A) of u16 deltas, entry = running sum + $E100 (70:$6AE8, via $2DBC and
+  69:$5D1C). Resource 1 at 0x5FD3E (size 0x40F): its block at +8 = 32 sprite cells, the highlighted 起 / 転 buttons
+  (SAT at VRAM $0E00: two 32x64 sprites, patterns $120 / $140; the right button uses cells +8).
+- Graphics LZ = two decoders (ring A $3C8D / $E000, ring B $3D62 / $E100) taking turns on ONE flag / nibble / byte
+  stream: the writer fetches low byte from A, high byte from B (or A). `lz.unpack_rings` / `pack_rings`. This is
+  why decoding with ring A alone (tenth session) gave data that "did not contain the tiles".
+- Old notes, kept for the record:
 - The panel before the title ("さいしょから はじめたいときは「起」を...") is BG tiles 258+ (BAT 64 wide), drawn with no font
   fetch. Its tiles are not raw on the disc. Loads before it: CD_READ sector 21506 x 0x60 (f=709) and 21634 x 0x73
   (f=897, banks from 6B?); LZ streams at f=1351-1396 from bank 78 ($802F 6112 bytes, $8B4A, $9157, $8D48) decode
