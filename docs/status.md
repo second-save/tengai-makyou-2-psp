@@ -87,6 +87,21 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   Verified with raw text and module messages. Width gate, battle window: wraps by itself at 28 tiles, 3 lines; the
   name placeholder takes its width out of the first line.
 
+## Enemy records (2026-11-20, eighth session) - details in notes.md "Enemy records"
+- Enemy names and their status / flee / attack lines live in each area's ADPCM image (plain SJIS, 99 areas, 1,184 records),
+  not in the modules or the battle stream. `extract.enemies` reads them, `script.py` adds them as `enemy/N` (551 strings:
+  509 from the DS catalogs, 42 written here in `script/overrides.json`), `insert.py` rewrites every area: 99 of 99 in English.
+- Room: DS lines were too long for the 44 tightest areas. Your shorter-names ruling applied: terse overrides for ~55
+  lines and 15 names (e.g. "Bone Hound", "Chimi", "$0 charges!"). 38 areas also spill records into sector padding
+  (zeros / FF up to a 0x800 boundary, 64-byte margin): assumed unread, not proven (`shortcut:` in insert.py).
+- Verified: a fresh battle from the old `battle.mss` with area 0x10's new image loaded by `tools/debug/adpcm.lua` shows
+  "Rabid Dog / fled!". Not verified: an area whose records sit in padding (no warp to one with battles yet).
+- The garbled top box in battle is the party status (hero's kanji name), the same before this change.
+- `show.py --regen` battle step is flaky: the intro's first load goes to sub 0x10 (opening, then the map-26 house load
+  the regen waits for) or sub 0x11 (straight to the house, no map-26 load) from run to run, on any build; warping on the
+  first load reaches the overworld but no random battle came in 30,000 frames. `work/states-en/battle.mss` is from the
+  previous build (main program unchanged, still usable; load a new area image with `adpcm.lua`).
+
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
    230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
@@ -96,8 +111,8 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    All 230 distinct lines have English: 6 come from `script/overrides.json` (hex -> English, applied last by script.py,
    written from the nearest DS combat lines). Left: `battle/91` and `battle/155` logged wider than 216 px;
    verified in a real fight from a cold-boot state (`狂犬 takes 4 damage!`).
-   Still Japanese in battle, from sources not extracted yet: enemy names (`狂犬`), enemy status / flee lines
-   (`狂犬は うなっている`, `狂犬は 逃げていった`), the prompt and command menu (main program), the hero's default name.
+   Still Japanese in battle: the prompt and command menu (main program), the hero's default name. Enemy names and
+   lines: done (see "Enemy records").
 1. Unmatched text. DS side: `end0`-`end3`, `v172`, `xk8` not found at all (ending / cutscene text, probably stored outside
    the message modules), `xj4` 50/105 (was 71 before the 106-word filter: one of the 14 dropped modules may hold text),
    and 5-40 lines short in about 25 area directories (likely small wording differences: the match is exact).
@@ -113,9 +128,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    The rebuilt CONTENT.DAT must be booted in PPSSPP or on hardware before release.
 
 ## Next steps
-1. Battle: find where the enemy names and the flee / victory lines live (not in the battle stream or the modules'
-   messages: trace the opener at 71:`$752A`, pointer `$F659`). Then the rest of the debug tool: a shop and a town
-   (warp opcodes 6F:`$7839` and 6F:`$6784`) and the width gate for menus and shops.
+1. Debug tool: make `--regen`'s battle step robust (handle both intro paths, or find what an encounter needs after a
+   first-load warp), then reach a battle in an area whose enemy records sit in padding (e.g. area 18, record at $9321)
+   to prove the padding is unread. Then a shop and a town (warp opcodes 6F:`$7839` and 6F:`$6784`) and the width gate
+   for menus and shops.
 2. Extract main-program strings (iso 0x41000-0x62800) into the script.
 3. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).

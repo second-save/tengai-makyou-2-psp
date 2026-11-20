@@ -24,6 +24,7 @@ EN = re.compile(r'\{([0-9A-F]{4})\}|￥Ｚ([０-９0-9])|(￥Ｓ)|(￥Ｄ)(?:￥
 SUBST = {'☆': '*', '△': '^', '▽': 'v', 'é': 'e', '’': "'", '“': '"', '”': '"', '—': '-', '～': '~', '･': '.', '・': '.'}
 MIRROR = 0x8000000
 KEEP_FF = 16            # padding left after the last stream (the extractor ends the last stream there)
+PAD_MARGIN = 64         # enemy records: bytes of sector padding left after the data it pads
 
 
 def tokens(m):
@@ -271,6 +272,102 @@ def rebuild(orig, new, b, words, log, cache):
     return done, total
 
 
+def enemy_english(m, en, log, at):
+    """Plain ASCII for an enemy name or line (copied by 71:$752A: `$0`-`$3` = name, `$n` = newline), or None."""
+    out = ''
+    for tag, z, s, d, slash, ch in EN.findall(en.strip()):
+        if z:
+            out += '$%d' % (int(unicodedata.normalize('NFKC', z)) - 1)
+        elif slash or ch == '\n':
+            out += '$n'
+        elif ch:
+            x = unicodedata.normalize('NFKC', SUBST.get(ch, ch))
+            if not all(' ' <= c <= '~' and c != '$' for c in x):
+                log.append('%s: no glyph for %r' % (at, x))
+                return None
+            out += x
+        elif tag or s or d:
+            log.append('%s: control tag in an enemy string' % at)
+            return None
+    if sorted(re.findall(rb'\$[0-3]', m)) != sorted(re.findall(rb'\$[0-3]', out.encode())):
+        log.append('%s: name placeholders differ' % at)
+        return None
+    return out.encode()
+
+
+def enemies(orig, new, script, back, log, writes):
+    """Rewrite every area's enemy records in English. The records go where the old ones were, then into the FF run before
+    the battle stream; the enemy pointers move with them. An area that does not fit stays in Japanese."""
+    text = {bytes.fromhex(e['hex']): (e['pages'][0]['en'], e['at']) for e in script
+            if len(e['pages']) == 1 and e['pages'][0]['en']}   # an enemy name can also be a module message
+    cache, done = {}, 0
+    areas = extract.enemies(orig)
+    for area in areas:
+        img = bytearray(orig[area['image']:area['image'] + 0x10000])
+
+        def english(m):
+            if not m:
+                return m
+            if m not in cache:
+                en, at = text.get(m, (None, None))
+                cache[m] = en and enemy_english(m, en, log, at)
+            return cache[m] or m
+        run = re.search(rb'\xff+$', img[:0xF400 - back])   # FF run ending at the battle stream
+        rooms = [[area['start'], area['end']]] + ([[run.start() + KEEP_FF, run.end()]] if run else [])
+        # then the padding that ends a data blob on a sector boundary (00 or FF up to a multiple of 0x800), after a margin
+        # shortcut: assumed unread (nothing seen pointing into it), verified in one area only
+        rooms += [[m.start() + PAD_MARGIN, m.end()] for m in re.finditer(rb'\x00{192,}|\xff{192,}', img[:0xF000])
+                  if m.end() % 0x800 == 0]
+        rooms = [x + [x[0]] for x in rooms]
+
+        def record(r):
+            return r['head'] + english(r['name']) + b'\0' + bytes([r['f670']]) + b''.join(
+                bytes([k, a]) + english(m) + b'\0' for k, a, m in r['entries']) + b'\0' + r['tail']
+        place, room_total = {}, sum(x[1] - x[0] for x in rooms)
+        for p, r in area['records'].items():
+            body = record(r)
+
+            def start(x):   # right after the previous record, its 2-byte tail can be this record's first 2 bytes
+                return x[0] - 2 if x[0] > x[2] and img[x[0] - 2:x[0]] == body[:2] else x[0]
+            room = next((x for x in rooms if x[1] - start(x) >= len(body)), None)
+            if room is None:
+                break
+            at = start(room)
+            img[at:at + len(body)] = body
+            place[p], room[0] = at, at + len(body)
+        else:
+            for x in area['ptrs']:
+                img[x:x + 2] = place[orig[area['image'] + x] | orig[area['image'] + x + 1] << 8].to_bytes(2, 'little')
+            got = extract.enemy_area(img, 0)['records']
+            for p, r in area['records'].items():
+                g = got[place[p]]
+                assert (g['head'], g['name'], g['f670'], g['entries'], g['tail']) == (r['head'], english(r['name']), r['f670'], [
+                    (k, a, english(m)) for k, a, m in r['entries']], r['tail']), 'enemies at %#x: read-back differs' % area['image']
+            base = area['image']
+            for o in (base, base + MIRROR):
+                if o == base or orig[o:o + 0x10000] == orig[base:base + 0x10000]:
+                    for s, e in spans(orig[base:base + 0x10000], img):
+                        writes.append('%x %s %s enemy records' % (o + s, orig[o + s:o + e].hex(), img[s:e].hex()))
+                        new[o + s:o + e] = img[s:e]
+            done += 1
+            continue
+        log.append('enemies at %#x: %d bytes of records, %d of room: left in Japanese' % (
+            area['image'], sum(len(record(r)) for r in area['records'].values()), room_total))
+    return done, len(areas)
+
+
+def spans(a, b):
+    """[start, end) runs where a and b differ."""
+    out = []
+    for i in range(len(a)):
+        if a[i] != b[i]:
+            if out and out[-1][1] == i:
+                out[-1][1] = i + 1
+            else:
+                out.append([i, i + 1])
+    return out
+
+
 def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
     orig = open(orig_path, 'rb').read()
     new = bytearray(open(built, 'rb').read())
@@ -279,7 +376,8 @@ def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
     old = [bytes.fromhex(x) for x in blocks[0]['groups'][1]['msgs']]   # the same dictionary in every block
     log, writes, cache = [], [], {}
     for e in json.load(open(script_path, encoding='utf-8')):
-        cache[e['hex']] = translate(e, old, w, marker, log)
+        if not e['at'].startswith('enemy/'):   # enemy records are plain SJIS: enemies() writes them
+            cache[e['hex']] = translate(e, old, w, marker, log)
     words = dictionary([t.decode() for m in cache.values() if m for text, t in runs(m) if text], CODES)
     code = {x: bytes([0x80 + i]) for i, x in enumerate(words)}
     pat = re.compile(b'|'.join(re.escape(x) for x in sorted(words, key=len, reverse=True)))
@@ -330,6 +428,8 @@ def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
         new[o:o + len(packed)] = packed
     assert extract.battle(new) == (want, [o - back for o in copies]), 'battle stream: read-back differs'
     done, total = done + sum(1 for m in msgs if cache.get(m.hex())), total + len(msgs)
+    e_done, e_total = enemies(orig, new, json.load(open(script_path, encoding='utf-8')), back, log, writes)
+    print('enemy records: %d of %d areas in English' % (e_done, e_total))
     open(built, 'wb').write(new)
     open(built + '.writes', 'a').write('\n'.join(writes) + '\n')
     open(built + '.insert.log', 'w', encoding='utf-8').write('\n'.join(log) + '\n')

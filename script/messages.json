@@ -112694,5 +112694,6617 @@
     "en": "￥Ｚ１ is in tiger form!￥ｋ"
    }
   ]
+ },
+ {
+  "hex": "8ef190d882e895ef929a",
+  "at": "enemy/0",
+  "uses": 4,
+  "jp": "首切り包丁",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Headsman Knife"
+   }
+  ]
+ },
+ {
+  "hex": "96ec97c78ca2",
+  "at": "enemy/1",
+  "uses": 7,
+  "jp": "野良犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Stray Dog"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a482c882c182c482a282e921",
+  "at": "enemy/2",
+  "uses": 12,
+  "jp": "$0は$nうなっている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／growls!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e93a682b082c482a282c182bd2121",
+  "at": "enemy/3",
+  "uses": 2,
+  "jp": "$0は$n逃げていった!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／fled!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8bb68ca2",
+  "at": "enemy/4",
+  "uses": 7,
+  "jp": "狂犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Rabid Dog"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e93a682b082c482a282c182bd21",
+  "at": "enemy/5",
+  "uses": 10,
+  "jp": "$0は$n逃げていった!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／fled!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8345838d835282cc8b4d9577906c",
+  "at": "enemy/6",
+  "uses": 3,
+  "jp": "ウロコの貴婦人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Scaled Lady"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8345838d835282f082d382e982ed82b982bd2121",
+  "at": "enemy/7",
+  "uses": 1,
+  "jp": "$0は、$nウロコをふるわせた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rattles its scales!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91cc82c98aaa82ab957482a282c482ab82bd21",
+  "at": "enemy/8",
+  "uses": 1,
+  "jp": "$0は、$n体に巻き付いてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／coils around its victim!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "906c96ca83498352835b",
+  "at": "enemy/9",
+  "uses": 3,
+  "jp": "人面オコゼ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Man-Stonefish"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a982dd82c282a282c482ab82bd2121",
+  "at": "enemy/10",
+  "uses": 1,
+  "jp": "$0は、$nかみついてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／lunges with a bite!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8be08b9b82a882c682b1",
+  "at": "enemy/11",
+  "uses": 4,
+  "jp": "金魚おとこ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Goldfish Man"
+   }
+  ]
+ },
+ {
+  "hex": "8363835e82a882c682b1",
+  "at": "enemy/12",
+  "uses": 3,
+  "jp": "ツタおとこ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ivy Man"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e987282f0905582e889f182b582bd21",
+  "at": "enemy/13",
+  "uses": 1,
+  "jp": "$0は、$n腕を振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings an arm wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8e6182e897f482ab928e",
+  "at": "enemy/14",
+  "uses": 5,
+  "jp": "斬り裂き虫",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ripper Bug"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e9453897482f082cd82a282bd2121",
+  "at": "enemy/15",
+  "uses": 3,
+  "jp": "$0は、$n粘液をはいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits slime!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "926782a982c88e8091cc",
+  "at": "enemy/16",
+  "uses": 3,
+  "jp": "暖かな死体",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Warm Corpse"
+   }
+  ]
+ },
+ {
+  "hex": "8d9c835b837e",
+  "at": "enemy/17",
+  "uses": 4,
+  "jp": "骨ゼミ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Bone Cicada"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8aef96ad82c890ba82c582c882a282bd21",
+  "at": "enemy/18",
+  "uses": 2,
+  "jp": "$0は、$n奇妙な声でないた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／cries out strangely!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8357815b82c182c682b582c482a282e921",
+  "at": "enemy/19",
+  "uses": 2,
+  "jp": "$0は、$nジーっとしている!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／stares and stares!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a482c882c182c482a282e921",
+  "at": "enemy/20",
+  "uses": 2,
+  "jp": "$0は、$nうなっている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／growls!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e93a682b082c482a282c182bd2121",
+  "at": "enemy/21",
+  "uses": 2,
+  "jp": "$0は、$n逃げていった!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／fled!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90d48bca",
+  "at": "enemy/22",
+  "uses": 1,
+  "jp": "赤玉",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Orb"
+   }
+  ]
+ },
+ {
+  "hex": "837d83568383838a",
+  "at": "enemy/23",
+  "uses": 1,
+  "jp": "マシャリ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Mashari"
+   }
+  ]
+ },
+ {
+  "hex": "8fac8b53",
+  "at": "enemy/24",
+  "uses": 2,
+  "jp": "小鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Little Oni"
+   }
+  ]
+ },
+ {
+  "hex": "89bb82af8daa",
+  "at": "enemy/25",
+  "uses": 3,
+  "jp": "化け根",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Monster Root"
+   }
+  ]
+ },
+ {
+  "hex": "8b5382cc89d8",
+  "at": "enemy/26",
+  "uses": 1,
+  "jp": "鬼の華",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Demon Blossom"
+   }
+  ]
+ },
+ {
+  "hex": "90e7944e90e58f97",
+  "at": "enemy/27",
+  "uses": 2,
+  "jp": "千年仙女",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "1000-Year Fairy"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82d382c482ab82c88fce82dd82f082a482a982d782bd21",
+  "at": "enemy/28",
+  "uses": 2,
+  "jp": "$0は$nふてきな笑みをうかべた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins fearlessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8358834c82f082a482a982aa82c182c482a282e921",
+  "at": "enemy/29",
+  "uses": 2,
+  "jp": "$0は$nスキをうかがっている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／looks for an opening!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "83848367",
+  "at": "enemy/30",
+  "uses": 3,
+  "jp": "ヤト",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Yato"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8ea995aa82cc93f782f082a982b682c182bd21",
+  "at": "enemy/31",
+  "uses": 2,
+  "jp": "$0は$n自分の肉をかじった!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／bites its own flesh!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "916f93aa",
+  "at": "enemy/32",
+  "uses": 3,
+  "jp": "双頭",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Twinhead"
+   }
+  ]
+ },
+ {
+  "hex": "834b8389834b8389",
+  "at": "enemy/33",
+  "uses": 2,
+  "jp": "ガラガラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Rattler"
+   }
+  ]
+ },
+ {
+  "hex": "82c782ad82eb95ba",
+  "at": "enemy/34",
+  "uses": 2,
+  "jp": "どくろ兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Skull Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "95e68fea82cc917c8f9c89ae",
+  "at": "enemy/35",
+  "uses": 2,
+  "jp": "墓場の掃除屋",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Grave Sweeper"
+   }
+  ]
+ },
+ {
+  "hex": "94928d9c95908ed2",
+  "at": "enemy/36",
+  "uses": 4,
+  "jp": "白骨武者",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Bone Warrior"
+   }
+  ]
+ },
+ {
+  "hex": "8e53919e96408e74",
+  "at": "enemy/37",
+  "uses": 3,
+  "jp": "惨憎法師",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Vile Monk Sanzo"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e944f95a782f082c682c882a68e6e82df82bd21",
+  "at": "enemy/38",
+  "uses": 1,
+  "jp": "$0は、$n念仏をとなえ始めた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／begins chanting a Buddhist prayer!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "96e982cc89458ee8",
+  "at": "enemy/39",
+  "uses": 3,
+  "jp": "夜の右手",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Night's R. Hand"
+   }
+  ]
+ },
+ {
+  "hex": "88ea82c296da837b83548363",
+  "at": "enemy/40",
+  "uses": 3,
+  "jp": "一つ目ボサツ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "One-Eyed Saint"
+   }
+  ]
+ },
+ {
+  "hex": "8b538d9c95ba",
+  "at": "enemy/41",
+  "uses": 2,
+  "jp": "鬼骨兵",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Bone Oni"
+   }
+  ]
+ },
+ {
+  "hex": "968282cc92dc90d5",
+  "at": "enemy/42",
+  "uses": 1,
+  "jp": "魔の爪跡",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Demon Clawmark"
+   }
+  ]
+ },
+ {
+  "hex": "97648cd5",
+  "at": "enemy/43",
+  "uses": 2,
+  "jp": "妖虎",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Demon Tiger"
+   }
+  ]
+ },
+ {
+  "hex": "8ed78d9c8c958e6d",
+  "at": "enemy/44",
+  "uses": 3,
+  "jp": "邪骨剣士",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Evil Bone Blade"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8c9582f0905582e889f182b582bd21",
+  "at": "enemy/45",
+  "uses": 1,
+  "jp": "$0は、$n剣を振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings a sword wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e944f95a782f082c682c882a68e6e82df82bd21",
+  "at": "enemy/46",
+  "uses": 2,
+  "jp": "$0は$n念仏をとなえ始めた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／begins to chant!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8c9582f0905582e889f182b582bd21",
+  "at": "enemy/47",
+  "uses": 2,
+  "jp": "$0は$n剣を振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings a sword wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90d482a292dc90d5",
+  "at": "enemy/48",
+  "uses": 1,
+  "jp": "赤い爪跡",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Claw Marks"
+   }
+  ]
+ },
+ {
+  "hex": "937982cc94458c52",
+  "at": "enemy/49",
+  "uses": 3,
+  "jp": "土の忍軍",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Earth Ninjas"
+   }
+  ]
+ },
+ {
+  "hex": "905882cc8f888c59906c",
+  "at": "enemy/50",
+  "uses": 2,
+  "jp": "森の処刑人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Woods Headsman"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91ab82e082c682a982e7977b95aa82f08b7a82c182bd21",
+  "at": "enemy/51",
+  "uses": 1,
+  "jp": "$0は、$n足もとから養分を吸った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／absorbs nutrients from underfoot!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8c8c82f08b7a82a489d495d9",
+  "at": "enemy/52",
+  "uses": 2,
+  "jp": "血を吸う花弁",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Vampire Petal"
+   }
+  ]
+ },
+ {
+  "hex": "89c482cc8b90906c",
+  "at": "enemy/53",
+  "uses": 2,
+  "jp": "夏の巨人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Summer Giant"
+   }
+  ]
+ },
+ {
+  "hex": "90c2977482cc95ba91e0",
+  "at": "enemy/54",
+  "uses": 2,
+  "jp": "青葉の兵隊",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Greenleaf Guard"
+   }
+  ]
+ },
+ {
+  "hex": "82a082d482e782da82a4",
+  "at": "enemy/55",
+  "uses": 4,
+  "jp": "あぶらぼう",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Oil Monk"
+   }
+  ]
+ },
+ {
+  "hex": "82ca82e78ae7",
+  "at": "enemy/56",
+  "uses": 2,
+  "jp": "ぬら顔",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Slickface"
+   }
+  ]
+ },
+ {
+  "hex": "8c8c82dd82c782eb835483938353",
+  "at": "enemy/57",
+  "uses": 2,
+  "jp": "血みどろサンゴ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Bloodied Coral"
+   }
+  ]
+ },
+ {
+  "hex": "944782ea94af",
+  "at": "enemy/58",
+  "uses": 1,
+  "jp": "濡れ髪",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Wet Hair"
+   }
+  ]
+ },
+ {
+  "hex": "89aa8be08b9b",
+  "at": "enemy/59",
+  "uses": 2,
+  "jp": "岡金魚",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Land Goldfish"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a982dd82c282a282bd21",
+  "at": "enemy/60",
+  "uses": 2,
+  "jp": "$0は$nかみついた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／bites!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93aa93cb82ab959491e0",
+  "at": "enemy/61",
+  "uses": 1,
+  "jp": "頭突き部隊",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Headbutt Squad"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8a7082f0905582e88fe382b093cb82c18d9e82f182c582ab82bd21",
+  "at": "enemy/62",
+  "uses": 3,
+  "jp": "$0は$n角を振り上げ突っ込んできた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／charges with horns raised!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e987282f0905582e889f182b582bd21",
+  "at": "enemy/63",
+  "uses": 2,
+  "jp": "$0は$n腕を振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings an arm wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "97ce82cc8d698ef191e4",
+  "at": "enemy/64",
+  "uses": 1,
+  "jp": "緑の絞首台",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Green Gallows"
+   }
+  ]
+ },
+ {
+  "hex": "8edc944d82cc8e8b90fc",
+  "at": "enemy/65",
+  "uses": 1,
+  "jp": "灼熱の視線",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Scorching Gaze"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc944d82a28ae18db782b521",
+  "at": "enemy/66",
+  "uses": 1,
+  "jp": "$0の熱い眼差し!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ gazes passionately!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89d482cc82ad82bf82c382af",
+  "at": "enemy/67",
+  "uses": 1,
+  "jp": "花のくちづけ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flower's Kiss"
+   }
+  ]
+ },
+ {
+  "hex": "97ce82cc968289a4",
+  "at": "enemy/68",
+  "uses": 1,
+  "jp": "緑の魔王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Green Demonlord"
+   }
+  ]
+ },
+ {
+  "hex": "8fbc977482cc8b4d8cf68e71",
+  "at": "enemy/69",
+  "uses": 1,
+  "jp": "松葉の貴公子",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Pine-Sprig Lord"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82cd82b682af82bd21",
+  "at": "enemy/70",
+  "uses": 1,
+  "jp": "$0は$nはじけた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／bursts apart!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90859854",
+  "at": "enemy/71",
+  "uses": 1,
+  "jp": "水狼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Water Wolf"
+   }
+  ]
+ },
+ {
+  "hex": "834e834f836395ba",
+  "at": "enemy/72",
+  "uses": 2,
+  "jp": "クグツ兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Puppet Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "926e8d9682cc8f978bb38e74",
+  "at": "enemy/73",
+  "uses": 1,
+  "jp": "地獄の女教師",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hell Schoolmarm"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8380836082f0905582e889f182b582bd21",
+  "at": "enemy/74",
+  "uses": 1,
+  "jp": "$0は$nムチを振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings a whip wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "906a82cc8eda94aa",
+  "at": "enemy/75",
+  "uses": 1,
+  "jp": "針の尺八",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Needle Flute"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e92be96d982cc934a82f0908182a282bd21",
+  "at": "enemy/76",
+  "uses": 1,
+  "jp": "$0は$n沈黙の笛を吹いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／pipes silence!"
+   }
+  ]
+ },
+ {
+  "hex": "89d4927b",
+  "at": "enemy/77",
+  "uses": 1,
+  "jp": "花畜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flowerbeast"
+   }
+  ]
+ },
+ {
+  "hex": "834a8389837e8352",
+  "at": "enemy/78",
+  "uses": 1,
+  "jp": "カラミコ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Karamiko"
+   }
+  ]
+ },
+ {
+  "hex": "837d835f83898f9789a4",
+  "at": "enemy/79",
+  "uses": 1,
+  "jp": "マダラ女王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Mottled Queen"
+   }
+  ]
+ },
+ {
+  "hex": "926a82cc91e596d8",
+  "at": "enemy/80",
+  "uses": 1,
+  "jp": "男の大木",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Man-Tree"
+   }
+  ]
+ },
+ {
+  "hex": "83438350837b",
+  "at": "enemy/81",
+  "uses": 4,
+  "jp": "イケボ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ikebo"
+   }
+  ]
+ },
+ {
+  "hex": "82b582e782ca82a2",
+  "at": "enemy/82",
+  "uses": 2,
+  "jp": "しらぬい",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shiranui"
+   }
+  ]
+ },
+ {
+  "hex": "89ce898a95908ed2",
+  "at": "enemy/83",
+  "uses": 2,
+  "jp": "火炎武者",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flame Warrior"
+   }
+  ]
+ },
+ {
+  "hex": "8371835f836c",
+  "at": "enemy/84",
+  "uses": 2,
+  "jp": "ヒダネ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Firebrand"
+   }
+  ]
+ },
+ {
+  "hex": "834a8351838d8345",
+  "at": "enemy/85",
+  "uses": 2,
+  "jp": "カゲロウ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Heat Haze"
+   }
+  ]
+ },
+ {
+  "hex": "96bb957b82cc97c28ca2",
+  "at": "enemy/86",
+  "uses": 2,
+  "jp": "冥府の猟犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Nether Hound"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e898a82f082cd82a282bd2121",
+  "at": "enemy/87",
+  "uses": 1,
+  "jp": "$0は、$n炎をはいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／breathes fire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89ce82cb82b882dd",
+  "at": "enemy/88",
+  "uses": 3,
+  "jp": "火ねずみ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Fire Rat"
+   }
+  ]
+ },
+ {
+  "hex": "82a882a882aa82b582e7",
+  "at": "enemy/89",
+  "uses": 2,
+  "jp": "おおがしら",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Great Head"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82d382c482ab82c88fce82dd82f0958282a982d782bd21",
+  "at": "enemy/90",
+  "uses": 1,
+  "jp": "$0は、$nふてきな笑みを浮かべた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins fearlessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa8141246e82cc82b582a982a982c182c482ab82bd2121",
+  "at": "enemy/91",
+  "uses": 1,
+  "jp": "$0が、$nのしかかってきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／presses down with its weight!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "82a982af82c282da",
+  "at": "enemy/92",
+  "uses": 9,
+  "jp": "かけつぼ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Kaketsubo"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8fce82c182c482a282e9814581458145",
+  "at": "enemy/93",
+  "uses": 4,
+  "jp": "$0は、$n笑っている・・・",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is laughing...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc92d982aa246e89b982f082bd82c482c48a8482ea82bd21218140",
+  "at": "enemy/94",
+  "uses": 4,
+  "jp": "$0の壷が$n音をたてて割れた!!　",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s pot￥／shattered with a crash!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8d848b53",
+  "at": "enemy/95",
+  "uses": 9,
+  "jp": "剛鬼",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Brute Oni"
+   }
+  ]
+ },
+ {
+  "hex": "89ce908182ab",
+  "at": "enemy/96",
+  "uses": 9,
+  "jp": "火吹き",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Firebreather"
+   }
+  ]
+ },
+ {
+  "hex": "96ec8f6289a4",
+  "at": "enemy/97",
+  "uses": 2,
+  "jp": "野獣王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Beast King"
+   }
+  ]
+ },
+ {
+  "hex": "89ce898a8ed4",
+  "at": "enemy/98",
+  "uses": 9,
+  "jp": "火炎車",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Fire Wheel"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91ab82e082c682a982e7977b95aa82f08b7a82c182bd21",
+  "at": "enemy/99",
+  "uses": 1,
+  "jp": "$0は$n足もとから養分を吸った!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／drinks from the soil!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8b7a8c8c8d558c8221",
+  "at": "enemy/100",
+  "uses": 1,
+  "jp": "$0の吸血攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ drinks blood!"
+   }
+  ]
+ },
+ {
+  "hex": "9c928d9b82cc93b5",
+  "at": "enemy/101",
+  "uses": 1,
+  "jp": "恍惚の瞳",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Rapture Eye"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a482c182c682e882c68ca982c282df82bd814581458145",
+  "at": "enemy/102",
+  "uses": 1,
+  "jp": "$0は、$nうっとりと見つめた・・・",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gazes dreamily...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e9c928d9b82c982d082bd82c182c482a282e921",
+  "at": "enemy/103",
+  "uses": 1,
+  "jp": "$0は、$n恍惚にひたっている!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／is lost in rapture!"
+   }
+  ]
+ },
+ {
+  "hex": "834383828a4c95ba",
+  "at": "enemy/104",
+  "uses": 4,
+  "jp": "イモ貝兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Conid Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8cfb82a982e793c5897482f082cd82a282bd2121",
+  "at": "enemy/105",
+  "uses": 2,
+  "jp": "$0は、$n口から毒液をはいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits venom!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e9453897482f096da82c9908182ab82c282af82bd2121",
+  "at": "enemy/106",
+  "uses": 2,
+  "jp": "$0は、$n粘液を目に吹きつけた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays slime into the eyes!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8349837b",
+  "at": "enemy/107",
+  "uses": 4,
+  "jp": "オボ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Obo"
+   }
+  ]
+ },
+ {
+  "hex": "834983828343",
+  "at": "enemy/108",
+  "uses": 2,
+  "jp": "オモイ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Omoi"
+   }
+  ]
+ },
+ {
+  "hex": "8343838f8392",
+  "at": "enemy/109",
+  "uses": 2,
+  "jp": "イワヲ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Iwao"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e926e8d9682cc836e8393837d815b82f091c582bf8d7e82eb82b582bd2121",
+  "at": "enemy/110",
+  "uses": 1,
+  "jp": "$0は、$n地獄のハンマーを打ち降ろした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings down a hellish hammer!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "82eb82ad82eb96538ed2",
+  "at": "enemy/111",
+  "uses": 3,
+  "jp": "ろくろ亡者",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Longneck Wraith"
+   }
+  ]
+ },
+ {
+  "hex": "8fc096568ee5",
+  "at": "enemy/112",
+  "uses": 4,
+  "jp": "沼坊主",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Swamp Monk"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82ca82a982e982dd82f08dec82e88f6f82b582bd2121",
+  "at": "enemy/113",
+  "uses": 2,
+  "jp": "$0は、$nぬかるみを作り出した!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／makes a mire!"
+   }
+  ]
+ },
+ {
+  "hex": "94f282d189ce",
+  "at": "enemy/114",
+  "uses": 3,
+  "jp": "飛び火",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flying Spark"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e898a82f0908182ab82c282af82c482ab82bd2121",
+  "at": "enemy/115",
+  "uses": 1,
+  "jp": "$0は、$n炎を吹きつけてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／blasts with flames!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89ce835f838b",
+  "at": "enemy/116",
+  "uses": 2,
+  "jp": "火ダル",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hunger Spirit"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8ebd8d9582cc908582f0905582e882dc82a282bd2121",
+  "at": "enemy/117",
+  "uses": 1,
+  "jp": "$0は、$n漆黒の水を振りまいた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／sprays black water!"
+   }
+  ]
+ },
+ {
+  "hex": "82a882aa82dd93fc93b9",
+  "at": "enemy/118",
+  "uses": 2,
+  "jp": "おがみ入道",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Praying Monk"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e944f95a782f08fa582a682bd21",
+  "at": "enemy/119",
+  "uses": 1,
+  "jp": "$0は、$n念仏を唱えた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／chants a Buddhist prayer!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e90e0964082f08fa582a682bd2121",
+  "at": "enemy/120",
+  "uses": 1,
+  "jp": "$0は、$n説法を唱えた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／preaches a sermon!"
+   }
+  ]
+ },
+ {
+  "hex": "835f834c836a",
+  "at": "enemy/121",
+  "uses": 2,
+  "jp": "ダキニ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dakini"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a982dd82c282a282bd2121",
+  "at": "enemy/122",
+  "uses": 1,
+  "jp": "$0は、$nかみついた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／bites!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "838083898354",
+  "at": "enemy/123",
+  "uses": 2,
+  "jp": "ムラサ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Murasa"
+   }
+  ]
+ },
+ {
+  "hex": "8b7499c2",
+  "at": "enemy/124",
+  "uses": 2,
+  "jp": "逆卍",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Reverse Manji"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a082d482c882a291a182e895a882f082ad82ea82bd21",
+  "at": "enemy/125",
+  "uses": 1,
+  "jp": "$0は、$nあぶない贈り物をくれた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a dangerous gift!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e836a835a8ed282cc97cd82f08f578c8b82b582bd2121",
+  "at": "enemy/126",
+  "uses": 1,
+  "jp": "$0は、$nニセ者の力を集結した!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／gathers the fakes' power!"
+   }
+  ]
+ },
+ {
+  "hex": "99c282ad82b882b5",
+  "at": "enemy/127",
+  "uses": 2,
+  "jp": "卍くずし",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Manji Breaker"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc246e8347835a8d678adb8e6182e82121",
+  "at": "enemy/128",
+  "uses": 1,
+  "jp": "$0の$nエセ紅丸斬り!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s￥／fake Benimaru Slash!"
+   }
+  ]
+ },
+ {
+  "hex": "836b838b836b838b82cc90e3",
+  "at": "enemy/129",
+  "uses": 2,
+  "jp": "ヌルヌルの舌",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Slimy Tongue"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e92b782a290e382f093cb82ab8e6882b582bd21",
+  "at": "enemy/130",
+  "uses": 1,
+  "jp": "$0は、$n長い舌を突き刺した!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／stabs with its long tongue!"
+   }
+  ]
+ },
+ {
+  "hex": "82a982ed82b88adb",
+  "at": "enemy/131",
+  "uses": 2,
+  "jp": "かわず丸",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Kawazumaru"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8351838d8351838d82c682c882a282bd21",
+  "at": "enemy/132",
+  "uses": 1,
+  "jp": "$0は、$nゲロゲロとないた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／croaks loudly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "835d834583818393",
+  "at": "enemy/133",
+  "uses": 2,
+  "jp": "ゾウメン",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Zomen"
+   }
+  ]
+ },
+ {
+  "hex": "906c8ad490ed8ed4",
+  "at": "enemy/134",
+  "uses": 3,
+  "jp": "人間戦車",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human Tank"
+   }
+  ]
+ },
+ {
+  "hex": "8a43836c8359837e",
+  "at": "enemy/135",
+  "uses": 2,
+  "jp": "海ネズミ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sea Mouse"
+   }
+  ]
+ },
+ {
+  "hex": "89ce975682d18fad8f97",
+  "at": "enemy/136",
+  "uses": 2,
+  "jp": "火遊び少女",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Firebug Girl"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e90c382a982c98fce82c182bd21",
+  "at": "enemy/137",
+  "uses": 1,
+  "jp": "$0は、$n静かに笑った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／laughs quietly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8ac394fc82c88fce82dd82f0958282a982d782bd21",
+  "at": "enemy/138",
+  "uses": 1,
+  "jp": "$0は、$n甘美な笑みを浮かべた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a seductive smile!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e898a82f082cd82c882c182bd2121",
+  "at": "enemy/139",
+  "uses": 1,
+  "jp": "$0は、$n炎をはなった!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／shoots flames!"
+   }
+  ]
+ },
+ {
+  "hex": "82d382ad82d7",
+  "at": "enemy/140",
+  "uses": 2,
+  "jp": "ふくべ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Gourd"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e97bc8ee882c588f882c182a982a282c482ab82bd2121",
+  "at": "enemy/141",
+  "uses": 1,
+  "jp": "$0は、$n両手で引っかいてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／scratches with both hands!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e93aa82f0834a8389834a838996c282e782b582bd2121",
+  "at": "enemy/142",
+  "uses": 2,
+  "jp": "$0は、$n頭をカラカラ鳴らした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rattles its head!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "958297568e899662",
+  "at": "enemy/143",
+  "uses": 2,
+  "jp": "浮遊脂肪",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Floating Fat"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e944d82a2959782f0919782c182bd2121",
+  "at": "enemy/144",
+  "uses": 1,
+  "jp": "$0は、$n熱い風を送った!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／blows a hot wind!"
+   }
+  ]
+ },
+ {
+  "hex": "88c582cc8b7188f882ab",
+  "at": "enemy/145",
+  "uses": 2,
+  "jp": "闇の客引き",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Tout"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814189f682b582ad82a482b282df82a282bd2121",
+  "at": "enemy/146",
+  "uses": 1,
+  "jp": "$0は、怪しくうごめいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／writhes eerily!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141955382cc96da82f08b5082a282bd2121",
+  "at": "enemy/147",
+  "uses": 1,
+  "jp": "$0は、百の目を輝いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／flashes its hundred eyes!"
+   }
+  ]
+ },
+ {
+  "hex": "97f38b53",
+  "at": "enemy/148",
+  "uses": 2,
+  "jp": "烈鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Raging Demon"
+   }
+  ]
+ },
+ {
+  "hex": "90d4904b",
+  "at": "enemy/149",
+  "uses": 1,
+  "jp": "赤尻",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Rump"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc91e58b5a21",
+  "at": "enemy/150",
+  "uses": 1,
+  "jp": "$0の大技!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses￥／a powerful technique!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "926e8d96905f8a79",
+  "at": "enemy/151",
+  "uses": 1,
+  "jp": "地獄神楽",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hell Rite Dance"
+   }
+  ]
+ },
+ {
+  "hex": "8aaf945c82cc89a1934a",
+  "at": "enemy/152",
+  "uses": 1,
+  "jp": "官能の横笛",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flute of Desire"
+   }
+  ]
+ },
+ {
+  "hex": "90d482a682c8",
+  "at": "enemy/153",
+  "uses": 1,
+  "jp": "赤えな",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Placenta"
+   }
+  ]
+ },
+ {
+  "hex": "8e8082c989bb8fcf",
+  "at": "enemy/154",
+  "uses": 1,
+  "jp": "死に化粧",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Death Makeup"
+   }
+  ]
+ },
+ {
+  "hex": "8e8082cc8983",
+  "at": "enemy/155",
+  "uses": 1,
+  "jp": "死の宴",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Feast of Death"
+   }
+  ]
+ },
+ {
+  "hex": "959a978b",
+  "at": "enemy/156",
+  "uses": 1,
+  "jp": "伏雷",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hidden Thunder"
+   }
+  ]
+ },
+ {
+  "hex": "8350835f8382836d91be8cdb",
+  "at": "enemy/157",
+  "uses": 1,
+  "jp": "ケダモノ太鼓",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Beast Drum"
+   }
+  ]
+ },
+ {
+  "hex": "906c94e782cc83638364837e",
+  "at": "enemy/158",
+  "uses": 1,
+  "jp": "人皮のツヅミ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human-Skin Drum"
+   }
+  ]
+ },
+ {
+  "hex": "97ce82cc8a8a8bf391e0",
+  "at": "enemy/159",
+  "uses": 1,
+  "jp": "緑の滑空隊",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Green Gliders"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc91cc939682e88d558c8221",
+  "at": "enemy/160",
+  "uses": 4,
+  "jp": "$0の体当り攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ body-slams!"
+   }
+  ]
+ },
+ {
+  "hex": "93f782cc96b2",
+  "at": "enemy/161",
+  "uses": 1,
+  "jp": "肉の夢",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dream of Flesh"
+   }
+  ]
+ },
+ {
+  "hex": "88c38d958f5c95b68e9a",
+  "at": "enemy/162",
+  "uses": 2,
+  "jp": "暗黒十文字",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Cross"
+   }
+  ]
+ },
+ {
+  "hex": "977489659682906c",
+  "at": "enemy/163",
+  "uses": 2,
+  "jp": "葉影魔人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Leafshade Fiend"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc91e5905582e821",
+  "at": "enemy/164",
+  "uses": 8,
+  "jp": "$0の大振り!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ swings hard!"
+   }
+  ]
+ },
+ {
+  "hex": "8363836783628e71",
+  "at": "enemy/165",
+  "uses": 1,
+  "jp": "ツトッ子",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Tsutokko"
+   }
+  ]
+ },
+ {
+  "hex": "8384835e834b83898358",
+  "at": "enemy/166",
+  "uses": 3,
+  "jp": "ヤタガラス",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Yatagarasu"
+   }
+  ]
+ },
+ {
+  "hex": "906c8ad496718fea",
+  "at": "enemy/167",
+  "uses": 1,
+  "jp": "人間牧場",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human Ranch"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93b792f782df21",
+  "at": "enemy/168",
+  "uses": 1,
+  "jp": "$0の胴締め!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses a body hold!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "906c8bf282a292b9",
+  "at": "enemy/169",
+  "uses": 2,
+  "jp": "人喰い鳥",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Man-Eating Bird"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8bc689ce82f0936682a282bd21",
+  "at": "enemy/170",
+  "uses": 2,
+  "jp": "$0は$n業火を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spews hellfire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8360837e",
+  "at": "enemy/171",
+  "uses": 2,
+  "jp": "チミ",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Chimi"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8ef482a282f082a982af82c482ab82bd21",
+  "at": "enemy/172",
+  "uses": 2,
+  "jp": "$0は$n呪いをかけてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／casts a curse!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e835e8365834b837e82f08eb5904682c98b5082a982b982bd21",
+  "at": "enemy/173",
+  "uses": 2,
+  "jp": "$0は$nタテガミを七色に輝かせた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s mane￥／flashes rainbow!"
+   }
+  ]
+ },
+ {
+  "hex": "8ed790d497b3",
+  "at": "enemy/174",
+  "uses": 1,
+  "jp": "邪赤竜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Evil Red Dragon"
+   }
+  ]
+ },
+ {
+  "hex": "88c582a982e782b7",
+  "at": "enemy/175",
+  "uses": 2,
+  "jp": "闇からす",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Crow"
+   }
+  ]
+ },
+ {
+  "hex": "88c588ea9d84",
+  "at": "enemy/176",
+  "uses": 2,
+  "jp": "闇一揆",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Uprising"
+   }
+  ]
+ },
+ {
+  "hex": "906c96ca8eeb82e8",
+  "at": "enemy/177",
+  "uses": 1,
+  "jp": "人面狩り",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Face Hunter"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91e591be938182f0905582e889f182b582bd21",
+  "at": "enemy/178",
+  "uses": 1,
+  "jp": "$0は$n大太刀を振り回した!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／swings a greatsword!"
+   }
+  ]
+ },
+ {
+  "hex": "90d48d848b53",
+  "at": "enemy/179",
+  "uses": 1,
+  "jp": "赤剛鬼",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Red Brute Oni"
+   }
+  ]
+ },
+ {
+  "hex": "8d968ca2968289a4",
+  "at": "enemy/180",
+  "uses": 1,
+  "jp": "獄犬魔王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hellhound King"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89ce82f0908182a282bd21",
+  "at": "enemy/181",
+  "uses": 1,
+  "jp": "$0は$n火を吹いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／breathes fire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8e87904682cc90da95ab",
+  "at": "enemy/182",
+  "uses": 1,
+  "jp": "紫色の接吻",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Violet Kiss"
+   }
+  ]
+ },
+ {
+  "hex": "946782a482c293f78f60",
+  "at": "enemy/183",
+  "uses": 1,
+  "jp": "波うつ肉汁",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Rippling Gravy"
+   }
+  ]
+ },
+ {
+  "hex": "83808389835e837d",
+  "at": "enemy/184",
+  "uses": 1,
+  "jp": "ムラタマ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Muratama"
+   }
+  ]
+ },
+ {
+  "hex": "916f8a70",
+  "at": "enemy/185",
+  "uses": 1,
+  "jp": "双角",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Twinhorn"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93aa93cb82ab8d558c8221",
+  "at": "enemy/186",
+  "uses": 1,
+  "jp": "$0の頭突き攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ headbutts!"
+   }
+  ]
+ },
+ {
+  "hex": "94f282d1834b8389",
+  "at": "enemy/187",
+  "uses": 3,
+  "jp": "飛びガラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flying Crow"
+   }
+  ]
+ },
+ {
+  "hex": "836b8389838a837183878393",
+  "at": "enemy/188",
+  "uses": 1,
+  "jp": "ヌラリヒョン",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Nurarihyon"
+   }
+  ]
+ },
+ {
+  "hex": "82d382b782dc",
+  "at": "enemy/189",
+  "uses": 1,
+  "jp": "ふすま",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sky Shroud"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89f682b582ad82a482b282df82a282bd21",
+  "at": "enemy/190",
+  "uses": 2,
+  "jp": "$0は$n怪しくうごめいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／writhes eerily!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "906c8ad4926e8d96",
+  "at": "enemy/191",
+  "uses": 4,
+  "jp": "人間地獄",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human Hell"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e97ac8dbb82f08b4e82b182b582bd2121",
+  "at": "enemy/192",
+  "uses": 2,
+  "jp": "$0は、$n流砂を起こした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／creates quicksand!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8bad97cd82c88341835382c592f782df82c282af82bd2121",
+  "at": "enemy/193",
+  "uses": 2,
+  "jp": "$0は、$n強力なアゴで締めつけた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／clamps down with powerful jaws!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90b6834f8354936691a7",
+  "at": "enemy/194",
+  "uses": 2,
+  "jp": "生グサ吐息",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Rank Breath"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e944d82a2936691a782f082cd82a282bd2121",
+  "at": "enemy/195",
+  "uses": 1,
+  "jp": "$0は、$n熱い吐息をはいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／exhales scorching breath!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e979282f08cc482f182be2121",
+  "at": "enemy/196",
+  "uses": 1,
+  "jp": "$0は、$n嵐を呼んだ!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／calls a storm!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e88ee8dc882f08cc482f182be2121",
+  "at": "enemy/197",
+  "uses": 1,
+  "jp": "$0は、$n稲妻を呼んだ!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／calls down lightning!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "88ea8a7090af",
+  "at": "enemy/198",
+  "uses": 4,
+  "jp": "一角星",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "One-Horn Star"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8a7082f0905582e88fe382b093cb82c18d9e82f182c582ab82bd2121",
+  "at": "enemy/199",
+  "uses": 2,
+  "jp": "$0は、$n角を振り上げ突っ込んできた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／charges with horns raised!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8a7082cd8141978b82f082e682f182be2121",
+  "at": "enemy/200",
+  "uses": 2,
+  "jp": "$0の角は、雷をよんだ!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s horns￥／call down lightning!"
+   }
+  ]
+ },
+ {
+  "hex": "93f18a7090af",
+  "at": "enemy/201",
+  "uses": 4,
+  "jp": "二角星",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Two-Horn Star"
+   }
+  ]
+ },
+ {
+  "hex": "935382cc928e83508389",
+  "at": "enemy/202",
+  "uses": 4,
+  "jp": "鉄の虫ケラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Iron Vermin"
+   }
+  ]
+ },
+ {
+  "hex": "969e8a4a926e8d96",
+  "at": "enemy/203",
+  "uses": 2,
+  "jp": "満開地獄",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Full-Bloom Hell"
+   }
+  ]
+ },
+ {
+  "hex": "926e9286835f8352",
+  "at": "enemy/204",
+  "uses": 2,
+  "jp": "地中ダコ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Buried Octopus"
+   }
+  ]
+ },
+ {
+  "hex": "937993ea",
+  "at": "enemy/205",
+  "uses": 2,
+  "jp": "土縄",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Earth Serpent"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd81418e5f82f0908182ab82a982af82c482a282bd2121",
+  "at": "enemy/206",
+  "uses": 1,
+  "jp": "$0は、酸を吹きかけていた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／sprays acid!"
+   }
+  ]
+ },
+ {
+  "hex": "83678354834a82e082cc",
+  "at": "enemy/207",
+  "uses": 1,
+  "jp": "トサカもの",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Cockscomb"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8e5f82f0908182ab82a982af82bd2121",
+  "at": "enemy/208",
+  "uses": 2,
+  "jp": "$0は、$n酸を吹きかけた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e93c582cc92dc82c588f882ab97f482a282bd2121",
+  "at": "enemy/209",
+  "uses": 1,
+  "jp": "$0は、$n毒の爪で引き裂いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rends with poisonous claws!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e978382a982e78aef96ad82c895b282f082dc82a282bd2121",
+  "at": "enemy/210",
+  "uses": 1,
+  "jp": "$0は、$n翼から奇妙な粉をまいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／scatters strange dust from its wings!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8bf382cc92dc",
+  "at": "enemy/211",
+  "uses": 2,
+  "jp": "空の爪",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Sky Claw"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e978382f082cd82bd82df82a982b982bd2121",
+  "at": "enemy/212",
+  "uses": 2,
+  "jp": "$0は、$n翼をはためかせた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／flutters its wings!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8b7d8d7e89ba82b582c482ab82bd2121",
+  "at": "enemy/213",
+  "uses": 2,
+  "jp": "$0は、$n急降下してきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swoops down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8d7c935395ba",
+  "at": "enemy/214",
+  "uses": 3,
+  "jp": "鋼鉄兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Steel Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "8ef190d8928e",
+  "at": "enemy/215",
+  "uses": 4,
+  "jp": "首切虫",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Beheading Bug"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e834c838a834c838a82c696c282a282bd2121",
+  "at": "enemy/216",
+  "uses": 2,
+  "jp": "$0は、$nキリキリと鳴いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／lets out a piercing cry!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e834a8369834a836982c696c282a282bd2121",
+  "at": "enemy/217",
+  "uses": 2,
+  "jp": "$0は、$nカナカナと鳴いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／chirps like a cicada!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e94f282d18b8e82c182bd2121",
+  "at": "enemy/218",
+  "uses": 2,
+  "jp": "$0は、$n飛び去った!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／flies away!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8c8c8ac782e082ae82e8",
+  "at": "enemy/219",
+  "uses": 4,
+  "jp": "血管もぐり",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Vein Burrower"
+   }
+  ]
+ },
+ {
+  "hex": "906c96ca83458357",
+  "at": "enemy/220",
+  "uses": 2,
+  "jp": "人面ウジ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Manface Maggot"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91cc82f08aaa82ab957482af82c482ab82bd2121",
+  "at": "enemy/221",
+  "uses": 1,
+  "jp": "$0は、$n体を巻き付けてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／coils around its target!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e926e96ca82c982e082ae82c182c482a282c182bd2121",
+  "at": "enemy/222",
+  "uses": 1,
+  "jp": "$0は、$n地面にもぐっていった!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／burrows underground!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8dbb82cc95ba",
+  "at": "enemy/223",
+  "uses": 1,
+  "jp": "砂の兵",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Sand Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "8d7c93538341838a",
+  "at": "enemy/224",
+  "uses": 3,
+  "jp": "鋼鉄アリ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Steel Ant"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91be938182f0905582e88d7e82eb82b582bd2121",
+  "at": "enemy/225",
+  "uses": 1,
+  "jp": "$0は、$n太刀を振り降ろした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings its sword down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8d5c82a682f095cf82a682bd2121",
+  "at": "enemy/226",
+  "uses": 1,
+  "jp": "$0は、$n構えを変えた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／changes stance!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "88c38d9595908ed2",
+  "at": "enemy/227",
+  "uses": 2,
+  "jp": "暗黒武者",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Warrior"
+   }
+  ]
+ },
+ {
+  "hex": "83848359834a",
+  "at": "enemy/228",
+  "uses": 4,
+  "jp": "ヤズカ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Yazuka"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91cc82a982e79453897482f0908182ab8f6f82b582bd2121",
+  "at": "enemy/229",
+  "uses": 1,
+  "jp": "$0は、$n体から粘液を吹き出した!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays slime from its body!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "948882dc82dd82ea",
+  "at": "enemy/230",
+  "uses": 2,
+  "jp": "蝿まみれ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Fly-Ridden"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814190b88b4382f0924482c182bd2121",
+  "at": "enemy/231",
+  "uses": 1,
+  "jp": "$0は、精気を奪った!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／steals life energy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141905382c982c682e882c282a282bd21",
+  "at": "enemy/232",
+  "uses": 1,
+  "jp": "$0は、心にとりついた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／possesses the mind!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90d48ee8",
+  "at": "enemy/233",
+  "uses": 2,
+  "jp": "赤手",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Hand"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e92b782a28ee882f082b382e782c9904c82ce82b582c482ab82bd2121",
+  "at": "enemy/234",
+  "uses": 1,
+  "jp": "$0は、$n長い手をさらに伸ばしてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／stretches its long arms even further!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e92b782a28ee882f091e582ab82ad905582e889f182b582bd2121",
+  "at": "enemy/235",
+  "uses": 1,
+  "jp": "$0は、$n長い手を大きく振り回した!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings its long arms wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8be082cc9783",
+  "at": "enemy/236",
+  "uses": 1,
+  "jp": "金の翼",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Golden Wing"
+   }
+  ]
+ },
+ {
+  "hex": "8c8c90f582df9783",
+  "at": "enemy/237",
+  "uses": 1,
+  "jp": "血染め翼",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Bloodwing"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8aef96ad82c890ba82c596c282a282bd2121",
+  "at": "enemy/238",
+  "uses": 1,
+  "jp": "$0は、$n奇妙な声で鳴いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a strange cry!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e959182a28d7e82e882c482ab82bd2121",
+  "at": "enemy/239",
+  "uses": 1,
+  "jp": "$0は、$n舞い降りてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swoops down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc954b8e458d558c8221",
+  "at": "enemy/240",
+  "uses": 3,
+  "jp": "$0の必殺攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s death blow!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc89ce898a8d558c8221",
+  "at": "enemy/241",
+  "uses": 2,
+  "jp": "$0の火炎攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ spits fire!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e898a82f082cd82a282bd21",
+  "at": "enemy/242",
+  "uses": 3,
+  "jp": "$0は$n炎をはいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／breathes fire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82d382c482ab82c88fce82dd82f0958282a982d782bd21",
+  "at": "enemy/243",
+  "uses": 1,
+  "jp": "$0は$nふてきな笑みを浮かべた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins fearlessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e82cc82b582a982a982c182c482ab82bd21",
+  "at": "enemy/244",
+  "uses": 1,
+  "jp": "$0が$nのしかかってきた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／bears down!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8fce82c182c482a282e9814581458145",
+  "at": "enemy/245",
+  "uses": 5,
+  "jp": "$0は$n笑っている・・・",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is laughing...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc92d982aa246e89b982f082bd82c482c48a8482ea82bd218140",
+  "at": "enemy/246",
+  "uses": 5,
+  "jp": "$0の壷が$n音をたてて割れた!　",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s pot￥／shatters!"
+   }
+  ]
+ },
+ {
+  "hex": "95c98bca",
+  "at": "enemy/247",
+  "uses": 3,
+  "jp": "碧玉",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Blue Orb"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc82a882a882ab82c893b582aa8141246e834c8389838a82c68b5082a282bd2121",
+  "at": "enemy/248",
+  "uses": 1,
+  "jp": "$0のおおきな瞳が、$nキラリと輝いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s great eyes￥／flash!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8d8291ac8d558c822121",
+  "at": "enemy/249",
+  "uses": 1,
+  "jp": "$0の高速攻撃!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s￥／lightning attack!"
+   }
+  ]
+ },
+ {
+  "hex": "834a835683838393837b",
+  "at": "enemy/250",
+  "uses": 4,
+  "jp": "カシャンボ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Kashanbo"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc957388d382cc88ea8c822121",
+  "at": "enemy/251",
+  "uses": 2,
+  "jp": "$0の不意の一撃!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ lands a surprise blow!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a082d482c882a2834983828360838382f0938a82b082c482ab82bd2121",
+  "at": "enemy/252",
+  "uses": 2,
+  "jp": "$0は、$nあぶないオモチャを投げてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／throws a dangerous toy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "834b83898393",
+  "at": "enemy/253",
+  "uses": 4,
+  "jp": "ガラン",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Garan"
+   }
+  ]
+ },
+ {
+  "hex": "955396ca8e74",
+  "at": "enemy/254",
+  "uses": 2,
+  "jp": "百面師",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "100-Face Master"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e9153906782cc8985944f82f082d482c282af82bd2121",
+  "at": "enemy/255",
+  "uses": 1,
+  "jp": "$0は、$n全身の怨念をぶつけた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／unleashes all its malice!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8e7282cc89a48ed2",
+  "at": "enemy/256",
+  "uses": 3,
+  "jp": "屍の王者",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Corpse King"
+   }
+  ]
+ },
+ {
+  "hex": "8e538e4589a4",
+  "at": "enemy/257",
+  "uses": 2,
+  "jp": "惨殺王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Slaughter King"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8cfb82a982e79453897482f0936682a282bd2121",
+  "at": "enemy/258",
+  "uses": 1,
+  "jp": "$0は、$n口から粘液を吐いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／spits slime!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e944d82a28379815b835b82f0919782c182bd2121",
+  "at": "enemy/259",
+  "uses": 1,
+  "jp": "$0は、$n熱いペーゼを送った!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／blows a hot kiss!"
+   }
+  ]
+ },
+ {
+  "hex": "82b582e082b582e0",
+  "at": "enemy/260",
+  "uses": 3,
+  "jp": "しもしも",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shimoshimo"
+   }
+  ]
+ },
+ {
+  "hex": "8e8097ec8be2836f8347",
+  "at": "enemy/261",
+  "uses": 5,
+  "jp": "死霊銀バエ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ghost Blowfly"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e89488daa82f0906b82ed82b982bd2121",
+  "at": "enemy/262",
+  "uses": 1,
+  "jp": "$0は、$n羽根を震わせた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／flutters its wings!"
+   }
+  ]
+ },
+ {
+  "hex": "8e80905f",
+  "at": "enemy/263",
+  "uses": 2,
+  "jp": "死神",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Grim Reaper"
+   }
+  ]
+ },
+ {
+  "hex": "8e8082cc88ac8ee8",
+  "at": "enemy/264",
+  "uses": 1,
+  "jp": "死の握手",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Death Grip"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e88ac8ee882f082b582c482ab82bd2121",
+  "at": "enemy/265",
+  "uses": 1,
+  "jp": "$0は、$n握手をしてきた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／offers a handshake!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93798bf4838d837b",
+  "at": "enemy/266",
+  "uses": 5,
+  "jp": "土偶ロボ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Idol Robot"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8cfb82a982e789ce82f0936682a282bd2121",
+  "at": "enemy/267",
+  "uses": 2,
+  "jp": "$0は、$n口から火を吐いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spews fire from its mouth!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e97bc987282a982e7898a82f082d382e882dc82a282bd2121",
+  "at": "enemy/268",
+  "uses": 2,
+  "jp": "$0は、$n両腕から炎をふりまいた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays flames from both arms!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8cfb82c697bc987282a982e7898a82f0908182a282bd2121",
+  "at": "enemy/269",
+  "uses": 2,
+  "jp": "$0は、$n口と両腕から炎を吹いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／breathes fire from mouth and arms!"
+   }
+  ]
+ },
+ {
+  "hex": "83458363838d",
+  "at": "enemy/270",
+  "uses": 3,
+  "jp": "ウツロ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hollow One"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e91d993ae82b582c482a282e92121",
+  "at": "enemy/271",
+  "uses": 1,
+  "jp": "$0は、$n胎動している!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／stirs in the womb!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e946a97f482b582bd2121",
+  "at": "enemy/272",
+  "uses": 1,
+  "jp": "$0は、$n破裂した!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ burst!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246ee07997f482b582bd2121",
+  "at": "enemy/273",
+  "uses": 1,
+  "jp": "$0は、$n炸裂した!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／explodes!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82dc82e082cc82f090b682dd8f6f82b582bd2121",
+  "at": "enemy/274",
+  "uses": 1,
+  "jp": "$0は、$nまものを生み出した!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spawns a monster!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91928eae96568ee5",
+  "at": "enemy/275",
+  "uses": 2,
+  "jp": "葬式坊主",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Funeral Monk"
+   }
+  ]
+ },
+ {
+  "hex": "89bb82af926e91a0",
+  "at": "enemy/276",
+  "uses": 2,
+  "jp": "化け地蔵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Haunted Jizo"
+   }
+  ]
+ },
+ {
+  "hex": "243082c98ce38cf582aa82b382b582bd2121",
+  "at": "enemy/277",
+  "uses": 1,
+  "jp": "$0に後光がさした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ shines with a halo!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc94f282b082e88d558c822121",
+  "at": "enemy/278",
+  "uses": 1,
+  "jp": "$0の飛げり攻撃!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s￥／flying kick!"
+   }
+  ]
+ },
+ {
+  "hex": "8fce82a4959f8f95",
+  "at": "enemy/279",
+  "uses": 2,
+  "jp": "笑う福助",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Fukusuke Doll"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa8141836a8384838a82c682b582bd81638163",
+  "at": "enemy/280",
+  "uses": 1,
+  "jp": "$0が、ニヤリとした……",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins slyly...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa8141836a8341838a82c682b582bd81638163",
+  "at": "enemy/281",
+  "uses": 1,
+  "jp": "$0が、ニアリとした……",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa814182bb82c182c691a182e895a882f08db782b593fc82ea82bd2121",
+  "at": "enemy/282",
+  "uses": 1,
+  "jp": "$0が、そっと贈り物を差し入れた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／quietly slips in a gift!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa814192878ad482c9959f82f0975e82a682bd2121",
+  "at": "enemy/283",
+  "uses": 1,
+  "jp": "$0が、仲間に福を与えた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／blesses its allies with good luck!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141834a836282c696da82f08ca98a4a82a282bd2121",
+  "at": "enemy/284",
+  "uses": 1,
+  "jp": "$0は、カッと目を見開いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／opens its eyes wide!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814182d382c482ab82c98fce82c182c482a282e92121",
+  "at": "enemy/285",
+  "uses": 1,
+  "jp": "$0は、ふてきに笑っている!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is laughing fearlessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "926e8d9682cc835e837d",
+  "at": "enemy/286",
+  "uses": 2,
+  "jp": "地獄のタマ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hell Orb"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e82a88be082f08fb582a282bd2121",
+  "at": "enemy/287",
+  "uses": 1,
+  "jp": "$0は、$nお金を招いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons money!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e95908bef82f08fb582a282bd2121",
+  "at": "enemy/288",
+  "uses": 1,
+  "jp": "$0は、$n武具を招いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons arms and armor!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e93b98bef82f08fb582a282bd2121",
+  "at": "enemy/289",
+  "uses": 1,
+  "jp": "$0は、$n道具を招いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons items!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8eae905f82f08fb582a282bd2121",
+  "at": "enemy/290",
+  "uses": 1,
+  "jp": "$0は、$n式神を招いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／summons a shikigami!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e934782f08fb582a282bd2121",
+  "at": "enemy/291",
+  "uses": 1,
+  "jp": "$0は、$n敵を招いた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons enemies!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91cc82c98aaa82ab957482a282c482ab82bd21",
+  "at": "enemy/292",
+  "uses": 2,
+  "jp": "$0は$n体に巻き付いてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／coils around its victim!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8345838d835282f082d382e982ed82b982bd21",
+  "at": "enemy/293",
+  "uses": 2,
+  "jp": "$0は$nウロコをふるわせた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rattles its scales!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8343836f83899854",
+  "at": "enemy/294",
+  "uses": 2,
+  "jp": "イバラ狼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Briar Wolf"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8d8282e782a982c9966982a682bd21",
+  "at": "enemy/295",
+  "uses": 2,
+  "jp": "$0は$n高らかに吠えた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／roars loudly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243093cb8c8221",
+  "at": "enemy/296",
+  "uses": 2,
+  "jp": "$0突撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ charges!"
+   }
+  ]
+ },
+ {
+  "hex": "82cd928e8ca2",
+  "at": "enemy/297",
+  "uses": 2,
+  "jp": "は虫犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Reptile Hound"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc89f1935d8d558c8221",
+  "at": "enemy/298",
+  "uses": 2,
+  "jp": "$0の回転攻撃!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses a spinning attack!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a982dd82c282a282c482ab82bd21",
+  "at": "enemy/299",
+  "uses": 2,
+  "jp": "$0は$nかみついてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／lunges with a bite!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89ce898a82cc959182a2",
+  "at": "enemy/300",
+  "uses": 2,
+  "jp": "火炎の舞い",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flame Dance"
+   }
+  ]
+ },
+ {
+  "hex": "97ce82cc93f79265",
+  "at": "enemy/301",
+  "uses": 2,
+  "jp": "緑の肉弾",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Green Meatball"
+   }
+  ]
+ },
+ {
+  "hex": "8a5a834f8382",
+  "at": "enemy/302",
+  "uses": 3,
+  "jp": "鎧グモ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Armored Spider"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8343836782f082cd82a282bd21",
+  "at": "enemy/303",
+  "uses": 3,
+  "jp": "$0は$nイトをはいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits silk!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8d9582a2894889b9",
+  "at": "enemy/304",
+  "uses": 1,
+  "jp": "黒い羽音",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Black Wingbeat"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e978382f097cd8bad82ad82cd82ce82bd82a282bd21",
+  "at": "enemy/305",
+  "uses": 1,
+  "jp": "$0は$n翼を力強くはばたいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／beats its wings powerfully!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e978382f082c682b682c48357836282c682b582c482a282e921",
+  "at": "enemy/306",
+  "uses": 1,
+  "jp": "$0は$n翼をとじてジッとしている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／folds its wings and stays still!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "837e83638381",
+  "at": "enemy/307",
+  "uses": 3,
+  "jp": "ミツメ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Three-Eyes"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a082e282b582a296da82f08b5082a982b982bd21",
+  "at": "enemy/308",
+  "uses": 3,
+  "jp": "$0は$nあやしい目を輝かせた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s eyes￥／gleam eerily!"
+   }
+  ]
+ },
+ {
+  "hex": "836783728382836d",
+  "at": "enemy/309",
+  "uses": 1,
+  "jp": "トビモノ",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Flyer"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd81418df482f08d6c82a682bd2121",
+  "at": "enemy/310",
+  "uses": 1,
+  "jp": "$0は、策を考えた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／devises a strategy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141898a82f0936682a282bd2121",
+  "at": "enemy/311",
+  "uses": 1,
+  "jp": "$0は、炎を吐いた!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／breathes fire!"
+   }
+  ]
+ },
+ {
+  "hex": "95ea8e7190539286",
+  "at": "enemy/312",
+  "uses": 1,
+  "jp": "母子心中",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Doomed Mother"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814189a990f282cc8e718ee789cc82f089cc82c182bd2121",
+  "at": "enemy/313",
+  "uses": 1,
+  "jp": "$0は、黄泉の子守歌を歌った!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sings an underworld lullaby!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8e718b9f82aa814188f882ab97f482ad82e682a482c88b8382ab90ba82f08fe382b082bd21",
+  "at": "enemy/314",
+  "uses": 1,
+  "jp": "$0の子供が、引き裂くような泣き声を上げた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s child￥／lets out a piercing wail!"
+   }
+  ]
+ },
+ {
+  "hex": "8b9b8f62",
+  "at": "enemy/315",
+  "uses": 2,
+  "jp": "魚獣",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Fish Beast"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814190b88b4382f08b7a82a28ee682c182bd2121",
+  "at": "enemy/316",
+  "uses": 1,
+  "jp": "$0は、精気を吸い取った!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／drains vital energy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814191cc82f082dc82ce82e482ad8cf582e782b982bd2121",
+  "at": "enemy/317",
+  "uses": 1,
+  "jp": "$0は、体をまばゆく光らせた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／makes its body shine dazzlingly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8dbb83558381",
+  "at": "enemy/318",
+  "uses": 2,
+  "jp": "砂ザメ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sand Shark"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd814193c18d558d558c822121",
+  "at": "enemy/319",
+  "uses": 1,
+  "jp": "$0は、特攻攻撃!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／makes a suicide attack!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8a4392ea82c990f682c182c482b582dc82c182bd2121",
+  "at": "enemy/320",
+  "uses": 1,
+  "jp": "$0は、$n海底に潜ってしまった!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／dives to the seabed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "938097b3",
+  "at": "enemy/321",
+  "uses": 3,
+  "jp": "凍竜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Frost Dragon"
+   }
+  ]
+ },
+ {
+  "hex": "908582cc8e72",
+  "at": "enemy/322",
+  "uses": 1,
+  "jp": "水の屍",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Drowned Corpse"
+   }
+  ]
+ },
+ {
+  "hex": "8994834e83898351",
+  "at": "enemy/323",
+  "uses": 2,
+  "jp": "鉛クラゲ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Lead Jellyfish"
+   }
+  ]
+ },
+ {
+  "hex": "898f90d882e8836f8354837e",
+  "at": "enemy/324",
+  "uses": 4,
+  "jp": "縁切りバサミ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Breakup Shears"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e89f982c994f282d18d9e82f182c582ab82bd2121",
+  "at": "enemy/325",
+  "uses": 2,
+  "jp": "$0は、$n懐に飛び込んできた!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／leaps into close range!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "938082e9936691a7",
+  "at": "enemy/326",
+  "uses": 6,
+  "jp": "凍る吐息",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Frost Breath"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e97e282bd82a2936691a782f0919782c182bd2121",
+  "at": "enemy/327",
+  "uses": 3,
+  "jp": "$0は、$n冷たい吐息を送った!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sends out freezing breath!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "97b089a982cc9597",
+  "at": "enemy/328",
+  "uses": 1,
+  "jp": "硫黄の風",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Sulfur Wind"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e979282cc82e682a482c891e5959782f08aaa82ab8b4e82b182b582bd21",
+  "at": "enemy/329",
+  "uses": 1,
+  "jp": "$0は、$n嵐のような大風を巻き起こした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／whips up a storm-force gale!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e8d9582a297f3959782f08aaa82ab8b4e82b182b582bd2121",
+  "at": "enemy/330",
+  "uses": 1,
+  "jp": "$0は、$n黒い烈風を巻き起こした!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／whips up a black gale!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "896582cc89bb9067",
+  "at": "enemy/331",
+  "uses": 3,
+  "jp": "影の化身",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shadow Avatar"
+   }
+  ]
+ },
+ {
+  "hex": "8e8082cc8fa4906c",
+  "at": "enemy/332",
+  "uses": 2,
+  "jp": "死の商人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Death Merchant"
+   }
+  ]
+ },
+ {
+  "hex": "8f748bb69790",
+  "at": "enemy/333",
+  "uses": 4,
+  "jp": "春狂乱",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Spring Frenzy"
+   }
+  ]
+ },
+ {
+  "hex": "82b182a48d9b82cc93b5",
+  "at": "enemy/334",
+  "uses": 2,
+  "jp": "こう惚の瞳",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ecstatic Eyes"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a482c182c682e882c68ca982c282df82bd814581458145",
+  "at": "enemy/335",
+  "uses": 2,
+  "jp": "$0は$nうっとりと見つめた・・・",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gazes dreamily...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82b182a48d9b82c982d082bd82c182c482a282e921",
+  "at": "enemy/336",
+  "uses": 2,
+  "jp": "$0は$nこう惚にひたっている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is lost in ecstasy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8cfb82a982e793c5897482f082cd82a282bd21",
+  "at": "enemy/337",
+  "uses": 2,
+  "jp": "$0は$n口から毒液をはいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits venom!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e9453897482f096da82c9908182ab82c282af82bd21",
+  "at": "enemy/338",
+  "uses": 2,
+  "jp": "$0は$n粘液を目に吹きつけた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays slime into the eyes!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e926e8d9682cc836e8393837d815b82f091c582bf8d7e82eb82b582bd21",
+  "at": "enemy/339",
+  "uses": 1,
+  "jp": "$0は$n地獄のハンマーを打ち降ろした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings down a hellish hammer!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e898a82f0908182ab82c282af82c482ab82bd21",
+  "at": "enemy/340",
+  "uses": 2,
+  "jp": "$0は$n炎を吹きつけてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／blasts with flames!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e96fb82f0905582e882dc82a282bd21",
+  "at": "enemy/341",
+  "uses": 1,
+  "jp": "$0は$n油を振りまいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／scatters oil!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e944f95a782f08fa582a682bd21",
+  "at": "enemy/342",
+  "uses": 1,
+  "jp": "$0は$n念仏を唱えた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／chants a sutra!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a082d482c882a291a182e895a882f082ad82ea82bd21",
+  "at": "enemy/343",
+  "uses": 1,
+  "jp": "$0は$nあぶない贈り物をくれた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a dangerous gift!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8347835a8d9589488e6121",
+  "at": "enemy/344",
+  "uses": 1,
+  "jp": "$0のエセ黒羽斬!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s￥／fake Kuroha Slash!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8351838d8351838d82c682c882a282bd21",
+  "at": "enemy/345",
+  "uses": 1,
+  "jp": "$0は$nゲロゲロとないた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／croaks loudly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e898a82f095fa82c182bd21",
+  "at": "enemy/346",
+  "uses": 1,
+  "jp": "$0は$n炎を放った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／unleashes flames!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8ac394fc82c88fce82dd82f0958282a982d782bd21",
+  "at": "enemy/347",
+  "uses": 1,
+  "jp": "$0は$n甘美な笑みを浮かべた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a seductive smile!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e90c382a982c98fce82c182bd21",
+  "at": "enemy/348",
+  "uses": 1,
+  "jp": "$0は$n静かに笑った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／laughs quietly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e97bc8ee882c588f882c182a982a282c482ab82bd21",
+  "at": "enemy/349",
+  "uses": 1,
+  "jp": "$0は$n両手で引っかいてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／scratches with both hands!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e93aa82f0834a8389834a838996c282e782b582bd21",
+  "at": "enemy/350",
+  "uses": 2,
+  "jp": "$0は$n頭をカラカラ鳴らした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rattles its head!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc96da82aa8b5082a282bd21",
+  "at": "enemy/351",
+  "uses": 1,
+  "jp": "$0の目が輝いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s eyes gleamed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91928eae89b993aa",
+  "at": "enemy/352",
+  "uses": 1,
+  "jp": "葬式音頭",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Funeral Dance"
+   }
+  ]
+ },
+ {
+  "hex": "8354834a8365",
+  "at": "enemy/353",
+  "uses": 1,
+  "jp": "サカテ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Backward Hand"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8363838182c588f882c182a982a282bd21",
+  "at": "enemy/354",
+  "uses": 1,
+  "jp": "$0は$nツメで引っかいた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／scratches!"
+   }
+  ]
+ },
+ {
+  "hex": "834a83608a8482e8",
+  "at": "enemy/355",
+  "uses": 3,
+  "jp": "カチ割り",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Skull Splitter"
+   }
+  ]
+ },
+ {
+  "hex": "90e291ce97eb9378",
+  "at": "enemy/356",
+  "uses": 3,
+  "jp": "絶対零度",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Absolute Zero"
+   }
+  ]
+ },
+ {
+  "hex": "834c8363836c89ce",
+  "at": "enemy/357",
+  "uses": 3,
+  "jp": "キツネ火",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Foxfire"
+   }
+  ]
+ },
+ {
+  "hex": "97e28c8c93568e67",
+  "at": "enemy/358",
+  "uses": 3,
+  "jp": "冷血天使",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Iceblood Angel"
+   }
+  ]
+ },
+ {
+  "hex": "82c282e782e795ba",
+  "at": "enemy/359",
+  "uses": 3,
+  "jp": "つらら兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Icicle Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "955882cc9184",
+  "at": "enemy/360",
+  "uses": 3,
+  "jp": "氷の槍",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ice Spear"
+   }
+  ]
+ },
+ {
+  "hex": "937e82cc8b53",
+  "at": "enemy/361",
+  "uses": 3,
+  "jp": "冬の鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Winter Demon"
+   }
+  ]
+ },
+ {
+  "hex": "834a836c835f837d",
+  "at": "enemy/362",
+  "uses": 1,
+  "jp": "カネダマ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Money Spirit"
+   }
+  ]
+ },
+ {
+  "hex": "89a98be082cc836e8389838f835e",
+  "at": "enemy/363",
+  "uses": 1,
+  "jp": "黄金のハラワタ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Golden Entrails"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e91cc82c994f282d182c282a282bd21",
+  "at": "enemy/364",
+  "uses": 1,
+  "jp": "$0が$n体に飛びついた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／leaps onto its target!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8be082cc82e682be82ea",
+  "at": "enemy/365",
+  "uses": 1,
+  "jp": "金のよだれ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Golden Drool"
+   }
+  ]
+ },
+ {
+  "hex": "934493fc93b9",
+  "at": "enemy/366",
+  "uses": 1,
+  "jp": "泥入道",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Mud Monk"
+   }
+  ]
+ },
+ {
+  "hex": "96be82af834b83898358",
+  "at": "enemy/367",
+  "uses": 4,
+  "jp": "明けガラス",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dawn Crow"
+   }
+  ]
+ },
+ {
+  "hex": "90c28f62",
+  "at": "enemy/368",
+  "uses": 3,
+  "jp": "青獣",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Blue Beast"
+   }
+  ]
+ },
+ {
+  "hex": "8ef482a289ce",
+  "at": "enemy/369",
+  "uses": 3,
+  "jp": "呪い火",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Cursed Flame"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e97ac8dbb82f08b4e82b182b582bd21",
+  "at": "enemy/370",
+  "uses": 2,
+  "jp": "$0は$n流砂を起こした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／creates quicksand!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8bad97cd82c88341835382c592f782df82c282af82bd21",
+  "at": "enemy/371",
+  "uses": 2,
+  "jp": "$0は$n強力なアゴで締めつけた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s jaws￥／clamp down!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e944d82a2936691a782f082cd82a282bd21",
+  "at": "enemy/372",
+  "uses": 1,
+  "jp": "$0は$n熱い吐息をはいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／exhales scorching breath!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e979282f08cc482f182be21",
+  "at": "enemy/373",
+  "uses": 1,
+  "jp": "$0は$n嵐を呼んだ!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／calls a storm!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e88ee8dc882f08cc482f182be21",
+  "at": "enemy/374",
+  "uses": 1,
+  "jp": "$0は$n稲妻を呼んだ!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／calls down lightning!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8e5f82f0908182ab82a982af82c482a282bd21",
+  "at": "enemy/375",
+  "uses": 1,
+  "jp": "$0は$n酸を吹きかけていた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／sprays acid!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e9453897482f082cd82a282bd21",
+  "at": "enemy/376",
+  "uses": 2,
+  "jp": "$0は$n粘液をはいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits slime!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "83678354834a",
+  "at": "enemy/377",
+  "uses": 1,
+  "jp": "トサカ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Cockscomb"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8e5f82f0908182ab82a982af82bd21",
+  "at": "enemy/378",
+  "uses": 4,
+  "jp": "$0は$n酸を吹きかけた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e93c582cc92dc82c588f882ab97f482a282bd21",
+  "at": "enemy/379",
+  "uses": 1,
+  "jp": "$0は$n毒の爪で引き裂いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rends with poisonous claws!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e978382a982e78aef96ad82c895b282f082dc82a282bd21",
+  "at": "enemy/380",
+  "uses": 1,
+  "jp": "$0は$n翼から奇妙な粉をまいた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／scatters strange dust from its wings!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8bf392dc",
+  "at": "enemy/381",
+  "uses": 2,
+  "jp": "空爪",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sky Talon"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e978382f082cd82bd82df82a982b982bd21",
+  "at": "enemy/382",
+  "uses": 2,
+  "jp": "$0は$n翼をはためかせた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／flutters its wings!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8b7d8d7e89ba82b582c482ab82bd21",
+  "at": "enemy/383",
+  "uses": 2,
+  "jp": "$0は$n急降下してきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swoops down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93aa93cb8d558c8221",
+  "at": "enemy/384",
+  "uses": 2,
+  "jp": "$0の頭突攻撃!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ headbutts!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93b792f782df8d558c8221",
+  "at": "enemy/385",
+  "uses": 2,
+  "jp": "$0の胴締め攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s body hold!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e834c838a834c838a82c696c282a282bd21",
+  "at": "enemy/386",
+  "uses": 2,
+  "jp": "$0は$nキリキリと鳴いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／shrieks!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e834a8369834a836982c696c282a282bd21",
+  "at": "enemy/387",
+  "uses": 2,
+  "jp": "$0は$nカナカナと鳴いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／chirps like a cicada!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e94f282d18b8e82c182bd21",
+  "at": "enemy/388",
+  "uses": 2,
+  "jp": "$0は$n飛び去った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／flies away!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91cc82f08aaa82ab957482af82c482ab82bd21",
+  "at": "enemy/389",
+  "uses": 1,
+  "jp": "$0は$n体を巻き付けてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／coils around its target!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e926e96ca82c982e082ae82c182c482a282c182bd21",
+  "at": "enemy/390",
+  "uses": 1,
+  "jp": "$0は$n地面にもぐっていった!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／burrows underground!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8dbb905f95ba",
+  "at": "enemy/391",
+  "uses": 2,
+  "jp": "砂神兵",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Sandgod Guard"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91be938182f0905582e88d7e82eb82b582bd21",
+  "at": "enemy/392",
+  "uses": 2,
+  "jp": "$0は$n太刀を振り降ろした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings its sword down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8d5c82a682f095cf82a682bd21",
+  "at": "enemy/393",
+  "uses": 2,
+  "jp": "$0は$n構えを変えた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／changes stance!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91cc82a982e79453897482f0908182ab8f6f82b582bd21",
+  "at": "enemy/394",
+  "uses": 3,
+  "jp": "$0は$n体から粘液を吹き出した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sprays slime from its body!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e90b88b4382f0924482c182bd21",
+  "at": "enemy/395",
+  "uses": 1,
+  "jp": "$0は$n精気を奪った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／steals life energy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e905382c982c682e882c282a282bd21",
+  "at": "enemy/396",
+  "uses": 1,
+  "jp": "$0は$n心にとりついた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／possesses the mind!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e92b782a28ee882f082b382e782c9904c82ce82b582c482ab82bd21",
+  "at": "enemy/397",
+  "uses": 1,
+  "jp": "$0は$n長い手をさらに伸ばしてきた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／stretches its arms!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e92b782a28ee882f091e582ab82ad905582e889f182b582bd21",
+  "at": "enemy/398",
+  "uses": 1,
+  "jp": "$0は$n長い手を大きく振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings its long arms wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8be0978389a4",
+  "at": "enemy/399",
+  "uses": 1,
+  "jp": "金翼王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Goldwing King"
+   }
+  ]
+ },
+ {
+  "hex": "914e8c8c92b9",
+  "at": "enemy/400",
+  "uses": 1,
+  "jp": "鮮血鳥",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Bloodbird"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8aef96ad82c890ba82c596c282a282bd21",
+  "at": "enemy/401",
+  "uses": 1,
+  "jp": "$0は$n奇妙な声で鳴いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a strange cry!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e959182a28d7e82e882c482ab82bd21",
+  "at": "enemy/402",
+  "uses": 1,
+  "jp": "$0は$n舞い降りてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swoops down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "82c682a482c482c2",
+  "at": "enemy/403",
+  "uses": 1,
+  "jp": "とうてつ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Totetsu"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e906791cc82f091e582ab82ad905582e982ed82b982bd21",
+  "at": "enemy/404",
+  "uses": 1,
+  "jp": "$0は$n身体を大きく振るわせた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／shakes its body violently!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8a7082f0905582e88fe382b0814093cb906982b582c482ab82bd21",
+  "at": "enemy/405",
+  "uses": 1,
+  "jp": "$0は$n角を振り上げ　突進してきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／charges with horns raised!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e96d2906982b582c482ab82bd21",
+  "at": "enemy/406",
+  "uses": 1,
+  "jp": "$0は$n猛進してきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／charges furiously!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "97b38b53",
+  "at": "enemy/407",
+  "uses": 2,
+  "jp": "竜鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dragon Demon"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89ce82cc8bca82f0938a82b082c282af82c482ab82bd21",
+  "at": "enemy/408",
+  "uses": 2,
+  "jp": "$0は$n火の玉を投げつけてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／hurls a fireball!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8cfb82a982e78bc689ce82f0936682a282bd21",
+  "at": "enemy/409",
+  "uses": 2,
+  "jp": "$0は$n口から業火を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／breathes hellfire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8358835f837d",
+  "at": "enemy/410",
+  "uses": 2,
+  "jp": "スダマ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sudama"
+   }
+  ]
+ },
+ {
+  "hex": "83828345838a83878345",
+  "at": "enemy/411",
+  "uses": 1,
+  "jp": "モウリョウ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Water Fiend"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e97bc987282f0905582e889f182b582bd21",
+  "at": "enemy/412",
+  "uses": 1,
+  "jp": "$0は$n両腕を振り回した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings both arms wildly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "977e965d82cc8ca2",
+  "at": "enemy/413",
+  "uses": 2,
+  "jp": "欲望の犬",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Lust Hound"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8db682cc8ef182aa246e93c582f0936682a282bd21",
+  "at": "enemy/414",
+  "uses": 2,
+  "jp": "$0の左の首が$n毒を吐いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s left head￥／spits venom!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc894582cc8ef182aa246e8e5f82f0936682a282bd21",
+  "at": "enemy/415",
+  "uses": 2,
+  "jp": "$0の右の首が$n酸を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s right head￥／spits acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc9286899b82cc8ef182aa246e898a82f08e5482ab8e5582e782b582bd21",
+  "at": "enemy/416",
+  "uses": 2,
+  "jp": "$0の中央の首が$n炎を撒き散らした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１'s central head￥／scatters flames!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89ce8b7b8f97",
+  "at": "enemy/417",
+  "uses": 1,
+  "jp": "火宮女",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Fire Maiden"
+   }
+  ]
+ },
+ {
+  "hex": "977882e8944c",
+  "at": "enemy/418",
+  "uses": 2,
+  "jp": "踊り猫",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dancing Cat"
+   }
+  ]
+ },
+ {
+  "hex": "8e808ee8",
+  "at": "enemy/419",
+  "uses": 2,
+  "jp": "死手",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Death Hand"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e88ac8ee882f082b582c482ab82bd21",
+  "at": "enemy/420",
+  "uses": 2,
+  "jp": "$0は$n握手をしてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／offers a handshake!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "836583938372",
+  "at": "enemy/421",
+  "uses": 2,
+  "jp": "テンビ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Tenbi"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a282c182b982a282c994f282d18e5582c182bd21",
+  "at": "enemy/422",
+  "uses": 2,
+  "jp": "$0は$nいっせいに飛び散った!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／scatters!"
+   }
+  ]
+ },
+ {
+  "hex": "8bc689ce82cc8a5a",
+  "at": "enemy/423",
+  "uses": 3,
+  "jp": "業火の鎧",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Hellfire Mail"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8bc689ce82cc97bc987282f0904c82ce82b582c482ab82bd21",
+  "at": "enemy/424",
+  "uses": 3,
+  "jp": "$0は$n業火の両腕を伸ばしてきた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／reaches with fiery arms!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e898a82cc897e907782f08dec82c182bd21",
+  "at": "enemy/425",
+  "uses": 3,
+  "jp": "$0は$n炎の円陣を作った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／forms a ring of fire!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "906c8ad48ba58aed",
+  "at": "enemy/426",
+  "uses": 1,
+  "jp": "人間凶器",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human Weapon"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc954b8e458e45906c8c9d21",
+  "at": "enemy/427",
+  "uses": 1,
+  "jp": "$0の必殺殺人拳!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s Killer Fist!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc8c888e8082cc88ea8c8221",
+  "at": "enemy/428",
+  "uses": 2,
+  "jp": "$0の決死の一撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s desperate blow!"
+   }
+  ]
+ },
+ {
+  "hex": "95e68fea89b38f97",
+  "at": "enemy/429",
+  "uses": 1,
+  "jp": "墓場乙女",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Grave Maiden"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e95e6955782f0905582e889f182b582c493cb906982b582c482ab82bd21",
+  "at": "enemy/430",
+  "uses": 1,
+  "jp": "$0は$n墓標を振り回して突進してきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／charges, swinging a gravestone!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "958582c182bd8f5f94a7",
+  "at": "enemy/431",
+  "uses": 2,
+  "jp": "腐った柔肌",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Rotten Softskin"
+   }
+  ]
+ },
+ {
+  "hex": "8ef482a282dd82b1",
+  "at": "enemy/432",
+  "uses": 1,
+  "jp": "呪いみこ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hex Priestess"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc957388d382cc88ea8c8221",
+  "at": "enemy/433",
+  "uses": 2,
+  "jp": "$0の不意の一撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ ambushes!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a082d482c882a2834983828360838382f0938a82b082c482ab82bd21",
+  "at": "enemy/434",
+  "uses": 2,
+  "jp": "$0は$nあぶないオモチャを投げてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／throws a dangerous toy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e9153906782cc8985944f82f082d482c282af82bd21",
+  "at": "enemy/435",
+  "uses": 1,
+  "jp": "$0は$n全身の怨念をぶつけた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／unleashes all its malice!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8cfb82a982e789ce82f0936682a282bd21",
+  "at": "enemy/436",
+  "uses": 3,
+  "jp": "$0は$n口から火を吐いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／spits fire!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e97bc987282a982e7898a82f082d382e882dc82a282bd21",
+  "at": "enemy/437",
+  "uses": 3,
+  "jp": "$0は$n両腕から炎をふりまいた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s arms￥／spray fire!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91d993ae82b582c482a282e921",
+  "at": "enemy/438",
+  "uses": 2,
+  "jp": "$0は$n胎動している!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／stirs in the womb!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e946a97f482b582bd21",
+  "at": "enemy/439",
+  "uses": 2,
+  "jp": "$0は$n破裂した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ burst!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82b382ad97f482b582bd21",
+  "at": "enemy/440",
+  "uses": 2,
+  "jp": "$0は$nさく裂した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／exploded!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82dc82e082cc82f090b682dd8f6f82b582bd21",
+  "at": "enemy/441",
+  "uses": 2,
+  "jp": "$0は$nまものを生み出した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spawns a monster!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082c98ce38cf582aa82b382b582bd21",
+  "at": "enemy/442",
+  "uses": 1,
+  "jp": "$0に後光がさした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ shines with a halo!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc94f282b082e88d558c8221",
+  "at": "enemy/443",
+  "uses": 1,
+  "jp": "$0の飛げり攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s￥／flying kick!"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e836a8384838a82c682b582bd81638163",
+  "at": "enemy/444",
+  "uses": 1,
+  "jp": "$0が$nニヤリとした……",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins slyly...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e836a8341838a82c682b582bd81638163",
+  "at": "enemy/445",
+  "uses": 1,
+  "jp": "$0が$nニアリとした……",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／grins...￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e82bb82c182c691a182e895a882f08db782b593fc82ea82bd21",
+  "at": "enemy/446",
+  "uses": 1,
+  "jp": "$0が$nそっと贈り物を差し入れた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／quietly slips in a gift!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082aa246e92878ad482c9959f82f0975e82a682bd21",
+  "at": "enemy/447",
+  "uses": 1,
+  "jp": "$0が$n仲間に福を与えた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／blesses its allies!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e834a836282c696da82f08ca98a4a82a282bd21",
+  "at": "enemy/448",
+  "uses": 1,
+  "jp": "$0は$nカッと目を見開いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／opens its eyes wide!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82d382c482ab82c98fce82c182c482a282e921",
+  "at": "enemy/449",
+  "uses": 1,
+  "jp": "$0は$nふてきに笑っている!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／is laughing fearlessly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e82a88be082f08fb582a282bd21",
+  "at": "enemy/450",
+  "uses": 1,
+  "jp": "$0は$nお金を招いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons money!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e95908bef82f08fb582a282bd21",
+  "at": "enemy/451",
+  "uses": 1,
+  "jp": "$0は$n武具を招いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／summons weapons!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e93b98bef82f08fb582a282bd21",
+  "at": "enemy/452",
+  "uses": 1,
+  "jp": "$0は$n道具を招いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons items!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e898a82f08fb582a282bd21",
+  "at": "enemy/453",
+  "uses": 1,
+  "jp": "$0は$n炎を招いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons flames!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e934782f08fb582a282bd21",
+  "at": "enemy/454",
+  "uses": 1,
+  "jp": "$0は$n敵を招いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／summons enemies!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "96e982cc8ae7",
+  "at": "enemy/455",
+  "uses": 1,
+  "jp": "夜の顔",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Face of Night"
+   }
+  ]
+ },
+ {
+  "hex": "91ab8bf282a2",
+  "at": "enemy/456",
+  "uses": 1,
+  "jp": "足喰い",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Leg Eater"
+   }
+  ]
+ },
+ {
+  "hex": "8e8082cc8e9582ac82b582e8",
+  "at": "enemy/457",
+  "uses": 1,
+  "jp": "死の歯ぎしり",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Death's Gnash"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc82a982dd82c282ab8d558c8221",
+  "at": "enemy/458",
+  "uses": 1,
+  "jp": "$0のかみつき攻撃!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ bites!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8e5f82f0936682a282bd21",
+  "at": "enemy/459",
+  "uses": 1,
+  "jp": "$0は$n酸を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits acid!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8e45906c928693c5",
+  "at": "enemy/460",
+  "uses": 6,
+  "jp": "殺人中毒",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Murder Addict"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e918482f091e582ab82ad905582e889f182b582bd2121",
+  "at": "enemy/461",
+  "uses": 2,
+  "jp": "$0は、$n槍を大きく振り回した!!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／swings its spear wide!"
+   }
+  ]
+ },
+ {
+  "hex": "906c8ad48eeb82e8",
+  "at": "enemy/462",
+  "uses": 2,
+  "jp": "人間狩り",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Human Hunter"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc954b8e4582cc88ea905582e82121",
+  "at": "enemy/463",
+  "uses": 1,
+  "jp": "$0の必殺の一振り!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ makes a deadly swing!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "91958d9c8ca2",
+  "at": "enemy/464",
+  "uses": 4,
+  "jp": "装骨犬",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Bone Hound"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd8141246e89ce82cc8bca82f094ad8ecb82b582bd2121",
+  "at": "enemy/465",
+  "uses": 2,
+  "jp": "$0は、$n火の玉を発射した!!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／fires a fireball!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "90858ddb82cc8e4582b589ae",
+  "at": "enemy/466",
+  "uses": 1,
+  "jp": "水際の殺し屋",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Shore Killer"
+   }
+  ]
+ },
+ {
+  "hex": "8c8e96e982cc8e45906c8b53",
+  "at": "enemy/467",
+  "uses": 2,
+  "jp": "月夜の殺人鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Moonlit Killer"
+   }
+  ]
+ },
+ {
+  "hex": "8b8382ad8e7182a282cb82a9",
+  "at": "enemy/468",
+  "uses": 1,
+  "jp": "泣く子いねか",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Any Crybabies?"
+   }
+  ]
+ },
+ {
+  "hex": "8ca28ae7",
+  "at": "enemy/469",
+  "uses": 2,
+  "jp": "犬顔",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dogface"
+   }
+  ]
+ },
+ {
+  "hex": "8ed6836d96da",
+  "at": "enemy/470",
+  "uses": 1,
+  "jp": "蛇ノ目",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Snake Eye"
+   }
+  ]
+ },
+ {
+  "hex": "82aa82f19656",
+  "at": "enemy/471",
+  "uses": 1,
+  "jp": "がん坊",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ganbo"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e95f882ab82c282a282c482ab82bd21",
+  "at": "enemy/472",
+  "uses": 1,
+  "jp": "$0は$n抱きついてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ clings on!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8369837882a982d482e8",
+  "at": "enemy/473",
+  "uses": 1,
+  "jp": "ナベかぶり",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Pot Wearer"
+   }
+  ]
+ },
+ {
+  "hex": "8c8e82cc82b582bd82bd82e8",
+  "at": "enemy/474",
+  "uses": 1,
+  "jp": "月のしたたり",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Moon Droplet"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd95f882ab82c282a282c482ab82bd21",
+  "at": "enemy/475",
+  "uses": 1,
+  "jp": "$0は抱きついてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ clings on!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "89a98be082dc82cb82ab",
+  "at": "enemy/476",
+  "uses": 1,
+  "jp": "黄金まねき",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Golden Beckoner"
+   }
+  ]
+ },
+ {
+  "hex": "94fc8f97926e8d96",
+  "at": "enemy/477",
+  "uses": 1,
+  "jp": "美女地獄",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Hellish Beauty"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8bad82ad8bad82ad95f882ab92f782df82c482ab82bd21",
+  "at": "enemy/478",
+  "uses": 1,
+  "jp": "$0は$n強く強く抱き締めてきた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／gives a crushing embrace!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "837483628352",
+  "at": "enemy/479",
+  "uses": 1,
+  "jp": "フッコ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Young Sea Bass"
+   }
+  ]
+ },
+ {
+  "hex": "97b089a982cc9783",
+  "at": "enemy/480",
+  "uses": 2,
+  "jp": "硫黄の翼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sulfur Wings"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e979282cc82e682a482c891e5959782f08aaa82ab8b4e82b182b582bd21",
+  "at": "enemy/481",
+  "uses": 2,
+  "jp": "$0は$n嵐のような大風を巻き起こした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／whips up a storm-force gale!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8d9582a297f3959782f08aaa82ab8b4e82b182b582bd21",
+  "at": "enemy/482",
+  "uses": 2,
+  "jp": "$0は$n黒い烈風を巻き起こした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／whips up a black gale!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "896582cc89e5",
+  "at": "enemy/483",
+  "uses": 1,
+  "jp": "影の牙",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shadow Fang"
+   }
+  ]
+ },
+ {
+  "hex": "90d482a29492928b96b2",
+  "at": "enemy/484",
+  "uses": 3,
+  "jp": "赤い白昼夢",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Daydream"
+   }
+  ]
+ },
+ {
+  "hex": "947793bf82cc8c8a",
+  "at": "enemy/485",
+  "uses": 2,
+  "jp": "背徳の穴",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Vice Pit"
+   }
+  ]
+ },
+ {
+  "hex": "8ee892b7",
+  "at": "enemy/486",
+  "uses": 2,
+  "jp": "手長",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "Long Arms"
+   }
+  ]
+ },
+ {
+  "hex": "95ea82c882e995619183",
+  "at": "enemy/487",
+  "uses": 2,
+  "jp": "母なる病巣",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Disease Mother"
+   }
+  ]
+ },
+ {
+  "hex": "96828a438ed6",
+  "at": "enemy/488",
+  "uses": 1,
+  "jp": "魔海蛇",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sea Demon Snake"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8df482f08d6c82a682bd21",
+  "at": "enemy/489",
+  "uses": 1,
+  "jp": "$0は$n策を考えた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／devises a strategy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93cb8c828d558c8221",
+  "at": "enemy/490",
+  "uses": 3,
+  "jp": "$0の突撃攻撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１ charges!"
+   }
+  ]
+ },
+ {
+  "hex": "96828a4395ea8e71",
+  "at": "enemy/491",
+  "uses": 1,
+  "jp": "魔海母子",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Sea-Oni Mom/Kid"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89a990f282cc8e718ee789cc82f089cc82c182bd21",
+  "at": "enemy/492",
+  "uses": 1,
+  "jp": "$0は$n黄泉の子守歌を歌った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／sings an underworld lullaby!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e90b88b4382f08b7a82a28ee682c182bd21",
+  "at": "enemy/493",
+  "uses": 4,
+  "jp": "$0は$n精気を吸い取った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／drains vital energy!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91cc82f082dc82ce82e482ad8cf582e782b982bd21",
+  "at": "enemy/494",
+  "uses": 1,
+  "jp": "$0は$n体をまばゆく光らせた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／makes its body shine dazzlingly!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc93c18d558d558c8221",
+  "at": "enemy/495",
+  "uses": 1,
+  "jp": "$0の特攻攻撃!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ makes a suicide attack!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8a4392ea82c990f682c182c482b582dc82c182bd21",
+  "at": "enemy/496",
+  "uses": 1,
+  "jp": "$0は$n海底に潜ってしまった!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／dives to the seabed!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93aa8d9c8b9b",
+  "at": "enemy/497",
+  "uses": 2,
+  "jp": "頭骨魚",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Skullfish"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89f982c994f282d18d9e82f182c582ab82bd21",
+  "at": "enemy/498",
+  "uses": 2,
+  "jp": "$0は$n懐に飛び込んできた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／leaps into close range!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e97e282bd82a2936691a782f0919782c182bd21",
+  "at": "enemy/499",
+  "uses": 3,
+  "jp": "$0は$n冷たい吐息を送った!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／breathes frost!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc954b8e4582cc88ea905582e821",
+  "at": "enemy/500",
+  "uses": 1,
+  "jp": "$0の必殺の一振り!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s deadly swing!"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89ce82cc8bca82f094ad8ecb82b582bd21",
+  "at": "enemy/501",
+  "uses": 2,
+  "jp": "$0は$n火の玉を発射した!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／fires a fireball!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "836e928e95ba",
+  "at": "enemy/502",
+  "uses": 1,
+  "jp": "ハ虫兵",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Reptile Soldier"
+   }
+  ]
+ },
+ {
+  "hex": "8b53834a837e834c838a",
+  "at": "enemy/503",
+  "uses": 2,
+  "jp": "鬼カミキリ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Oni Longhorn"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e89488daa82f0836f8354838a82c68d4c82b082bd21",
+  "at": "enemy/504",
+  "uses": 2,
+  "jp": "$0は$n羽根をバサリと広げた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／spreads its wings!"
+   }
+  ]
+ },
+ {
+  "hex": "83658393834d83838393",
+  "at": "enemy/505",
+  "uses": 2,
+  "jp": "テンギャン",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Tengyan"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e915388f582cc90b692dc82f082cd82a282be21",
+  "at": "enemy/506",
+  "uses": 2,
+  "jp": "$0は$n全員の生爪をはいだ!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／rips everyone's nails off!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "97b38b7b82cc94d48ca2",
+  "at": "enemy/507",
+  "uses": 1,
+  "jp": "竜宮の番犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ryugu Watchdog"
+   }
+  ]
+ },
+ {
+  "hex": "835683878345835783878345",
+  "at": "enemy/508",
+  "uses": 1,
+  "jp": "ショウジョウ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shojo"
+   }
+  ]
+ },
+ {
+  "hex": "94928a439854",
+  "at": "enemy/509",
+  "uses": 1,
+  "jp": "白海狼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "White Sea Wolf"
+   }
+  ]
+ },
+ {
+  "hex": "945282a6834b83568389",
+  "at": "enemy/510",
+  "uses": 3,
+  "jp": "燃えガシラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Burning Head"
+   }
+  ]
+ },
+ {
+  "hex": "8ef49856906c",
+  "at": "enemy/511",
+  "uses": 2,
+  "jp": "呪老人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Cursed Elder"
+   }
+  ]
+ },
+ {
+  "hex": "82b382dc82e682a48fac94bb",
+  "at": "enemy/512",
+  "uses": 1,
+  "jp": "さまよう小判",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Gold Coin Rover"
+   }
+  ]
+ },
+ {
+  "hex": "835e837d82a982c282ac",
+  "at": "enemy/513",
+  "uses": 1,
+  "jp": "タマかつぎ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Soul Bearer"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8cfb82a982e7898a82f0936682a282bd21",
+  "at": "enemy/514",
+  "uses": 3,
+  "jp": "$0は$n口から炎を吐いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１￥／breathes fire!"
+   }
+  ]
+ },
+ {
+  "hex": "89d48e828e71837b835e8393",
+  "at": "enemy/515",
+  "uses": 2,
+  "jp": "花獅子ボタン",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Peony Lion"
+   }
+  ]
+ },
+ {
+  "hex": "8a8982ab82cc96ca",
+  "at": "enemy/516",
+  "uses": 1,
+  "jp": "渇きの面",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Mask of Thirst"
+   }
+  ]
+ },
+ {
+  "hex": "905382cc96ec8f62",
+  "at": "enemy/517",
+  "uses": 3,
+  "jp": "心の野獣",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Beast Within"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8cc882cc928682cc8f6282f08cc482d18b4e82b182b582bd21",
+  "at": "enemy/518",
+  "uses": 3,
+  "jp": "$0は$n己の中の獣を呼び起こした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／awakens the beast within!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93568d9182cc8ba982d1",
+  "at": "enemy/519",
+  "uses": 1,
+  "jp": "天国の叫び",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Heaven's Scream"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e95738d4b8ba982d182f08fe382b082bd21",
+  "at": "enemy/520",
+  "uses": 1,
+  "jp": "$0は$n不幸叫びを上げた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／lets out a cry of misfortune!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "966982a682e989d482d182e7",
+  "at": "enemy/521",
+  "uses": 1,
+  "jp": "吠える花びら",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Howling Petals"
+   }
+  ]
+ },
+ {
+  "hex": "9682898a97c28ca2",
+  "at": "enemy/522",
+  "uses": 1,
+  "jp": "魔炎猟犬",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Demonfire Hound"
+   }
+  ]
+ },
+ {
+  "hex": "837a83808389",
+  "at": "enemy/523",
+  "uses": 1,
+  "jp": "ホムラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Blaze"
+   }
+  ]
+ },
+ {
+  "hex": "82ab82e882a282bf82d7",
+  "at": "enemy/524",
+  "uses": 1,
+  "jp": "きりいちべ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Kiriichibe"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8db682cc8ef182a982e79453897482f0936682a282bd21",
+  "at": "enemy/525",
+  "uses": 1,
+  "jp": "$0は$n左の首から粘液を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits slime from its left head!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e894582cc8ef182a982e79453897482f0936682a282bd21",
+  "at": "enemy/526",
+  "uses": 1,
+  "jp": "$0は$n右の首から粘液を吐いた!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s right head￥／spits slime!"
+   }
+  ]
+ },
+ {
+  "hex": "90858b53",
+  "at": "enemy/527",
+  "uses": 1,
+  "jp": "水鬼",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Water Oni"
+   }
+  ]
+ },
+ {
+  "hex": "837e83648360",
+  "at": "enemy/528",
+  "uses": 1,
+  "jp": "ミヅチ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Mizuchi"
+   }
+  ]
+ },
+ {
+  "hex": "955890539682906c",
+  "at": "enemy/529",
+  "uses": 1,
+  "jp": "氷心魔人",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Iceheart Fiend"
+   }
+  ]
+ },
+ {
+  "hex": "97a0944f95a7",
+  "at": "enemy/530",
+  "uses": 1,
+  "jp": "裏念仏",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Unholy Prayer"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e836e8393837d815b82f091c582bf8d7e82eb82b582bd21",
+  "at": "enemy/531",
+  "uses": 2,
+  "jp": "$0は$nハンマーを打ち降ろした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings a hammer down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc82b182f1906782cc88ea8c8221",
+  "at": "enemy/532",
+  "uses": 2,
+  "jp": "$0のこん身の一撃!",
+  "pages": [
+   {
+    "ds": "override",
+    "en": "￥Ｚ１'s all-out blow!"
+   }
+  ]
+ },
+ {
+  "hex": "926e92ea8c788e40",
+  "at": "enemy/533",
+  "uses": 4,
+  "jp": "地底警察",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Subsoil Police"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e834383698359837d82f08cc482f182be21",
+  "at": "enemy/534",
+  "uses": 4,
+  "jp": "$0は$nイナズマを呼んだ!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／calls down lightning!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "834a8375835c",
+  "at": "enemy/535",
+  "uses": 3,
+  "jp": "カブソ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Kabuso"
+   }
+  ]
+ },
+ {
+  "hex": "83568383834f837d",
+  "at": "enemy/536",
+  "uses": 3,
+  "jp": "シャグマ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shaguma"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc82a482b582eb82b082e821",
+  "at": "enemy/537",
+  "uses": 3,
+  "jp": "$0のうしろげり!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ uses a back kick!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "8d678e85928e",
+  "at": "enemy/538",
+  "uses": 4,
+  "jp": "紅糸虫",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Red Threadworm"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8e8582f0936682a282bd21",
+  "at": "enemy/539",
+  "uses": 4,
+  "jp": "$0は$n糸を吐いた!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／spits silk!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "88c582a982b882e7",
+  "at": "enemy/540",
+  "uses": 3,
+  "jp": "闇かずら",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Dark Vine"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91cc97cd82f08b7a82a28ee682c182bd21",
+  "at": "enemy/541",
+  "uses": 3,
+  "jp": "$0は$n体力を吸い取った!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／drains HP!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "94f282d18355838b",
+  "at": "enemy/542",
+  "uses": 1,
+  "jp": "飛びザル",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flying Monkey"
+   }
+  ]
+ },
+ {
+  "hex": "243082cc94f282b082e821",
+  "at": "enemy/543",
+  "uses": 1,
+  "jp": "$0の飛げり!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１ delivers a flying kick!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "83568349836d8381",
+  "at": "enemy/544",
+  "uses": 1,
+  "jp": "シオノメ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Shionome"
+   }
+  ]
+ },
+ {
+  "hex": "82d482c182a982ab",
+  "at": "enemy/545",
+  "uses": 1,
+  "jp": "ぶっかき",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Smasher"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e8bf3905582e882f082b582bd21",
+  "at": "enemy/546",
+  "uses": 1,
+  "jp": "$0は$n空振りをした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings and misses!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "243082cd246e91e58be092c682f091c582bf8d7e82eb82b582bd21",
+  "at": "enemy/547",
+  "uses": 1,
+  "jp": "$0は$n大金槌を打ち降ろした!",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "￥Ｚ１￥／swings a huge mallet down!￥ｋ"
+   }
+  ]
+ },
+ {
+  "hex": "93f782cc89d483728389",
+  "at": "enemy/548",
+  "uses": 1,
+  "jp": "肉の花ビラ",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Flesh Petals"
+   }
+  ]
+ },
+ {
+  "hex": "955897b3",
+  "at": "enemy/549",
+  "uses": 1,
+  "jp": "氷竜",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "Ice Dragon"
+   }
+  ]
+ },
+ {
+  "hex": "95538b5389a4",
+  "at": "enemy/550",
+  "uses": 1,
+  "jp": "百鬼王",
+  "pages": [
+   {
+    "ds": "catalog",
+    "en": "100-Demon King"
+   }
+  ]
  }
 ]

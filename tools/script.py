@@ -68,6 +68,20 @@ def main(blocks_path, match_path, ds_path, out_path, *catalogs, iso='work/conten
         e['uses'] += 1
         if e['pages'] and not e['pages'][0]['en'] and norm(jp) in cat:   # an empty message has no page
             e['pages'][0].update(ds='catalog', en=cat[norm(jp)])
+    # enemy names and lines (plain SJIS, $0 = name, $n = newline): matched to the DS catalogs without codes or punctuation
+    bare = lambda s: re.sub(r'￥Ｚ.|\$.|￥.|[、！!｜\s]', '', s)
+    ecat = {}
+    for path in catalogs:
+        for r in records(json.load(open(path, encoding='utf-8'))):
+            ecat.setdefault(bare(r['jp']), r['en'])
+    for area in extract.enemies(open(iso, 'rb').read()):
+        for r in area['records'].values():
+            for m in [r['name']] + [e[2] for e in r['entries'] if e[2]]:
+                if m.hex() not in out:
+                    jp = m.decode('shift_jis')
+                    out[m.hex()] = {'hex': m.hex(), 'at': 'enemy/%d' % sum(e['at'].startswith('enemy/') for e in out.values()),
+                                    'uses': 0, 'jp': jp, 'pages': [{'ds': 'catalog' if bare(jp) in ecat else None, 'en': ecat.get(bare(jp))}]}
+                out[m.hex()]['uses'] += 1
     over = json.load(open(os.path.join(os.path.dirname(out_path), 'overrides.json'), encoding='utf-8'))
     for h, text in over.items():   # one-page messages only, so far
         if h in out:

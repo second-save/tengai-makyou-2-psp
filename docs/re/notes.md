@@ -72,6 +72,20 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - The stream ends with the ADPCM image, so a longer one starts earlier: 56 bytes of FF padding sit before it in the
   tightest copy (871 in most). insert.py moves the start and patches the address at 71:`$7502` (`LDA #$F4 / LDX #$00`).
 
+## Enemy records (traced 2026-11-20, eighth session; `extract.enemies`, `insert.enemies`)
+- Enemy names and their status / flee / attack lines are plain SJIS in each area's ADPCM image (iso `area*0x40000 + 0x31000`),
+  99 areas below the mirror (1,184 records, 275 names, 277 lines). Image header: u16 end of the record section, u16 n,
+  n u16 enemy block offsets, 0, then 4 u16 section offsets; the last one is also enemy 0's record pointer (= section start).
+  Enemy block + 6 = u16 ADPCM address of its record.
+- Record: 21 bytes of stats, name NUL, 1 byte (`$F670`), entries (kind, param, message NUL) up to a 00, then 2 bytes
+  (`$F68A/B`) that are often the next record's first two bytes. 71:`$7F9E` reads 256 bytes from the record's ADPCM
+  address into `$2AE3` (AD_READ), name at `$2AF8`; 71:`$7FA6` walks it by NULs and keeps each message's offset
+  (`$F671,X`); 71:`$7D80` sets the pointer `$F659` that 71:`$752A` copies to `$E66E` (`$0`-`$3` -> `1D n+1`,
+  `$n` -> `0D`, everything else raw, no dictionary). So records can move anywhere in the image if the pointer follows.
+- Data after the section (a u16 table at `end`) is left in place. Room: section + the FF run before the battle stream;
+  in 38 tight areas (6 free bytes there) records spill into zero / FF padding that ends a blob on a 0x800 boundary
+  (64-byte margin; assumed unread, guess).
+
 ## Message system (bank 0x6F at $6000 while a message runs; traced 2026-11-19)
 - Event block = module loaded raw at base bank `$4F` (0x74 for the start area), also mapped at $6000 as code. Header: 3-byte
   entries `[bank delta, lo, hi]` = block offset delta*0x2000 + the plain 16-bit lo/hi (do NOT mask it to 13 or 15 bits:

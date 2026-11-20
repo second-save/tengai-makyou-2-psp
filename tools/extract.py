@@ -119,6 +119,44 @@ def battle(iso):
     return msgs, [o for o in range(BATTLE - back, len(iso), 0x40000) if iso[o:o + len(raw)] == raw]
 
 
+ENEMY = 0x31000   # each area's ADPCM image (= ADPCM address 0) in its 0x40000 bytes
+
+
+def enemy_record(img, p):
+    """One enemy record at image offset p: 21 bytes of stats, name, one byte ($F670), entries (kind, param, message)
+    up to a 00, then 2 bytes ($F68A/B) that can be the next record's first two. Walked by NULs at 71:$7FA6."""
+    q = img.index(0, p + 21)
+    r = {'head': img[p:p + 21], 'name': img[p + 21:q], 'f670': img[q + 1], 'entries': []}
+    q += 2
+    while img[q]:
+        e = img.index(0, q + 2)
+        r['entries'].append((img[q], img[q + 1], img[q + 2:e]))
+        q = e + 1
+    r['tail'], r['end'] = img[q + 1:q + 3], q + 3
+    return r
+
+
+def enemies(iso):
+    """Enemy records of every area (docs/re/notes.md, "Enemy records"): [{'image', 'start', 'end', 'ptrs', 'records'}].
+    Image header: u16 end of the record section, u16 n, n u16 enemy blocks, 0, 4 more u16 section offsets, the last one
+    = start of the records. Enemy block + 6 = u16 pointer to its record. Names and lines are plain SJIS, `$0`-`$3` = name
+    placeholder, `$n` = newline (71:$752A)."""
+    out = [enemy_area(iso[b:b + 0x10000], b) for b in range(ENEMY, min(len(iso), MIRROR), 0x40000)]
+    return [a for a in out if a]
+
+
+def enemy_area(img, base):
+    end, n = img[0] | img[1] << 8, img[2] | img[3] << 8
+    if not 1 <= n <= 12:
+        return None
+    w = [img[4 + 2 * i] | img[5 + 2 * i] << 8 for i in range(n + 5)]
+    if w[n] != 0 or w[n + 1] != 4 + 2 * (n + 5) or not end <= 0x8000:   # w[-1] is also enemy 0's record pointer
+        return None
+    ptrs = [w[i] + 6 for i in range(n)]
+    recs = {p: enemy_record(img, p) for p in sorted(set(img[x] | img[x + 1] << 8 for x in ptrs))}
+    return {'image': base, 'start': w[-1], 'end': end, 'ptrs': ptrs, 'records': recs}
+
+
 def main(iso_path, out_path):
     iso = open(iso_path, 'rb').read()
     blocks = [block(iso, m.start()) for m in re.finditer(SIG, iso, re.S)

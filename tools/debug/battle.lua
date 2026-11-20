@@ -7,7 +7,8 @@ function on_frame(f)
   FRAME = f
   if found then return end
   local at = WALK_AT or 900
-  if f >= at and (f - at) % 150 == 0 then ROUTE[#ROUTE + 1] = {f + 1, {dirs[((f - at) // 150) % 4 + 1]}, 150} end
+  if f < at then return end   -- a battle already running in the start state does not count
+  if (f - at) % 150 == 0 then ROUTE[#ROUTE + 1] = {f + 1, {dirs[((f - at) // 150) % 4 + 1]}, 150} end
   hits = emu.getState()["memoryManager.mpr[4]"] == 0x6A and hits + 1 or 0
   if hits >= 30 then
     found = true
