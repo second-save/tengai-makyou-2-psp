@@ -21,11 +21,11 @@
   "note": "battle guard sub-menu (DS names)"
  },
  {
-  "at": "4CFB3",
-  "hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "at": "4CFBF",
+  "hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
   "jp": "[FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF][FF]",
   "en": "{16}[81][88][8C][88]{08}{01}Status{02}[8B]{01}Items{0D}{08}{01}Scrolls{02}[8B]{01}Gear{0D}{08}{01}Techs{02}[8B]{01}",
-  "note": "field menu (button II): copy at 6E:$7FB3 printed by the far call build.py puts at 6B:$665B; window 10 -> 12 tiles; the 6th item is printed after it from the list at 6B:$6C2E",
+  "note": "field menu (button II): copy at 6E:$7FBF printed by the far call build.py puts at 6B:$665B; window 10 -> 12 tiles; the 6th item is printed after it from the list at 6B:$6C2E",
   "free": true
  },
  {

@@ -68,9 +68,9 @@ def main(orig, syscard, out, all_ascii=False):
         # not mapped when this runs). TXA ASL ASL ASL TAY LDX #$FA / LDA $7FDE,Y STA $765F,X INY INX BNE / RTS (same 18 bytes)
         writes.append((far(0x70, 0x7646, 0x6000), bytes.fromhex('8a0a0a0aa8a2fab9de7f9d5f76c8e8d0f660'), 'menu slot 2: 6-byte names'))
         # field menu: its English does not fit the 43 bytes at 6B:$6705, so 6B:$665B (JSR $50A3 / BIT $6705: print the
-        # string inline) becomes a far call into 6E ($4933) that prints a copy at 6E:$7FB3 (written by mainstr.py)
-        writes.append((far(0x6B, 0x665B, 0x6000), bytes.fromhex('2033492cac7f'), 'field menu: far call'))
-        writes.append((far(0x6E, 0x7FAC, 0x6000), bytes.fromhex('20a3502cb37f60'), 'field menu: print from 6E'))
+        # string inline) becomes a far call into 6E ($4933) that prints a copy at 6E:$7FBF (written by mainstr.py)
+        writes.append((far(0x6B, 0x665B, 0x6000), bytes.fromhex('2033492cb87f'), 'field menu: far call'))
+        writes.append((far(0x6E, 0x7FB8, 0x6000), bytes.fromhex('20a3502cbf7f60'), 'field menu: print from 6E'))
         # the kind names ({1A} in "Use which ...": 武具 道具 巻物 ...) are looked up by number from the list whose base is
         # set at 6B:$6D7B (LDY #$6B / LDX #$99); it moves into the old field menu string at 6B:$6705 (unused now,
         # English list written there by mainstr.py)
@@ -100,8 +100,8 @@ def main(orig, syscard, out, all_ascii=False):
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)
     open(out + '.writes', 'w').write('\n'.join(log) + '\n')
-    assert len(vwf) <= 0xF3, 'vwf runs into the field menu routine at 6E:$7FAC'
-    print('vwf %d bytes (room %d), stub %d (room %d), %d writes' % (len(vwf), 0xF3, len(stub), 0x34, len(log)))
+    assert len(vwf) <= 0xFF, 'vwf runs into the field menu routine at 6E:$7FB8'
+    print('vwf %d bytes (room %d), stub %d (room %d), %d writes' % (len(vwf), 0xFF, len(stub), 0x34, len(log)))
 
 
 if __name__ == '__main__':

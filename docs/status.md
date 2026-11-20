@@ -104,6 +104,23 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   shared by every run): a save written by one run changed the next cold boot's new-game path. `pce.py` now deletes it
   before every cold-boot run; regen is deterministic again (house load at f=14453) and accepts a black preload frame.
 
+## Main-program strings (2026-11-20, tenth session) - details in notes.md "Main-program strings"
+- `tools/mainstr.py ISO OUT.json` lists candidate UI strings (heuristic; `work/script/main_strings.json`);
+  `script/main.json` holds the curated ones (at, original hex, jp template, en template, note, pad); `mainstr.py insert`
+  writes them in place (both copies), refuses one that grew or whose original is not followed by a NUL.
+  Templates: `{XX}` code, `[XX]` raw argument byte, `{00}` a NUL inside a list. Lists read by skipping NULs pad with `20`.
+- `tools/make.sh` = build + insert + mainstr insert + romdiff + cue; then `show.py --regen` (now also town, shop, menu).
+- English on screen: battle menu (Fight Sword Run / Scroll Guard Stats / Items Plans ??), Guard sub-menu, "Go, Manji!!",
+  field menu (Status Items / Scrolls Gear / Techs), shop menus, prompts and names, Yes/No, item / scroll / gear action
+  menus, give / drop prompts, effect categories ("/Heal"), status bar name ("Manji 体 37"), kind names ("Use which Item").
+- Engine changes (build.py): battle menu slot 2 names 6 bytes (70:$7646 loop, table 70:$7FDE); field menu printed from a
+  copy in 6E ($665B far call, 6E:$7FB8 routine, string at $7FBF); kind / party name lists moved in 6B (bases at
+  $6CF8 $6D10 $6D75 $6D7B $6CDC $6CD3); status bar name room 24 -> 32 px (6B:$61D2); VWF room check 8 px wide, 16 px
+  high in windows of 6+ tiles and 8 px in smaller ones (status bar).
+- Left in Japanese: status bar / status screen glyph labels 体 段 技 (custom 8x8 glyphs for `_ ^ ]`, need redrawing),
+  徳 (Virtue: 2 bytes), 両 after amounts (Ryo needs 3 bytes), status ailments (2-3 bytes), storage / bank menus,
+  save screens (0x576CC-0x58800, not resident), province names 0x58140, the ship commands in battle slot 9.
+
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
    230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
@@ -121,7 +138,10 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    PC Engine side: the 1,319 system pages should be matched against the DS `native_catalog.json` / `combat_text.json`.
 2. Stream ends are inferred (cut at the first invalid message). Confirm against the message counts the scripts actually
    use before reinserting.
-3. Main-program text (menus, shops, battle; plain SJIS + the mixed encoding) at iso 0x41000-0x62800 is not extracted yet.
+3. Main-program text: in progress (see "Main-program strings").
+8. Long dialogue messages break in the window: 2050/25/4 (shop tutorial, 5 pages) shows only stray glyphs ("長い!") and
+   the last line on pages 1-2 in `show.py`. Same on the session-start build (not a regression). Guess: the expanded
+   message passes the 256-byte pre-expansion buffer at $E66E (6F:$7FD5 flushes at $E76E). Check in game, then fix.
 4. VWF: done as an engine spike (`src/vwf.s`, `tools/build.py`, notes.md "VWF"), using the System Card 8x8 font.
    Open: W and M touch their neighbours (8-px glyphs), text sits at the top of the 16-px line, text speed is still one
    glyph per 4 frames, `--all-ascii` works (plain ASCII, no prefix), marker build and width gate for the other windows (battle, menus, shops) not done.
@@ -137,15 +157,13 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 2. Debug tool: village (`town.mss`) and the shop's buy menu (`shop.mss`) come out of `--regen` (notes.md "Scenes";
    `goto.lua` walks by RAM position). Left: a warp to one of the 38 areas whose enemy records sit in padding (e.g. area
    18, record at $9321; `scenes.py ISO 12` lists its subs and events), the width gate for menus and shops.
-3. Extract main-program strings (iso 0x41000-0x62800) into the script.
+3. Main-program strings: finish the list under "Main-program strings" (left in Japanese), then the width gate.
 4. Find the ending / cutscene text; translate the 1,272 messages without English (near-miss matching against the DS
    script first: many differ by a few characters only).
 5. Font polish (narrower W/M or a redrawn font in SYSCARD3P.PCE bank 1), text speed.
 6. Rebuild CONTENT.DAT, QA, release as a patch on CONTENT.DAT.
 
-Build: `python3 tools/build.py work/content/HCD1022_02.iso work/content/files/SYSCARD3P.PCE build/tm2_02.iso`, check with
-`python3 tools/romdiff.py work/content/HCD1022_02.iso build/tm2_02.iso --writes build/tm2_02.iso.writes`, cue with
-`python3 tools/mkcue.py work/content/files/HCD1022.hcd build/tm2_02.iso work/cd-en`. Cold boot to the house: 16000 frames,
+Build: `tools/make.sh` (build, insert, main strings, write check, cue), then `python3 tools/debug/show.py --regen`. Cold boot to the house: 16000 frames,
 route `1200:run*10;1500:run*10;1800:run*10;2100:i*10;2400:i*10 --mash 40` (about 50 s).
 
 ## Housekeeping
