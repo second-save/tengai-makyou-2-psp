@@ -140,6 +140,18 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   Still Japanese in the main program: province names 0x58140 (4 bytes each: need the list base to relocate),
   summon names 0x50AC1 (名無し シロ 式神 三角), debug menus (chapter select 0x5771D, battle test 0x4F213 / 0x510C6).
 
+## Ending staff roll (2026-11-21, twelfth session) - details in notes.md "Programs and the ending staff roll"
+- User ruling: credits in English (roll + opening card), title logo stays kanji (docs/decisions.md).
+- Graphics survey of the cold boot (intro, title): only the opening card 制作・総指揮 工藤裕司 (graphics) and the
+  kanji logo (kept) are Japanese; the ending roll was the only other credit text.
+- `tools/debug/prog.lua --var PROG=0x9E` runs the ending from a cold boot. `script/roll.json` (264 records, English
+  from the DS `staff_roll.json`, names in Western order, 43 written here: different producer Yuji Kudo, PC Engine
+  name variants, the company list) inserted by `tools/roll.py` (in make.sh); `src/roll.s` draws two ASCII
+  characters per 16-px cell. Verified from a cold boot through the whole roll (`work/qa/end4`, `end5`).
+- Readings to review: Atsushi Hayashida (林田淳; DS had 敦), Yoshihiko Inamoto (義彦; DS 亀彦), T. Hamada (濱田敏徳),
+  Shin Sasaki. DS abbreviations kept where the full word does not fit 32 columns (Music Superv., Sound Dir., Anim.
+  Director, initials).
+
 ## Open problems
 7. Battle text (done 2026-11-20, seventh session): the 235-line battle stream is in the script (`battle/N`, 225 of
    230 distinct lines have English from `combat_text.json`) and inserted in all 370 copies. It packs to 0xC2E bytes
@@ -168,9 +180,11 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 1. PSP-side test (blocker for release): boot `build/CONTENT.DAT` (or the original + `dist/tm2-en.xdelta`) in PPSSPP
    or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
 2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
-   Left: title logo, any other tile-drawn Japanese (survey not done). `tools/lua/vramwho.lua` finds the writer of
-   any VRAM range (tracks the VDC address itself; CPU write callbacks on $0000-$0003 see ST0/ST1/ST2 too).
-3. Ending / cutscene text: confirm voice-only by reaching an ending (debug tool: find its area / event).
+   Left: the opening card "制作・総指揮 工藤裕司" (intro program 0x9F, f~600; redraw as "Executive Producer
+   Yuji Kudo" like the roll), in-game graphics not surveyed yet (place cards, battle effects).
+   `tools/lua/vramwho.lua` finds the writer of any VRAM range.
+3. Ending: staff roll done; the ending scenes before it (f~200-4000) show no text. DS `end0`-`end3` text: still
+   to confirm voice-only (the ending program has no message stream).
 4. Main-program leftovers: 毒 (2 bytes), the battle slot-9 ship commands (Guns, Torpedo...), save screens
    (0x576CC+, not resident: find their overlay), province names at 0x58140, a warp to an area with enemy records in
    padding (area 18), the width gate for the other windows, storage menus not seen on screen yet.

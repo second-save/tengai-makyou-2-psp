@@ -104,6 +104,19 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   (graphics, count bit 15), not a source pointer. VRAM writers: BIOS 00:E5F7/E5F9 (51,200 bytes), 69:$4706/$470C.
   Next: break on VDC writes to the panel tiles' VRAM address (tile 258 * 16 words) and follow the source back.
 
+## Programs and the ending staff roll (2026-11-21, twelfth session; `tools/debug/prog.lua`, `tools/roll.py`, `src/roll.s`)
+- Resident loop 00:`$3887`: `JSR $388C` loads program A (sector A*128+2, count from `$2616,Y`, via `$3908`) to bank
+  $69 (+$21) and jumps to `$4000`; the program returns the next program number in A. 0x01 = main game, 0x9E = ending
+  + staff roll, 0x9F-0xA1 = intro (first call, f=63), 0xA8/0xA9 = title. `prog.lua --var PROG=0x9E` swaps the first
+  load: the ending plays from a cold boot (roll from f~4300 to f~19000, clear time from boot RAM).
+- Staff roll = bank $78 of program 0x9E (iso 0x279F000, mirror +0x8000000): u16 pointer table (entry 0 = $0002),
+  records `colour (1 = heading) + 2-byte cells + 00 00`, a record starting `00 00` ends it. Printer 6A:`$6340`
+  (pointer `$8C`), cell renderer 6A:`$64B3`: 16 cells of 16x16 per line, `$650C` = glyph: `01 nn` = own glyph from
+  the table at 6A:`$6641` (0/1 = "P." "H.", 2 辻 3 濱 4 潘 5 蜷 6 茉 7 ㈱ 8 ㈲ 9 卍; `01 F0`-`F4` = clear-time digits),
+  else System Card EX_GETFNT 16x16 into `$2DEE` (16 rows x 2 bytes). `src/roll.s` (6A:$7F00, FF tail) adds
+  two-ASCII cells (two 8x8 glyphs, System Card bank 1 at $8000 + c*8): 32 characters per line.
+- The opening card "制作・総指揮 工藤裕司" (intro, f~600) is graphics, not this text.
+
 ## Scenes (2026-11-20, tenth session; `tools/debug/scenes.py`, `warp.lua`)
 - `$2BF6` ("map") is an event id: the loader (6A:`$69E8`) runs it through 6F:`$7977`. Header entry 3 = u16 per sub ->
   object list -> 3-byte entries (event id, script pointer); `scenes.py ISO AREA` lists the ids per sub (subs below 0x10

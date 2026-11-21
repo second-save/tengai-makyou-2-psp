@@ -27,9 +27,12 @@ def glyph(rows):
 SLOT2 = ('Sword', 'Arts', 'Skills', 'Demon')   # 剣法 秘芸 体術 鬼道 (DS names), 6 bytes each at most
 
 
-def far(bank, cpu, base):
-    """iso offset of CPU address `cpu` in main-program `bank` mapped at `base`."""
-    return MAIN + (bank - 0x69) * 0x2000 + cpu - base
+def far(bank, cpu, base, prog=MAIN):
+    """iso offset of CPU address `cpu` in main-program `bank` mapped at `base` (prog = another program's iso offset)."""
+    return prog + (bank - 0x69) * 0x2000 + cpu - base
+
+
+ENDING = (0x9E * 128 + 2) * 0x800   # program 0x9E (ending + staff roll), loaded at bank 0x69 like the main program
 
 
 def widths(iso, syscard):
@@ -58,13 +61,19 @@ def main(orig, syscard, out, all_ascii=False):
     os.makedirs(tmp, exist_ok=True)
     subprocess.run(['ca65', '--cpu', 'huc6280', os.path.join(ROOT, 'src/vwf.s'), '-o', tmp + '/vwf.o'], check=True)
     subprocess.run(['ld65', '-C', os.path.join(ROOT, 'src/vwf.cfg'), tmp + '/vwf.o', '-o', tmp + '/vwf'], check=True)
+    subprocess.run(['ca65', '--cpu', 'huc6280', os.path.join(ROOT, 'src/roll.s'), '-o', tmp + '/roll.o'], check=True)
+    subprocess.run(['ld65', '-C', os.path.join(ROOT, 'src/roll.cfg'), tmp + '/roll.o', '-o', tmp + '/roll'], check=True)
     stub, vwf, dic = (open(tmp + '/vwf.' + s, 'rb').read() for s in ('stub', 'vwf', 'dict'))
+    roll = open(tmp + '/roll.roll', 'rb').read()
     vwf = vwf[:-96] + widths(iso, card)
     writes = [
         (far(0x6D, 0x7FCC, 0x6000), stub, 'vwf stub'),
         (far(0x6E, 0x9EB9, 0x8000), vwf, 'vwf + width table'),
         # 6D:$625D (after PHA PHX PHY): JSR stub; JMP $6014 (PLY PLX PLA RTS)
         (far(0x6D, 0x625D, 0x6000), bytes.fromhex('20cc7f4c1460'), 'half-width draw -> vwf'),
+        # ending staff roll: cells of two ASCII bytes draw as two 8x8 glyphs (src/roll.s, in the FF tail of 6A)
+        (far(0x6A, 0x7F00, 0x6000, ENDING), roll, 'staff roll: ASCII cells'),
+        (far(0x6A, 0x650C, 0x6000, ENDING), bytes.fromhex('4c007f'), 'staff roll: cell -> ASCII cells'),
     ]
     if all_ascii:
         # 6F:$7EA8 JSR $7E5C (next message byte) -> bytes 0x80-0xFF expand as dictionary words (tools/insert.py)
@@ -129,7 +138,8 @@ def main(orig, syscard, out, all_ascii=False):
               'party name list -> 6B:$6B99': 'a06ca23d', 'party name list 2 -> 6B:$6C3D': 'a06ca255', 'party name list 2 -> 6B:$6C3D (2)': 'a06ca255',
               'party name list -> 6B:$6B99 (2)': 'a06ca23d',
               'status bar: name room 24 -> 32 px': '6906', 'menu slot 2: 6-byte names': '8a0a0aa882b9cb769d5977c8e8e00490f460',
-              'message byte -> dictionary codes': '205c7e', 'half-width draw -> vwf': None}
+              'message byte -> dictionary codes': '205c7e', 'half-width draw -> vwf': None,
+              'staff roll: cell -> ASCII cells': 'a5f9c9'}
     for off, data, name in writes:
         if expect.get(name):
             assert iso[off:off + len(data)].hex() == expect[name], '%s: original bytes %s' % (name, iso[off:off + len(data)].hex())
@@ -140,7 +150,7 @@ def main(orig, syscard, out, all_ascii=False):
             log.append('%x %s %s %s' % (o, iso[o:o + len(data)].hex(), data.hex(), name))
             new[o:o + len(data)] = data
     for off, data, name in writes[:2] + [w for w in writes if w[2] in ('menu slot 2 names', 'field menu: print from 6E',
-                                                                       'message buffer: draw and empty')]:
+                                                                       'message buffer: draw and empty', 'staff roll: ASCII cells')]:
         assert set(iso[off:off + len(data)]) == {0xFF}, name + ': target is not free space'
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     open(out, 'wb').write(new)

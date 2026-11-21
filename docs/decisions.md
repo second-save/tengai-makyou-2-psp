@@ -11,3 +11,8 @@
 - The coloured ailment words have 4 bytes each: Weak Numb Iced Doze Daze Mute, "Acd" for 酸; 毒 keeps its kanji
   (2 bytes, and the list's access method is unknown so entries cannot borrow room). Revisit if the list base is found.
 - Storage menu: "Put" / "Take", money lines "Own" / "Box" + Ryo (Cash / Bank + Ryo do not fit).
+
+## Credits and title logo (2026-11-21)
+- Options: credits in English / kept Japanese / staff roll only; logo kept / redrawn in English.
+- Ruling (user): credits in English (opening graphics card "制作・総指揮 工藤裕司" and the ending staff roll at
+  iso 0x279F000), names romanized. Title logo 天外魔境 II stays kanji (FAR EAST OF EDEN is already above it).

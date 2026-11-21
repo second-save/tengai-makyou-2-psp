@@ -1,0 +1,1586 @@
+[
+{
+"n": 0,
+"c": 1,
+"jp": "　　　　　ＳＴＡＦＦ",
+"en": "STAFF"
+},
+{
+"n": 1,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 2,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 3,
+"c": 0,
+"jp": "　製作／総指揮　　　工藤　裕司",
+"en": "Executive Producer|Yuji Kudo"
+},
+{
+"n": 4,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 5,
+"c": 0,
+"jp": "　原作　　　　　　　{0100}{0101}チャダ",
+"en": "Original Story|P.H. Chada"
+},
+{
+"n": 6,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 7,
+"c": 0,
+"jp": "　企画／監修　　　　広井　王子",
+"en": "Planning/Supervision|Oji Hiroi"
+},
+{
+"n": 8,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 9,
+"c": 0,
+"jp": "　総監督　　　　　　桝田　省治",
+"en": "General Director|Shoji Masuda"
+},
+{
+"n": 10,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 11,
+"c": 0,
+"jp": "　演出　　　　　　　岩崎　啓真",
+"en": "Direction|Hiromasa Iwasaki"
+},
+{
+"n": 12,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 13,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 14,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 15,
+"c": 0,
+"jp": "　　　　　　声の出演",
+"en": "Voice Cast"
+},
+{
+"n": 16,
+"c": 0,
+"jp": "　戦国　{0109}丸　　　　伊倉　一寿",
+"en": "Manjimaru|Kazue Ikura"
+},
+{
+"n": 17,
+"c": 0,
+"jp": "　カブキ団十郎　　　山口　勝平",
+"en": "Kabuki Danjuro|Kappei Yamaguchi"
+},
+{
+"n": 18,
+"c": 0,
+"jp": "　極楽　太郎　　　赤星　昇一郎",
+"en": "Gokuraku|Shoichiro Akaboshi"
+},
+{
+"n": 19,
+"c": 0,
+"jp": "　絹　　　　　　　井上　あずみ",
+"en": "Kinu|Azumi Inoue"
+},
+{
+"n": 20,
+"c": 0,
+"jp": "　ホテイ丸　　　　　　青野　武",
+"en": "Hoteimaru|Takeshi Aono"
+},
+{
+"n": 21,
+"c": 0,
+"jp": "　花火　　　　　　木下　千鶴子",
+"en": "Hanabi|Chizuko Kinoshita"
+},
+{
+"n": 22,
+"c": 0,
+"jp": "　まつり　　　　　高山　みなみ",
+"en": "Matsuri|Minami Takayama"
+},
+{
+"n": 23,
+"c": 0,
+"jp": "　みこし　　　　　　柿沢　美貴",
+"en": "Mikoshi|Miki Kakizawa"
+},
+{
+"n": 24,
+"c": 0,
+"jp": "　弁天　　　　　　　小山　{0106}美",
+"en": "Benten|Mami Koyama"
+},
+{
+"n": 25,
+"c": 0,
+"jp": "　足下五兄弟　　　　矢尾　一樹",
+"en": "Ashimoto Brothers|Kazuki Yao"
+},
+{
+"n": 26,
+"c": 0,
+"jp": "　おミル　　　　　　白石　冬美",
+"en": "Omiru|Fuyumi Shiraishi"
+},
+{
+"n": 27,
+"c": 0,
+"jp": "　死神将軍　　　　　銀河　万丈",
+"en": "Reaper General|Banjo Ginga"
+},
+{
+"n": 28,
+"c": 0,
+"jp": "　菊五郎　　　　　　　千葉　繁",
+"en": "Kikugoro|Shigeru Chiba"
+},
+{
+"n": 29,
+"c": 0,
+"jp": "　はまぐり姫　　　　　{0104}　恵子",
+"en": "Princess Hamaguri|Keiko Han"
+},
+{
+"n": 30,
+"c": 0,
+"jp": "　名無しの十八番　　　羽室　満",
+"en": "Nameless No. 18|Mitsuru Hamuro"
+},
+{
+"n": 31,
+"c": 0,
+"jp": "　マダム・バーバラ　藤田　淑子",
+"en": "Madame Barbara|Toshiko Fujita"
+},
+{
+"n": 32,
+"c": 0,
+"jp": "　デューク・ペペ　八奈見　乗児",
+"en": "Duke Pepe|Joji Yanami"
+},
+{
+"n": 33,
+"c": 0,
+"jp": "　地獄釜の肉助　　　内海　賢二",
+"en": "Nikusuke|Kenji Utsumi"
+},
+{
+"n": 34,
+"c": 0,
+"jp": "　右のガーニン　　　矢尾　一樹",
+"en": "Garnin of the Right|Kazuki Yao"
+},
+{
+"n": 35,
+"c": 0,
+"jp": "　吹雪御前　　　　　山田　栄子",
+"en": "Fubuki Gozen|Eiko Yamada"
+},
+{
+"n": 36,
+"c": 0,
+"jp": "　剛天明王　　　　　内海　賢二",
+"en": "Wise King Goten|Kenji Utsumi"
+},
+{
+"n": 37,
+"c": 0,
+"jp": "　マントー２　　　　　千葉　繁",
+"en": "Manto 2|Shigeru Chiba"
+},
+{
+"n": 38,
+"c": 0,
+"jp": "　ベーロン　　　　　内海　賢二",
+"en": "Beron|Kenji Utsumi"
+},
+{
+"n": 39,
+"c": 0,
+"jp": "　デロレン　　　　　宮内　幸平",
+"en": "Deroren|Kohei Miyauchi"
+},
+{
+"n": 40,
+"c": 0,
+"jp": "　デーロン　　　　　永井　一郎",
+"en": "Deron|Ichiro Nagai"
+},
+{
+"n": 41,
+"c": 0,
+"jp": "　ヨミ　　　　　　　池田　秀一",
+"en": "Yomi|Shuichi Ikeda"
+},
+{
+"n": 42,
+"c": 0,
+"jp": "　マリ　　　　　　　池田　昌子",
+"en": "Mari|Masako Ikeda"
+},
+{
+"n": 43,
+"c": 0,
+"jp": "　創造神　　　　　岸田　今日子",
+"en": "The Creator|Kyoko Kishida"
+},
+{
+"n": 44,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 45,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 46,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 47,
+"c": 0,
+"jp": "　　　　シナリオユニット",
+"en": "Scenario Unit"
+},
+{
+"n": 48,
+"c": 0,
+"jp": "　脚本／構成　　　　桝田　省治",
+"en": "Script/Structure|Shoji Masuda"
+},
+{
+"n": 49,
+"c": 0,
+"jp": "　翻案　　　　　あだち　ひろし",
+"en": "Adaptation|Hiroshi Adachi"
+},
+{
+"n": 50,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 51,
+"c": 0,
+"jp": "　　　　　脚本アシスト",
+"en": "Script Assistants"
+},
+{
+"n": 52,
+"c": 0,
+"jp": "　井沢　寛　　　　　　下田　淳",
+"en": "Hiroshi Izawa|Jun Shimoda"
+},
+{
+"n": 53,
+"c": 0,
+"jp": "　林　ゆきと　　　　山田　真木",
+"en": "Yukito Hayashi|Maki Yamada"
+},
+{
+"n": 54,
+"c": 0,
+"jp": "　安藤　誠",
+"en": "Makoto Ando|"
+},
+{
+"n": 55,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 56,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 57,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 58,
+"c": 1,
+"jp": "　　　プログラムユニット",
+"en": "Program Unit"
+},
+{
+"n": 59,
+"c": 0,
+"jp": "　ビジュアル　　　　岩崎　啓真",
+"en": "Visuals|Hiromasa Iwasaki"
+},
+{
+"n": 60,
+"c": 0,
+"jp": "　システム　　　　　長谷川　浩",
+"en": "System|Hiroshi Hasegawa"
+},
+{
+"n": 61,
+"c": 0,
+"jp": "　バトル　　　　　　　薮　芳昭",
+"en": "Battle|Yoshiaki Yabu"
+},
+{
+"n": 62,
+"c": 0,
+"jp": "　　　　　　　　　　蝦名　寿昌",
+"en": "|Toshimasa Ebina"
+},
+{
+"n": 63,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 64,
+"c": 1,
+"jp": "　　　シナリオプログラム",
+"en": "Scenario Programming"
+},
+{
+"n": 65,
+"c": 0,
+"jp": "　武田　浩　　　　　室井　孝子",
+"en": "Hiroshi Takeda|Takako Muroi"
+},
+{
+"n": 66,
+"c": 0,
+"jp": "　中川　拓志　　　　安部　利也",
+"en": "Takushi Nakagawa|Toshiya Abe"
+},
+{
+"n": 67,
+"c": 0,
+"jp": "　小西　康雅　　　　山本　耕司",
+"en": "Yasumasa Konishi|Koji Yamamoto"
+},
+{
+"n": 68,
+"c": 0,
+"jp": "　杉本　悟　　　　　芳賀　孝宏",
+"en": "Satoru Sugimoto|Takahiro Haga"
+},
+{
+"n": 69,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 70,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 71,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 72,
+"c": 0,
+"jp": "　　　　サウンドユニット",
+"en": "Sound Unit"
+},
+{
+"n": 73,
+"c": 0,
+"jp": "　音楽監督　　　　　　久石　譲",
+"en": "Music Director|Joe Hisaishi"
+},
+{
+"n": 74,
+"c": 0,
+"jp": "　音楽　　　　　　　福田　裕彦",
+"en": "Music|Hirohiko Fukuda"
+},
+{
+"n": 75,
+"c": 0,
+"jp": "　音楽監修　　　　　中神　紀之",
+"en": "Music Superv.|Noriyuki Nakagami"
+},
+{
+"n": 76,
+"c": 0,
+"jp": "　ＰＳＧオペレート　　小原　肇",
+"en": "PSG Operation|Hajime Ohara"
+},
+{
+"n": 77,
+"c": 0,
+"jp": "　音響監督　　　　　滝本　利昭",
+"en": "Sound Dir.|Toshiaki Takimoto"
+},
+{
+"n": 78,
+"c": 0,
+"jp": "　サウンド編集　　　井上　雅明",
+"en": "Sound Editing|Masaaki Inoue"
+},
+{
+"n": 79,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 80,
+"c": 1,
+"jp": "　　　　　効果音作成",
+"en": "Sound Effects"
+},
+{
+"n": 81,
+"c": 0,
+"jp": "　成田　修　　　　　　星　恵太",
+"en": "Osamu Narita|Keita Hoshi"
+},
+{
+"n": 82,
+"c": 0,
+"jp": "　佐藤　昭洋　　　谷藤　真紀子",
+"en": "Akihiro Sato|Makiko Tanifuji"
+},
+{
+"n": 83,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 84,
+"c": 0,
+"jp": "　ＡＤＰＣＭ　　　　神保　大介",
+"en": "ADPCM|Daisuke Jinbo"
+},
+{
+"n": 85,
+"c": 0,
+"jp": "　効果音選択　　　梶野　竜太郎",
+"en": "SE Selection|Ryutaro Kajino"
+},
+{
+"n": 86,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 87,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 88,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 89,
+"c": 1,
+"jp": "　　　ビジュアルユニット",
+"en": "Visual Unit"
+},
+{
+"n": 90,
+"c": 0,
+"jp": "　作画監督　　　　{0102}野　寅次郎",
+"en": "Anim. Director|Torajiro Tsujino"
+},
+{
+"n": 91,
+"c": 0,
+"jp": "　チーフ　　　　　　松田　泰一",
+"en": "Chief|Taiichi Matsuda"
+},
+{
+"n": 92,
+"c": 0,
+"jp": "　美術設定　　　　　鷲田　敏弥",
+"en": "Art Settings|Toshiya Washida"
+},
+{
+"n": 93,
+"c": 0,
+"jp": "　メカデザイン　　　石津　泰志",
+"en": "Mecha Design|Yasushi Ishizu"
+},
+{
+"n": 94,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 95,
+"c": 0,
+"jp": "　　　　キャラクタワーク",
+"en": "Character Work"
+},
+{
+"n": 96,
+"c": 0,
+"jp": "　明貴　美加　　　　　僕　久保",
+"en": "Mika Akitaka|Boku Kubo"
+},
+{
+"n": 97,
+"c": 0,
+"jp": "　小高　伊都可　　　大橋　裕之",
+"en": "Itsuka Odaka|Hiroyuki Ohashi"
+},
+{
+"n": 98,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 99,
+"c": 0,
+"jp": "　　　　　　　原画",
+"en": "Key Animation"
+},
+{
+"n": 100,
+"c": 0,
+"jp": "　石倉　敬一　　　大河原　晴男",
+"en": "Keiichi Ishikura|Haruo Okawara"
+},
+{
+"n": 101,
+"c": 0,
+"jp": "　竹内　敦志　　　　下坂　英男",
+"en": "A. Takeuchi|Hideo Shimosaka"
+},
+{
+"n": 102,
+"c": 0,
+"jp": "　青木　康浩　　　　吉川　博明",
+"en": "Yasuhiro Aoki|Hiroaki Yoshikawa"
+},
+{
+"n": 103,
+"c": 0,
+"jp": "　石浜　真史",
+"en": "Masashi Ishihama|"
+},
+{
+"n": 104,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 105,
+"c": 1,
+"jp": "　　　　ドットデザイン",
+"en": "Pixel Art"
+},
+{
+"n": 106,
+"c": 0,
+"jp": "　東　明彦　　　　　　小林　浩",
+"en": "A. Higashi|Hiroshi Kobayashi"
+},
+{
+"n": 107,
+"c": 0,
+"jp": "　遠藤　勝　　　　　寺尾　光夫",
+"en": "Masaru Endo|Mitsuo Terao"
+},
+{
+"n": 108,
+"c": 0,
+"jp": "　坪井　慶美　　　　月田　文女",
+"en": "Yoshimi Tsuboi|Fumie Tsukida"
+},
+{
+"n": 109,
+"c": 0,
+"jp": "　佐藤　稔典　　　北郷　美奈子",
+"en": "Toshinori Sato|Minako Kitago"
+},
+{
+"n": 110,
+"c": 0,
+"jp": "　原　康子　　　　松野　利伊子",
+"en": "Yasuko Hara|Riiko Matsuno"
+},
+{
+"n": 111,
+"c": 0,
+"jp": "　塩坂　富子　　　　　古屋　哲",
+"en": "Tomiko Shiozaka|Satoshi Furuya"
+},
+{
+"n": 112,
+"c": 0,
+"jp": "　岩佐　浩徳　　　　緒方　公平",
+"en": "Hironori Iwasa|Kohei Ogata"
+},
+{
+"n": 113,
+"c": 0,
+"jp": "　大河原　一樹　　　河野　祐子",
+"en": "Kazuki Okawara|Yuko Kono"
+},
+{
+"n": 114,
+"c": 0,
+"jp": "　関口　暁信　　　　藤本　佳代",
+"en": "Akinobu Sekiguchi|Kayo Fujimoto"
+},
+{
+"n": 115,
+"c": 0,
+"jp": "　武田　真理　　　　日高　真一",
+"en": "Mari Takeda|Shinichi Hidaka"
+},
+{
+"n": 116,
+"c": 0,
+"jp": "　大竹　浩史",
+"en": "Hiroshi Otake|"
+},
+{
+"n": 117,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 118,
+"c": 0,
+"jp": "　コンテ／作画進行　　浦上　進",
+"en": "Storyboards|Susumu Uragami"
+},
+{
+"n": 119,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 120,
+"c": 0,
+"jp": "　背景美術　アトリエ・ラスコー",
+"en": "Backgrounds|Atelier Lascaux"
+},
+{
+"n": 121,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 122,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 123,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 124,
+"c": 1,
+"jp": "　マップ／キャラクタユニット",
+"en": "Map/Character Unit"
+},
+{
+"n": 125,
+"c": 0,
+"jp": "　監督　　　　　　　天城　秀行",
+"en": "Director|Hideyuki Amagi"
+},
+{
+"n": 126,
+"c": 0,
+"jp": "　チーフ　　　　　　　久保　久",
+"en": "Chief|Hisashi Kubo"
+},
+{
+"n": 127,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 128,
+"c": 1,
+"jp": "　マップ／キャラクタデザイン",
+"en": "Map/Character Design"
+},
+{
+"n": 129,
+"c": 0,
+"jp": "　桑原　元司　　　　岡田　寿夫",
+"en": "Motoji Kuwahara|Toshio Okada"
+},
+{
+"n": 130,
+"c": 0,
+"jp": "　鈴木　宏昭　　　小林　功一郎",
+"en": "Hiroaki Suzuki|K. Kobayashi"
+},
+{
+"n": 131,
+"c": 0,
+"jp": "　安部　政晴　　　　　林田　淳",
+"en": "Masaharu Abe|Atsushi Hayashida"
+},
+{
+"n": 132,
+"c": 0,
+"jp": "　岡本　篤仁　　　　古田　康芳",
+"en": "Atsuhito Okamoto|Y. Furuta"
+},
+{
+"n": 133,
+"c": 0,
+"jp": "　本間　弘士　　　　打保　恵次",
+"en": "Hiroshi Honma|Keiji Uchibo"
+},
+{
+"n": 134,
+"c": 0,
+"jp": "　関　和義　　　　　今野　幸治",
+"en": "Kazuyoshi Seki|Koji Konno"
+},
+{
+"n": 135,
+"c": 0,
+"jp": "　大浦　孝浩　　　　佐藤　善美",
+"en": "Takahiro Oura|Yoshimi Sato"
+},
+{
+"n": 136,
+"c": 0,
+"jp": "　山口　もと　　　　　佐藤　裕",
+"en": "Moto Yamaguchi|Yutaka Sato"
+},
+{
+"n": 137,
+"c": 0,
+"jp": "　伊藤　真希　　　佐々木　みか",
+"en": "Maki Ito|Mika Sasaki"
+},
+{
+"n": 138,
+"c": 0,
+"jp": "　高岡　史江　　　　向井　由美",
+"en": "Fumie Takaoka|Yumi Mukai"
+},
+{
+"n": 139,
+"c": 0,
+"jp": "　佐藤　太亮　　　　土江　達也",
+"en": "Taisuke Sato|Tatsuya Tsuchie"
+},
+{
+"n": 140,
+"c": 0,
+"jp": "　興膳　有基徳　　　関島　俊文",
+"en": "Yukinori Kozen|T. Sekijima"
+},
+{
+"n": 141,
+"c": 0,
+"jp": "　蟹江　則宏　　　　伊藤　丈夫",
+"en": "Norihiro Kanie|Takeo Ito"
+},
+{
+"n": 142,
+"c": 0,
+"jp": "　丸山　浩平　　　　小林　美鈴",
+"en": "Kohei Maruyama|Misuzu Kobayashi"
+},
+{
+"n": 143,
+"c": 0,
+"jp": "　三上　由起子　　　金　佳代子",
+"en": "Yukiko Mikami|Kayoko Kin"
+},
+{
+"n": 144,
+"c": 0,
+"jp": "　百田　亮海　　　　西川　勝久",
+"en": "Akimi Momota|K. Nishikawa"
+},
+{
+"n": 145,
+"c": 0,
+"jp": "　佐々木　伸",
+"en": "Shin Sasaki|"
+},
+{
+"n": 146,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 147,
+"c": 0,
+"jp": "　進行　　　　　　　松浦　浩司",
+"en": "Coordination|Koji Matsuura"
+},
+{
+"n": 148,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 149,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 150,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 151,
+"c": 0,
+"jp": "　　　　プロジェクト進行",
+"en": "Project Management"
+},
+{
+"n": 152,
+"c": 0,
+"jp": "　監督　　　　　　　飛田　雅宏",
+"en": "Director|Masahiro Tobita"
+},
+{
+"n": 153,
+"c": 0,
+"jp": "　チーフ　　　　　　荒井　弘二",
+"en": "Chief|Koji Arai"
+},
+{
+"n": 154,
+"c": 0,
+"jp": "　サブ　　　　　　　　長山　豊",
+"en": "Sub-Chief|Yutaka Nagayama"
+},
+{
+"n": 155,
+"c": 0,
+"jp": "　進行　　　　　　梶野　竜太郎",
+"en": "Coordination|Ryutaro Kajino"
+},
+{
+"n": 156,
+"c": 0,
+"jp": "　　　　　　　　　　小林　正樹",
+"en": "|Masaki Kobayashi"
+},
+{
+"n": 157,
+"c": 0,
+"jp": "　　　　　　　　　　広井　栄二",
+"en": "|Eiji Hiroi"
+},
+{
+"n": 158,
+"c": 0,
+"jp": "　プロデューサー　　　清水　始",
+"en": "Producer|Hajime Shimizu"
+},
+{
+"n": 159,
+"c": 0,
+"jp": "　スーパーバイザー　中本　伸一",
+"en": "Supervisor|Shinichi Nakamoto"
+},
+{
+"n": 160,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 161,
+"c": 0,
+"jp": "　　　　　　デバッグ",
+"en": "Debugging"
+},
+{
+"n": 162,
+"c": 0,
+"jp": "　若林　哲也　　　　藤井　康博",
+"en": "Tetsuya Wakabayashi|Y. Fujii"
+},
+{
+"n": 163,
+"c": 0,
+"jp": "　太田　宏之　　　　高山　奈美",
+"en": "Hiroyuki Ota|Nami Takayama"
+},
+{
+"n": 164,
+"c": 0,
+"jp": "　小林　勲　　　　　印南　好司",
+"en": "Isao Kobayashi|Koji Innami"
+},
+{
+"n": 165,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 166,
+"c": 0,
+"jp": "　ＳＰＥＣＩＡＬ　ＴＨＡＮＫＳ",
+"en": "Special Thanks"
+},
+{
+"n": 167,
+"c": 0,
+"jp": "　小山　俊典　　　　藤原　茂樹",
+"en": "T. Koyama|Shigeki Fujiwara"
+},
+{
+"n": 168,
+"c": 0,
+"jp": "　安田　圭吾　　　　岡本　敏郎",
+"en": "Keigo Yasuda|Toshiro Okamoto"
+},
+{
+"n": 169,
+"c": 0,
+"jp": "　浦　敏治　　　　　秋元　明子",
+"en": "Toshiharu Ura|Akiko Akimoto"
+},
+{
+"n": 170,
+"c": 0,
+"jp": "　高橋　利幸　　　　大草　康之",
+"en": "T. Takahashi|Yasuyuki Okusa"
+},
+{
+"n": 171,
+"c": 0,
+"jp": "　稲本　義彦　　さくま　あきら",
+"en": "Yoshihiko Inamoto|Akira Sakuma"
+},
+{
+"n": 172,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 173,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 174,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 175,
+"c": 1,
+"jp": "　　　アイディア一般公募",
+"en": "Idea Contest Contributors"
+},
+{
+"n": 176,
+"c": 0,
+"jp": "　平畠　昌樹　　　　知念　直也",
+"en": "Masaki Hirahata|Naoya Chinen"
+},
+{
+"n": 177,
+"c": 0,
+"jp": "　和田　由紀子　　　戸ヶ崎　睦",
+"en": "Yukiko Wada|Mutsumi Togasaki"
+},
+{
+"n": 178,
+"c": 0,
+"jp": "　黒坂　栄一　　　　菊池　俊英",
+"en": "Eiichi Kurosaka|T. Kikuchi"
+},
+{
+"n": 179,
+"c": 0,
+"jp": "　松崎　正明　　　　坂本　直人",
+"en": "M. Matsuzaki|Naoto Sakamoto"
+},
+{
+"n": 180,
+"c": 0,
+"jp": "　片岡　啓介　　　　志村　敬子",
+"en": "Keisuke Kataoka|Keiko Shimura"
+},
+{
+"n": 181,
+"c": 0,
+"jp": "　宮林　勇　　　　　脇坂　東洋",
+"en": "Isamu Miyabayashi|Toyo Wakisaka"
+},
+{
+"n": 182,
+"c": 0,
+"jp": "　中島　寛明　　　　　唐木　剛",
+"en": "Hiroaki Nakajima|T. Karaki"
+},
+{
+"n": 183,
+"c": 0,
+"jp": "　{0103}田　敏徳　　　　　林　賢信",
+"en": "T. Hamada|Kenshin Hayashi"
+},
+{
+"n": 184,
+"c": 0,
+"jp": "　深井　勇　　　　　大成　麻友",
+"en": "Isamu Fukai|Mayu Onari"
+},
+{
+"n": 185,
+"c": 0,
+"jp": "　太田　和利　　　　小倉　奈々",
+"en": "Kazutoshi Ota|Nana Ogura"
+},
+{
+"n": 186,
+"c": 0,
+"jp": "　山川　竜史　　　　　鹿倉　徹",
+"en": "T. Yamakawa|Toru Shikakura"
+},
+{
+"n": 187,
+"c": 0,
+"jp": "　一岩　正広　　　　町田　雅仁",
+"en": "M. Ichiiwa|Masahito Machida"
+},
+{
+"n": 188,
+"c": 0,
+"jp": "　安達　淳　　　　　野崎　光俊",
+"en": "Jun Adachi|Mitsutoshi Nozaki"
+},
+{
+"n": 189,
+"c": 0,
+"jp": "　阪藤　富士雄　　　　{0105}川　充",
+"en": "Fujio Sakato|Mitsuru Ninagawa"
+},
+{
+"n": 190,
+"c": 0,
+"jp": "　今井　敦史　　　佐々木　忠則",
+"en": "Atsushi Imai|Tadanori Sasaki"
+},
+{
+"n": 191,
+"c": 0,
+"jp": "　安井　学　　　　　山本　浩史",
+"en": "Manabu Yasui|Hiroshi Yamamoto"
+},
+{
+"n": 192,
+"c": 0,
+"jp": "　浅賀　一禎　　　　外瀬　竜彦",
+"en": "K. Asaka|Tatsuhiko Tonose"
+},
+{
+"n": 193,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 194,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 195,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 196,
+"c": 0,
+"jp": "　　　　　　　協力",
+"en": "In Cooperation With"
+},
+{
+"n": 197,
+"c": 0,
+"jp": "　{0107}Ｉ＆Ｓ",
+"en": "I&S Co., Ltd.|"
+},
+{
+"n": 198,
+"c": 0,
+"jp": "　{0107}青二プロダクション",
+"en": "Aoni Production Co., Ltd.|"
+},
+{
+"n": 199,
+"c": 0,
+"jp": "　アトリエ・ラスコー",
+"en": "Atelier Lascaux|"
+},
+{
+"n": 200,
+"c": 0,
+"jp": "　{0108}アプリコットプロモーション",
+"en": "Apricot Promotion Ltd.|"
+},
+{
+"n": 201,
+"c": 0,
+"jp": "　{0107}アルファ・システム",
+"en": "Alpha System Co., Ltd.|"
+},
+{
+"n": 202,
+"c": 0,
+"jp": "　{0107}ウインズ",
+"en": "Winds Co., Ltd.|"
+},
+{
+"n": 203,
+"c": 0,
+"jp": "　{0108}エイティワンプロデュース",
+"en": "81 Produce Ltd.|"
+},
+{
+"n": 204,
+"c": 0,
+"jp": "　{0107}円企画",
+"en": "En Kikaku Co., Ltd.|"
+},
+{
+"n": 205,
+"c": 0,
+"jp": "　{0107}角川メディアオフィス",
+"en": "Kadokawa Media Office Ltd.|"
+},
+{
+"n": 206,
+"c": 0,
+"jp": "　カメレオンハウス",
+"en": "Chameleon House|"
+},
+{
+"n": 207,
+"c": 0,
+"jp": "　劇団２１世紀ＦＯＸ",
+"en": "Gekidan 21st Century FOX|"
+},
+{
+"n": 208,
+"c": 0,
+"jp": "　賢プロダクション",
+"en": "Ken Production|"
+},
+{
+"n": 209,
+"c": 0,
+"jp": "　{0107}サム・コーポレーション",
+"en": "Sam Corporation Co., Ltd.|"
+},
+{
+"n": 210,
+"c": 0,
+"jp": "　{0107}スタジオぬえ",
+"en": "Studio Nue Co., Ltd.|"
+},
+{
+"n": 211,
+"c": 0,
+"jp": "　{0107}スタジオＢＣ",
+"en": "Studio BC Co., Ltd.|"
+},
+{
+"n": 212,
+"c": 0,
+"jp": "　スタジオライブ",
+"en": "Studio Live|"
+},
+{
+"n": 213,
+"c": 0,
+"jp": "　{0107}スラップショット",
+"en": "Slapshot Co., Ltd.|"
+},
+{
+"n": 214,
+"c": 0,
+"jp": "　{0108}スワラ・プロダクション",
+"en": "Swara Production Ltd.|"
+},
+{
+"n": 215,
+"c": 0,
+"jp": "　{0108}電気未来社",
+"en": "Denki Miraisha Ltd.|"
+},
+{
+"n": 216,
+"c": 0,
+"jp": "　{0108}ドリームコーポレーション",
+"en": "Dream Corporation Ltd.|"
+},
+{
+"n": 217,
+"c": 0,
+"jp": "　俳協",
+"en": "Haikyo|"
+},
+{
+"n": 218,
+"c": 0,
+"jp": "　{0107}１００パーセント",
+"en": "100 Percent Co., Ltd.|"
+},
+{
+"n": 219,
+"c": 0,
+"jp": "　{0107}ぷろだくしょんバオバブ",
+"en": "Production Baobab Co., Ltd.|"
+},
+{
+"n": 220,
+"c": 0,
+"jp": "　{0107}マイルストーン",
+"en": "Milestone Co., Ltd.|"
+},
+{
+"n": 221,
+"c": 0,
+"jp": "　{0107}ミュウテック",
+"en": "Mutech Co., Ltd.|"
+},
+{
+"n": 222,
+"c": 0,
+"jp": "　{0107}ＲＥＤ　ＣＯＭＰＡＮＹ",
+"en": "RED COMPANY Corp.|"
+},
+{
+"n": 223,
+"c": 0,
+"jp": "　{0107}ワンダーシティ",
+"en": "Wonder City Co., Ltd.|"
+},
+{
+"n": 224,
+"c": 0,
+"jp": "　　　　　　　　　（五十音順）",
+"en": "|(in Japanese order)"
+},
+{
+"n": 225,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 226,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 227,
+"c": 0,
+"jp": "　　　　　録音スタジオ",
+"en": "Recording Studios"
+},
+{
+"n": 228,
+"c": 0,
+"jp": "　ワンダーステーション",
+"en": "Wonder Station|"
+},
+{
+"n": 229,
+"c": 0,
+"jp": "　にっかつスタジオセンター",
+"en": "Nikkatsu Studio Center|"
+},
+{
+"n": 230,
+"c": 0,
+"jp": "　スタジオＳＡＭ",
+"en": "Studio SAM|"
+},
+{
+"n": 231,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 232,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 233,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 234,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 235,
+"c": 0,
+"jp": "　クリア時間　{01f0}{01f1}{01f2}時間{01f3}{01f4}分",
+"en": "  Clear Time    {01f0}{01f1}{01f2}h {01f3}{01f4}m "
+},
+{
+"n": 236,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 237,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 238,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 239,
+"c": 1,
+"jp": "　　　　　制作・著作",
+"en": "Produced by"
+},
+{
+"n": 240,
+"c": 1,
+"jp": "　　ＨＵＤＳＯＮ　ＳＯＦＴ",
+"en": "HUDSON SOFT"
+},
+{
+"n": 241,
+"c": 1,
+"jp": "　　　　　　ＲＥＤ",
+"en": "RED"
+},
+{
+"n": 242,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 243,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 244,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 245,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 246,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 247,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 248,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 249,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 250,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 251,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 252,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 253,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 254,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 255,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 256,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 257,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 258,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 259,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 260,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 261,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 262,
+"c": 0,
+"jp": "　",
+"en": ""
+},
+{
+"n": 263,
+"c": 0,
+"jp": "　",
+"en": ""
+}
+]
