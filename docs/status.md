@@ -181,8 +181,12 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
 2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
    Opening card done (twelfth session, `tools/card.py`: "Executive Producer / Yuji Kudo", in make.sh).
-   Left: in-game graphics not surveyed yet (place cards, battle effects, the ending scenes' pictures).
-   `tools/lua/vramwho.lua` finds the writer of any VRAM range.
+   In-game survey done (thirteenth session, `docs/re/graphics.md`): todo = shop signboards 武 雑 宿 領 道 薬 (same
+   tiles in 16 town tilesets), a money-changer board 両売替… (4 interior tilesets), the "卍丸さん江" letter picture
+   (area 0x1C; ask the user: redraw or keep). Not covered: game over, battle graphics, cutscene pictures beyond the tour.
+   Tools: `tools/gfxscan.py` (decodes every map tileset), `tools/debug/tour.py` (warp + shoot per area/sub),
+   `tools/lua/gfxwho.lua`, `tools/tilefind.py`. Redraw path: a `gfxscan`-style insert (re-pack with `lz.pack_rings`,
+   same block size or relocation) for each of the 16 tilesets.
 3. Ending: staff roll done; the ending scenes before it (f~200-4000) show no text. DS `end0`-`end3` text: still
    to confirm voice-only (the ending program has no message stream).
 4. Main-program leftovers: 毒 (2 bytes), the battle slot-9 ship commands (Guns, Torpedo...), save screens

@@ -140,6 +140,19 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - Still Japanese in the shop (main program): title 道具屋, 買う / 売る / やめる, お品書 / 値段 / 両 / 持ち金, the buy prompt
   (`Hを買いますか？`, item description line), and the はい / いいえ choice under the greeting.
 
+## Map tilesets (traced 2026-11-21, thirteenth session; `tools/gfxscan.py`, `tools/lua/gfxwho.lua`; survey in graphics.md)
+- Every map graphics block goes through 69:`$46C4` (LZ init, A:X = source) and the writer loop 69:`$4700`-`$470D`
+  (`lz.unpack_rings`, header u16 word count, bit 15 = ring B). Two sources:
+- Event block descriptor (6A:`$6201` walks it, pointer in `$53`): `[u16 0][u16 e1][u16 e2 or 0][0]`, entries are signed
+  16-bit offsets from the descriptor (wrap: a sub shares another sub's block by pointing back), one entry is 8 = its own
+  block right after it. Area 0x10: village 0x18D0E -> 0x18D16 (VRAM $1000, 0xC00 words) + 0x19EDA ($1C00); shop
+  0x1CE77 -> -0x4161 (= 0x18D16) + 0x1CE7F. Offsets here are block offsets (block = sector area*128+2; bank 0x74 + n).
+- ADPCM image (sector area*128+98, 64K; 6A:`$61B8`, A < 6 selects): 69:`$498C` A=2 follows u16@0 -> u16@there = table
+  `t`; tileset v = u16 at t+2+2v (area 0x10: t=0x3A70, 0x3A76 = overworld, 0x6B92). Read through the 256-byte AD_READ
+  buffer at `$2AE3` (source shows as `$2AE5`).
+- Tiles are 16x16 metatiles stored TL TR / BL BR = n, n+1, n+16, n+17: render with 16 tiles a row to read them.
+- The first stream at the ADPCM image head (`f00f` ...) is not tiles (decodes to noise as 4bpp).
+
 ## Battle group 11 (traced 2026-11-20, tenth session; `tools/lua/msgwho.lua` logs every message open and `$752A` print)
 - 6B:`$6D9D` (far-called from 69:`$5616`) opens group 11 message A into the buffer `$E66E` through the normal pre-expander
   (dictionary codes work); 69:`$5601` prints it at the cursor (`$50E6`), 69:`$560A` the same with `$3211` (`$50E7`).
