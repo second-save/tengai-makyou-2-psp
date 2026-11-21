@@ -16,3 +16,12 @@
 - Options: credits in English / kept Japanese / staff roll only; logo kept / redrawn in English.
 - Ruling (user): credits in English (opening graphics card "制作・総指揮 工藤裕司" and the ending staff roll at
   iso 0x279F000), names romanized. Title logo 天外魔境 II stays kanji (FAR EAST OF EDEN is already above it).
+
+## Letter picture (2026-11-21)
+- Options: redraw the "卍丸さん江" letter picture (area 0x1C, graphics.md row 6) in English / keep it as art.
+- Ruling (user): keep the kanji as artwork; the caption already explains it.
+
+## Shop signboards and money-changer board (2026-11-21)
+- Options: short English words (ARMS / INN ...) / pictograms / keep the kanji (graphics.md row 4).
+- Ruling (user): keep the kanji as scenery; the shop's own title text names it. Same for the money-changer board
+  両売替… (graphics.md row 5).

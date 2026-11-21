@@ -181,9 +181,9 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
 2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
    Opening card done (twelfth session, `tools/card.py`: "Executive Producer / Yuji Kudo", in make.sh).
-   In-game survey done (thirteenth session, `docs/re/graphics.md`): todo = shop signboards 武 雑 宿 領 道 薬 (same
-   tiles in 16 town tilesets), a money-changer board 両売替… (4 interior tilesets), the "卍丸さん江" letter picture
-   (area 0x1C; ask the user: redraw or keep). Not covered: game over, battle graphics, cutscene pictures beyond the tour.
+   In-game survey done (thirteenth session, `docs/re/graphics.md`): shop signboards 武 雑 宿 領 道 薬 (16
+   town tilesets) and the money-changer board 両売替… (4 interior tilesets) stay kanji (ruling). The "卍丸さん江" letter picture
+   (area 0x1C) stays as art (ruling, decisions.md). Not covered: game over, battle graphics, cutscene pictures beyond the tour.
    Tools: `tools/gfxscan.py` (decodes every map tileset), `tools/debug/tour.py` (warp + shoot per area/sub),
    `tools/lua/gfxwho.lua`, `tools/tilefind.py`. Redraw path: a `gfxscan`-style insert (re-pack with `lz.pack_rings`,
    same block size or relocation) for each of the 16 tilesets.

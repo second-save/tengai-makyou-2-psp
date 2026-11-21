@@ -137,8 +137,8 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   (`PATH='x,y;x,y'`, `FACE`, `TALKS` I presses, `START` frame: after a map load the player moves only ~300 frames later).
   Shopkeeper of sub 0x19: from (12,18) to (18,18), face up. `show.py --regen` saves `town.mss` (gate) and `shop.mss`
   (inside the buy menu).
-- Still Japanese in the shop (main program): title 道具屋, 買う / 売る / やめる, お品書 / 値段 / 両 / 持ち金, the buy prompt
-  (`Hを買いますか？`, item description line), and the はい / いいえ choice under the greeting.
+- Shop main-program text (title 道具屋, 買う / 売る / やめる, お品書 / 値段 / 両, buy / sell prompts, はい / いいえ) is in
+  English since a60d371 (script/main.json). Not checked since: 持ち金 and the item description line.
 
 ## Map tilesets (traced 2026-11-21, thirteenth session; `tools/gfxscan.py`, `tools/lua/gfxwho.lua`; survey in graphics.md)
 - Every map graphics block goes through 69:`$46C4` (LZ init, A:X = source) and the writer loop 69:`$4700`-`$470D`
