@@ -140,6 +140,18 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   Still Japanese in the main program: province names 0x58140 (4 bytes each: need the list base to relocate),
   summon names 0x50AC1 (名無し シロ 式神 三角), debug menus (chapter select 0x5771D, battle test 0x4F213 / 0x510C6).
 
+## Save screens (2026-11-21, fourteenth session) - details in notes.md "Save screens"
+- A save to test with: `work/states-en/inn.sav` (backup RAM, Stay+Save at the first village inn); `pce.py --sav F`
+  starts with it (every run now leaves `OUT/bram.sav`). Continue > Info from a cold boot:
+  `--sav work/states-en/inn.sav --route "1200:run*10;1500:run*10;2000:right*10;2150:i*10;2500:right*8;2600:right*8;2700:right*8;2850:i*8;3100:i*8"`
+  (slot line at f2900, Info at f3300). Inn: `work/states-en/inn.mss` = innkeeper menu open (old man by the hearth;
+  from town.mss: route `10:down*150`, warp.lua SUB=0x1C MAP=3 ENT=6, goto PATH `12,26;22,26;22,18;16,18` FACE up).
+- Bug (ours): Info screen Gear / Item / Scroll lines print "fefefe..." garbage; the original shows 手製の竹光 ぼろ着 /
+  そば団子. Not traced yet; first guess: the screen prints item names without the message pre-expander, so the
+  one-byte dictionary codes (0x80-0xFF, insert.py --all-ascii) in the English names come out raw.
+- Slot line still Japanese: "3段/ 20徳/火多の国/ 0:01" (Lv, Virtue, province, play time). Plan in notes.md: new strings
+  and an English province list in the zero tail of bank 74 ($7F3E-$7FFF), inline pointers re-aimed (build.py).
+
 ## Ending staff roll (2026-11-21, twelfth session) - details in notes.md "Programs and the ending staff roll"
 - User ruling: credits in English (roll + opening card), title logo stays kanji (docs/decisions.md).
 - Graphics survey of the cold boot (intro, title): only the opening card 制作・総指揮 工藤裕司 (graphics) and the
@@ -178,7 +190,7 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 
 ## Next steps
 1. PSP-side test (blocker for release): boot `build/CONTENT.DAT` (or the original + `dist/tm2-en.xdelta`) in PPSSPP
-   or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
+   or on a PSP; the file grew by 978,432 bytes. PPSSPP is installed: `/Applications/PPSSPPSDL.app` (user, 2026-11-21).
 2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
    Opening card done (twelfth session, `tools/card.py`: "Executive Producer / Yuji Kudo", in make.sh).
    In-game survey done (thirteenth session, `docs/re/graphics.md`): shop signboards 武 雑 宿 領 道 薬 (16
@@ -189,9 +201,11 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    same block size or relocation) for each of the 16 tilesets.
 3. Ending: staff roll done; the ending scenes before it (f~200-4000) show no text. DS `end0`-`end3` text: still
    to confirm voice-only (the ending program has no message stream).
-4. Main-program leftovers: 毒 (2 bytes), the battle slot-9 ship commands (Guns, Torpedo...), save screens
-   (0x576CC+, not resident: find their overlay), province names at 0x58140, a warp to an area with enemy records in
-   padding (area 18), the width gate for the other windows, storage menus not seen on screen yet.
+4. Main-program leftovers (save screens, fourteenth session; see "Save screens" below): **bug: the Continue > Info
+   screen prints garbage for Gear / Item / Scroll names** (`work/qa/saves/info_en.png` vs `info_jp.png`), then the
+   slot line (Lv / Virtue / province / time). Also: 毒 (2 bytes), summon names 0x50AC1, 両 in storage / bank lines,
+   storage menus not seen on screen yet, the width gate for the other windows. (Ship commands and the Continue menu,
+   file manager and BRAM messages were already done.)
 5. Font polish (W/M touch neighbours), text speed. Review the ~150 messages translated in the tenth session
    (`script/overrides.json`, page lists) and the 169 near-miss pages (`ds` = "near:...").
 

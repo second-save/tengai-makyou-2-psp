@@ -2,13 +2,13 @@
 """Headless PC Engine CD run in Mesen: scripted input, screenshots, RAM dumps, extra Lua.
 
   pce.py CUE --out DIR --frames N [--route "600:run*10;900:i*5"] [--mash N] [--shots 600,1200 | --shot-every N]
-         [--dump 1200,...] [--state-in F] [--state-out F] [--script x.lua] [--var NAME=LUA]
+         [--dump 1200,...] [--state-in F] [--state-out F] [--script x.lua] [--var NAME=LUA] [--sav BRAM]
 
 Route step "FRAME:button[+button]*HOLD". Buttons: i ii select run up down left right.
 --dump writes ram<frame>.bin (0x2000 work RAM + 0x10000 CD RAM + 0x30000 Super CD RAM) and vram<frame>.bin.
 Exit 0 ok, 2 Lua error, 3 black final frame, 124 timeout.
 """
-import argparse, json, os, struct, subprocess, sys, zlib
+import argparse, json, os, shutil, struct, subprocess, sys, zlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXE = os.path.join(ROOT, 'tools/mesen/Mesen.app/Contents/MacOS/Mesen')
@@ -77,6 +77,7 @@ def main():
     ap.add_argument('--state-in'); ap.add_argument('--state-out', action='store_true', help='write OUT/state.mss at the end')
     ap.add_argument('--script', action='append', default=[]); ap.add_argument('--var', action='append', default=[])
     ap.add_argument('--timeout', type=int, default=600)
+    ap.add_argument('--sav', help='backup RAM to start with (default: none on a cold boot); every run leaves OUT/bram.sav')
     a = ap.parse_args()
     out = os.path.abspath(a.out) + '/'
     os.makedirs(out, exist_ok=True)
@@ -94,7 +95,10 @@ def main():
     # Mesen keeps backup RAM per game name (Saves/tm2.sav) across runs: a save written by an earlier run changed the new
     # game path of the next cold boot (the intro's first load went to the house instead of the opening). Start clean.
     sav = os.path.join(os.path.dirname(EXE), 'Saves', os.path.splitext(os.path.basename(a.cue))[0] + '.sav')
-    if not a.state_in and os.path.exists(sav):
+    if a.sav:   # a save made by an earlier run (its OUT/bram.sav), e.g. to reach the Continue menu's slots
+        os.makedirs(os.path.dirname(sav), exist_ok=True)
+        shutil.copy(a.sav, sav)
+    elif not a.state_in and os.path.exists(sav):
         os.remove(sav)
     route = []
     for step in filter(None, (s.strip() for s in a.route.split(';'))):
@@ -120,6 +124,8 @@ def main():
         code = 2
     elif code == 0 and (not os.path.exists(out + 'final.png') or black(out + 'final.png')):
         code = 3
+    if os.path.exists(sav):   # shortcut: parallel runs share this one file; save-making runs must run alone
+        shutil.copy(sav, out + 'bram.sav')
     print('exit', code)
     sys.exit(code)
 

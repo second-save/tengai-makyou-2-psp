@@ -140,6 +140,22 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
 - Shop main-program text (title 道具屋, 買う / 売る / やめる, お品書 / 値段 / 両, buy / sell prompts, はい / いいえ) is in
   English since a60d371 (script/main.json). Not checked since: 持ち金 and the item description line.
 
+## Save screens (traced 2026-11-21, fourteenth session; `tools/lua/rwatch.lua`)
+- Bank 0x74 (iso 0x57000, mapped at $6000) holds the Continue menu / BRAM code only before the game starts: in game
+  the area event block is loaded over banks 0x74+ (reads of "$9140" in town are event scripts, not the strings here).
+- `rwatch.lua --var RBANK=0x74 --var RLO=0x113B --var RHI=0x118F` (offsets inside the bank, every window watched)
+  found the slot-line builder: 74:$6F70. `$5404` starts a buffer at $E66E and appends the inline-pointer string
+  (`JSR $5404 / BIT ptr`), `$540C` appends a string, `$4921` + inline pointer appends a number, `$50DE` prints it.
+  Order: prefix $6FE1 `{14}[80]{06}` (pointer at 74:$6F7A), level, `{04}段{06}/` $6FE5 (ptr $6F86), virtue,
+  `{04}徳{06}/` $6FEB (ptr $6F92), province ($6FF5: LDA #$3B STA $95 LDA #$71 STA $96 = base $713B, index from
+  $7012 = area $2BF4 >> 3 via the table at $7190, 0x87 -> 0x0F, 0x96 -> 0x0E; $4665 = skip-N-NULs, $5434 append),
+  `の国` $700D (ptr $700A), `{06}/` $6FF2 (ptr $6F9B), time ($702B). Header `{05}AREA   TIME` at $6FD3 is ASCII already.
+- Province list 0x5813B ($713B): 17 x (2 kanji + NUL): 火多 尾張 伊勢 紀伊 　京 近江 越前 越中 越後 因幡 出雲 石見 丹波
+  浪華 吉備 安芸 長門. Script spellings: Hida Owari Ise Kii Kyoto Omi Echizen Etchu Echigo Inaba Izumo Iwami Tanba
+  Naniwa Kibi Aki Nagato. Free: 194 zero bytes at 0x58F3E ($7F3E-$7FFF, end of bank 74); 256 zeros at 0x5835A
+  (probably a buffer: don't use).
+- 57720 (末初期化してゲームを始めます / １．火多〜尾張 ...) is the debug chapter select (left Japanese on purpose).
+
 ## Map tilesets (traced 2026-11-21, thirteenth session; `tools/gfxscan.py`, `tools/lua/gfxwho.lua`; survey in graphics.md)
 - Every map graphics block goes through 69:`$46C4` (LZ init, A:X = source) and the writer loop 69:`$4700`-`$470D`
   (`lz.unpack_rings`, header u16 word count, bit 15 = ring B). Two sources:
