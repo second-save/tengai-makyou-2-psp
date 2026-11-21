@@ -115,7 +115,13 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   the table at 6A:`$6641` (0/1 = "P." "H.", 2 辻 3 濱 4 潘 5 蜷 6 茉 7 ㈱ 8 ㈲ 9 卍; `01 F0`-`F4` = clear-time digits),
   else System Card EX_GETFNT 16x16 into `$2DEE` (16 rows x 2 bytes). `src/roll.s` (6A:$7F00, FF tail) adds
   two-ASCII cells (two 8x8 glyphs, System Card bank 1 at $8000 + c*8): 32 characters per line.
-- The opening card "制作・総指揮 工藤裕司" (intro, f~600) is graphics, not this text.
+- Opening card "制作・総指揮 工藤裕司" (intro program 0x9F, f 540-700; `tools/card.py`): tiles = resource
+  `[flags][u16 count]` + plain LZ in intro bank 70 at $9B31 (69:$43B9 streams it to VRAM tile 0x100), map = plain
+  LZ in the intro's ADPCM image (ADPCM $0000 = iso 0x27EF000 = block + 92 sectors) at $1EE2, read by 69:$4522 through
+  the intro's own LZ reader (`$4216`, AD_READ 256 bytes at a time into $2BEE): 32x32 words, entry = 0x100 + running
+  sum. A table read at f=270 sits at ADPCM $1FCD, right after the map (235 bytes of room). Map addresses per index:
+  table at 69:$587C. The English card uses 71 tiles (count raised from 0x40); frames 0-3200 differ from the
+  original only on the card. `tools/lua/adpcmdump.lua` dumps ADPCM RAM and logs AD_READ.
 
 ## Scenes (2026-11-20, tenth session; `tools/debug/scenes.py`, `warp.lua`)
 - `$2BF6` ("map") is an event id: the loader (6A:`$69E8`) runs it through 6F:`$7977`. Header entry 3 = u16 per sub ->

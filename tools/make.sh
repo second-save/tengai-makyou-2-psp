@@ -9,6 +9,7 @@ python3 -X utf8 tools/mainstr.py insert $B script/main.json
 python3 -X utf8 tools/roll.py insert $B script/roll.json
 # start menu panel; needs Pillow (python3.12 here: the default python3 has none)
 python3.12 tools/panel.py make $O $SC build/panel.bin && python3.12 tools/panel.py insert $B build/panel.bin
+python3.12 tools/card.py make $O $SC build/card && python3.12 tools/card.py insert $B build/card
 python3 tools/romdiff.py $O $B --writes $B.writes | tail -2
 python3 tools/mkcue.py work/content/files/HCD1022.hcd $B work/cd-en
 shasum $B

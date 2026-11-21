@@ -180,8 +180,8 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
 1. PSP-side test (blocker for release): boot `build/CONTENT.DAT` (or the original + `dist/tm2-en.xdelta`) in PPSSPP
    or on a PSP; the file grew by 978,432 bytes. Needs PPSSPP (not on this Mac; the user's disk is nearly full).
 2. Graphics text: start menu panel and its 起 / 転 buttons done (eleventh session, `tools/panel.py`, NEW / LOAD).
-   Left: the opening card "制作・総指揮 工藤裕司" (intro program 0x9F, f~600; redraw as "Executive Producer
-   Yuji Kudo" like the roll), in-game graphics not surveyed yet (place cards, battle effects).
+   Opening card done (twelfth session, `tools/card.py`: "Executive Producer / Yuji Kudo", in make.sh).
+   Left: in-game graphics not surveyed yet (place cards, battle effects, the ending scenes' pictures).
    `tools/lua/vramwho.lua` finds the writer of any VRAM range.
 3. Ending: staff roll done; the ending scenes before it (f~200-4000) show no text. DS `end0`-`end3` text: still
    to confirm voice-only (the ending program has no message stream).
