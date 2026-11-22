@@ -9,6 +9,8 @@ padded to 32. Data tracks (*.bin) are zlib chunks of 0x40000 bytes behind a
   content.py unpack CONTENT.DAT PSP-KEY.EDAT OUTDIR
   content.py pack   OUTDIR PSP-KEY.EDAT CONTENT.DAT [TRACK.iso]   (TRACK.iso replaces data track HCD1022_02.bin)
   content.py test   CONTENT.DAT PSP-KEY.EDAT     (identity self-check)
+
+Needs tools/public.key (the 512-byte table above, not in this repo): take it from the community PCE_py_tool.
 """
 import os, struct, sys, zlib
 
