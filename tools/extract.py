@@ -49,9 +49,10 @@ def valid(m):
     return True
 
 
-def block(iso, base, valid=valid):
-    d, lo, hi = iso[base + 12:base + 15]
-    tab = d * 0x2000 + (lo | hi << 8)  # plain 16-bit block offset, like the group offsets (no bank masking)
+def block(iso, base, valid=valid, tab=None):
+    if tab is None:
+        d, lo, hi = iso[base + 12:base + 15]
+        tab = d * 0x2000 + (lo | hi << 8)  # plain 16-bit block offset, like the group offsets (no bank masking)
     offs = []
     i = 0
     while True:
@@ -102,6 +103,9 @@ def block(iso, base, valid=valid):
 BATTLE, BATTLE_ROOM = 0x40400, 0xC00   # battle lines: offset in each area's 0x40000 bytes (0xF400 of its ADPCM image), room
 BATTLE_LINES = 235                      # lines in the original stream
 BATTLE_CODE = 0x41000 + (0x71 - 0x69) * 0x2000 + 0x1502   # 71:$7502 LDA #hi / LDX #lo = the stream's ADPCM address
+# Copy of the system groups 1-11 (dictionary, item names, battle / menu text) in the boot image, bank 75: read by the
+# Continue > Info screen, where no event block is loaded. No header of its own (table given), FF padding up to +0x4000.
+SYSTEXT = {'sector': 0x59000 // 2048, 'table': 0x17C, 'end': 0x4000}
 
 
 def battle(iso):

@@ -197,6 +197,7 @@ def blank(m):
 def rebuild(orig, new, b, words, log, cache):
     """Re-pack one block's streams into `new`. Returns (translated, total) messages, or None when it does not fit."""
     base, groups = b['sector'] * 2048, b['groups']
+    top = b.get('end', 0x10000)   # FF padding past this belongs to other data
     old = [bytes.fromhex(x) for x in groups[1]['msgs']]
 
     def source(i):
@@ -228,7 +229,7 @@ def rebuild(orig, new, b, words, log, cache):
     free.sort()
     lo, ends = free[0][0], {f[1] for f in free}
     # FF padding after the first stream (alignment gaps between the module's sections), group offsets are 16-bit
-    for m in re.finditer(rb'\xff{64,}', orig[base + lo:base + 0x10000]):
+    for m in re.finditer(rb'\xff{64,}', orig[base + lo:base + top]):
         s, e = lo + m.start(), lo + m.end()
         if not any(f[0] < e and s < f[1] for f in free):
             free.append([s if s in ends else s + KEEP_FF, e - KEEP_FF])
@@ -245,7 +246,7 @@ def rebuild(orig, new, b, words, log, cache):
         lead = b'' if where else table   # the dictionary sits right before a stream: the extractor ends it there
         f = next((f for f in free if f[1] - f[0] >= len(lead) + len(data)), None)
         if f is None:
-            new[base:base + 0x10000] = orig[base:base + 0x10000]
+            new[base:base + top] = orig[base:base + top]
             log.append('block %d: streams need %d bytes, %d free: left in Japanese' % (
                 b['sector'], len(table) + sum(len(x) for x in set(packed.values())), sum(e - s for s, e in was)))
             return None
@@ -263,7 +264,7 @@ def rebuild(orig, new, b, words, log, cache):
             p = base + b['table'] + i * 2
             assert new[p] | new[p + 1] << 8 == g['offset']
             new[p:p + 2] = place[g['offset']].to_bytes(2, 'little')
-    got = extract.block(new, base, valid=lambda m: True)   # self-check: the extractor must read back what was meant
+    got = extract.block(new, base, valid=lambda m: True, tab=b['table'])   # self-check: the extractor must read back what was meant
     assert got['groups'][1]['msgs'] == [x.hex() for x in words], 'block %d: dictionary read-back differs' % b['sector']
     for i, g in enumerate(got['groups']):
         if groups[i]['kind'] == 'lz' and groups[i]['msgs']:
@@ -373,6 +374,7 @@ def main(orig_path, syscard, built, blocks_path, script_path, marker=False):
     new = bytearray(open(built, 'rb').read())
     w = build.widths(orig, open(syscard, 'rb').read())
     blocks = json.load(open(blocks_path))
+    blocks.append(dict(extract.SYSTEXT, groups=extract.block(orig, extract.SYSTEXT['sector'] * 2048, tab=extract.SYSTEXT['table'])['groups']))
     old = [bytes.fromhex(x) for x in blocks[0]['groups'][1]['msgs']]   # the same dictionary in every block
     log, writes, cache = [], [], {}
     for e in json.load(open(script_path, encoding='utf-8')):

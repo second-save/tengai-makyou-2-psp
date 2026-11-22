@@ -154,6 +154,10 @@ when to stop. A second ring ($3D52/$3D62, vectors $3854/$3857) is used for graph
   浪華 吉備 安芸 長門. Script spellings: Hida Owari Ise Kii Kyoto Omi Echizen Etchu Echigo Inaba Izumo Iwami Tanba
   Naniwa Kibi Aki Nagato. Free: 194 zero bytes at 0x58F3E ($7F3E-$7FFF, end of bank 74); 256 zeros at 0x5835A
   (probably a buffer: don't use).
+- Continue > Info (no event block loaded) opens groups 2 / 3 through the normal opener with the selector on a copy of
+  the system text in the boot image: table at iso 0x5917C (17 u16 offsets relative to 0x59000), group 1 = the 106-word
+  dictionary at +0x19E, groups 2-11 = the start block's streams, 12-16 empty (+0x26D5), FF padding to +0x4000 (bank 77
+  at 0x5D000 is other data). The bank-74 header (`4C 3D 7F` x3, `01 00 00`, `01 7C 01`) misses extract.py's SIG.
 - 57720 (末初期化してゲームを始めます / １．火多〜尾張 ...) is the debug chapter select (left Japanese on purpose).
 
 ## Map tilesets (traced 2026-11-21, thirteenth session; `tools/gfxscan.py`, `tools/lua/gfxwho.lua`; survey in graphics.md)

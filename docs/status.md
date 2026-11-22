@@ -8,6 +8,20 @@ Translation source: the user's own DS translation, `~/develop/tengai-makyou-2-ds
 Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle viewer and warp work, shop / town scenes do not yet,
 4 (extract) done for the message modules, 5 (engine spike) VWF working, DS English inserted for 189 blocks (first build).
 
+## Release route: the PC Engine translation ported (2026-11-22, fifteenth session)
+- User ruling: ship the PC Engine project's v0.9 translation (`~/develop/tengai-makyou-2-pce-cd`) on the PSP; this repo's
+  own pipeline (DS text) is not what gets released.
+- CONTENT.DAT's data track = the PC Engine track 02 minus its 0xE6-sector pregap, with 108 sectors of Hudson edits:
+  one far call (`JSR $4921 / BIT $6DE8`) inserted in engine banks 6B (+0656), 6E (+0337), 74 (+09CF, then +0A25: +7),
+  code after it moved; event code changed in areas 35 / 110 / 124 (the PC Engine ids 23 / 6E / 7C); area 35 lost the two
+  first lines of group 17; mirror copies at sector 65536+.
+- Build there: `tools/tm2_text.py build work/en_build --ascii --psp work/content/HCD1022_02.iso` -> `build/tm2_psp.iso`
+  (`tools/tm2_psp.py`: engine patched on the PC Engine engine, then moved through the shift map; `check` = the map agrees
+  with Hudson's own relocation of all 153 string pointers). Pack here:
+  `tools/content.py pack work/content rom/NPJJ30036/PSP-KEY.EDAT build/pce-port/CONTENT.DAT .../build/tm2_psp.iso`.
+- Mesen QA (PSP track vs PC Engine build, same script): file screens, Info, first dialogue, shop route and a battle are
+  pixel-identical. Not tested on a PSP or in PPSSPP yet.
+
 ## Done (2026-11-19) - details in docs/re/notes.md
 - No English patch exists for the PC Engine game (web search). Related repos on this machine: `~/develop/tengai-makyou-2-pce-cd`
   (June notes; its decompressor theory is wrong, ignore it; `tools/dis6280.py` copied from there) and
@@ -146,9 +160,9 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
   `--sav work/states-en/inn.sav --route "1200:run*10;1500:run*10;2000:right*10;2150:i*10;2500:right*8;2600:right*8;2700:right*8;2850:i*8;3100:i*8"`
   (slot line at f2900, Info at f3300). Inn: `work/states-en/inn.mss` = innkeeper menu open (old man by the hearth;
   from town.mss: route `10:down*150`, warp.lua SUB=0x1C MAP=3 ENT=6, goto PATH `12,26;22,26;22,18;16,18` FACE up).
-- Bug (ours): Info screen Gear / Item / Scroll lines print "fefefe..." garbage; the original shows 手製の竹光 ぼろ着 /
-  そば団子. Not traced yet; first guess: the screen prints item names without the message pre-expander, so the
-  one-byte dictionary codes (0x80-0xFF, insert.py --all-ascii) in the English names come out raw.
+- Info screen garbage fixed (fifteenth session): it reads item names from a Japanese copy of system groups 1-11 in
+  the boot image (iso 0x59000, bank 75), and the dictionary hook took its SJIS bytes for word codes. insert.py now
+  rebuilds that copy too (`extract.SYSTEXT`, block 178). Gear / Item now read "Takemitsu  Rags" / "Soba Dango".
 - Slot line still Japanese: "3段/ 20徳/火多の国/ 0:01" (Lv, Virtue, province, play time). Plan in notes.md: new strings
   and an English province list in the zero tail of bank 74 ($7F3E-$7FFF), inline pointers re-aimed (build.py).
 
@@ -201,8 +215,8 @@ Phase: 1 (recon) nearly done, 2 (debug tool) half done: dialogue viewer, battle 
    same block size or relocation) for each of the 16 tilesets.
 3. Ending: staff roll done; the ending scenes before it (f~200-4000) show no text. DS `end0`-`end3` text: still
    to confirm voice-only (the ending program has no message stream).
-4. Main-program leftovers (save screens, fourteenth session; see "Save screens" below): **bug: the Continue > Info
-   screen prints garbage for Gear / Item / Scroll names** (`work/qa/saves/info_en.png` vs `info_jp.png`), then the
+4. Main-program leftovers (save screens, fourteenth session; see "Save screens" below): **the Continue > Info
+   screen's garbage is fixed (fifteenth session)**; next the
    slot line (Lv / Virtue / province / time). Also: 毒 (2 bytes), summon names 0x50AC1, 両 in storage / bank lines,
    storage menus not seen on screen yet, the width gate for the other windows. (Ship commands and the Continue menu,
    file manager and BRAM messages were already done.)
